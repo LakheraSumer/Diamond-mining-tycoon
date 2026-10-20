@@ -1,0 +1,82 @@
+{
+  "source": "D:\\games\\uptodown-com.lumber.inc.apk",
+  "working_copy": "D:\\games\\DiamondMineTycoon\\analysis\\evidence\\reference-working-copy.apk",
+  "sha256": "dc885921fc2d141a53906675bd555f6f5d3705119f37f892d3edf3e61b342550",
+  "source_preserved": true,
+  "bytes": 15560578,
+  "entries": 2169,
+  "uncompressed_bytes": 32522515,
+  "bad_crc_entry": null,
+  "duplicate_names": [],
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86",
+    "x86_64"
+  ],
+  "native_libraries": [
+    "lib/arm64-v8a/libandroidx.graphics.path.so",
+    "lib/arm64-v8a/libdatastore_shared_counter.so",
+    "lib/arm64-v8a/libuptodown-native.so",
+    "lib/arm64-v8a/libutd-services-native.so",
+    "lib/armeabi-v7a/libandroidx.graphics.path.so",
+    "lib/armeabi-v7a/libdatastore_shared_counter.so",
+    "lib/armeabi-v7a/libuptodown-native.so",
+    "lib/armeabi-v7a/libutd-services-native.so",
+    "lib/x86/libandroidx.graphics.path.so",
+    "lib/x86/libdatastore_shared_counter.so",
+    "lib/x86/libuptodown-native.so",
+    "lib/x86/libutd-services-native.so",
+    "lib/x86_64/libandroidx.graphics.path.so",
+    "lib/x86_64/libdatastore_shared_counter.so",
+    "lib/x86_64/libuptodown-native.so",
+    "lib/x86_64/libutd-services-native.so"
+  ],
+  "dex_files": [
+    "classes.dex",
+    "classes2.dex",
+    "classes3.dex",
+    "classes4.dex"
+  ],
+  "unity_indicators": [],
+  "embedded_apks_or_obb": [],
+  "commands": {
+    "badging.txt": {
+      "argv": [
+        "C:\\Users\\Sumer Lakhera\\AppData\\Local\\Android\\Sdk\\build-tools\\36.1.0\\aapt.exe",
+        "dump",
+        "badging",
+        "D:\\games\\DiamondMineTycoon\\analysis\\evidence\\reference-working-copy.apk"
+      ],
+      "exit_code": 0
+    },
+    "manifest-tree.txt": {
+      "argv": [
+        "C:\\Users\\Sumer Lakhera\\AppData\\Local\\Android\\Sdk\\build-tools\\36.1.0\\aapt.exe",
+        "dump",
+        "xmltree",
+        "D:\\games\\DiamondMineTycoon\\analysis\\evidence\\reference-working-copy.apk",
+        "AndroidManifest.xml"
+      ],
+      "exit_code": 0
+    },
+    "signing.txt": {
+      "argv": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+        "-jar",
+        "C:\\Users\\Sumer Lakhera\\AppData\\Local\\Android\\Sdk\\build-tools\\36.1.0\\lib\\apksigner.jar",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "D:\\games\\DiamondMineTycoon\\analysis\\evidence\\reference-working-copy.apk"
+      ],
+      "exit_code": 0
+    }
+  },
+  "limitations": [
+    "No APK execution",
+    "Signing certificate not compared with an independently trusted publisher identity",
+    "ZIP integrity is not publisher authenticity",
+    "No network or private services contacted"
+  ]
+}

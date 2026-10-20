@@ -1,0 +1,14 @@
+{
+  "name": "DiamondMine.Simulation",
+  "rootNamespace": "DiamondMine.Simulation",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": true
+}

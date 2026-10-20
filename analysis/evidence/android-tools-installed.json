@@ -1,0 +1,44 @@
+[
+  {
+    "id": "android-open-jdk-17.0.18+8",
+    "path": "D:\\games\\DiamondMineTycoon\\.cache\\android-tools\\OpenJDK",
+    "url": "https://download.unity3d.com/download_unity/open-jdk/open-jdk-win-x64/jdk17.0.18-8_15e8817d1f5db6db3571ebe7430ef37f7fa8e60e8ff6f3e18ca1cb4c29f78774.zip",
+    "checksum": "sha256:15e8817d1f5db6db3571ebe7430ef37f7fa8e60e8ff6f3e18ca1cb4c29f78774",
+    "archive_sha256": "15e8817d1f5db6db3571ebe7430ef37f7fa8e60e8ff6f3e18ca1cb4c29f78774"
+  },
+  {
+    "id": "android-ndk-r27c",
+    "path": "D:\\games\\DiamondMineTycoon\\.cache\\android-tools\\NDK",
+    "url": "https://dl.google.com/android/repository/android-ndk-r27c-windows.zip",
+    "checksum": "sha1:ac5f7762764b1f15341094e148ad4f847d050c38",
+    "archive_sha256": "27e49f11e0cee5800983d8af8f4acd5bf09987aa6f790d4439dda9f3643d2494"
+  },
+  {
+    "id": "android-sdk-build-tools-36.0.0",
+    "path": "D:\\games\\DiamondMineTycoon\\.cache\\android-tools\\SDK\\build-tools\\36.0.0",
+    "url": "https://dl.google.com/android/repository/build-tools_r36_windows.zip",
+    "checksum": "sha1:f16ccffd34de8790dede813a6c7d8e2c11a27b50",
+    "archive_sha256": "aa1095cb14d83e483818a748a2c06faaeb8e601561b06a356a119a1b2ca280d3"
+  },
+  {
+    "id": "android-sdk-platforms-36",
+    "path": "D:\\games\\DiamondMineTycoon\\.cache\\android-tools\\SDK\\platforms\\android-36",
+    "url": "https://dl.google.com/android/repository/platform-36_r02.zip",
+    "checksum": "sha1:2c1a80dd4d9f7d0e6dd336ec603d9b5c55a6f576",
+    "archive_sha256": "37607369a28c5b640b3a7998868d45898ebcb777565a0e85f9acf36f29631d2e"
+  },
+  {
+    "id": "android-sdk-command-line-tools-16.0",
+    "path": "D:\\games\\DiamondMineTycoon\\.cache\\android-tools\\SDK\\cmdline-tools\\16.0",
+    "url": "https://dl.google.com/android/repository/commandlinetools-win-12266719_latest.zip",
+    "checksum": "sha1:32787c10f55911fd109848906b1275723e79f659",
+    "archive_sha256": "f9088c04a44f1f37a8a3a228a7663e11ae9445fa07529c96cef38acb985a88f3"
+  },
+  {
+    "id": "cmake-3.22.1",
+    "path": "D:\\games\\DiamondMineTycoon\\.cache\\android-tools\\SDK\\cmake\\3.22.1",
+    "url": "https://dl.google.com/android/repository/cmake-3.22.1-windows.zip",
+    "checksum": "sha1:292778f32a7d5183e1c49c7897b870653f2d2c1b",
+    "archive_sha256": "c9a9d568452a20cf27d703cb21ef9529dd67bda6be048c4d4b884acb3ac3a2b8"
+  }
+]

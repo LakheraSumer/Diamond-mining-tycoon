@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="a8049b01-ceec-4c6c-b36e-a8a70587b587" name="Sumer Lakhera@SUMO 2026-10-20 09:10:38" runUser="SUMO\CodexSandboxOffline" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-20T09:10:38.0474150+05:30" queuing="2026-10-20T09:10:38.0474155+05:30" start="2026-10-20T09:10:37.3526526+05:30" finish="2026-10-20T09:10:41.2665186+05:30" />
+  <TestSettings name="default" id="5e160880-b483-4311-bc7c-31049ccaa1a1">
+    <Deployment runDeploymentRoot="Sumer_Lakhera_SUMO_2026-10-20_09_10_38" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="2f394afd-154c-4f1e-8fd8-d637fd6ee6ff" testId="be87917b-2f69-47ae-bc73-82e6c00d6744" testName="Timestamp_RejectsInvalidRanges(&quot;1e100&quot;)" computerName="SUMO" duration="00:00:00.0005830" startTime="2026-10-20T09:10:41.1884984+05:30" endTime="2026-10-20T09:10:41.1890817+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f394afd-154c-4f1e-8fd8-d637fd6ee6ff" />
+    <UnitTestResult executionId="8274de37-bb76-4d3e-8ae5-bb2baeecef86" testId="5363d350-d624-3ae2-217f-e26e8160d80c" testName="DuplicateCompletion_OnlyInvokesDurableGrantOnce" computerName="SUMO" duration="00:00:00.0004500" startTime="2026-10-20T09:10:41.1944450+05:30" endTime="2026-10-20T09:10:41.1948953+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8274de37-bb76-4d3e-8ae5-bb2baeecef86" />
+    <UnitTestResult executionId="6b0e01e1-666d-4d6b-b019-0913db2861c7" testId="f9803659-8359-2581-14ee-a9d255e82f12" testName="LegacyMoney_MigratesToCoins" computerName="SUMO" duration="00:00:00.0005620" startTime="2026-10-20T09:10:41.1999116+05:30" endTime="2026-10-20T09:10:41.2004734+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b0e01e1-666d-4d6b-b019-0913db2861c7" />
+    <UnitTestResult executionId="c7c6f956-17ee-47b3-a664-f474128d0509" testId="bfd2c395-e076-9119-824b-65f3be65d3ee" testName="UpgradeCosts_MatchTheSeriesAndBuyMax" computerName="SUMO" duration="00:00:00.0007220" startTime="2026-10-20T09:10:41.1559908+05:30" endTime="2026-10-20T09:10:41.1567130+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c7c6f956-17ee-47b3-a664-f474128d0509" />
+    <UnitTestResult executionId="4b4e6cf8-0f9a-4472-8bc7-5c51530acf4c" testId="3c640065-e5a0-d4a6-c5ba-9019cc308de7" testName="UnfinishedAd_NeverInvokesGrant(Failed)" computerName="SUMO" duration="00:00:00.0001530" startTime="2026-10-20T09:10:41.1956539+05:30" endTime="2026-10-20T09:10:41.1958070+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b4e6cf8-0f9a-4472-8bc7-5c51530acf4c" />
+    <UnitTestResult executionId="13d06893-3490-4082-86ee-d343e486e31a" testId="9725cdb7-c903-e8f4-aa4c-ff946e51971d" testName="CorruptPrimary_RestoresBackup_AndLeavesBrokenFiles" computerName="SUMO" duration="00:00:00.0012060" startTime="2026-10-20T09:10:41.1967864+05:30" endTime="2026-10-20T09:10:41.1979913+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="13d06893-3490-4082-86ee-d343e486e31a" />
+    <UnitTestResult executionId="dbb6ec6e-2cac-49bc-bca9-3afa9b4ac868" testId="5a255219-f459-a5a8-5f86-c62c80f41357" testName="EditedCart_RejectsResourceInjection" computerName="SUMO" duration="00:00:00.0004960" startTime="2026-10-20T09:10:41.1759590+05:30" endTime="2026-10-20T09:10:41.1764550+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbb6ec6e-2cac-49bc-bca9-3afa9b4ac868" />
+    <UnitTestResult executionId="17400bb1-994b-4c18-943b-24631ac6a651" testId="7dab9d11-16d5-a330-0439-a8806d52b130" testName="Offline_WithoutAutomationDoesNotCreateOre" computerName="SUMO" duration="00:00:00.0022100" startTime="2026-10-20T09:10:37.9765228+05:30" endTime="2026-10-20T09:10:37.9787326+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17400bb1-994b-4c18-943b-24631ac6a651" />
+    <UnitTestResult executionId="957c7cd6-2f27-44f4-ab02-b83bcee9cb20" testId="2cc95446-1894-d171-2a12-ceee7738cbb4" testName="BothCopiesCorrupt_StartFreshWithoutDeletingFiles" computerName="SUMO" duration="00:00:00.0008420" startTime="2026-10-20T09:10:41.1959275+05:30" endTime="2026-10-20T09:10:41.1967688+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="957c7cd6-2f27-44f4-ab02-b83bcee9cb20" />
+    <UnitTestResult executionId="417d676b-05da-48d0-9f31-78bf49588b07" testId="77382e7a-fb58-ef0d-f3f0-9872f01d34e8" testName="Unlock_RequiresLifetimeCoins" computerName="SUMO" duration="00:00:00.0005940" startTime="2026-10-20T09:10:41.1553755+05:30" endTime="2026-10-20T09:10:41.1559690+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="417d676b-05da-48d0-9f31-78bf49588b07" />
+    <UnitTestResult executionId="80119ca9-a79b-4ecc-a8c0-1658d7967f57" testId="56c126a1-def7-0fa2-8ca0-e0ac2e9af1a3" testName="NegativePurchaseAndHugeBuyMaximum_DoNotSpendOrOverflow" computerName="SUMO" duration="00:00:00.0007300" startTime="2026-10-20T09:10:41.1781772+05:30" endTime="2026-10-20T09:10:41.1789064+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80119ca9-a79b-4ecc-a8c0-1658d7967f57" />
+    <UnitTestResult executionId="a9592734-ea30-4e55-b65b-a91e8835d285" testId="c470afd1-012c-1751-1ccf-2755ff54e665" testName="Pacing_LateGameReachesPrestigeAndTheDeepCore" computerName="SUMO" duration="00:00:03.0924130" startTime="2026-10-20T09:10:37.9799048+05:30" endTime="2026-10-20T09:10:41.0723173+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9592734-ea30-4e55-b65b-a91e8835d285">
+      <Output>
+        <StdOut>4h mine2=836 mine3=5213 prestigeAt=2578 prestigeDone=2578 mastery=2 income=123.6 coins=444784</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="52aeb145-e231-4f22-91b4-a92f830043e6" testId="e46bdde4-52ec-ab3b-2354-5079bc7aca54" testName="AmbiguousJson_IsRejected(&quot;{\&quot;version\&quot;:1.5}&quot;)" computerName="SUMO" duration="00:00:00.0008410" startTime="2026-10-20T09:10:41.1647804+05:30" endTime="2026-10-20T09:10:41.1656208+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52aeb145-e231-4f22-91b4-a92f830043e6" />
+    <UnitTestResult executionId="7bc43b79-93d8-409c-9dd8-014ed5e69e80" testId="d0fa813e-9e52-7a2a-cdf7-3dfc8b6a5546" testName="NewerBackup_IsProtectedEvenWithMissingOrBrokenPrimary(False)" computerName="SUMO" duration="00:00:00.0008890" startTime="2026-10-20T09:10:41.1789728+05:30" endTime="2026-10-20T09:10:41.1798610+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7bc43b79-93d8-409c-9dd8-014ed5e69e80" />
+    <UnitTestResult executionId="a0cc1749-98e0-4b78-b3b4-7b32f4c0beaa" testId="73b37966-9228-d671-4b5e-54e75feee51f" testName="UpgradeLevels_RejectOverflowAndFractionalValues(&quot;1e100&quot;)" computerName="SUMO" duration="00:00:00.0018080" startTime="2026-10-20T09:10:41.1895788+05:30" endTime="2026-10-20T09:10:41.1913859+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a0cc1749-98e0-4b78-b3b4-7b32f4c0beaa" />
+    <UnitTestResult executionId="264126d1-5269-4afb-84da-8983562fea4d" testId="7e55e6d8-8b09-a877-f17f-958310bf31f6" testName="UnfinishedAd_NeverInvokesGrant(Cancelled)" computerName="SUMO" duration="00:00:00.0001350" startTime="2026-10-20T09:10:41.1955135+05:30" endTime="2026-10-20T09:10:41.1956482+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="264126d1-5269-4afb-84da-8983562fea4d" />
+    <UnitTestResult executionId="10fe2a5a-b379-46a7-bb91-95aa97f011b1" testId="d38e8ae5-a888-e7f9-07bd-41a5ed295ed7" testName="FailedWrite_DoesNotApplyAnUpgrade" computerName="SUMO" duration="00:00:00.0009240" startTime="2026-10-20T09:10:41.1980267+05:30" endTime="2026-10-20T09:10:41.1989501+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="10fe2a5a-b379-46a7-bb91-95aa97f011b1" />
+    <UnitTestResult executionId="6784eab1-b05f-42a0-8c57-59668056419a" testId="493ee9f1-647f-0f37-60be-e3b69194aac3" testName="Objectives_PayOnce" computerName="SUMO" duration="00:00:00.0019350" startTime="2026-10-20T09:10:37.9436243+05:30" endTime="2026-10-20T09:10:37.9455584+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6784eab1-b05f-42a0-8c57-59668056419a" />
+    <UnitTestResult executionId="86e957a8-2e54-4fda-97d6-61d5f1976c30" testId="6b084d64-2208-41ef-b011-8a4ee04a515a" testName="UnfinishedAd_NeverInvokesGrant(Timeout)" computerName="SUMO" duration="00:00:00.0000040" startTime="2026-10-20T09:10:41.1958227+05:30" endTime="2026-10-20T09:10:41.1958270+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="86e957a8-2e54-4fda-97d6-61d5f1976c30" />
+    <UnitTestResult executionId="5ce70536-4fc0-4e74-9611-c27b43621616" testId="e844759b-bb0e-6acd-61b3-5001cc7b9802" testName="Tutorial_SkipsActionsAlreadyDone" computerName="SUMO" duration="00:00:00.0005160" startTime="2026-10-20T09:10:41.1548388+05:30" endTime="2026-10-20T09:10:41.1553544+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ce70536-4fc0-4e74-9611-c27b43621616" />
+    <UnitTestResult executionId="24b4affe-6fc1-47c8-8307-5806d71305ff" testId="beb14a06-695e-3797-83cd-031dcdf6c204" testName="Training_RequiresTheMiner" computerName="SUMO" duration="00:00:00.0006420" startTime="2026-10-20T09:10:41.1534018+05:30" endTime="2026-10-20T09:10:41.1540437+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24b4affe-6fc1-47c8-8307-5806d71305ff" />
+    <UnitTestResult executionId="5bf6b328-faf0-44c7-bcb3-9b178757b75c" testId="01c2d19c-7d21-72a8-61fd-2f8c1bc0d950" testName="NewerBackup_IsProtectedEvenWithMissingOrBrokenPrimary(True)" computerName="SUMO" duration="00:00:00.0006690" startTime="2026-10-20T09:10:41.1798901+05:30" endTime="2026-10-20T09:10:41.1805581+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5bf6b328-faf0-44c7-bcb3-9b178757b75c" />
+    <UnitTestResult executionId="e68c3c14-e54b-4f26-8387-faca8dde9980" testId="bafaf71b-daa8-6103-dab6-9edfd366701c" testName="UpgradeLevels_RejectOverflowAndFractionalValues(&quot;1.5&quot;)" computerName="SUMO" duration="00:00:00.0006160" startTime="2026-10-20T09:10:41.1914185+05:30" endTime="2026-10-20T09:10:41.1920348+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e68c3c14-e54b-4f26-8387-faca8dde9980" />
+    <UnitTestResult executionId="1e04fd55-2c54-45d3-b3c3-3af4adf42f78" testId="a3f3757b-ba6b-987b-b0c4-7a4b64ef2734" testName="EditedBuffers_RejectQuantitiesAboveCapacity(&quot;processInput&quot;)" computerName="SUMO" duration="00:00:00.0006900" startTime="2026-10-20T09:10:41.1738194+05:30" endTime="2026-10-20T09:10:41.1745090+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e04fd55-2c54-45d3-b3c3-3af4adf42f78" />
+    <UnitTestResult executionId="bc447d7b-6414-4cbe-be12-379b10243025" testId="6e49fd87-09f7-875c-68d6-cd7df7ad3b97" testName="OfflineBonus_IsOnce_AndCancelDoesNotGrant" computerName="SUMO" duration="00:00:00.0011329" startTime="2026-10-20T09:10:37.9787543+05:30" endTime="2026-10-20T09:10:37.9798869+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc447d7b-6414-4cbe-be12-379b10243025" />
+    <UnitTestResult executionId="d3c77062-3d66-4ad1-9fe0-ed270086e18d" testId="2a6bfe96-5b05-dd4e-fab6-bf0a4b9acb72" testName="Economy_HasThreeDistinctMinesAndEightHourCap" computerName="SUMO" duration="00:00:00.0021100" startTime="2026-10-20T09:10:37.9309791+05:30" endTime="2026-10-20T09:10:37.9330882+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d3c77062-3d66-4ad1-9fe0-ed270086e18d" />
+    <UnitTestResult executionId="e5a3f6eb-18c8-4163-933e-3b36b27bdbf0" testId="6264eb83-2c0f-c9be-393b-bd353833db65" testName="Prestige_ResetsProgressAndKeepsMastery" computerName="SUMO" duration="00:00:00.0016710" startTime="2026-10-20T09:10:41.1494615+05:30" endTime="2026-10-20T09:10:41.1511314+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e5a3f6eb-18c8-4163-933e-3b36b27bdbf0" />
+    <UnitTestResult executionId="1c6f0504-5f6a-418c-a1e8-66247199f1fc" testId="92edf113-1c6e-d330-99d4-ad43f2d07351" testName="NewerSave_IsNotOverwritten" computerName="SUMO" duration="00:00:00.0006150" startTime="2026-10-20T09:10:41.2057828+05:30" endTime="2026-10-20T09:10:41.2063980+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c6f0504-5f6a-418c-a1e8-66247199f1fc" />
+    <UnitTestResult executionId="0ed642aa-6d9b-4e8a-a734-38bc4260d05c" testId="8f210abe-73c9-bb1f-3a07-aefd35131119" testName="OfflineClaim_InterruptionAndRelaunchDoNotDuplicateReward" computerName="SUMO" duration="00:00:00.0071060" startTime="2026-10-20T09:10:41.1806041+05:30" endTime="2026-10-20T09:10:41.1877118+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ed642aa-6d9b-4e8a-a734-38bc4260d05c" />
+    <UnitTestResult executionId="553c34a5-06f4-47ec-ab8e-15a7b4984144" testId="163b5d85-c29c-f350-c04f-71fdb9cbc55e" testName="EditedBuffers_RejectQuantitiesAboveCapacity(&quot;oreAtFace&quot;)" computerName="SUMO" duration="00:00:00.0003820" startTime="2026-10-20T09:10:41.1751104+05:30" endTime="2026-10-20T09:10:41.1754926+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="553c34a5-06f4-47ec-ab8e-15a7b4984144" />
+    <UnitTestResult executionId="9b274ee5-1ede-4121-b42b-4a862c1f2d68" testId="7a0f349e-81c0-bae3-4a90-db3711872346" testName="ManualTap_RespectsCooldownAndBuffer" computerName="SUMO" duration="00:00:00.0062090" startTime="2026-10-20T09:10:37.9365799+05:30" endTime="2026-10-20T09:10:37.9427878+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b274ee5-1ede-4121-b42b-4a862c1f2d68" />
+    <UnitTestResult executionId="c9f23197-0af2-4dc8-9cd9-eaa73e470b28" testId="19fc6127-1ac2-19ad-8ce7-05255c80046f" testName="AmbiguousJson_IsRejected(&quot;{\&quot;activeMineId\&quot;:\&quot;bad\ntext\&quot;}&quot;)" computerName="SUMO" duration="00:00:00.0003700" startTime="2026-10-20T09:10:41.1668957+05:30" endTime="2026-10-20T09:10:41.1672656+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9f23197-0af2-4dc8-9cd9-eaa73e470b28" />
+    <UnitTestResult executionId="708c4c78-7b89-4354-bc9f-77edd3693505" testId="f1b6c61d-0fe5-f8c4-ed83-7634177f5509" testName="MissingPrimary_KeepsRecoveryBackupEvenWhenMoveFails(True)" computerName="SUMO" duration="00:00:00.0015000" startTime="2026-10-20T09:10:41.2027953+05:30" endTime="2026-10-20T09:10:41.2042951+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="708c4c78-7b89-4354-bc9f-77edd3693505" />
+    <UnitTestResult executionId="35bcf3d4-06c9-4495-a5fa-15ac84516b8c" testId="52c6b535-657e-ec9e-e9ad-95bea07b5769" testName="Resources_AreConservedThroughTheChain" computerName="SUMO" duration="00:00:00.0008150" startTime="2026-10-20T09:10:41.1511663+05:30" endTime="2026-10-20T09:10:41.1519808+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="35bcf3d4-06c9-4495-a5fa-15ac84516b8c" />
+    <UnitTestResult executionId="5f5f0a5e-a61a-4bef-bdf4-5171fc8443a2" testId="1fec8f26-463d-cd35-0780-35801ea6382b" testName="SaveFailure_RetainsOfferForRetry_AndDisabledProviderCannotBegin" computerName="SUMO" duration="00:00:00.0005630" startTime="2026-10-20T09:10:41.1949116+05:30" endTime="2026-10-20T09:10:41.1954747+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f5f0a5e-a61a-4bef-bdf4-5171fc8443a2" />
+    <UnitTestResult executionId="7107bd84-75d7-4487-8fe2-f398afead281" testId="acc233e2-3c5a-3db2-019e-564cf2c4fb28" testName="UnfinishedAd_NeverInvokesGrant(NoFill)" computerName="SUMO" duration="00:00:00.0000060" startTime="2026-10-20T09:10:41.1958138+05:30" endTime="2026-10-20T09:10:41.1958199+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7107bd84-75d7-4487-8fe2-f398afead281" />
+    <UnitTestResult executionId="4327204e-ee1c-435e-8362-3b6f477c399d" testId="c2e08fe4-e611-0439-a872-b14045de4ac0" testName="InterruptedReplace_KeepsThePreviousSave" computerName="SUMO" duration="00:00:00.0008980" startTime="2026-10-20T09:10:41.1989811+05:30" endTime="2026-10-20T09:10:41.1998788+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4327204e-ee1c-435e-8362-3b6f477c399d" />
+    <UnitTestResult executionId="5075cbeb-c552-4d89-bd47-8b40962ecfaf" testId="10b405a9-f24e-52d6-c112-e0680f5eb976" testName="EditedBuffers_RejectQuantitiesAboveCapacity(&quot;storage&quot;)" computerName="SUMO" duration="00:00:00.0004350" startTime="2026-10-20T09:10:41.1755004+05:30" endTime="2026-10-20T09:10:41.1759349+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5075cbeb-c552-4d89-bd47-8b40962ecfaf" />
+    <UnitTestResult executionId="792189f3-4ccd-4919-b552-eeddcd336adc" testId="b215187a-e6d5-b90a-f41d-515753f2d12f" testName="RoundTrip_PreservesProgress" computerName="SUMO" duration="00:00:00.0010850" startTime="2026-10-20T09:10:41.2137985+05:30" endTime="2026-10-20T09:10:41.2148829+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="792189f3-4ccd-4919-b552-eeddcd336adc" />
+    <UnitTestResult executionId="48b49292-8369-4f25-a424-bd3539dd507b" testId="fd7c74e9-b4bf-b998-3f4e-dfef324f740c" testName="Timestamp_RejectsInvalidRanges(&quot;1.5&quot;)" computerName="SUMO" duration="00:00:00.0004340" startTime="2026-10-20T09:10:41.1890929+05:30" endTime="2026-10-20T09:10:41.1895267+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="48b49292-8369-4f25-a424-bd3539dd507b" />
+    <UnitTestResult executionId="ffb36bd3-b43c-42f7-9694-a5c920b929ca" testId="6a15b342-2034-8c29-7791-1b701db39925" testName="Numbers_FormatAndNeverGoNegative" computerName="SUMO" duration="00:00:00.0007690" startTime="2026-10-20T09:10:37.9428225+05:30" endTime="2026-10-20T09:10:37.9435908+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ffb36bd3-b43c-42f7-9694-a5c920b929ca" />
+    <UnitTestResult executionId="672284f9-e0f5-424b-ae20-92ce85e5343a" testId="09b503de-ac8f-abb5-af0a-b4ea224f678c" testName="Delivery_RequiresSoldDiamondsAndPaysOnceAcrossSaveAndPrestige" computerName="SUMO" duration="00:00:00.0010399" startTime="2026-10-20T09:10:41.1933805+05:30" endTime="2026-10-20T09:10:41.1944196+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="672284f9-e0f5-424b-ae20-92ce85e5343a" />
+    <UnitTestResult executionId="8907e892-59df-4c84-9396-3e5b8690be94" testId="0f4fdabf-0bb6-ce8a-3d2f-4b51d7f0e683" testName="Timestamp_RejectsInvalidRanges(&quot;-1&quot;)" computerName="SUMO" duration="00:00:00.0006910" startTime="2026-10-20T09:10:41.1877840+05:30" endTime="2026-10-20T09:10:41.1884749+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8907e892-59df-4c84-9396-3e5b8690be94" />
+    <UnitTestResult executionId="f3e85dd9-a1d3-422e-8acf-cae693906eab" testId="7484891c-ffdb-f72d-405b-22c226185724" testName="AmbiguousJson_IsRejected(&quot;{\&quot;coins\&quot;:1e500}&quot;)" computerName="SUMO" duration="00:00:00.0003570" startTime="2026-10-20T09:10:41.1665232+05:30" endTime="2026-10-20T09:10:41.1668798+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3e85dd9-a1d3-422e-8acf-cae693906eab" />
+    <UnitTestResult executionId="a7470907-fa7a-4f1b-a9d7-a0ca59f78817" testId="b15f37d9-dc17-4ed9-5f0a-d5b45bfa8e9f" testName="RealFiles_ReplaceAtomicallyAndKeepABackup" computerName="SUMO" duration="00:00:00.0073290" startTime="2026-10-20T09:10:41.2064217+05:30" endTime="2026-10-20T09:10:41.2137505+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7470907-fa7a-4f1b-a9d7-a0ca59f78817" />
+    <UnitTestResult executionId="bea8afdd-08ed-4b5e-a093-745ab643e75f" testId="5d875b08-aff7-a931-f9f0-a7f55fda1b72" testName="ChecksumEdit_RecoversLastGoodBackupAndArchivesDamage" computerName="SUMO" duration="00:00:00.0064250" startTime="2026-10-20T09:10:41.1673201+05:30" endTime="2026-10-20T09:10:41.1737443+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bea8afdd-08ed-4b5e-a093-745ab643e75f" />
+    <UnitTestResult executionId="5ee04b63-0467-4ca1-ba9c-127057d29ecb" testId="18413a34-3551-2f15-957b-a1dc993543af" testName="EditedBuffers_RejectQuantitiesAboveCapacity(&quot;rough&quot;)" computerName="SUMO" duration="00:00:00.0005530" startTime="2026-10-20T09:10:41.1745357+05:30" endTime="2026-10-20T09:10:41.1750890+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ee04b63-0467-4ca1-ba9c-127057d29ecb" />
+    <UnitTestResult executionId="83e696d9-aaa3-4cf7-a72a-f0f0bc53e01e" testId="b685e200-e8a0-40fd-cf3a-20d9a34ba7ce" testName="UpgradeWhileCartTravels_StillLoadsSuccessfully" computerName="SUMO" duration="00:00:00.0011840" startTime="2026-10-20T09:10:41.1920729+05:30" endTime="2026-10-20T09:10:41.1932566+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83e696d9-aaa3-4cf7-a72a-f0f0bc53e01e" />
+    <UnitTestResult executionId="55dab62b-eb81-46c6-924e-8b48cb0210c8" testId="75277a7d-0f3e-d7e5-bdc2-0b38cb916242" testName="Offline_CapsAtEightHours_AndIgnoresABackwardClock" computerName="SUMO" duration="00:00:00.0300750" startTime="2026-10-20T09:10:37.9455985+05:30" endTime="2026-10-20T09:10:37.9756720+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="55dab62b-eb81-46c6-924e-8b48cb0210c8" />
+    <UnitTestResult executionId="2e3cf682-c304-4aca-9109-74cdaa1a40d4" testId="3464c8e9-609b-32d2-fad7-ba4477694057" testName="AmbiguousJson_IsRejected(&quot;{\&quot;coins\&quot;:1,\&quot;coins\&quot;:2}&quot;)" computerName="SUMO" duration="00:00:00.0043330" startTime="2026-10-20T09:10:41.1604115+05:30" endTime="2026-10-20T09:10:41.1647442+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e3cf682-c304-4aca-9109-74cdaa1a40d4" />
+    <UnitTestResult executionId="2dfde058-dc92-4124-80ad-dea4ccec1af5" testId="90023443-8274-1823-990f-db2347975f29" testName="LongAdvance_MatchesShortSteps" computerName="SUMO" duration="00:00:00.0034450" startTime="2026-10-20T09:10:37.9331121+05:30" endTime="2026-10-20T09:10:37.9365565+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2dfde058-dc92-4124-80ad-dea4ccec1af5" />
+    <UnitTestResult executionId="866f2999-727f-4bde-b05b-1c6affc62026" testId="903705bb-de8e-305a-6816-6f9c3a31a7c1" testName="AmbiguousJson_IsRejected(&quot;{\&quot;coins\&quot;:1.}&quot;)" computerName="SUMO" duration="00:00:00.0003890" startTime="2026-10-20T09:10:41.1661171+05:30" endTime="2026-10-20T09:10:41.1665054+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="866f2999-727f-4bde-b05b-1c6affc62026" />
+    <UnitTestResult executionId="bc1f0a63-339a-49da-9379-8d0cd94f7a56" testId="e8442bd2-7e9f-28e3-326a-e81f15620040" testName="TransportBottleneck_LimitsThroughput" computerName="SUMO" duration="00:00:00.0007510" startTime="2026-10-20T09:10:41.1540679+05:30" endTime="2026-10-20T09:10:41.1548180+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc1f0a63-339a-49da-9379-8d0cd94f7a56" />
+    <UnitTestResult executionId="08dba3cf-fc11-4352-b823-94339d03148c" testId="a2547d7e-fe37-43ad-7cad-36600df7b9da" testName="Boost_RejectsDuplicateTokens" computerName="SUMO" duration="00:00:00.0218950" startTime="2026-10-20T09:10:37.9031340+05:30" endTime="2026-10-20T09:10:37.9249803+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08dba3cf-fc11-4352-b823-94339d03148c" />
+    <UnitTestResult executionId="f18b1cdc-eae7-43ca-bc55-1632cb7f0d05" testId="2a02d0ef-b585-9b5b-8b40-d5a3a1d24791" testName="StorageFull_PointsAtSales" computerName="SUMO" duration="00:00:00.0013580" startTime="2026-10-20T09:10:41.1520091+05:30" endTime="2026-10-20T09:10:41.1533665+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f18b1cdc-eae7-43ca-bc55-1632cb7f0d05" />
+    <UnitTestResult executionId="cec7d83d-b316-4909-93fb-7af56b022ee7" testId="31e0c4f3-ce92-080f-4c2f-371fd04ebf3b" testName="MissingPrimary_KeepsRecoveryBackupEvenWhenMoveFails(False)" computerName="SUMO" duration="00:00:00.0022430" startTime="2026-10-20T09:10:41.2005251+05:30" endTime="2026-10-20T09:10:41.2027678+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cec7d83d-b316-4909-93fb-7af56b022ee7" />
+    <UnitTestResult executionId="e75731ff-74da-4bd2-a04b-c1f7bd37e85e" testId="6ef941cf-f4b4-b266-afad-ca5769343e1f" testName="NegativeCoins_AreRejected" computerName="SUMO" duration="00:00:00.0014180" startTime="2026-10-20T09:10:41.2043411+05:30" endTime="2026-10-20T09:10:41.2057583+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e75731ff-74da-4bd2-a04b-c1f7bd37e85e" />
+    <UnitTestResult executionId="c4bffd47-7001-4dc8-8554-09e0eb14261b" testId="9ac41233-ece3-2acf-9ff3-9114c4f27eda" testName="Pacing_ReachesEarlyAndMidMilestonesWithoutAds" computerName="SUMO" duration="00:00:00.0770480" startTime="2026-10-20T09:10:41.0723645+05:30" endTime="2026-10-20T09:10:41.1494117+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c4bffd47-7001-4dc8-8554-09e0eb14261b">
+      <Output>
+        <StdOut>20m sale=8.5 upgrade=43.3 auto=282.3 mine2=836.3 coins=631 life=12252 income=20.00 worstMinute=96</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="249e89b2-7237-4064-8dc2-54e5c497f7c2" testId="70852c54-0a83-1e71-10f4-ffe0045398e7" testName="BuyPreview_MatchesThePurchaseAndRejectsAShortfall" computerName="SUMO" duration="00:00:00.0047750" startTime="2026-10-20T09:10:37.9261743+05:30" endTime="2026-10-20T09:10:37.9309487+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="249e89b2-7237-4064-8dc2-54e5c497f7c2" />
+    <UnitTestResult executionId="af8d7b1c-d23e-47c8-a9c5-b1103dd3ee2a" testId="52f1e38d-c2ff-e988-c28c-0105c05f85c0" testName="AmbiguousJson_IsRejected(&quot;{\&quot;coins\&quot;:01}&quot;)" computerName="SUMO" duration="00:00:00.0004530" startTime="2026-10-20T09:10:41.1656458+05:30" endTime="2026-10-20T09:10:41.1660986+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af8d7b1c-d23e-47c8-a9c5-b1103dd3ee2a" />
+    <UnitTestResult executionId="2fdeb632-bcee-45df-ac49-b896e8a3c7fe" testId="07e7b0ef-ae3a-0321-61b5-019658c7760a" testName="JsonSizeAndDepth_AreBounded" computerName="SUMO" duration="00:00:00.0016750" startTime="2026-10-20T09:10:41.1764768+05:30" endTime="2026-10-20T09:10:41.1781513+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2fdeb632-bcee-45df-ac49-b896e8a3c7fe" />
+    <UnitTestResult executionId="ac22b18b-2b70-43a1-8ecf-33be4d1530d9" testId="1f5de750-9e95-591f-89fc-8a5bf50cbc6d" testName="Offline_DrainsExistingOreWithoutAMiner" computerName="SUMO" duration="00:00:00.0007950" startTime="2026-10-20T09:10:37.9757048+05:30" endTime="2026-10-20T09:10:37.9764989+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ac22b18b-2b70-43a1-8ecf-33be4d1530d9" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="AmbiguousJson_IsRejected(&quot;{\&quot;coins\&quot;:1,\&quot;coins\&quot;:2}&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="3464c8e9-609b-32d2-fad7-ba4477694057">
+      <Execution id="2e3cf682-c304-4aca-9109-74cdaa1a40d4" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="AmbiguousJson_IsRejected(&quot;{\&quot;coins\&quot;:1,\&quot;coins\&quot;:2}&quot;)" />
+    </UnitTest>
+    <UnitTest name="Pacing_ReachesEarlyAndMidMilestonesWithoutAds" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="9ac41233-ece3-2acf-9ff3-9114c4f27eda">
+      <Execution id="c4bffd47-7001-4dc8-8554-09e0eb14261b" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Pacing_ReachesEarlyAndMidMilestonesWithoutAds" />
+    </UnitTest>
+    <UnitTest name="DuplicateCompletion_OnlyInvokesDurableGrantOnce" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="5363d350-d624-3ae2-217f-e26e8160d80c">
+      <Execution id="8274de37-bb76-4d3e-8ae5-bb2baeecef86" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.OrdersAndAdsTests" name="DuplicateCompletion_OnlyInvokesDurableGrantOnce" />
+    </UnitTest>
+    <UnitTest name="Delivery_RequiresSoldDiamondsAndPaysOnceAcrossSaveAndPrestige" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="09b503de-ac8f-abb5-af0a-b4ea224f678c">
+      <Execution id="672284f9-e0f5-424b-ae20-92ce85e5343a" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.OrdersAndAdsTests" name="Delivery_RequiresSoldDiamondsAndPaysOnceAcrossSaveAndPrestige" />
+    </UnitTest>
+    <UnitTest name="TransportBottleneck_LimitsThroughput" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="e8442bd2-7e9f-28e3-326a-e81f15620040">
+      <Execution id="bc1f0a63-339a-49da-9379-8d0cd94f7a56" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="TransportBottleneck_LimitsThroughput" />
+    </UnitTest>
+    <UnitTest name="BuyPreview_MatchesThePurchaseAndRejectsAShortfall" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="70852c54-0a83-1e71-10f4-ffe0045398e7">
+      <Execution id="249e89b2-7237-4064-8dc2-54e5c497f7c2" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="BuyPreview_MatchesThePurchaseAndRejectsAShortfall" />
+    </UnitTest>
+    <UnitTest name="Pacing_LateGameReachesPrestigeAndTheDeepCore" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="c470afd1-012c-1751-1ccf-2755ff54e665">
+      <Execution id="a9592734-ea30-4e55-b65b-a91e8835d285" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Pacing_LateGameReachesPrestigeAndTheDeepCore" />
+    </UnitTest>
+    <UnitTest name="UnfinishedAd_NeverInvokesGrant(Timeout)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="6b084d64-2208-41ef-b011-8a4ee04a515a">
+      <Execution id="86e957a8-2e54-4fda-97d6-61d5f1976c30" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.OrdersAndAdsTests" name="UnfinishedAd_NeverInvokesGrant(Timeout)" />
+    </UnitTest>
+    <UnitTest name="CorruptPrimary_RestoresBackup_AndLeavesBrokenFiles" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="9725cdb7-c903-e8f4-aa4c-ff946e51971d">
+      <Execution id="13d06893-3490-4082-86ee-d343e486e31a" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.SaveTests" name="CorruptPrimary_RestoresBackup_AndLeavesBrokenFiles" />
+    </UnitTest>
+    <UnitTest name="SaveFailure_RetainsOfferForRetry_AndDisabledProviderCannotBegin" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="1fec8f26-463d-cd35-0780-35801ea6382b">
+      <Execution id="5f5f0a5e-a61a-4bef-bdf4-5171fc8443a2" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.OrdersAndAdsTests" name="SaveFailure_RetainsOfferForRetry_AndDisabledProviderCannotBegin" />
+    </UnitTest>
+    <UnitTest name="NewerSave_IsNotOverwritten" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="92edf113-1c6e-d330-99d4-ad43f2d07351">
+      <Execution id="1c6f0504-5f6a-418c-a1e8-66247199f1fc" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.SaveTests" name="NewerSave_IsNotOverwritten" />
+    </UnitTest>
+    <UnitTest name="StorageFull_PointsAtSales" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="2a02d0ef-b585-9b5b-8b40-d5a3a1d24791">
+      <Execution id="f18b1cdc-eae7-43ca-bc55-1632cb7f0d05" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="StorageFull_PointsAtSales" />
+    </UnitTest>
+    <UnitTest name="Timestamp_RejectsInvalidRanges(&quot;-1&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="0f4fdabf-0bb6-ce8a-3d2f-4b51d7f0e683">
+      <Execution id="8907e892-59df-4c84-9396-3e5b8690be94" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="Timestamp_RejectsInvalidRanges(&quot;-1&quot;)" />
+    </UnitTest>
+    <UnitTest name="JsonSizeAndDepth_AreBounded" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="07e7b0ef-ae3a-0321-61b5-019658c7760a">
+      <Execution id="2fdeb632-bcee-45df-ac49-b896e8a3c7fe" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="JsonSizeAndDepth_AreBounded" />
+    </UnitTest>
+    <UnitTest name="RealFiles_ReplaceAtomicallyAndKeepABackup" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="b15f37d9-dc17-4ed9-5f0a-d5b45bfa8e9f">
+      <Execution id="a7470907-fa7a-4f1b-a9d7-a0ca59f78817" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.SaveTests" name="RealFiles_ReplaceAtomicallyAndKeepABackup" />
+    </UnitTest>
+    <UnitTest name="FailedWrite_DoesNotApplyAnUpgrade" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="d38e8ae5-a888-e7f9-07bd-41a5ed295ed7">
+      <Execution id="10fe2a5a-b379-46a7-bb91-95aa97f011b1" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.SaveTests" name="FailedWrite_DoesNotApplyAnUpgrade" />
+    </UnitTest>
+    <UnitTest name="EditedBuffers_RejectQuantitiesAboveCapacity(&quot;rough&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="18413a34-3551-2f15-957b-a1dc993543af">
+      <Execution id="5ee04b63-0467-4ca1-ba9c-127057d29ecb" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="EditedBuffers_RejectQuantitiesAboveCapacity(&quot;rough&quot;)" />
+    </UnitTest>
+    <UnitTest name="Timestamp_RejectsInvalidRanges(&quot;1.5&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="fd7c74e9-b4bf-b998-3f4e-dfef324f740c">
+      <Execution id="48b49292-8369-4f25-a424-bd3539dd507b" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="Timestamp_RejectsInvalidRanges(&quot;1.5&quot;)" />
+    </UnitTest>
+    <UnitTest name="InterruptedReplace_KeepsThePreviousSave" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="c2e08fe4-e611-0439-a872-b14045de4ac0">
+      <Execution id="4327204e-ee1c-435e-8362-3b6f477c399d" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.SaveTests" name="InterruptedReplace_KeepsThePreviousSave" />
+    </UnitTest>
+    <UnitTest name="NewerBackup_IsProtectedEvenWithMissingOrBrokenPrimary(True)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="01c2d19c-7d21-72a8-61fd-2f8c1bc0d950">
+      <Execution id="5bf6b328-faf0-44c7-bcb3-9b178757b75c" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="NewerBackup_IsProtectedEvenWithMissingOrBrokenPrimary(True)" />
+    </UnitTest>
+    <UnitTest name="EditedBuffers_RejectQuantitiesAboveCapacity(&quot;processInput&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="a3f3757b-ba6b-987b-b0c4-7a4b64ef2734">
+      <Execution id="1e04fd55-2c54-45d3-b3c3-3af4adf42f78" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="EditedBuffers_RejectQuantitiesAboveCapacity(&quot;processInput&quot;)" />
+    </UnitTest>
+    <UnitTest name="Timestamp_RejectsInvalidRanges(&quot;1e100&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="be87917b-2f69-47ae-bc73-82e6c00d6744">
+      <Execution id="2f394afd-154c-4f1e-8fd8-d637fd6ee6ff" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="Timestamp_RejectsInvalidRanges(&quot;1e100&quot;)" />
+    </UnitTest>
+    <UnitTest name="ManualTap_RespectsCooldownAndBuffer" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="7a0f349e-81c0-bae3-4a90-db3711872346">
+      <Execution id="9b274ee5-1ede-4121-b42b-4a862c1f2d68" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="ManualTap_RespectsCooldownAndBuffer" />
+    </UnitTest>
+    <UnitTest name="EditedBuffers_RejectQuantitiesAboveCapacity(&quot;oreAtFace&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="163b5d85-c29c-f350-c04f-71fdb9cbc55e">
+      <Execution id="553c34a5-06f4-47ec-ab8e-15a7b4984144" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="EditedBuffers_RejectQuantitiesAboveCapacity(&quot;oreAtFace&quot;)" />
+    </UnitTest>
+    <UnitTest name="LegacyMoney_MigratesToCoins" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="f9803659-8359-2581-14ee-a9d255e82f12">
+      <Execution id="6b0e01e1-666d-4d6b-b019-0913db2861c7" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.SaveTests" name="LegacyMoney_MigratesToCoins" />
+    </UnitTest>
+    <UnitTest name="UpgradeLevels_RejectOverflowAndFractionalValues(&quot;1e100&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="73b37966-9228-d671-4b5e-54e75feee51f">
+      <Execution id="a0cc1749-98e0-4b78-b3b4-7b32f4c0beaa" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="UpgradeLevels_RejectOverflowAndFractionalValues(&quot;1e100&quot;)" />
+    </UnitTest>
+    <UnitTest name="Offline_CapsAtEightHours_AndIgnoresABackwardClock" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="75277a7d-0f3e-d7e5-bdc2-0b38cb916242">
+      <Execution id="55dab62b-eb81-46c6-924e-8b48cb0210c8" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Offline_CapsAtEightHours_AndIgnoresABackwardClock" />
+    </UnitTest>
+    <UnitTest name="Offline_DrainsExistingOreWithoutAMiner" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="1f5de750-9e95-591f-89fc-8a5bf50cbc6d">
+      <Execution id="ac22b18b-2b70-43a1-8ecf-33be4d1530d9" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Offline_DrainsExistingOreWithoutAMiner" />
+    </UnitTest>
+    <UnitTest name="Tutorial_SkipsActionsAlreadyDone" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="e844759b-bb0e-6acd-61b3-5001cc7b9802">
+      <Execution id="5ce70536-4fc0-4e74-9611-c27b43621616" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Tutorial_SkipsActionsAlreadyDone" />
+    </UnitTest>
+    <UnitTest name="AmbiguousJson_IsRejected(&quot;{\&quot;coins\&quot;:1.}&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="903705bb-de8e-305a-6816-6f9c3a31a7c1">
+      <Execution id="866f2999-727f-4bde-b05b-1c6affc62026" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="AmbiguousJson_IsRejected(&quot;{\&quot;coins\&quot;:1.}&quot;)" />
+    </UnitTest>
+    <UnitTest name="UnfinishedAd_NeverInvokesGrant(Failed)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="3c640065-e5a0-d4a6-c5ba-9019cc308de7">
+      <Execution id="4b4e6cf8-0f9a-4472-8bc7-5c51530acf4c" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.OrdersAndAdsTests" name="UnfinishedAd_NeverInvokesGrant(Failed)" />
+    </UnitTest>
+    <UnitTest name="Prestige_ResetsProgressAndKeepsMastery" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="6264eb83-2c0f-c9be-393b-bd353833db65">
+      <Execution id="e5a3f6eb-18c8-4163-933e-3b36b27bdbf0" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Prestige_ResetsProgressAndKeepsMastery" />
+    </UnitTest>
+    <UnitTest name="UnfinishedAd_NeverInvokesGrant(NoFill)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="acc233e2-3c5a-3db2-019e-564cf2c4fb28">
+      <Execution id="7107bd84-75d7-4487-8fe2-f398afead281" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.OrdersAndAdsTests" name="UnfinishedAd_NeverInvokesGrant(NoFill)" />
+    </UnitTest>
+    <UnitTest name="Unlock_RequiresLifetimeCoins" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="77382e7a-fb58-ef0d-f3f0-9872f01d34e8">
+      <Execution id="417d676b-05da-48d0-9f31-78bf49588b07" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Unlock_RequiresLifetimeCoins" />
+    </UnitTest>
+    <UnitTest name="OfflineClaim_InterruptionAndRelaunchDoNotDuplicateReward" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="8f210abe-73c9-bb1f-3a07-aefd35131119">
+      <Execution id="0ed642aa-6d9b-4e8a-a734-38bc4260d05c" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="OfflineClaim_InterruptionAndRelaunchDoNotDuplicateReward" />
+    </UnitTest>
+    <UnitTest name="NegativePurchaseAndHugeBuyMaximum_DoNotSpendOrOverflow" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="56c126a1-def7-0fa2-8ca0-e0ac2e9af1a3">
+      <Execution id="80119ca9-a79b-4ecc-a8c0-1658d7967f57" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="NegativePurchaseAndHugeBuyMaximum_DoNotSpendOrOverflow" />
+    </UnitTest>
+    <UnitTest name="AmbiguousJson_IsRejected(&quot;{\&quot;version\&quot;:1.5}&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="e46bdde4-52ec-ab3b-2354-5079bc7aca54">
+      <Execution id="52aeb145-e231-4f22-91b4-a92f830043e6" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="AmbiguousJson_IsRejected(&quot;{\&quot;version\&quot;:1.5}&quot;)" />
+    </UnitTest>
+    <UnitTest name="EditedCart_RejectsResourceInjection" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="5a255219-f459-a5a8-5f86-c62c80f41357">
+      <Execution id="dbb6ec6e-2cac-49bc-bca9-3afa9b4ac868" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="EditedCart_RejectsResourceInjection" />
+    </UnitTest>
+    <UnitTest name="UpgradeWhileCartTravels_StillLoadsSuccessfully" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="b685e200-e8a0-40fd-cf3a-20d9a34ba7ce">
+      <Execution id="83e696d9-aaa3-4cf7-a72a-f0f0bc53e01e" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="UpgradeWhileCartTravels_StillLoadsSuccessfully" />
+    </UnitTest>
+    <UnitTest name="Economy_HasThreeDistinctMinesAndEightHourCap" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="2a6bfe96-5b05-dd4e-fab6-bf0a4b9acb72">
+      <Execution id="d3c77062-3d66-4ad1-9fe0-ed270086e18d" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Economy_HasThreeDistinctMinesAndEightHourCap" />
+    </UnitTest>
+    <UnitTest name="Offline_WithoutAutomationDoesNotCreateOre" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="7dab9d11-16d5-a330-0439-a8806d52b130">
+      <Execution id="17400bb1-994b-4c18-943b-24631ac6a651" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Offline_WithoutAutomationDoesNotCreateOre" />
+    </UnitTest>
+    <UnitTest name="AmbiguousJson_IsRejected(&quot;{\&quot;activeMineId\&quot;:\&quot;bad\ntext\&quot;}&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="19fc6127-1ac2-19ad-8ce7-05255c80046f">
+      <Execution id="c9f23197-0af2-4dc8-9cd9-eaa73e470b28" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="AmbiguousJson_IsRejected(&quot;{\&quot;activeMineId\&quot;:\&quot;bad\ntext\&quot;}&quot;)" />
+    </UnitTest>
+    <UnitTest name="NegativeCoins_AreRejected" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="6ef941cf-f4b4-b266-afad-ca5769343e1f">
+      <Execution id="e75731ff-74da-4bd2-a04b-c1f7bd37e85e" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.SaveTests" name="NegativeCoins_AreRejected" />
+    </UnitTest>
+    <UnitTest name="UnfinishedAd_NeverInvokesGrant(Cancelled)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="7e55e6d8-8b09-a877-f17f-958310bf31f6">
+      <Execution id="264126d1-5269-4afb-84da-8983562fea4d" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.OrdersAndAdsTests" name="UnfinishedAd_NeverInvokesGrant(Cancelled)" />
+    </UnitTest>
+    <UnitTest name="AmbiguousJson_IsRejected(&quot;{\&quot;coins\&quot;:01}&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="52f1e38d-c2ff-e988-c28c-0105c05f85c0">
+      <Execution id="af8d7b1c-d23e-47c8-a9c5-b1103dd3ee2a" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="AmbiguousJson_IsRejected(&quot;{\&quot;coins\&quot;:01}&quot;)" />
+    </UnitTest>
+    <UnitTest name="Objectives_PayOnce" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="493ee9f1-647f-0f37-60be-e3b69194aac3">
+      <Execution id="6784eab1-b05f-42a0-8c57-59668056419a" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Objectives_PayOnce" />
+    </UnitTest>
+    <UnitTest name="OfflineBonus_IsOnce_AndCancelDoesNotGrant" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="6e49fd87-09f7-875c-68d6-cd7df7ad3b97">
+      <Execution id="bc447d7b-6414-4cbe-be12-379b10243025" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="OfflineBonus_IsOnce_AndCancelDoesNotGrant" />
+    </UnitTest>
+    <UnitTest name="EditedBuffers_RejectQuantitiesAboveCapacity(&quot;storage&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="10b405a9-f24e-52d6-c112-e0680f5eb976">
+      <Execution id="5075cbeb-c552-4d89-bd47-8b40962ecfaf" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="EditedBuffers_RejectQuantitiesAboveCapacity(&quot;storage&quot;)" />
+    </UnitTest>
+    <UnitTest name="MissingPrimary_KeepsRecoveryBackupEvenWhenMoveFails(False)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="31e0c4f3-ce92-080f-4c2f-371fd04ebf3b">
+      <Execution id="cec7d83d-b316-4909-93fb-7af56b022ee7" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.SaveTests" name="MissingPrimary_KeepsRecoveryBackupEvenWhenMoveFails(False)" />
+    </UnitTest>
+    <UnitTest name="LongAdvance_MatchesShortSteps" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="90023443-8274-1823-990f-db2347975f29">
+      <Execution id="2dfde058-dc92-4124-80ad-dea4ccec1af5" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="LongAdvance_MatchesShortSteps" />
+    </UnitTest>
+    <UnitTest name="Training_RequiresTheMiner" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="beb14a06-695e-3797-83cd-031dcdf6c204">
+      <Execution id="24b4affe-6fc1-47c8-8307-5806d71305ff" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Training_RequiresTheMiner" />
+    </UnitTest>
+    <UnitTest name="Boost_RejectsDuplicateTokens" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="a2547d7e-fe37-43ad-7cad-36600df7b9da">
+      <Execution id="08dba3cf-fc11-4352-b823-94339d03148c" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Boost_RejectsDuplicateTokens" />
+    </UnitTest>
+    <UnitTest name="Numbers_FormatAndNeverGoNegative" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="6a15b342-2034-8c29-7791-1b701db39925">
+      <Execution id="ffb36bd3-b43c-42f7-9694-a5c920b929ca" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Numbers_FormatAndNeverGoNegative" />
+    </UnitTest>
+    <UnitTest name="MissingPrimary_KeepsRecoveryBackupEvenWhenMoveFails(True)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="f1b6c61d-0fe5-f8c4-ed83-7634177f5509">
+      <Execution id="708c4c78-7b89-4354-bc9f-77edd3693505" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.SaveTests" name="MissingPrimary_KeepsRecoveryBackupEvenWhenMoveFails(True)" />
+    </UnitTest>
+    <UnitTest name="UpgradeLevels_RejectOverflowAndFractionalValues(&quot;1.5&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="bafaf71b-daa8-6103-dab6-9edfd366701c">
+      <Execution id="e68c3c14-e54b-4f26-8387-faca8dde9980" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="UpgradeLevels_RejectOverflowAndFractionalValues(&quot;1.5&quot;)" />
+    </UnitTest>
+    <UnitTest name="BothCopiesCorrupt_StartFreshWithoutDeletingFiles" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="2cc95446-1894-d171-2a12-ceee7738cbb4">
+      <Execution id="957c7cd6-2f27-44f4-ab02-b83bcee9cb20" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.SaveTests" name="BothCopiesCorrupt_StartFreshWithoutDeletingFiles" />
+    </UnitTest>
+    <UnitTest name="AmbiguousJson_IsRejected(&quot;{\&quot;coins\&quot;:1e500}&quot;)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="7484891c-ffdb-f72d-405b-22c226185724">
+      <Execution id="f3e85dd9-a1d3-422e-8acf-cae693906eab" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="AmbiguousJson_IsRejected(&quot;{\&quot;coins\&quot;:1e500}&quot;)" />
+    </UnitTest>
+    <UnitTest name="ChecksumEdit_RecoversLastGoodBackupAndArchivesDamage" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="5d875b08-aff7-a931-f9f0-a7f55fda1b72">
+      <Execution id="bea8afdd-08ed-4b5e-a093-745ab643e75f" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="ChecksumEdit_RecoversLastGoodBackupAndArchivesDamage" />
+    </UnitTest>
+    <UnitTest name="Resources_AreConservedThroughTheChain" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="52c6b535-657e-ec9e-e9ad-95bea07b5769">
+      <Execution id="35bcf3d4-06c9-4495-a5fa-15ac84516b8c" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="Resources_AreConservedThroughTheChain" />
+    </UnitTest>
+    <UnitTest name="RoundTrip_PreservesProgress" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="b215187a-e6d5-b90a-f41d-515753f2d12f">
+      <Execution id="792189f3-4ccd-4919-b552-eeddcd336adc" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.SaveTests" name="RoundTrip_PreservesProgress" />
+    </UnitTest>
+    <UnitTest name="NewerBackup_IsProtectedEvenWithMissingOrBrokenPrimary(False)" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="d0fa813e-9e52-7a2a-cdf7-3dfc8b6a5546">
+      <Execution id="7bc43b79-93d8-409c-9dd8-014ed5e69e80" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.HardeningTests" name="NewerBackup_IsProtectedEvenWithMissingOrBrokenPrimary(False)" />
+    </UnitTest>
+    <UnitTest name="UpgradeCosts_MatchTheSeriesAndBuyMax" storage="d:\games\diamondminetycoon\tests\diamondmine.simulation.tests\bin\debug\net8.0\diamondmine.simulation.tests.dll" id="bfd2c395-e076-9119-824b-65f3be65d3ee">
+      <Execution id="c7c6f956-17ee-47b3-a664-f474128d0509" />
+      <TestMethod codeBase="D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="DiamondMine.Simulation.Tests.CoreTests" name="UpgradeCosts_MatchTheSeriesAndBuyMax" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="be87917b-2f69-47ae-bc73-82e6c00d6744" executionId="2f394afd-154c-4f1e-8fd8-d637fd6ee6ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5363d350-d624-3ae2-217f-e26e8160d80c" executionId="8274de37-bb76-4d3e-8ae5-bb2baeecef86" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f9803659-8359-2581-14ee-a9d255e82f12" executionId="6b0e01e1-666d-4d6b-b019-0913db2861c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bfd2c395-e076-9119-824b-65f3be65d3ee" executionId="c7c6f956-17ee-47b3-a664-f474128d0509" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3c640065-e5a0-d4a6-c5ba-9019cc308de7" executionId="4b4e6cf8-0f9a-4472-8bc7-5c51530acf4c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9725cdb7-c903-e8f4-aa4c-ff946e51971d" executionId="13d06893-3490-4082-86ee-d343e486e31a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5a255219-f459-a5a8-5f86-c62c80f41357" executionId="dbb6ec6e-2cac-49bc-bca9-3afa9b4ac868" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7dab9d11-16d5-a330-0439-a8806d52b130" executionId="17400bb1-994b-4c18-943b-24631ac6a651" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2cc95446-1894-d171-2a12-ceee7738cbb4" executionId="957c7cd6-2f27-44f4-ab02-b83bcee9cb20" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="77382e7a-fb58-ef0d-f3f0-9872f01d34e8" executionId="417d676b-05da-48d0-9f31-78bf49588b07" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="56c126a1-def7-0fa2-8ca0-e0ac2e9af1a3" executionId="80119ca9-a79b-4ecc-a8c0-1658d7967f57" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c470afd1-012c-1751-1ccf-2755ff54e665" executionId="a9592734-ea30-4e55-b65b-a91e8835d285" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e46bdde4-52ec-ab3b-2354-5079bc7aca54" executionId="52aeb145-e231-4f22-91b4-a92f830043e6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0fa813e-9e52-7a2a-cdf7-3dfc8b6a5546" executionId="7bc43b79-93d8-409c-9dd8-014ed5e69e80" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73b37966-9228-d671-4b5e-54e75feee51f" executionId="a0cc1749-98e0-4b78-b3b4-7b32f4c0beaa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7e55e6d8-8b09-a877-f17f-958310bf31f6" executionId="264126d1-5269-4afb-84da-8983562fea4d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d38e8ae5-a888-e7f9-07bd-41a5ed295ed7" executionId="10fe2a5a-b379-46a7-bb91-95aa97f011b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="493ee9f1-647f-0f37-60be-e3b69194aac3" executionId="6784eab1-b05f-42a0-8c57-59668056419a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6b084d64-2208-41ef-b011-8a4ee04a515a" executionId="86e957a8-2e54-4fda-97d6-61d5f1976c30" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e844759b-bb0e-6acd-61b3-5001cc7b9802" executionId="5ce70536-4fc0-4e74-9611-c27b43621616" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="beb14a06-695e-3797-83cd-031dcdf6c204" executionId="24b4affe-6fc1-47c8-8307-5806d71305ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="01c2d19c-7d21-72a8-61fd-2f8c1bc0d950" executionId="5bf6b328-faf0-44c7-bcb3-9b178757b75c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bafaf71b-daa8-6103-dab6-9edfd366701c" executionId="e68c3c14-e54b-4f26-8387-faca8dde9980" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3f3757b-ba6b-987b-b0c4-7a4b64ef2734" executionId="1e04fd55-2c54-45d3-b3c3-3af4adf42f78" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e49fd87-09f7-875c-68d6-cd7df7ad3b97" executionId="bc447d7b-6414-4cbe-be12-379b10243025" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a6bfe96-5b05-dd4e-fab6-bf0a4b9acb72" executionId="d3c77062-3d66-4ad1-9fe0-ed270086e18d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6264eb83-2c0f-c9be-393b-bd353833db65" executionId="e5a3f6eb-18c8-4163-933e-3b36b27bdbf0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92edf113-1c6e-d330-99d4-ad43f2d07351" executionId="1c6f0504-5f6a-418c-a1e8-66247199f1fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f210abe-73c9-bb1f-3a07-aefd35131119" executionId="0ed642aa-6d9b-4e8a-a734-38bc4260d05c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="163b5d85-c29c-f350-c04f-71fdb9cbc55e" executionId="553c34a5-06f4-47ec-ab8e-15a7b4984144" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a0f349e-81c0-bae3-4a90-db3711872346" executionId="9b274ee5-1ede-4121-b42b-4a862c1f2d68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19fc6127-1ac2-19ad-8ce7-05255c80046f" executionId="c9f23197-0af2-4dc8-9cd9-eaa73e470b28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f1b6c61d-0fe5-f8c4-ed83-7634177f5509" executionId="708c4c78-7b89-4354-bc9f-77edd3693505" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52c6b535-657e-ec9e-e9ad-95bea07b5769" executionId="35bcf3d4-06c9-4495-a5fa-15ac84516b8c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fec8f26-463d-cd35-0780-35801ea6382b" executionId="5f5f0a5e-a61a-4bef-bdf4-5171fc8443a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="acc233e2-3c5a-3db2-019e-564cf2c4fb28" executionId="7107bd84-75d7-4487-8fe2-f398afead281" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c2e08fe4-e611-0439-a872-b14045de4ac0" executionId="4327204e-ee1c-435e-8362-3b6f477c399d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10b405a9-f24e-52d6-c112-e0680f5eb976" executionId="5075cbeb-c552-4d89-bd47-8b40962ecfaf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b215187a-e6d5-b90a-f41d-515753f2d12f" executionId="792189f3-4ccd-4919-b552-eeddcd336adc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd7c74e9-b4bf-b998-3f4e-dfef324f740c" executionId="48b49292-8369-4f25-a424-bd3539dd507b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6a15b342-2034-8c29-7791-1b701db39925" executionId="ffb36bd3-b43c-42f7-9694-a5c920b929ca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="09b503de-ac8f-abb5-af0a-b4ea224f678c" executionId="672284f9-e0f5-424b-ae20-92ce85e5343a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f4fdabf-0bb6-ce8a-3d2f-4b51d7f0e683" executionId="8907e892-59df-4c84-9396-3e5b8690be94" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7484891c-ffdb-f72d-405b-22c226185724" executionId="f3e85dd9-a1d3-422e-8acf-cae693906eab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b15f37d9-dc17-4ed9-5f0a-d5b45bfa8e9f" executionId="a7470907-fa7a-4f1b-a9d7-a0ca59f78817" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5d875b08-aff7-a931-f9f0-a7f55fda1b72" executionId="bea8afdd-08ed-4b5e-a093-745ab643e75f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18413a34-3551-2f15-957b-a1dc993543af" executionId="5ee04b63-0467-4ca1-ba9c-127057d29ecb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b685e200-e8a0-40fd-cf3a-20d9a34ba7ce" executionId="83e696d9-aaa3-4cf7-a72a-f0f0bc53e01e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="75277a7d-0f3e-d7e5-bdc2-0b38cb916242" executionId="55dab62b-eb81-46c6-924e-8b48cb0210c8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3464c8e9-609b-32d2-fad7-ba4477694057" executionId="2e3cf682-c304-4aca-9109-74cdaa1a40d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="90023443-8274-1823-990f-db2347975f29" executionId="2dfde058-dc92-4124-80ad-dea4ccec1af5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="903705bb-de8e-305a-6816-6f9c3a31a7c1" executionId="866f2999-727f-4bde-b05b-1c6affc62026" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e8442bd2-7e9f-28e3-326a-e81f15620040" executionId="bc1f0a63-339a-49da-9379-8d0cd94f7a56" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2547d7e-fe37-43ad-7cad-36600df7b9da" executionId="08dba3cf-fc11-4352-b823-94339d03148c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a02d0ef-b585-9b5b-8b40-d5a3a1d24791" executionId="f18b1cdc-eae7-43ca-bc55-1632cb7f0d05" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="31e0c4f3-ce92-080f-4c2f-371fd04ebf3b" executionId="cec7d83d-b316-4909-93fb-7af56b022ee7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ef941cf-f4b4-b266-afad-ca5769343e1f" executionId="e75731ff-74da-4bd2-a04b-c1f7bd37e85e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ac41233-ece3-2acf-9ff3-9114c4f27eda" executionId="c4bffd47-7001-4dc8-8554-09e0eb14261b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="70852c54-0a83-1e71-10f4-ffe0045398e7" executionId="249e89b2-7237-4064-8dc2-54e5c497f7c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52f1e38d-c2ff-e988-c28c-0105c05f85c0" executionId="af8d7b1c-d23e-47c8-a9c5-b1103dd3ee2a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="07e7b0ef-ae3a-0321-61b5-019658c7760a" executionId="2fdeb632-bcee-45df-ac49-b896e8a3c7fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f5de750-9e95-591f-89fc-8a5bf50cbc6d" executionId="ac22b18b-2b70-43a1-8ecf-33be4d1530d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="62" executed="62" passed="62" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.6.0.0: Test execution started&#xD;
+Running all tests in D:\games\DiamondMineTycoon\tests\DiamondMine.Simulation.Tests\bin\Debug\net8.0\DiamondMine.Simulation.Tests.dll&#xD;
+   NUnit3TestExecutor discovered 62 of 62 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+4h mine2=836 mine3=5213 prestigeAt=2578 prestigeDone=2578 mastery=2 income=123.6 coins=444784&#xD;
+&#xD;
+20m sale=8.5 upgrade=43.3 auto=282.3 mine2=836.3 coins=631 life=12252 income=20.00 worstMinute=96&#xD;
+&#xD;
+NUnit Adapter 4.6.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

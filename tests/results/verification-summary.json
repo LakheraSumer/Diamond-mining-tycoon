@@ -1,0 +1,439 @@
+{
+  "test_counters": {
+    "total": "62",
+    "executed": "62",
+    "passed": "62",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "test_run_times": {
+    "creation": "2026-10-20T09:10:38.0474150+05:30",
+    "queuing": "2026-10-20T09:10:38.0474155+05:30",
+    "start": "2026-10-20T09:10:37.3526526+05:30",
+    "finish": "2026-10-20T09:10:41.2665186+05:30"
+  },
+  "host": "Windows-11-10.0.26300-SP0",
+  "pacing": [
+    {
+      "test": "Pacing_LateGameReachesPrestigeAndTheDeepCore",
+      "output": "4h mine2=836 mine3=5213 prestigeAt=2578 prestigeDone=2578 mastery=2 income=123.6 coins=444784"
+    },
+    {
+      "test": "Pacing_ReachesEarlyAndMidMilestonesWithoutAds",
+      "output": "20m sale=8.5 upgrade=43.3 auto=282.3 mine2=836.3 coins=631 life=12252 income=20.00 worstMinute=96"
+    }
+  ],
+  "tests": [
+    {
+      "testName": "Timestamp_RejectsInvalidRanges(\"1e100\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0005830"
+    },
+    {
+      "testName": "DuplicateCompletion_OnlyInvokesDurableGrantOnce",
+      "outcome": "Passed",
+      "duration": "00:00:00.0004500"
+    },
+    {
+      "testName": "LegacyMoney_MigratesToCoins",
+      "outcome": "Passed",
+      "duration": "00:00:00.0005620"
+    },
+    {
+      "testName": "UpgradeCosts_MatchTheSeriesAndBuyMax",
+      "outcome": "Passed",
+      "duration": "00:00:00.0007220"
+    },
+    {
+      "testName": "UnfinishedAd_NeverInvokesGrant(Failed)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0001530"
+    },
+    {
+      "testName": "CorruptPrimary_RestoresBackup_AndLeavesBrokenFiles",
+      "outcome": "Passed",
+      "duration": "00:00:00.0012060"
+    },
+    {
+      "testName": "EditedCart_RejectsResourceInjection",
+      "outcome": "Passed",
+      "duration": "00:00:00.0004960"
+    },
+    {
+      "testName": "Offline_WithoutAutomationDoesNotCreateOre",
+      "outcome": "Passed",
+      "duration": "00:00:00.0022100"
+    },
+    {
+      "testName": "BothCopiesCorrupt_StartFreshWithoutDeletingFiles",
+      "outcome": "Passed",
+      "duration": "00:00:00.0008420"
+    },
+    {
+      "testName": "Unlock_RequiresLifetimeCoins",
+      "outcome": "Passed",
+      "duration": "00:00:00.0005940"
+    },
+    {
+      "testName": "NegativePurchaseAndHugeBuyMaximum_DoNotSpendOrOverflow",
+      "outcome": "Passed",
+      "duration": "00:00:00.0007300"
+    },
+    {
+      "testName": "Pacing_LateGameReachesPrestigeAndTheDeepCore",
+      "outcome": "Passed",
+      "duration": "00:00:03.0924130"
+    },
+    {
+      "testName": "AmbiguousJson_IsRejected(\"{\\\"version\\\":1.5}\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0008410"
+    },
+    {
+      "testName": "NewerBackup_IsProtectedEvenWithMissingOrBrokenPrimary(False)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0008890"
+    },
+    {
+      "testName": "UpgradeLevels_RejectOverflowAndFractionalValues(\"1e100\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0018080"
+    },
+    {
+      "testName": "UnfinishedAd_NeverInvokesGrant(Cancelled)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0001350"
+    },
+    {
+      "testName": "FailedWrite_DoesNotApplyAnUpgrade",
+      "outcome": "Passed",
+      "duration": "00:00:00.0009240"
+    },
+    {
+      "testName": "Objectives_PayOnce",
+      "outcome": "Passed",
+      "duration": "00:00:00.0019350"
+    },
+    {
+      "testName": "UnfinishedAd_NeverInvokesGrant(Timeout)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0000040"
+    },
+    {
+      "testName": "Tutorial_SkipsActionsAlreadyDone",
+      "outcome": "Passed",
+      "duration": "00:00:00.0005160"
+    },
+    {
+      "testName": "Training_RequiresTheMiner",
+      "outcome": "Passed",
+      "duration": "00:00:00.0006420"
+    },
+    {
+      "testName": "NewerBackup_IsProtectedEvenWithMissingOrBrokenPrimary(True)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0006690"
+    },
+    {
+      "testName": "UpgradeLevels_RejectOverflowAndFractionalValues(\"1.5\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0006160"
+    },
+    {
+      "testName": "EditedBuffers_RejectQuantitiesAboveCapacity(\"processInput\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0006900"
+    },
+    {
+      "testName": "OfflineBonus_IsOnce_AndCancelDoesNotGrant",
+      "outcome": "Passed",
+      "duration": "00:00:00.0011329"
+    },
+    {
+      "testName": "Economy_HasThreeDistinctMinesAndEightHourCap",
+      "outcome": "Passed",
+      "duration": "00:00:00.0021100"
+    },
+    {
+      "testName": "Prestige_ResetsProgressAndKeepsMastery",
+      "outcome": "Passed",
+      "duration": "00:00:00.0016710"
+    },
+    {
+      "testName": "NewerSave_IsNotOverwritten",
+      "outcome": "Passed",
+      "duration": "00:00:00.0006150"
+    },
+    {
+      "testName": "OfflineClaim_InterruptionAndRelaunchDoNotDuplicateReward",
+      "outcome": "Passed",
+      "duration": "00:00:00.0071060"
+    },
+    {
+      "testName": "EditedBuffers_RejectQuantitiesAboveCapacity(\"oreAtFace\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0003820"
+    },
+    {
+      "testName": "ManualTap_RespectsCooldownAndBuffer",
+      "outcome": "Passed",
+      "duration": "00:00:00.0062090"
+    },
+    {
+      "testName": "AmbiguousJson_IsRejected(\"{\\\"activeMineId\\\":\\\"bad\\ntext\\\"}\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0003700"
+    },
+    {
+      "testName": "MissingPrimary_KeepsRecoveryBackupEvenWhenMoveFails(True)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0015000"
+    },
+    {
+      "testName": "Resources_AreConservedThroughTheChain",
+      "outcome": "Passed",
+      "duration": "00:00:00.0008150"
+    },
+    {
+      "testName": "SaveFailure_RetainsOfferForRetry_AndDisabledProviderCannotBegin",
+      "outcome": "Passed",
+      "duration": "00:00:00.0005630"
+    },
+    {
+      "testName": "UnfinishedAd_NeverInvokesGrant(NoFill)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0000060"
+    },
+    {
+      "testName": "InterruptedReplace_KeepsThePreviousSave",
+      "outcome": "Passed",
+      "duration": "00:00:00.0008980"
+    },
+    {
+      "testName": "EditedBuffers_RejectQuantitiesAboveCapacity(\"storage\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0004350"
+    },
+    {
+      "testName": "RoundTrip_PreservesProgress",
+      "outcome": "Passed",
+      "duration": "00:00:00.0010850"
+    },
+    {
+      "testName": "Timestamp_RejectsInvalidRanges(\"1.5\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0004340"
+    },
+    {
+      "testName": "Numbers_FormatAndNeverGoNegative",
+      "outcome": "Passed",
+      "duration": "00:00:00.0007690"
+    },
+    {
+      "testName": "Delivery_RequiresSoldDiamondsAndPaysOnceAcrossSaveAndPrestige",
+      "outcome": "Passed",
+      "duration": "00:00:00.0010399"
+    },
+    {
+      "testName": "Timestamp_RejectsInvalidRanges(\"-1\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0006910"
+    },
+    {
+      "testName": "AmbiguousJson_IsRejected(\"{\\\"coins\\\":1e500}\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0003570"
+    },
+    {
+      "testName": "RealFiles_ReplaceAtomicallyAndKeepABackup",
+      "outcome": "Passed",
+      "duration": "00:00:00.0073290"
+    },
+    {
+      "testName": "ChecksumEdit_RecoversLastGoodBackupAndArchivesDamage",
+      "outcome": "Passed",
+      "duration": "00:00:00.0064250"
+    },
+    {
+      "testName": "EditedBuffers_RejectQuantitiesAboveCapacity(\"rough\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0005530"
+    },
+    {
+      "testName": "UpgradeWhileCartTravels_StillLoadsSuccessfully",
+      "outcome": "Passed",
+      "duration": "00:00:00.0011840"
+    },
+    {
+      "testName": "Offline_CapsAtEightHours_AndIgnoresABackwardClock",
+      "outcome": "Passed",
+      "duration": "00:00:00.0300750"
+    },
+    {
+      "testName": "AmbiguousJson_IsRejected(\"{\\\"coins\\\":1,\\\"coins\\\":2}\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0043330"
+    },
+    {
+      "testName": "LongAdvance_MatchesShortSteps",
+      "outcome": "Passed",
+      "duration": "00:00:00.0034450"
+    },
+    {
+      "testName": "AmbiguousJson_IsRejected(\"{\\\"coins\\\":1.}\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0003890"
+    },
+    {
+      "testName": "TransportBottleneck_LimitsThroughput",
+      "outcome": "Passed",
+      "duration": "00:00:00.0007510"
+    },
+    {
+      "testName": "Boost_RejectsDuplicateTokens",
+      "outcome": "Passed",
+      "duration": "00:00:00.0218950"
+    },
+    {
+      "testName": "StorageFull_PointsAtSales",
+      "outcome": "Passed",
+      "duration": "00:00:00.0013580"
+    },
+    {
+      "testName": "MissingPrimary_KeepsRecoveryBackupEvenWhenMoveFails(False)",
+      "outcome": "Passed",
+      "duration": "00:00:00.0022430"
+    },
+    {
+      "testName": "NegativeCoins_AreRejected",
+      "outcome": "Passed",
+      "duration": "00:00:00.0014180"
+    },
+    {
+      "testName": "Pacing_ReachesEarlyAndMidMilestonesWithoutAds",
+      "outcome": "Passed",
+      "duration": "00:00:00.0770480"
+    },
+    {
+      "testName": "BuyPreview_MatchesThePurchaseAndRejectsAShortfall",
+      "outcome": "Passed",
+      "duration": "00:00:00.0047750"
+    },
+    {
+      "testName": "AmbiguousJson_IsRejected(\"{\\\"coins\\\":01}\")",
+      "outcome": "Passed",
+      "duration": "00:00:00.0004530"
+    },
+    {
+      "testName": "JsonSizeAndDepth_AreBounded",
+      "outcome": "Passed",
+      "duration": "00:00:00.0016750"
+    },
+    {
+      "testName": "Offline_DrainsExistingOreWithoutAMiner",
+      "outcome": "Passed",
+      "duration": "00:00:00.0007950"
+    }
+  ],
+  "source_sha256": {
+    "Assets/_Project/Art/AppIcon.png": "e1c68387a4c4df8c534cdbc3b24a2eabdd81785480e2c4e767146add75973085",
+    "Assets/_Project/Art/AppIcon.png.meta": "fd0c8e10daaf85f22867bdce04a878afec454418365dc09b6c424f60c695ba60",
+    "Assets/_Project/Art.meta": "26397c4655a7978ad3eba5fd8698002097ef21edf7e12fa3c8007d730128fd72",
+    "Assets/_Project/Editor/BuildCommands.cs": "17a8db343f5d3d8f279f7fa09eef65b99e0017e5d2381d0f82b6d29d6ef9dd2a",
+    "Assets/_Project/Editor/BuildCommands.cs.meta": "1b2c9f62279de0431e538645751e19ddd0d7bfab88dac92c40f95821a2f50cd1",
+    "Assets/_Project/Editor/DiamondMine.Editor.asmdef": "4cd914eda68618eb6753c2ffd6a36d698606deb4b195115c51ec90540d69f768",
+    "Assets/_Project/Editor/DiamondMine.Editor.asmdef.meta": "c0d3443658db2b1a7edee484235c3d33452b3da99e554f7dd18d732873bfbf42",
+    "Assets/_Project/Editor/ReviewCapture.cs": "74fb4b967573521a9c19a4cf5fe27c0d7d2c27ad92a4e5d2e6d5d5ce9862ade7",
+    "Assets/_Project/Editor/ReviewCapture.cs.meta": "19aaaf164511eef01b0b8aaf555970898e3ecc3bce18c9aca58c6d6b87994bad",
+    "Assets/_Project/Editor.meta": "aa1593317ce6ae28f92f79868b472d582097f3b225f6e2df54a6e47ccd7d598a",
+    "Assets/_Project/Resources/economy.json": "6ac38264e9aada062b5fd0f52217f80942445f33eb53fbf0302d303f1959f316",
+    "Assets/_Project/Resources/economy.json.meta": "668ec419568a12e03bba04c4f23854624f9e7d0d3686d9e66b5cd94aff09a346",
+    "Assets/_Project/Resources.meta": "71acb46b52927a25d7478bcfd389e4e3166086c907c6e9b6d54ab06e4ed079b6",
+    "Assets/_Project/Scenes/Main.unity": "030f2230e2540ab4bc4efa6a46f3642906694dae33f19a3359192cc71a8aee76",
+    "Assets/_Project/Scenes/Main.unity.meta": "d76a6642d07c5de37c73ff50917e06df77c4316cfc536d63910ea2ddc1ddd16e",
+    "Assets/_Project/Scenes.meta": "dfc88e801a0e129a24cc7bf2e90176422b99c43801f4b4bc00871f5698dc8f36",
+    "Assets/_Project/Scripts/Runtime/Branding.cs": "69d124e13161ec11d7164c9be2c01b788e210bef8ad8bcd82c4405642cafe6a1",
+    "Assets/_Project/Scripts/Runtime/Branding.cs.meta": "bd2b915190f33c986ee7b32dea79333f66065b6bac14bb066acc7d58bcac5b33",
+    "Assets/_Project/Scripts/Runtime/DevRewardedAds.cs": "c92941ce2fe16ec258b3afff77cf254c8051af770e640f1bb2c55ce1e29107a8",
+    "Assets/_Project/Scripts/Runtime/DevRewardedAds.cs.meta": "d9c008e40c0bc0e989d4b1ecb243f5a2aef6970a7ee09e8532f1b59082cf34fd",
+    "Assets/_Project/Scripts/Runtime/DiamondMine.Runtime.asmdef": "db7e6ac6562a349126f1ab0d5898e42226c146f01e26a07f1d341030c5a9a83b",
+    "Assets/_Project/Scripts/Runtime/DiamondMine.Runtime.asmdef.meta": "ba9bf32cdf87eeafd776169dc768be88730833afbd586944f3bfc80329e06de2",
+    "Assets/_Project/Scripts/Runtime/GameAudio.cs": "eb1d95e2b73e04e5f88003913c36209f4577f1a139cbfa4c9194632fd57b7d82",
+    "Assets/_Project/Scripts/Runtime/GameAudio.cs.meta": "bfff7c4511896d693a07c40af77bdf3342eca73e6070f0c72271c7be968ded04",
+    "Assets/_Project/Scripts/Runtime/GameBootstrap.cs": "fceb4deddaa82c4dfb36519eb539f9375e8e50224b3c0d0264bb548de6675df9",
+    "Assets/_Project/Scripts/Runtime/GameBootstrap.cs.meta": "79d6afe11c2fdb4938af781567c31549426d529ca08c93180e4ee6d8bab5a4db",
+    "Assets/_Project/Scripts/Runtime/GameSession.cs": "67c2c881bce209231c2ccd39e61008626b7d361eabc36422cea72d8dd05394cd",
+    "Assets/_Project/Scripts/Runtime/GameSession.cs.meta": "a12cac9531684b8fb899dcac02595c183a51b55c8be0f535cf4644c01710b7b8",
+    "Assets/_Project/Scripts/Runtime/GameUi.cs": "7348a62284d0e2bffc0eb95b30526848e8ce8909603d1051143e8301cb4bba07",
+    "Assets/_Project/Scripts/Runtime/GameUi.cs.meta": "9b3a4e0b5581851366c0954c18ab9b6b15d98dba187f11e1f320bcd6b78a4276",
+    "Assets/_Project/Scripts/Runtime/GameUiOrders.cs": "f5d07adc7836ba3bdcc46e8e9a13b14df405d6f1c7ea9a43045bc53e49f41eec",
+    "Assets/_Project/Scripts/Runtime/GameUiOrders.cs.meta": "39c8786cd2ba725c2b7039fc8427fdf1d655a418db4e7ac9af67b6678178d2d4",
+    "Assets/_Project/Scripts/Runtime/GameUiPanels.cs": "37b318508bf38d6760816a6b25941e4ecb801a2ae56f4266f9dd3ec634c61095",
+    "Assets/_Project/Scripts/Runtime/GameUiPanels.cs.meta": "304d0312a5d84ca0d9b8ca4c8290d76f06836c5dbdaecf199ab6f0b076316cd8",
+    "Assets/_Project/Scripts/Runtime/InfoCopy.cs": "c2a59406db56eaccbe0a8dd79ffc7be6b85236f280cf67896d78fb5dc5c7c8a8",
+    "Assets/_Project/Scripts/Runtime/InfoCopy.cs.meta": "cc38bd48fb507a4614da944eaf4b973f831cd27a9b75b16366232af370df906c",
+    "Assets/_Project/Scripts/Runtime/MinePresenter.cs": "9100ca6b2cf3521c895c147853909de9eba9b642d0c207ccee4b44e3310dfc5d",
+    "Assets/_Project/Scripts/Runtime/MinePresenter.cs.meta": "10c37a10b111944cea6bf366e1230c6c56d18220f2a8d5a4c81d126da0aaed75",
+    "Assets/_Project/Scripts/Runtime/PlatformServices.cs": "692b8c62bb432395b87a0d6186cc5a38123b3a652cd90771bbb9d1a6349c0375",
+    "Assets/_Project/Scripts/Runtime/PlatformServices.cs.meta": "685f1380079a54a0d20f67afd4dcc5c11b6b5b6f020e97ef5e4c539f0faf3c3e",
+    "Assets/_Project/Scripts/Runtime/UiFactory.cs": "cc46e5be266f930085f61c065238fecb7accfc877f4cdd0bcd2202082aa9283b",
+    "Assets/_Project/Scripts/Runtime/UiFactory.cs.meta": "023aaca1ef61f5447e0dfd9080d7c024333fe3acbb1895533c7e0cc96f448489",
+    "Assets/_Project/Scripts/Runtime.meta": "fc9fde75ae404b6dde2fe588dd50754444282e65a8704459b8957f8b63fde29b",
+    "Assets/_Project/Scripts/Simulation/DiamondMine.Simulation.asmdef": "21c4648035fe9af79c36c857a5bd6410c9df83dc7ad4591060fd0bdf92b59bf2",
+    "Assets/_Project/Scripts/Simulation/DiamondMine.Simulation.asmdef.meta": "517276420bf18aa83d4020c05d2f5117292a75cfe5b84a4864d9b00bba3a5a22",
+    "Assets/_Project/Scripts/Simulation/EconomyLoader.cs": "907306d2dd4526b0b901c032928808ea4b7711dae074b94763210c2fb4778a5a",
+    "Assets/_Project/Scripts/Simulation/EconomyLoader.cs.meta": "d201ecafa3230ec6f5eafc98a6a04104b8f487b971491d86494df0ad4e014714",
+    "Assets/_Project/Scripts/Simulation/GameModels.cs": "8fa1c60268d0105c24b3a0b928e6ecf8fd6283bf9e57b398fd98fef1d32832b0",
+    "Assets/_Project/Scripts/Simulation/GameModels.cs.meta": "e6206623c82e9bb8240cb80a32dcdb587f2e9c8c549329c90f28fbb2504847e1",
+    "Assets/_Project/Scripts/Simulation/JsonValues.cs": "a5b1a3c61de468d2f79e8c023a6ad40fbd607c40c4e45ba47d080cd89ee9cfb4",
+    "Assets/_Project/Scripts/Simulation/JsonValues.cs.meta": "5bee48b6f194584e11c583f2912cc56a84ccf1ffb760c1b4298df14c9c866d5a",
+    "Assets/_Project/Scripts/Simulation/MineStats.cs": "5d71760bcf9bf4b5e74a0876eb9eb2f052482783b87d402d5bd75431b9277937",
+    "Assets/_Project/Scripts/Simulation/MineStats.cs.meta": "0b6c2f7beac76b88453e9bbb5ea7bc1dddd46ed50a228ed36968c7f4d929d0b9",
+    "Assets/_Project/Scripts/Simulation/NumericFormat.cs": "b970391978ff38cffdf064023432558a2c3ea236182351fe13cd62be524d8431",
+    "Assets/_Project/Scripts/Simulation/NumericFormat.cs.meta": "ae8e0f0796e15f51b441e07b46d3025d008505437ac0cf93413d9b3f81ddc90c",
+    "Assets/_Project/Scripts/Simulation/OfflineAdsSave.cs": "cc77228bf529fcdbf6dce5f92df52829b7dc98724f0e285c66a46ddf7038abec",
+    "Assets/_Project/Scripts/Simulation/OfflineAdsSave.cs.meta": "19ff644893b23f297f381c86732536dc27af773eda8d4ca5024a6d4f3265a14d",
+    "Assets/_Project/Scripts/Simulation/OrderService.cs": "1aaedde3acb92e9a9b27591c1d527d85ea8ff54edf5e6dc06cf8512c207622c6",
+    "Assets/_Project/Scripts/Simulation/OrderService.cs.meta": "1fe399cdca615ed6c661395c870727d711e854e9c6e8ec7c04193a080f6fd2a7",
+    "Assets/_Project/Scripts/Simulation/ProductionSimulator.cs": "3b3b81fd9bd73e2df3afc9e82dbe2da112f13e395b15a5792d5e290a82e5fcd9",
+    "Assets/_Project/Scripts/Simulation/ProductionSimulator.cs.meta": "a7c938eab06a7e40183b002dbbb03c8f0bbdba787237796c319590808a3c5cd2",
+    "Assets/_Project/Scripts/Simulation/ProgressionBot.cs": "d0e033a40fda8e0773e768b5cc948136a86dd4cfaffdea96d35996f3d92b5e6e",
+    "Assets/_Project/Scripts/Simulation/ProgressionBot.cs.meta": "06d76c531754e8ff64afd7eb8d6a96d77043fc6cb402f1fb5c09b7cc9f9e4cbd",
+    "Assets/_Project/Scripts/Simulation/ProgressionServices.cs": "5447d1055e9a070aef803e7ef8b31825fd07a07b7ea985f2e73a674de3186f41",
+    "Assets/_Project/Scripts/Simulation/ProgressionServices.cs.meta": "804a1713ca3626403a9fca20af6d88945e8f9b4816256c6ee84fd5849a5d21c4",
+    "Assets/_Project/Scripts/Simulation/SaveEnvelope.cs": "5d58d87e25beef3406086eaf7bf0908cf27f05ac986c04044cff572f2d9ae17c",
+    "Assets/_Project/Scripts/Simulation/SaveEnvelope.cs.meta": "86074efe2801bb7e9bbad2bd8277575c10efc94fa458bd072112ac679df0601c",
+    "Assets/_Project/Scripts/Simulation.meta": "8cf40f778f904af911393fa8421dbe3f77cb4a8e016da40632ea192d2dd0ccfb",
+    "Assets/_Project/Scripts.meta": "bca5ac9a0c3af4b2b6f1be50f2ab6c07cd98448598e1f348e8b6fc5960dea7ba",
+    "Assets/_Project.meta": "09dff8e17c1204b7b90a6a717278ee597d8932789825ca165da3b44846653401",
+    "Assets/Plugins/iOS/PrivacyInfo.xcprivacy": "d4f7578cc9627ecf91fb164cd2c6fe29103fd4aae9030055dcdfa8953af776dc",
+    "Assets/Plugins/iOS/PrivacyInfo.xcprivacy.meta": "789b7a4d017aef4b854c13c646ee44602711daaa72ec48c6dec706dfd6688171",
+    "Assets/Plugins/iOS.meta": "53321a5fbc679364397b2ab55e88b8e41d7a9a0d800826aa1ee9ab5b84d043aa",
+    "Assets/Plugins.meta": "6043414f5a16536e016bc3bb488497992f49c996bb5f06dba17fa83b724f06cb",
+    "Packages/manifest.json": "35f0125541dbe8c8e52804abcfc33c37ca93a66de752f5d7cdd252804255b1ad",
+    "ProjectSettings/EditorBuildSettings.asset": "c1351b53e2d7c197758547a1f94a224dd4d5d6aecb9b70dc8bd5ae79130c380a",
+    "ProjectSettings/ProjectVersion.txt": "4ddf39aa39b852cbf6baf04dd54cab3ea512b0845f171fa91bbea809bc5d402f"
+  },
+  "trx_sha256": "3ceee37fab59bcc885e9ecc14365895b6fc86c45a7997e8035f42a67bc37dfc0",
+  "unity_player_build": "not built",
+  "device_qa": {
+    "android": "not run",
+    "ios": "not run"
+  },
+  "limitations": [
+    "API compiler check is not Unity import or IL2CPP",
+    "Windows save behavior is not a mobile filesystem result",
+    "No device FPS, thermal or memory measurement"
+  ]
+}
