@@ -1,0 +1,37 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#F6F1E6"/>
+  <text x="32" y="42" font-family="Segoe UI, sans-serif" font-size="28" fill="#2B241C">Beni Trailcart</text>
+  <text x="32" y="70" font-family="Segoe UI, sans-serif" font-size="18" fill="#5C5148">Delivery worker · Finish 3 orders</text>
+  <text x="70" y="110" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C5148">Front</text>
+  <text x="250" y="110" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C5148">Side</text>
+  <text x="430" y="110" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C5148">Back</text>
+  <text x="620" y="110" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C5148">Silhouette</text>
+  <path d="M 48 78 h 44 v 48 h -44 z" fill="#7EB6E0" stroke="#2B241C" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 56 38 h 28 v 30 h -28 z" fill="#D4A574" stroke="#2B241C" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 52 34 h 36 v 14 h -36 z" fill="#E0A040" stroke="#2B241C" stroke-width="3"/>
+  <circle cx="70" cy="128" r="8" fill="#F4E7C8"/>
+  <path d="M 58 46 h 10 v 8 h -10 z" fill="#6A4226"/>
+  <path d="M 238 78 h 28 v 46 h -28 z" fill="#7EB6E0" stroke="#2B241C" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 242 40 h 24 v 28 h -24 z" fill="#D4A574" stroke="#2B241C" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 232 34 h 36 v 14 h -36 z" fill="#E0A040" stroke="#2B241C" stroke-width="3"/>
+  <circle cx="250" cy="128" r="8" fill="#F4E7C8"/>
+  <path d="M 238 46 h 10 v 8 h -10 z" fill="#6A4226"/>
+  <path d="M 408 78 h 44 v 48 h -44 z" fill="#7EB6E0" stroke="#2B241C" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 416 38 h 28 v 30 h -28 z" fill="#D4A574" stroke="#2B241C" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 412 34 h 36 v 14 h -36 z" fill="#E0A040" stroke="#2B241C" stroke-width="3"/>
+  <circle cx="430" cy="128" r="8" fill="#F4E7C8"/>
+  <path d="M 418 46 h 10 v 8 h -10 z" fill="#6A4226"/>
+  <path d="M 640 38 h 28 v 30 h -28 z M 632 78 h 44 v 48 h -44 z" fill="#2B241C"/>
+  <text x="32" y="200" font-family="Segoe UI, sans-serif" font-size="16" fill="#2B241C">Accessory: Small delivery cart</text>
+  <rect x="32" y="230" width="48" height="48" fill="#E0A040" stroke="#2B241C"/>
+  <rect x="88" y="230" width="48" height="48" fill="#7EB6E0" stroke="#2B241C"/>
+  <rect x="144" y="230" width="48" height="48" fill="#F4E7C8" stroke="#2B241C"/>
+  <rect x="200" y="230" width="48" height="48" fill="#D4A574" stroke="#2B241C"/>
+  <rect x="256" y="230" width="48" height="48" fill="#6A4226" stroke="#2B241C"/>
+  <text x="32" y="310" font-family="Segoe UI, sans-serif" font-size="16" fill="#5C5148">Helmet, clothes, accent, skin, hair. Same adult scale for every crew member.</text>
+  <line x1="32" y1="360" x2="32" y2="470" stroke="#2B241C" stroke-width="4"/>
+  <line x1="24" y1="360" x2="40" y2="360" stroke="#2B241C" stroke-width="4"/>
+  <line x1="24" y1="470" x2="40" y2="470" stroke="#2B241C" stroke-width="4"/>
+  <text x="48" y="420" font-family="Segoe UI, sans-serif" font-size="16" fill="#2B241C">About 1.8 m in the yard</text>
+  <text x="32" y="500" font-family="Segoe UI, sans-serif" font-size="14" fill="#5C5148">Original project geometry. Provisional name. Not a claim of trademark clearance.</text>
+</svg>

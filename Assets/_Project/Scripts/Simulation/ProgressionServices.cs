@@ -310,7 +310,7 @@ namespace DiamondMine.Simulation
             text.Append(preview.BonusBeforePercent.ToString("0.#", CultureInfo.InvariantCulture));
             text.Append("% → ");
             text.Append(preview.BonusAfterPercent.ToString("0.#", CultureInfo.InvariantCulture));
-            text.Append("%. Coins, ore, diamonds, and upgrade levels reset. Mastery, settings, and the tutorial stay.");
+            text.Append("%. Works coins, ore, diamonds, and works upgrade levels reset. Factory machine levels and hired yard crew reset. Bunker ownership, pocket goods, cosmetics, recovered diamonds, mastery, settings, and the tutorial stay.");
             preview.Summary = text.ToString();
             return preview;
         }
@@ -321,6 +321,7 @@ namespace DiamondMine.Simulation
             if (!preview.Available)
                 return false;
 
+            AdventureState keptAdventure = state.Adventure != null ? state.Adventure.Clone() : AdventureRules.CreateFresh();
             var settings = state.Settings.Clone();
             var claimed = new System.Collections.Generic.List<string>(state.ClaimedObjectives);
             var orders = new System.Collections.Generic.List<string>(state.ClaimedOrders);
@@ -361,6 +362,7 @@ namespace DiamondMine.Simulation
             state.Coins = 0d;
             state.CoinsSincePrestige = 0d;
             state.BoostRemainingSeconds = 0d;
+            AdventureRules.ApplyPrestigeKeep(state, keptAdventure);
             return true;
         }
 

@@ -9,7 +9,7 @@ namespace DiamondMine.Runtime
     /// Owns the one live GameState. Buttons call these methods; they do not change balances themselves.
     /// Animations read the state after ProductionSimulator advances it.
     /// </summary>
-    public sealed class GameSession : MonoBehaviour
+    public sealed partial class GameSession : MonoBehaviour
     {
         public const float AutosaveSeconds = 20f;
 
@@ -126,6 +126,7 @@ namespace DiamondMine.Runtime
             try
             {
                 ProductionSimulator.Advance(State, Config, dt);
+                AdventureRules.Advance(State, dt);
             }
             catch (Exception ex)
             {
@@ -303,9 +304,7 @@ namespace DiamondMine.Runtime
             MineState mine = State.FindMine(mineId);
             if (mine == null || !mine.Unlocked || State.ActiveMineId == mineId)
                 return mine != null && mine.Unlocked;
-            State.ActiveMineId = mineId;
-            StampAndSave();
-            return string.IsNullOrEmpty(SaveError);
+            return Commit(delegate (GameState clone) { clone.ActiveMineId = mineId; });
         }
 
         public bool TryPrestige()
@@ -337,13 +336,15 @@ namespace DiamondMine.Runtime
         {
             if (!CanPlay())
                 return;
-            State.Settings.Music = Clamp01(music);
-            State.Settings.Sfx = Clamp01(sfx);
-            State.Settings.Haptics = haptics;
-            State.Settings.ReducedMotion = reducedMotion;
-            State.Settings.Quality = Mathf.Clamp(quality, 0, 2);
-            QualityPreset.Apply(State.Settings.Quality);
-            dirtySave = true;
+            bool saved = Commit(delegate (GameState clone)
+            {
+                clone.Settings.Music = Clamp01(music);
+                clone.Settings.Sfx = Clamp01(sfx);
+                clone.Settings.Haptics = haptics;
+                clone.Settings.ReducedMotion = reducedMotion;
+                clone.Settings.Quality = Mathf.Clamp(quality, 0, 2);
+            });
+            if (saved) QualityPreset.Apply(State.Settings.Quality);
         }
 
         public void DismissOfflineReport()

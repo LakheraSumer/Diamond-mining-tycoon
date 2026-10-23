@@ -7,6 +7,10 @@ namespace DiamondMine.Runtime
 {
     public sealed partial class GameUi : MonoBehaviour
     {
+#if UNITY_EDITOR
+        // Pixel-space inset simulation used only by the isolated editor review.
+        public static Rect? ReviewSafeAreaOverride;
+#endif
         enum Modal
         {
             NotRendered = -1,
@@ -42,11 +46,14 @@ namespace DiamondMine.Runtime
         GameSession session;
         GameAudio gameSound;
         MinePresenter world;
+        YardControls yardControls;
+        bool yardOpen;
         RectTransform safe;
         RectTransform modalHost;
         RectTransform upgradeHost;
         RectTransform upgradeContent;
         Text coinsText;
+        Text mineNameText;
         Text incomeText;
         Text objectiveText;
         Text bottleneckText;
@@ -75,6 +82,18 @@ namespace DiamondMine.Runtime
         int upgradeSignature = -1;
         Text prestigeBody;
         Button prestigeConfirm;
+
+        public void AttachYard(YardControls controls)
+        {
+            yardControls = controls;
+        }
+
+        public void SetYardOpen(bool open)
+        {
+            yardOpen = open;
+            if (world != null)
+                world.SetRendering(!open);
+        }
 
         public void Bind(GameSession gameSession, GameAudio gameAudio, MinePresenter presenter)
         {
@@ -113,7 +132,7 @@ namespace DiamondMine.Runtime
             session.NotifyBottleneckVisible(dt, covered);
             session.NotifyObjectiveVisible(dt, covered);
 
-            if (world != null && session.Ready)
+            if (world != null && session.Ready && !yardOpen)
                 world.Present(session);
             hudTimer += dt;
             if (hudTimer >= 0.1f)
@@ -142,7 +161,7 @@ namespace DiamondMine.Runtime
             CanvasScaler scaler = canvasObject.GetComponent<CanvasScaler>();
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             scaler.referenceResolution = new Vector2(720f, 1280f);
-            scaler.matchWidthOrHeight = 0.5f;
+            scaler.matchWidthOrHeight = 0f;
 
             if (FindAnyObjectByType<UnityEngine.EventSystems.EventSystem>() == null)
             {
@@ -152,11 +171,15 @@ namespace DiamondMine.Runtime
 
             safe = UiFactory.Rect("Safe", canvasObject.transform);
             coinsText = UiFactory.Label(safe, "", 52, UiTheme.Coin, TextAnchor.MiddleLeft);
+            mineNameText = UiFactory.Label(safe, "", 28, UiTheme.Diamond, TextAnchor.MiddleRight);
             incomeText = UiFactory.Label(safe, "", 30, UiTheme.Paper, TextAnchor.MiddleLeft);
             objectiveText = UiFactory.Label(safe, "", 32, UiTheme.Paper, TextAnchor.MiddleLeft);
             bottleneckText = UiFactory.Label(safe, "", 30, UiTheme.Paper, TextAnchor.MiddleLeft);
             metersText = UiFactory.Label(safe, "", 26, UiTheme.Diamond, TextAnchor.MiddleLeft);
             bannerText = UiFactory.Label(safe, "", 28, UiTheme.Paper, TextAnchor.MiddleLeft);
+            bannerText.resizeTextForBestFit = true;
+            bannerText.resizeTextMinSize = 20;
+            bannerText.resizeTextMaxSize = 28;
             toastText = UiFactory.Label(safe, "", 30, UiTheme.Coin, TextAnchor.MiddleCenter);
 
             tapButton = UiFactory.Press(safe, "Tap the rock", OnTap, UiTheme.ButtonOn, 140f);
@@ -173,19 +196,26 @@ namespace DiamondMine.Runtime
             UiFactory.Stretch(scroll);
 
             modalHost = UiFactory.Panel("Modal", safe, new Color(0.05f, 0.03f, 0.02f, 0.72f));
+            UiFactory.Stretch(modalHost);
             modalHost.gameObject.SetActive(false);
             upgradeHost.gameObject.SetActive(false);
         }
 
         void BuildNav()
         {
-            string[] labels = { "Upgrades", "Goals", "Mines", "Prestige", "Settings" };
-            Modal[] modals = { Modal.Upgrades, Modal.Goals, Modal.Mines, Modal.Prestige, Modal.Settings };
+            string[] labels = { "Yard", "Upgrades", "Goals", "Mines", "Prestige", "Settings" };
+            Modal[] modals = { Modal.None, Modal.Upgrades, Modal.Goals, Modal.Mines, Modal.Prestige, Modal.Settings };
             for (int i = 0; i < labels.Length; i++)
             {
                 Modal modal = modals[i];
                 Button button = UiFactory.Press(navRoot, labels[i], delegate
                 {
+                    if (modal == Modal.None)
+                    {
+                        if (yardControls != null)
+                            yardControls.Show();
+                        return;
+                    }
                     if (modal == Modal.Upgrades && tablet)
                         return;
                     Push(modal, true);
@@ -195,18 +225,26 @@ namespace DiamondMine.Runtime
                 float next = (i + 1) / (float)labels.Length;
                 rect.anchorMin = new Vector2(column, 0.08f);
                 rect.anchorMax = new Vector2(next - 0.01f, 0.92f);
-                rect.offsetMin = new Vector2(8f, 0f);
-                rect.offsetMax = new Vector2(-8f, 0f);
+                rect.offsetMin = new Vector2(3f, 0f);
+                rect.offsetMax = new Vector2(-3f, 0f);
                 LayoutElement layout = button.GetComponent<LayoutElement>();
                 if (layout != null)
                     Destroy(layout);
-                UiFactory.Caption(button).fontSize = 28;
+                Text caption = UiFactory.Caption(button);
+                caption.fontSize = 24;
+                caption.horizontalOverflow = HorizontalWrapMode.Overflow;
+                caption.resizeTextForBestFit = true;
+                caption.resizeTextMinSize = 14;
+                caption.resizeTextMaxSize = 24;
             }
         }
 
         void ApplyLayout(bool force)
         {
             Rect area = Screen.safeArea;
+#if UNITY_EDITOR
+            if (ReviewSafeAreaOverride.HasValue) area = ReviewSafeAreaOverride.Value;
+#endif
             bool nowTablet = PlatformInfo.IsTabletLayout();
             if (!force && layoutReady && screenW == Screen.width && screenH == Screen.height && safeRect == area && tablet == nowTablet)
                 return;
@@ -228,11 +266,12 @@ namespace DiamondMine.Runtime
             safe.offsetMax = Vector2.zero;
 
             float textRight = tablet ? 0.58f : 0.96f;
-            Place(coinsText.rectTransform, 0.04f, 0.9f, textRight, 0.99f);
+            Place(coinsText.rectTransform, 0.04f, 0.9f, tablet ? 0.3f : 0.55f, 0.99f);
+            Place(mineNameText.rectTransform, tablet ? 0.31f : 0.57f, 0.9f, textRight, 0.99f);
             Place(incomeText.rectTransform, 0.04f, 0.845f, textRight, 0.9f);
             Place(objectiveText.rectTransform, 0.04f, 0.78f, textRight, 0.845f);
             Place(bottleneckText.rectTransform, 0.04f, 0.7f, textRight, 0.78f);
-            Place(metersText.rectTransform, 0.04f, 0.64f, textRight, 0.71f);
+            Place(metersText.rectTransform, 0.04f, 0.63f, textRight, 0.7f);
             Place(bannerText.rectTransform, 0.04f, 0.58f, textRight, 0.64f);
             Place(toastText.rectTransform, 0.08f, 0.52f, tablet ? 0.56f : 0.92f, 0.58f);
 
@@ -257,9 +296,10 @@ namespace DiamondMine.Runtime
 
             if (world != null)
             {
-                world.SetViewport(tablet
+                Rect mineArea = tablet
                     ? new Rect(0f, 0.1f, 0.58f, 0.8f)
-                    : new Rect(0f, 0.2f, 1f, 0.48f));
+                    : new Rect(0f, 0.25f, 1f, 0.38f);
+                world.SetViewport(new Rect(min.x + mineArea.x * (max.x - min.x), min.y + mineArea.y * (max.y - min.y), mineArea.width * (max.x - min.x), mineArea.height * (max.y - min.y)));
             }
             PlaceUpgradeHost();
         }
@@ -297,6 +337,7 @@ namespace DiamondMine.Runtime
             if (!session.Ready || session.State == null)
             {
                 coinsText.text = Branding.WorkingTitle;
+                mineNameText.text = "";
                 incomeText.text = "";
                 objectiveText.text = session.NewerSaveBlocked ? "" : (string.IsNullOrEmpty(session.StatusMessage) ? "Opening the mine..." : session.StatusMessage);
                 bottleneckText.text = "";
@@ -310,7 +351,19 @@ namespace DiamondMine.Runtime
             GameState state = session.State;
             MineState mine = state.FindMine(state.ActiveMineId);
             MineDefinition def = session.Config.FindMine(state.ActiveMineId);
-            tapButton.gameObject.SetActive(!session.OfflinePending);
+            tapButton.gameObject.SetActive(!session.OfflinePending && !yardOpen);
+            if (yardOpen && session.State.Adventure != null)
+            {
+                coinsText.text = NumericFormat.Format(state.Coins) + " coins";
+                CharacterDef person = JourneyCatalog.FindCharacter(session.State.Adventure.SelectedCharacter);
+                mineNameText.text = person == null ? "Choose a miner" : person.Name;
+                incomeText.text = "Yard";
+                objectiveText.text = AdventureRules.NextHint(session.State);
+                bottleneckText.text = "";
+                metersText.text = "";
+                bannerText.text = session.ActionMessage ?? "";
+                return;
+            }
             coinsText.text = NumericFormat.Format(state.Coins) + " coins";
             if (state.BoostRemainingSeconds > 0.5d)
                 coinsText.text += "   " + session.Config.BoostMultiplier.ToString("0") + "x " + Mathf.CeilToInt((float)state.BoostRemainingSeconds) + "s";
@@ -320,11 +373,12 @@ namespace DiamondMine.Runtime
             {
                 MineRates rates = MineStats.Compute(def, mine, session.Config, state.Mastery, state.BoostRemainingSeconds > 0d);
                 automated = rates.AutoUnlocked;
+                mineNameText.text = def.Name;
                 double income = MineStats.SustainedIncome(state, session.Config, true);
                 int open = 0;
                 for (int i = 0; i < state.Mines.Count; i++)
                     if (state.Mines[i].Unlocked) open++;
-                incomeText.text = (automated ? "Est. income  " : "Est. income while tapping  ") + NumericFormat.FormatRate(income);
+                incomeText.text = "Income " + NumericFormat.FormatRate(income) + (automated ? "" : " while tapping");
                 if (open > 1)
                     incomeText.text += "   · all open mines";
                 StageDiagnosis diagnosis = BottleneckService.Diagnose(mine, rates);
@@ -335,11 +389,9 @@ namespace DiamondMine.Runtime
                     prefix = "SLOW · ";
                 bottleneckText.text = prefix + diagnosis.Title + ". " + diagnosis.Reason;
                 metersText.text =
-                    "Face " + NumericFormat.Format(mine.OreAtFace) + "/" + NumericFormat.Format(rates.MineBuffer) +
-                    "   Carts " + mine.Carts.Count +
-                    "   Crusher " + NumericFormat.Format(mine.ProcessInput) + "/" + NumericFormat.Format(rates.ProcessBuffer) +
-                    "   Rough " + NumericFormat.Format(mine.Rough) + "/" + NumericFormat.Format(rates.RoughBuffer) +
-                    "   Vault " + NumericFormat.Format(mine.Storage) + "/" + NumericFormat.Format(rates.StorageCap);
+                    "Ore " + NumericFormat.Format(mine.OreAtFace) + "/" + NumericFormat.Format(rates.MineBuffer) + " · Carts " + mine.Carts.Count +
+                    " · Crusher " + NumericFormat.Format(mine.ProcessInput) + "/" + NumericFormat.Format(rates.ProcessBuffer) +
+                    "\nGems " + NumericFormat.Format(mine.Rough) + "/" + NumericFormat.Format(rates.RoughBuffer) + " · Vault " + NumericFormat.Format(mine.Storage) + "/" + NumericFormat.Format(rates.StorageCap);
             }
 
             if (!state.TutorialComplete)
@@ -373,6 +425,8 @@ namespace DiamondMine.Runtime
         {
             if (!Input.GetKeyDown(KeyCode.Escape))
                 return;
+            if (yardControls != null && yardOpen && yardControls.TryConsumeBack())
+                return;
             if (stack.Count == 0)
             {
                 Push(Modal.Quit, true);
@@ -394,6 +448,8 @@ namespace DiamondMine.Runtime
             if (stack.Count > 0 && stack[stack.Count - 1] == modal)
                 return;
             if (modal == Modal.Settings)
+                resetArmed = false;
+            if (modal == Modal.Reset)
                 resetArmed = false;
             if (modal == Modal.Prestige)
                 prestigeArmed = false;
@@ -419,6 +475,8 @@ namespace DiamondMine.Runtime
                 session.DismissOfflineReport();
             if (closed == Modal.Ad)
                 session.CancelPendingAd();
+            if (closed == Modal.Reset)
+                resetArmed = false;
             built = Modal.NotRendered;
             SyncModal();
             PlaceUpgradeHost();

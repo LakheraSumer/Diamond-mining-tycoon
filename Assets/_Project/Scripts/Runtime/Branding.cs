@@ -7,8 +7,8 @@ namespace DiamondMine.Runtime
     public static class Branding
     {
         public const string WorkingTitle = "Diamond Mine Tycoon";
-        public const string Version = "0.1.0";
-        public const int BuildNumber = 1;
+        public const string Version = "0.1.1";
+        public const int BuildNumber = 2;
         public const string CompanyPlaceholder = "Replace With Publisher Name";
         public const string AndroidApplicationId = "com.diamondmine.tycoon.dev";
         public const string IosBundleId = "com.diamondmine.tycoon.dev";

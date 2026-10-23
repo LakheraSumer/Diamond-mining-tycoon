@@ -19,6 +19,14 @@
 
 No HMAC key embedded in the client is presented as a secret. No destructive anti-tamper action, progress wipe, mandatory integrity gate or promise of an unmodifiable APK is included.
 
+## Yard scores, 24 October 2026
+
+Lifetime diamonds recovered are counted once, when a sort batch first creates a rough diamond. Cutting, polishing, crafting, selling, and reloading do not add that diamond again. The automated journey covers the reload case.
+
+`RankRules.ProductionEnabled` is false. The yard label says the on-device number is practice only. `SubmitClientTotal` rejects a raw client total. A server-style book accepts an event only when the event id is new, the ore consumed is at least four units per diamond, and the server timestamp is not a replay. There is no hosted account, no upload, and no claim that this is a live verified ranking.
+
+Play Integrity and App Attest are still not configured. They would be signals beside server-checked events, not a ban rule and not proof by themselves. Saves can still be edited on a device the player controls. The checksum detects corruption. It does not prove an honest balance. Progress is not wiped as a security response.
+
 ## Optional online design — not implemented
 
 Add a single small service only if a future owner-approved online reward needs server trust. Keep an authoritative protected entitlement ledger separate from all offline coins. Never accept a client balance or reward amount as authority. No cloud synchronization or cross-device merging exists now.

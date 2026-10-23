@@ -156,6 +156,7 @@ namespace DiamondMine.Simulation
                 MineDefinition def = config.Mines[i];
                 state.Mines.Add(CreateMine(def, def.UnlockLifetimeCoins <= 0d));
             }
+            state.Adventure = AdventureRules.CreateFresh();
             return state;
         }
 

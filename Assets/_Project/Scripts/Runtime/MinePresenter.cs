@@ -11,6 +11,7 @@ namespace DiamondMine.Runtime
         const int CartPool = 8;
 
         Camera view;
+        Camera backdrop;
         Light sun;
         Transform facePile;
         Transform processPile;
@@ -46,6 +47,14 @@ namespace DiamondMine.Runtime
 
         public Camera View { get { return view; } }
 
+        public void SetRendering(bool enabled)
+        {
+            if (view != null)
+                view.enabled = enabled;
+            if (backdrop != null)
+                backdrop.enabled = enabled;
+        }
+
         void Awake()
         {
             Shader shader = Shader.Find("Unlit/Color");
@@ -59,9 +68,22 @@ namespace DiamondMine.Runtime
             coinMat = Make(shader, new Color(0.93f, 0.76f, 0.28f));
             emberMat = Make(shader, new Color(0.75f, 0.28f, 0.12f));
 
-            view = gameObject.AddComponent<Camera>();
+            // Cameras must not move the scenery they observe. A full-screen clear
+            // also prevents old overlay UI pixels surviving outside the mine viewport.
+            var backdropObject = new GameObject("BackdropCamera");
+            backdropObject.transform.SetParent(transform, false);
+            backdrop = backdropObject.AddComponent<Camera>();
+            backdrop.depth = -2;
+            backdrop.clearFlags = CameraClearFlags.SolidColor;
+            backdrop.backgroundColor = new Color(0.09f, 0.07f, 0.08f);
+            backdrop.cullingMask = 0;
+            backdrop.allowMSAA = false;
+            var cameraObject = new GameObject("MineCamera");
+            cameraObject.transform.SetParent(transform, false);
+            view = cameraObject.AddComponent<Camera>();
+            view.depth = -1;
             if (FindAnyObjectByType<AudioListener>() == null)
-                gameObject.AddComponent<AudioListener>();
+                cameraObject.AddComponent<AudioListener>();
             view.clearFlags = CameraClearFlags.SolidColor;
             view.backgroundColor = new Color(0.2f, 0.13f, 0.1f);
             view.fieldOfView = 48f;
@@ -90,7 +112,7 @@ namespace DiamondMine.Runtime
             float aspect = Mathf.Max(0.25f, view.aspect);
             float vertical = view.fieldOfView * Mathf.Deg2Rad;
             float horizontal = 2f * Mathf.Atan(Mathf.Tan(vertical * 0.5f) * aspect);
-            float distance = 1.9f / Mathf.Tan(horizontal * 0.5f);
+            float distance = Mathf.Max(3.3f, 2.05f / Mathf.Tan(horizontal * 0.5f));
             view.transform.position = new Vector3(0.12f, 1.62f, -distance);
             view.transform.LookAt(new Vector3(0.12f, 0.78f, 0f));
         }
@@ -134,7 +156,7 @@ namespace DiamondMine.Runtime
 
             bool mining = rates.AutoUnlocked || state.TotalPlaySeconds - mine.LastTapTime < 0.55d;
             float bob = reduced ? 0f : Mathf.Sin(Time.unscaledTime * 5.5f) * 0.035f;
-            miner.localPosition = new Vector3(-1.28f, 0.42f + (mining ? bob : 0f), 0.35f);
+            miner.localPosition = new Vector3(-1.28f, 0.42f + (mining ? bob : 0f), -0.68f);
             hauler.localPosition = new Vector3(-0.55f, 0.4f + (reduced ? 0f : bob), -0.42f);
             sorterWorker.localPosition = new Vector3(0.62f, 0.4f + (mine.Rough > 0.2d && !reduced ? bob : 0f), 0.38f);
             clerk.localPosition = new Vector3(1.48f, 0.4f + (mine.Storage > 0.2d && !reduced ? bob : 0f), -0.28f);
@@ -241,7 +263,7 @@ namespace DiamondMine.Runtime
             Box("SalesDesk", new Vector3(1.5f, 0.24f, -0.15f), new Vector3(0.4f, 0.28f, 0.32f), woodMat);
             saleGem = Gem("SaleGem", new Vector3(1.5f, 0.48f, -0.15f), new Vector3(0.12f, 0.12f, 0.12f));
 
-            miner = Worker("Miner", new Vector3(-1.28f, 0.42f, 0.35f), woodMat);
+            miner = Worker("Miner", new Vector3(-1.28f, 0.42f, -0.68f), woodMat);
             minerArm = Box("Pick", new Vector3(0.12f, 0.18f, 0f), new Vector3(0.28f, 0.05f, 0.05f), metalMat, miner);
             hauler = Worker("Hauler", new Vector3(-0.55f, 0.4f, -0.42f), metalMat);
             sorterWorker = Worker("Sorter", new Vector3(0.62f, 0.4f, 0.38f), diamondMat);
@@ -251,9 +273,15 @@ namespace DiamondMine.Runtime
             loads = new Transform[CartPool];
             for (int i = 0; i < CartPool; i++)
             {
-                carts[i] = Box("Cart" + i, FacePoint, new Vector3(0.22f, 0.12f, 0.16f), woodMat);
+                var cartObject = new GameObject("Cart" + i);
+                cartObject.transform.SetParent(transform, false);
+                carts[i] = cartObject.transform;
+                carts[i].localPosition = FacePoint;
+                Box("CartBody", Vector3.zero, new Vector3(0.24f, 0.14f, 0.2f), woodMat, carts[i]);
                 loads[i] = Box("Load" + i, new Vector3(0f, 0.12f, 0f), new Vector3(0.16f, 0.1f, 0.12f), rockMat, carts[i]);
-                Box("Wheel", new Vector3(0.06f, -0.08f, 0.08f), new Vector3(0.06f, 0.06f, 0.06f), metalMat, carts[i]);
+                for (int axle = -1; axle <= 1; axle += 2)
+                    for (int side = -1; side <= 1; side += 2)
+                        Box("Wheel", new Vector3(axle * 0.08f, -0.09f, side * 0.11f), new Vector3(0.07f, 0.07f, 0.04f), metalMat, carts[i]);
             }
 
             warmDress = new GameObject("WarmDress");
@@ -306,9 +334,16 @@ namespace DiamondMine.Runtime
 
         Transform Worker(string name, Vector3 position, Material shirt)
         {
-            Transform body = Box(name, position, new Vector3(0.16f, 0.28f, 0.12f), shirt);
-            Box("Head", new Vector3(0f, 0.22f, 0f), new Vector3(0.12f, 0.12f, 0.12f), new Material(wallMat) { color = new Color(0.93f, 0.78f, 0.62f) }, body);
-            return body;
+            var worker = new GameObject(name);
+            worker.transform.SetParent(transform, false);
+            worker.transform.localPosition = position;
+            Transform root = worker.transform;
+            Box("Shirt", Vector3.zero, new Vector3(0.17f, 0.25f, 0.13f), shirt, root);
+            Box("Head", new Vector3(0f, 0.21f, 0f), new Vector3(0.14f, 0.14f, 0.14f), new Material(wallMat) { color = new Color(0.93f, 0.78f, 0.62f) }, root);
+            Box("Helmet", new Vector3(0f, 0.3f, 0f), new Vector3(0.18f, 0.06f, 0.17f), coinMat, root);
+            Box("LeftLeg", new Vector3(-0.05f, -0.2f, 0f), new Vector3(0.065f, 0.18f, 0.1f), metalMat, root);
+            Box("RightLeg", new Vector3(0.05f, -0.2f, 0f), new Vector3(0.065f, 0.18f, 0.1f), metalMat, root);
+            return root;
         }
 
         Transform Box(string name, Vector3 position, Vector3 scale, Material material)

@@ -35,3 +35,5 @@ tests/**/obj/
 diamond-mine-save.json*
 *.retired-*
 *.corrupt-*
+__pycache__/
+*.pyc

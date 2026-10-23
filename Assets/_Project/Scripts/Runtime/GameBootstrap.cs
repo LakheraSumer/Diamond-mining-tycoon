@@ -34,6 +34,12 @@ namespace DiamondMine.Runtime
             var world = worldObject.AddComponent<MinePresenter>();
             var ui = gameObject.AddComponent<GameUi>();
             ui.Bind(session, audio, world);
+            var yardObject = new GameObject("Yard");
+            yardObject.transform.SetParent(transform, false);
+            var yard = yardObject.AddComponent<YardWorld>();
+            var yardControls = gameObject.AddComponent<YardControls>();
+            ui.AttachYard(yardControls);
+            yardControls.Bind(session, yard, ui, audio);
         }
     }
 }

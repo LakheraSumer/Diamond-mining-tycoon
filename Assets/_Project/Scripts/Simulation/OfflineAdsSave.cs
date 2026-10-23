@@ -137,7 +137,10 @@ namespace DiamondMine.Simulation
         {
             OfflinePlan plan = Plan(state, config, elapsedSeconds);
             if (plan.SecondsSimulated > 0d)
+            {
                 ProductionSimulator.Advance(state, config, plan.SecondsSimulated);
+                AdventureRules.Advance(state, plan.SecondsSimulated);
+            }
             state.LastOfflineGrantId = plan.GrantId;
             state.LastOfflineBaseCoins = plan.Coins;
             state.LastOfflineBonusClaimed = false;
@@ -262,7 +265,7 @@ namespace DiamondMine.Simulation
 
     public static class SaveCodec
     {
-        public const int CurrentVersion = 1;
+        public const int CurrentVersion = 2;
 
         public static string Write(GameState state)
         {
@@ -318,6 +321,9 @@ namespace DiamondMine.Simulation
             for (int i = 0; i < state.Mines.Count; i++)
                 WriteMine(json, state.Mines[i]);
             json.EndArray();
+            if (state.Adventure == null)
+                state.Adventure = AdventureRules.CreateFresh();
+            AdventureCodec.Write(json, state.Adventure);
             json.EndObject();
             return json.ToString();
         }
@@ -423,6 +429,17 @@ namespace DiamondMine.Simulation
 
             if (state.FindMine(state.ActiveMineId) == null && state.Mines.Count > 0)
                 state.ActiveMineId = state.Mines[0].Id;
+            if (version >= 2)
+            {
+                if (!root.Has("adventure"))
+                    throw new InvalidSaveException("Save is missing the world record.");
+                state.Adventure = AdventureCodec.Read(root.Get("adventure"));
+            }
+            else
+            {
+                AdventureRules.ApplyLegacyMigration(state);
+            }
+            AdventureRules.Advance(state, 0d);
             return state;
         }
 

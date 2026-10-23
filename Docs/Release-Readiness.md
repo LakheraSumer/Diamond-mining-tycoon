@@ -1,6 +1,15 @@
 # Release readiness
 
-20 October 2026: **not ready for public release**. The game source and automated simulation checks are ready for owner/code review. No mobile player build or gameplay screenshot is claimed.
+24 October 2026: **not ready for public release**. The yard loop is implemented and covered by automated rules. No mobile player build or gameplay screenshot is claimed.
+
+| Yard deliverable | State | Evidence |
+| --- | --- | --- |
+| Save migration and five starter bunkers | Tested | AdventureJourneyTests, Docs/Save-Migration.md |
+| 102,400 plot addresses | Tested as data, not as drawn objects | Unique ids and a full description pass in the same suite |
+| Mine, factory, ring, sale, sixth bunker | Tested | Journey test, reload does not duplicate the ring |
+| Twelve cosmetic characters | Implemented as a shared procedural puppet | Docs/characters, YardWorld.cs. No external model |
+| Verified online ranking | Blocked | Rules exist and reject forged totals. Production flag is false. No server |
+| Android APK / iOS export | Not run | Still the gap from 20 October |
 
 | Deliverable | State | Evidence / remaining work |
 | --- | --- | --- |

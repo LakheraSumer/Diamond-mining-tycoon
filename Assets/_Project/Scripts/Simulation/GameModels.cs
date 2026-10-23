@@ -243,6 +243,7 @@ namespace DiamondMine.Simulation
         public readonly List<string> ClaimedObjectives = new List<string>();
         public readonly List<string> ClaimedOrders = new List<string>();
         public SettingsState Settings = new SettingsState();
+        public AdventureState Adventure = new AdventureState();
         public readonly List<MineState> Mines = new List<MineState>();
 
         public MineState FindMine(string id)
@@ -281,7 +282,8 @@ namespace DiamondMine.Simulation
                 LastOfflineGrantId = LastOfflineGrantId,
                 LastOfflineBaseCoins = LastOfflineBaseCoins,
                 LastOfflineBonusClaimed = LastOfflineBonusClaimed,
-                Settings = Settings.Clone()
+                Settings = Settings.Clone(),
+                Adventure = Adventure != null ? Adventure.Clone() : new AdventureState()
             };
             for (int i = 0; i < UsedAdTokens.Count; i++)
                 copy.UsedAdTokens.Add(UsedAdTokens[i]);
@@ -318,6 +320,7 @@ namespace DiamondMine.Simulation
             LastOfflineBaseCoins = other.LastOfflineBaseCoins;
             LastOfflineBonusClaimed = other.LastOfflineBonusClaimed;
             Settings = other.Settings;
+            Adventure = other.Adventure != null ? other.Adventure.Clone() : new AdventureState();
             UsedAdTokens.Clear();
             for (int i = 0; i < other.UsedAdTokens.Count; i++)
                 UsedAdTokens.Add(other.UsedAdTokens[i]);

@@ -109,7 +109,7 @@ namespace DiamondMine.Runtime
                 row.Body.text = string.IsNullOrEmpty(one.Summary) ? upgrade.Description : one.Summary;
                 bool buyOne = one.Affordable && one.Count == 1;
                 row.One.interactable = buyOne;
-                row.OneText.text = buyOne ? "Buy  " + NumericFormat.Format(one.Cost) : ShortDeny(one.DenyReason);
+                row.OneText.text = one.Cost > 0d ? "Buy  " + NumericFormat.Format(one.Cost) : ShortDeny(one.DenyReason);
 
                 int room = upgrade.MaxLevel - level;
                 int affordable = UpgradeService.MaxAffordable(session.State.Coins, level, upgrade.MaxLevel, upgrade.BaseCost, upgrade.CostGrowth);
@@ -310,7 +310,7 @@ namespace DiamondMine.Runtime
                 session.UpdateSettings(session.State.Settings.Music, session.State.Settings.Sfx, session.State.Settings.Haptics, value, session.State.Settings.Quality);
             });
             string qualityName = settings.Quality <= 0 ? "Low" : settings.Quality == 1 ? "Medium" : "High";
-            Button quality = UiFactory.Press(content, "Quality: " + qualityName + "  (30 FPS, High is 60)", delegate
+            Button quality = UiFactory.Press(content, "Graphics: " + qualityName, delegate
             {
                 int next = (session.State.Settings.Quality + 1) % 3;
                 session.UpdateSettings(session.State.Settings.Music, session.State.Settings.Sfx, session.State.Settings.Haptics, session.State.Settings.ReducedMotion, next);
@@ -399,7 +399,7 @@ namespace DiamondMine.Runtime
 
         void BuildOffline(RectTransform card)
         {
-            Header(card, "While you were away");
+            Header(card, "Away earnings");
             OfflinePlan plan = session.OfflineReport;
             string body;
             if (plan == null)
@@ -419,8 +419,10 @@ namespace DiamondMine.Runtime
                     body += "\n\nThe elapsed time was not a usable number. Nothing was added.";
                 body += "\n\nThese coins are already in your balance. Continue does not add them again.";
             }
-            Text text = UiFactory.Label(card, body, 30, UiTheme.Paper, TextAnchor.UpperLeft);
-            Place(text.rectTransform, 0.05f, 0.28f, 0.95f, 0.86f);
+            RectTransform offlineContent;
+            RectTransform offlineScroll = UiFactory.Scroll(card, out offlineContent);
+            Place(offlineScroll, 0.03f, 0.28f, 0.97f, 0.86f);
+            Text text = UiFactory.Label(offlineContent, body, 30, UiTheme.Paper, TextAnchor.UpperLeft);
             if (session.CanOfferOfflineBonus())
             {
                 Button watch = UiFactory.Press(card, session.OfflineBonusLabel(), delegate

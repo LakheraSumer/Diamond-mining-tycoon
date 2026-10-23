@@ -1,5 +1,11 @@
 # Progress
 
+Updated 24 October 2026. The yard loop is in the simulation and the Unity API compile. This is not a tested mobile release candidate.
+
+Open the project, press Play, and use Yard. Choose a free miner, walk to a bunker, mine, then use the mill and the shop. Works still opens the older mine screen. Automated checks: `TEST_GAME.cmd`. Latest local result is 84 passed. See Docs/PROJECT-STATUS.md.
+
+## Earlier progress
+
 Updated 20 October 2026. The Unity source is implemented, but this is not a tested mobile release candidate.
 
 ## Current evidence

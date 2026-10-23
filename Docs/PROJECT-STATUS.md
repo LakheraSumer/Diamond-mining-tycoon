@@ -1,5 +1,25 @@
 # Diamond Mine Tycoon project status
 
+Yard update, 24 October 2026. The 20 October notes below still describe the works mine. They are not a claim that mobile release work finished.
+
+## Yard update
+
+Implemented in the shared simulation and compiled against the Unity 6000.3.26f1 API for Android, iOS, and editor:
+
+- Save version 2. Version 0 and 1 loads keep coins and works upgrades, grant the five starter bunkers once, and keep an already unlocked Deep Core as plot 5 without charging. Rules are in Docs/Save-Migration.md.
+- 100 regions by 1,024 plots. Addresses are generated on demand. A full 102,400-plot description pass is inside the automated suite.
+- Character choice, twelve cosmetic looks, yard movement rules, five-stage diamond batches, metal refining, ten jewellery recipes, shop sales, scripted orders, tasks, one yard crew, and prestige rules that keep bunker ownership.
+- The first scripted journey mines diamond rock, sorts a diamond, makes one ring, sells it, and buys plot 5. Reloading does not create a second ring or a second recovered diamond.
+- Online ranking code rejects a raw client total and a replayed event. `RankRules.ProductionEnabled` is false. The yard says the device total is practice only.
+
+Automated result after this change: 84 passed, 0 failed, 0 skipped. Unity API compilation passed for simulation, Android, Android development, iOS, and editor. The runtime compile reported no errors. One inherited-name warning was removed after the run that first showed it.
+
+Not run on 24 October: Unity Play mode, portrait screenshots, Android APK, Android AAB, iOS Xcode export, device QA, FPS, thermal, and supervised family play. No store submission.
+
+The working title collides with an older Android idle game that store listings also call Diamond Mine Tycoon, package `com.theholycowstudio.diamondmerchant`, and with a Roblox experience named Diamond Mining Tycoon. Full names such as Tavi Flintstep were not found as existing characters in this search. A web search is not a trademark clearance.
+
+## Earlier status
+
 Evidence reviewed 20 October 2026. Version 0.1.0, build 1.
 
 ## Current outcome

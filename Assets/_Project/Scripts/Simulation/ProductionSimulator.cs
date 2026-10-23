@@ -290,19 +290,19 @@ namespace DiamondMine.Simulation
                     slack = dt - clearTime;
             }
 
-            bool assigned = false;
+            // Remove consumed/moved ore from individual carts in order. Merging
+            // every waiting cart into one load can exceed that cart's capacity
+            // under crusher backpressure and make a genuine save invalid.
+            double takenFromCarts = Math.Max(0d, unloading - leftOnCarts);
             for (int i = 0; i < mine.Carts.Count; i++)
             {
                 CartState cart = mine.Carts[i];
                 if (cart.Phase != CartPhase.Unloading)
                     continue;
-                if (!assigned && leftOnCarts > Eps)
-                {
-                    cart.Load = leftOnCarts;
-                    assigned = true;
-                    leftOnCarts = 0d;
-                }
-                else
+                double taken = Math.Min(cart.Load, takenFromCarts);
+                cart.Load = Math.Max(0d, cart.Load - taken);
+                takenFromCarts = Math.Max(0d, takenFromCarts - taken);
+                if (cart.Load <= Eps)
                 {
                     double timer = Math.Max(0d, rates.TripSeconds - slack) + dt;
                     StartReturn(cart, rates, timer);
@@ -330,12 +330,12 @@ namespace DiamondMine.Simulation
             {
                 CartState cart = mine.Carts[i];
                 if (cart.Phase == CartPhase.Outbound || cart.Phase == CartPhase.Returning)
-                    cart.Timer -= dt;
+                    cart.Timer = Math.Max(0d, cart.Timer - dt);
                 else if (!loaderSeen && cart.Phase == CartPhase.Loading)
                 {
                     loaderSeen = true;
                     if (loaderActive && mine.OreAtFace < rates.CartCapacity - Eps)
-                        cart.Timer -= dt;
+                        cart.Timer = Math.Max(0d, cart.Timer - dt);
                 }
             }
         }

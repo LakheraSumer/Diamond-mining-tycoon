@@ -38,11 +38,21 @@ The prompts are actions: tap, watch the cart arrive, see a sale, buy something, 
 
 Goals pay their coin reward once. Offline earnings use the saved mine and the device clock, with an eight-hour cap. Existing ore can still be processed without a miner. New ore offline requires a hired miner. A backward clock grants nothing. A huge forward jump still grants only the cap. The base amount is saved before the report is shown. Continue does not add it again. Editor/development builds have an optional labeled local test ad that can add half again after Complete, once per grant. Release builds offer no ads.
 
-Prestige shows the mastery change and what resets, then asks for a second confirmation. It clears coins, stocks, upgrade levels, and the non-starter mines. It keeps mastery, lifetime coins, settings, finished tutorial state, claimed goals, and used ad tokens.
+Prestige shows the mastery change and what resets, then asks for a second confirmation. It clears works coins, works stocks, works upgrade levels, factory machine levels, and the hired yard crew. It keeps mastery, lifetime coins, settings, finished tutorial state, claimed goals, used ad tokens, bunker ownership, pocket goods, cosmetics, and the count of diamonds first recovered from ore.
+
+## Yard
+
+The yard is a third-person walk around the factory, the shop, and the first bunkers. Mining inside a bunker needs ownership. Walking past a locked door does not open a purchase. The player chooses a cosmetic miner. Four of the twelve crew looks are free. The others unlock from ordinary play. Clothes do not change prices.
+
+Region 0 has 1,024 plots and the world has 100 regions, 102,400 addresses. Only nearby doors are drawn. The rest are generated from the world seed when a map page is opened.
+
+Diamond rock is crushed, washed, and sorted. Four pieces of rock become one rough diamond plus gravel. Cutting and polishing do not create extra diamonds. Silver ore becomes a silver bar before it can be used in a ring. Ten jewellery recipes are in the bench. The shop buys goods at fixed coin prices. Customer orders are a short scripted list.
+
+There is no live ranking server. The practice total on the device is labeled as practice.
 
 ## What this version leaves out
 
-Multiplayer, chat, guilds, leaderboards, subscriptions, a live server, forced interstitials, a required login, and in-app purchases. The release is ad-free. Only editor/development builds have a labeled local reward test.
+Multiplayer, chat, trading, a public map of other players, subscriptions, a required login, and in-app purchases. The release is ad-free. Only editor/development builds have a labeled local reward test. A production leaderboard is not enabled.
 
 ## Family audience and orders
 

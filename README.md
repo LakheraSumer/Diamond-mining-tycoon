@@ -38,7 +38,7 @@ The script stops if `D:\Unity\6000.3.26f1\Editor\Unity.exe` is missing. A releas
 
 ## Current verification
 
-Updated 20 October 2026: 62 automated tests and the installed Unity API compiler checks pass. The normal desktop Unity Editor successfully imported the project and entered Play mode; mining input and increasing ore were observed. The earlier restricted-environment license error is superseded for desktop play. Mobile builds, portrait layout QA and device testing remain pending. See `Docs/Release-Readiness.md` and `Docs/ENVIRONMENT.md`.
+Updated 24 October 2026: 84 automated tests passed, and the Unity API compiler check passed for the yard code. The 20 October desktop Play check still stands for the older mine screen. The yard itself has not had a new Play-mode or phone pass. Mobile builds remain pending. See `Docs/PROJECT-STATUS.md`.
 
 The owner targets ages 5+, mainly children. Release builds have no production ads, accounts or purchases. Six gem-box orders are under Goals. The supplied APK is Uptodown App Store, not Lumber Inc; see `analysis/REFERENCE_FINDINGS.md`. The game remains an original implementation.
 

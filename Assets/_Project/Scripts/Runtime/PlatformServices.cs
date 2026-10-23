@@ -22,9 +22,9 @@ namespace DiamondMine.Runtime
         {
             float width = Mathf.Max(1f, Screen.width);
             float height = Mathf.Max(1f, Screen.height);
-            float portraitAspect = height / width;
-            float shortSide = Mathf.Min(width, height);
-            return portraitAspect < 1.7f || shortSide >= 1600f;
+            // A portrait tablet still needs a full-width, readable upgrade page.
+            // Pixel density alone must not turn a high-resolution phone into a sidebar layout.
+            return width / height >= 1.15f;
         }
 
         public static bool HapticsSupported()
@@ -74,11 +74,11 @@ namespace DiamondMine.Runtime
             switch (Application.internetReachability)
             {
                 case NetworkReachability.NotReachable:
-                    return "No network. The mine still runs. Test rewards stay on this device.";
+                    return "Offline. Your mine keeps working. Progress stays on this device.";
                 case NetworkReachability.ReachableViaCarrierDataNetwork:
-                    return "Mobile data is available. This build does not send gameplay or ads.";
+                    return "Connected. You can also play offline. Progress stays on this device.";
                 default:
-                    return "A local network is available. This build does not send gameplay or ads.";
+                    return "Connected. You can also play offline. Progress stays on this device.";
             }
         }
     }

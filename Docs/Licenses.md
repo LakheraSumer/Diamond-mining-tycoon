@@ -16,5 +16,8 @@
 | REA 6.7.0 | Supplied MIT-licensed checkout with its own third-party notices | Local static analysis tooling only; never part of Assets/player |
 | AdMob, analytics, crash-reporting or payment SDK | Not included | No production use |
 | Paid art/audio/obfuscator packs | None purchased | No use |
+| Yard puppet, bunker markers, 12 crew palettes | Original procedural meshes in YardWorld.cs. Shared rig, color and accessory swaps. No downloaded model or animation clip | In the player |
+| Character sheets under Docs/characters | Original SVG geometry from tools/New-CharacterSheets.ps1. Design references only | Not shipped in the player |
+| Journey balance, world generator, jewellery recipes | Original project data in JourneyCatalog.cs and WorldGenerator.cs | In the player |
 
 Reference APKs and analysis output remain under analysis, outside production Assets. No extracted proprietary code, graphics, models, dialogue, layouts, music or credentials were copied into the game. Keep package/tool notices and re-audit provenance when adding any third-party asset or SDK. Final artwork/name and license eligibility need owner review; no claim is made that a Unity license was activated by installing the editor.

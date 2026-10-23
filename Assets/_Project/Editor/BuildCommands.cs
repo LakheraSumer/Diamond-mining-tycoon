@@ -49,7 +49,6 @@ namespace DiamondMine.Editor
             PlayerSettings.SetScriptingBackend(NamedBuildTarget.Android, ScriptingImplementation.IL2CPP);
             PlayerSettings.SetScriptingBackend(NamedBuildTarget.iOS, ScriptingImplementation.IL2CPP);
             PlayerSettings.SetIl2CppCompilerConfiguration(NamedBuildTarget.Android, Il2CppCompilerConfiguration.Release);
-            PlayerSettings.SetIl2CppCompilerConfiguration(NamedBuildTarget.iOS, Il2CppCompilerConfiguration.Release);
 
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel25;
             PlayerSettings.Android.targetSdkVersion = AndroidSdkVersions.AndroidApiLevel36;
@@ -84,12 +83,27 @@ namespace DiamondMine.Editor
         public static void BuildAndroidApk()
         {
             ApplyPlayerSettings();
+            PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.diamondmine.tycoon.qa");
+            PlayerSettings.bundleVersion = Branding.Version + "-qa-dev";
+            PlayerSettings.productName = Branding.WorkingTitle + " QA Dev";
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64 | AndroidArchitecture.X86_64;
             EditorUserBuildSettings.buildAppBundle = false;
             EditorUserBuildSettings.development = true;
             Build(BuildTarget.Android, "Builds/Android/DiamondMineTycoon-" + Branding.Version + "-dev.apk", BuildOptions.Development, "android-apk");
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
             EditorUserBuildSettings.development = false;
+        }
+
+        public static void BuildAndroidReleaseQa()
+        {
+            ApplyPlayerSettings();
+            PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.diamondmine.tycoon.qa");
+            PlayerSettings.bundleVersion = Branding.Version + "-qa";
+            PlayerSettings.productName = Branding.WorkingTitle + " QA";
+            PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64 | AndroidArchitecture.X86_64;
+            EditorUserBuildSettings.buildAppBundle = false;
+            EditorUserBuildSettings.development = false;
+            Build(BuildTarget.Android, "Builds/Android/DiamondMineTycoon-" + Branding.Version + "-qa-release.apk", BuildOptions.None, "android-qa-release");
         }
 
         public static void BuildAndroidAab()
@@ -146,10 +160,12 @@ namespace DiamondMine.Editor
         static void Build(BuildTarget target, string relativePath, BuildOptions options, string label)
         {
             string project = Directory.GetCurrentDirectory();
-            string output = Path.Combine(project, relativePath.Replace('/', Path.DirectorySeparatorChar));
+            string artifactRoot = Environment.GetEnvironmentVariable("DIAMOND_ARTIFACT_ROOT");
+            if (string.IsNullOrEmpty(artifactRoot)) artifactRoot = project;
+            string output = Path.Combine(artifactRoot, relativePath.Replace('/', Path.DirectorySeparatorChar));
             string folder = target == BuildTarget.iOS ? output : Path.GetDirectoryName(output);
             Directory.CreateDirectory(folder);
-            string notePath = Path.Combine(project, "Builds", label + "-manifest.txt");
+            string notePath = Path.Combine(artifactRoot, "Builds", label + "-manifest.txt");
             Directory.CreateDirectory(Path.GetDirectoryName(notePath));
             File.WriteAllText(notePath,
                 "product=" + Branding.WorkingTitle + "\n" +
@@ -157,8 +173,15 @@ namespace DiamondMine.Editor
                 "build=" + Branding.BuildNumber + "\n" +
                 "unity=" + Application.unityVersion + "\n" +
                 "target=" + target + "\n" +
+                "applicationId=" + PlayerSettings.GetApplicationIdentifier(target == BuildTarget.Android ? NamedBuildTarget.Android : NamedBuildTarget.iOS) + "\n" +
+                "bundleVersion=" + PlayerSettings.bundleVersion + "\n" +
+                "development=" + ((options & BuildOptions.Development) != 0) + "\n" +
+                "androidArchitectures=" + PlayerSettings.Android.targetArchitectures + "\n" +
+                "androidMinApi=" + PlayerSettings.Android.minSdkVersion + "\n" +
+                "androidTargetApi=" + PlayerSettings.Android.targetSdkVersion + "\n" +
+                "scriptingBackend=IL2CPP\n" +
+                "portrait=" + PlayerSettings.defaultInterfaceOrientation + "\n" +
                 "output=" + output + "\n" +
-                "androidTools=" + AndroidTools() + "\n" +
                 "startedUtc=" + DateTime.UtcNow.ToString("o") + "\n");
 
             var playerOptions = new BuildPlayerOptions
@@ -170,7 +193,10 @@ namespace DiamondMine.Editor
             };
             UnityEditor.Build.Reporting.BuildReport report;
             using (var tools = new ProjectAndroidTools(target))
+            {
+                File.AppendAllText(notePath,"effectiveAndroidTools=" + AndroidTools() + "\n");
                 report = BuildPipeline.BuildPlayer(playerOptions);
+            }
             bool ok = report.summary.result == UnityEditor.Build.Reporting.BuildResult.Succeeded;
             File.AppendAllText(notePath,
                 "result=" + report.summary.result + "\n" +
@@ -223,7 +249,17 @@ namespace DiamondMine.Editor
             }
             public void Dispose()
             {
-                foreach (var property in previous) property.Key.SetValue(null, property.Value, null);
+                foreach (var property in previous)
+                {
+                    string original = property.Value as string;
+                    if (string.IsNullOrEmpty(original) || !Directory.Exists(original))
+                    {
+                        Debug.Log("Previous Android " + property.Key.Name + " was unconfigured or unavailable; retaining the verified project-local tool path.");
+                        continue;
+                    }
+                    try { property.Key.SetValue(null, property.Value, null); }
+                    catch (Exception ex) { Debug.LogWarning("Could not restore Android " + property.Key.Name + ": " + ex.Message); }
+                }
                 previous.Clear();
             }
         }

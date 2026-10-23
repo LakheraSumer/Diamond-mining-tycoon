@@ -8,7 +8,7 @@ namespace DiamondMine.Runtime
     public static class UiTheme
     {
         public static readonly Color Ink = new Color(0.12f, 0.08f, 0.07f, 0.94f);
-        public static readonly Color Panel = new Color(0.22f, 0.15f, 0.12f, 0.97f);
+        public static readonly Color Panel = new Color(0.22f, 0.15f, 0.12f, 1f);
         public static readonly Color Paper = new Color(0.96f, 0.9f, 0.82f, 1f);
         public static readonly Color Muted = new Color(0.8f, 0.72f, 0.62f, 1f);
         public static readonly Color Diamond = new Color(0.25f, 0.78f, 0.84f, 1f);
@@ -122,6 +122,7 @@ namespace DiamondMine.Runtime
             navigation.mode = Navigation.Mode.None;
             button.navigation = navigation;
             button.targetGraphic = rect.GetComponent<Image>();
+            button.targetGraphic.color = Color.white;
             if (onClick != null)
                 button.onClick.AddListener(onClick);
             Text caption = Label(rect, label, 32, UiTheme.Paper, TextAnchor.MiddleCenter);
