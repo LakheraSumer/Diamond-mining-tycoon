@@ -1,0 +1,306 @@
+{
+  "script_sha256": "b6b3a9eeea0ca43c32a3bcfae6620f661d59e2a527d8a3d8a8b8c2f75dedeeff",
+  "notes": "Actual model face thumbnails. They do not certify likeness to the original character roster.",
+  "portraits": [
+    {
+      "id": "tavi",
+      "source": "ArtSource/Characters/Tavi/07_Face.png",
+      "source_sha256": "87f6614c447b9e41e3bb529fa3830ecd332f4bdea87bb8f5baaff54ba9d12ec9",
+      "kind": "Circular thumbnail crop of actual Blender model face render",
+      "modification": "UI thumbnail resize, circular alpha and narrow ivory rim only; original face render is unchanged.",
+      "outputs": [
+        {
+          "file": "Assets/_Project/Resources/Ui/crew_avatar_tavi.png",
+          "sha256": "ab40f789c6f5f0a63c927242bdcb2da47f67c5f1b330c2adc4ed070842628fc0",
+          "size": [
+            256,
+            256
+          ]
+        },
+        {
+          "file": "ArtSource/UI/Portraits/crew_avatar_tavi-128.png",
+          "sha256": "d3413e1e18fe4f04ca911b57d4fb7d2f6708e7f0744703ea04ab80debc1575f5",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mira",
+      "source": "ArtSource/Characters/Mira/07_Face.png",
+      "source_sha256": "0c05c0d590c86c2eb874a5c1b18a6d854bcdac8947a65039cfd82d4acde9dba8",
+      "kind": "Circular thumbnail crop of actual Blender model face render",
+      "modification": "UI thumbnail resize, circular alpha and narrow ivory rim only; original face render is unchanged.",
+      "outputs": [
+        {
+          "file": "Assets/_Project/Resources/Ui/crew_avatar_mira.png",
+          "sha256": "7f3f9dca0261f47aff70f2c332fe51c9019ecc3457e27bfb48986adaee238ce1",
+          "size": [
+            256,
+            256
+          ]
+        },
+        {
+          "file": "ArtSource/UI/Portraits/crew_avatar_mira-128.png",
+          "sha256": "ee7805fc4aa42319b66acfb2360d7bd9833493d80f27f9228446f62cda688fd9",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oren",
+      "source": "ArtSource/Characters/Oren/07_Face.png",
+      "source_sha256": "6c81cd2b8747074cb534ae8a36136ab87208c13d248cff0ce915aaf1f274294c",
+      "kind": "Circular thumbnail crop of actual Blender model face render",
+      "modification": "UI thumbnail resize, circular alpha and narrow ivory rim only; original face render is unchanged.",
+      "outputs": [
+        {
+          "file": "Assets/_Project/Resources/Ui/crew_avatar_oren.png",
+          "sha256": "5e2bebfba901777ed6d9dbe94841896629f4fa8ffdad71cc95d9dfc9b374899b",
+          "size": [
+            256,
+            256
+          ]
+        },
+        {
+          "file": "ArtSource/UI/Portraits/crew_avatar_oren-128.png",
+          "sha256": "3cc25cfb86276a17a1ce6af8d7159d74209af3267b3e8e714803fc70176bd61a",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zela",
+      "source": "ArtSource/Characters/Zela/07_Face.png",
+      "source_sha256": "30e07d9bf83df0c53686e31e4e54078419cdd0d0551f4bba48cbb8df6694ea71",
+      "kind": "Circular thumbnail crop of actual Blender model face render",
+      "modification": "UI thumbnail resize, circular alpha and narrow ivory rim only; original face render is unchanged.",
+      "outputs": [
+        {
+          "file": "Assets/_Project/Resources/Ui/crew_avatar_zela.png",
+          "sha256": "7907c3d26c49f72cbc836548a1044bb29681f3a7e7d009f32f875df58fc0334a",
+          "size": [
+            256,
+            256
+          ]
+        },
+        {
+          "file": "ArtSource/UI/Portraits/crew_avatar_zela-128.png",
+          "sha256": "6b33e8643b51c59856cec6ac4c967dd160f96c8aaac66a3f9658c3dccc2876e1",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pavi",
+      "source": "ArtSource/Characters/Pavi/07_Face.png",
+      "source_sha256": "c4c992c85190cd8821f5c81b3b68187928b1078efa67d1f57e68cd429d4ae969",
+      "kind": "Circular thumbnail crop of actual Blender model face render",
+      "modification": "UI thumbnail resize, circular alpha and narrow ivory rim only; original face render is unchanged.",
+      "outputs": [
+        {
+          "file": "Assets/_Project/Resources/Ui/crew_avatar_pavi.png",
+          "sha256": "5e11bef310f54df22fa97a12f9bf117d801775d452cac97a9ef3fc699961b1a7",
+          "size": [
+            256,
+            256
+          ]
+        },
+        {
+          "file": "ArtSource/UI/Portraits/crew_avatar_pavi-128.png",
+          "sha256": "50e1ee20b176b9fdf384d3cddb132721785671ddc0c6bdf2a6e8b3f7de2b3935",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nilo",
+      "source": "ArtSource/Characters/Nilo/07_Face.png",
+      "source_sha256": "499254e4533628cf7833d9d97872c4b531f19c71c1f02c5cf9df1d713ac29764",
+      "kind": "Circular thumbnail crop of actual Blender model face render",
+      "modification": "UI thumbnail resize, circular alpha and narrow ivory rim only; original face render is unchanged.",
+      "outputs": [
+        {
+          "file": "Assets/_Project/Resources/Ui/crew_avatar_nilo.png",
+          "sha256": "35080580374c80a8f3017523b625bc5fad8a080d9d4d388a42dd5870c92d9d42",
+          "size": [
+            256,
+            256
+          ]
+        },
+        {
+          "file": "ArtSource/UI/Portraits/crew_avatar_nilo-128.png",
+          "sha256": "495a00bc0dd54977a926ad729b5809319d4051b32802b3e702e6d7cd23af0b7b",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "etta",
+      "source": "ArtSource/Characters/Etta/07_Face.png",
+      "source_sha256": "31e074ce662784a51a0a2179adcd25d8fcfbf801805999d861c6ee9b294bbebc",
+      "kind": "Circular thumbnail crop of actual Blender model face render",
+      "modification": "UI thumbnail resize, circular alpha and narrow ivory rim only; original face render is unchanged.",
+      "outputs": [
+        {
+          "file": "Assets/_Project/Resources/Ui/crew_avatar_etta.png",
+          "sha256": "daa9d28d87248593c9048514a5dc1ec0d29846efdb92698c78133915121456a2",
+          "size": [
+            256,
+            256
+          ]
+        },
+        {
+          "file": "ArtSource/UI/Portraits/crew_avatar_etta-128.png",
+          "sha256": "94f6c178882edd61f032b9b8b88e0656b9e19816e61afbad169a33024b27f5a2",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rumi",
+      "source": "ArtSource/Characters/Rumi/07_Face.png",
+      "source_sha256": "cb6055211e97a739205c3f09e53f307574a9dfce278ec19fe20781b809e0fc41",
+      "kind": "Circular thumbnail crop of actual Blender model face render",
+      "modification": "UI thumbnail resize, circular alpha and narrow ivory rim only; original face render is unchanged.",
+      "outputs": [
+        {
+          "file": "Assets/_Project/Resources/Ui/crew_avatar_rumi.png",
+          "sha256": "aa12195493dbf52b2b4c5efc715d297085e7de986070c8d371084916351b2516",
+          "size": [
+            256,
+            256
+          ]
+        },
+        {
+          "file": "ArtSource/UI/Portraits/crew_avatar_rumi-128.png",
+          "sha256": "1fbadf42abf941277e7d8c462bf9cf1fd6e00de2214312aa81e13e69e4f25922",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kavi",
+      "source": "ArtSource/Characters/Kavi/07_Face.png",
+      "source_sha256": "0ad502fa52cb37b4970a964353f14209b201cefddeeb317d71741380ebc40984",
+      "kind": "Circular thumbnail crop of actual Blender model face render",
+      "modification": "UI thumbnail resize, circular alpha and narrow ivory rim only; original face render is unchanged.",
+      "outputs": [
+        {
+          "file": "Assets/_Project/Resources/Ui/crew_avatar_kavi.png",
+          "sha256": "f6c31f97da08532edd6ba840a87fa26fd47c95700a59cf064170d98993b4c1d3",
+          "size": [
+            256,
+            256
+          ]
+        },
+        {
+          "file": "ArtSource/UI/Portraits/crew_avatar_kavi-128.png",
+          "sha256": "5888ea1d671ecd0947574ba3f9fc236b51ffc5853fc66df70cbb3c9b0577a5d8",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sola",
+      "source": "ArtSource/Characters/Sola/07_Face.png",
+      "source_sha256": "892fc60bad46f69da79b087094f7482b40f198496efafa37927a69cda3d477c7",
+      "kind": "Circular thumbnail crop of actual Blender model face render",
+      "modification": "UI thumbnail resize, circular alpha and narrow ivory rim only; original face render is unchanged.",
+      "outputs": [
+        {
+          "file": "Assets/_Project/Resources/Ui/crew_avatar_sola.png",
+          "sha256": "71ec1c1bd29b332c953cf51cf0cef61f9da5087981380b747b5fb17599400ecd",
+          "size": [
+            256,
+            256
+          ]
+        },
+        {
+          "file": "ArtSource/UI/Portraits/crew_avatar_sola-128.png",
+          "sha256": "766802c8838f3e0534da0966607352ecb04bbe6f3ba1a5dc8661e841f3ea9aad",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beni",
+      "source": "ArtSource/Characters/Beni/07_Face.png",
+      "source_sha256": "b34f4a7a1421305440ccc8430930bf02567dd638ef3c3e13e331711380fb3945",
+      "kind": "Circular thumbnail crop of actual Blender model face render",
+      "modification": "UI thumbnail resize, circular alpha and narrow ivory rim only; original face render is unchanged.",
+      "outputs": [
+        {
+          "file": "Assets/_Project/Resources/Ui/crew_avatar_beni.png",
+          "sha256": "fbde4ff5549e6acaf4a378fdfa81e6c5db82a1ca82b23cbd2d02febad1c63913",
+          "size": [
+            256,
+            256
+          ]
+        },
+        {
+          "file": "ArtSource/UI/Portraits/crew_avatar_beni-128.png",
+          "sha256": "417fbc53cae35549ed9b5309603f3e7ac1b8bcf3177b7b3b948a429b593b335b",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daro",
+      "source": "ArtSource/Characters/Daro/07_Face.png",
+      "source_sha256": "47c356d8abb54a21e8cd7b95b9b30bfdc611eed76f7fe565f49412fc2e5ae333",
+      "kind": "Circular thumbnail crop of actual Blender model face render",
+      "modification": "UI thumbnail resize, circular alpha and narrow ivory rim only; original face render is unchanged.",
+      "outputs": [
+        {
+          "file": "Assets/_Project/Resources/Ui/crew_avatar_daro.png",
+          "sha256": "46e106047c5c34fbe1466289a10645c8e4b4df564f68ae4c9d572115169b0cc0",
+          "size": [
+            256,
+            256
+          ]
+        },
+        {
+          "file": "ArtSource/UI/Portraits/crew_avatar_daro-128.png",
+          "sha256": "9bda2ba50bef8dc51a73ab4884d444dec631112cd264b49bae6f7c8c2d48c669",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    }
+  ]
+}

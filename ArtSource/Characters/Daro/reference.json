@@ -1,0 +1,213 @@
+{
+  "id": "daro",
+  "name": "Daro",
+  "source_crop_rect_xyxy": [
+    858,
+    346,
+    1024,
+    644
+  ],
+  "source_crop_dimensions": [
+    166,
+    298
+  ],
+  "source_crop_sha256": "30b497b555e4604e8b6ea8ff051bc8a35f4af256617b9986a4ae45a69f1c6637",
+  "decoded_pixel_copy_verified": true,
+  "auxiliary_source": "D:\\games\\chartcter image\\j.png",
+  "auxiliary_sha256": "a9cda929b5b62a9d27422efd47d974af59d4d0c85354774db1759ec8b36d50bb",
+  "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+  "source_palette": [
+    {
+      "rgb": [
+        249,
+        233,
+        212
+      ],
+      "pixels": 4426
+    },
+    {
+      "rgb": [
+        116,
+        91,
+        61
+      ],
+      "pixels": 4320
+    },
+    {
+      "rgb": [
+        163,
+        130,
+        95
+      ],
+      "pixels": 4215
+    },
+    {
+      "rgb": [
+        78,
+        57,
+        39
+      ],
+      "pixels": 4100
+    },
+    {
+      "rgb": [
+        88,
+        79,
+        62
+      ],
+      "pixels": 3877
+    },
+    {
+      "rgb": [
+        119,
+        115,
+        85
+      ],
+      "pixels": 3628
+    },
+    {
+      "rgb": [
+        45,
+        33,
+        23
+      ],
+      "pixels": 3265
+    },
+    {
+      "rgb": [
+        183,
+        188,
+        176
+      ],
+      "pixels": 2406
+    }
+  ],
+  "labelled_source_samples": [
+    {
+      "label": "Mustard helmet",
+      "crop_pixel_rect_xyxy": [
+        61,
+        19,
+        66,
+        24
+      ],
+      "rgb": [
+        190,
+        137,
+        79
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Skin",
+      "crop_pixel_rect_xyxy": [
+        89,
+        42,
+        94,
+        47
+      ],
+      "rgb": [
+        223,
+        136,
+        103
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Facial hair",
+      "crop_pixel_rect_xyxy": [
+        84,
+        54,
+        89,
+        59
+      ],
+      "rgb": [
+        160,
+        119,
+        99
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Olive overalls",
+      "crop_pixel_rect_xyxy": [
+        105,
+        173,
+        110,
+        178
+      ],
+      "rgb": [
+        97,
+        92,
+        50
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark shirt",
+      "crop_pixel_rect_xyxy": [
+        136,
+        79,
+        141,
+        84
+      ],
+      "rgb": [
+        249,
+        242,
+        232
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Work glove",
+      "crop_pixel_rect_xyxy": [
+        146,
+        128,
+        151,
+        133
+      ],
+      "rgb": [
+        135,
+        104,
+        72
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Brown boot",
+      "crop_pixel_rect_xyxy": [
+        129,
+        273,
+        134,
+        278
+      ],
+      "rgb": [
+        74,
+        54,
+        47
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Turquoise blueprint",
+      "crop_pixel_rect_xyxy": [
+        34,
+        86,
+        39,
+        91
+      ],
+      "rgb": [
+        100,
+        199,
+        236
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    }
+  ],
+  "decisions": [
+    "Retain the original mustard helmet, glasses, beard, olive overalls, dark shirt, pale rolled cuffs, turquoise blueprint and dark planning board.",
+    "The auxiliary square frames and overall fittings are useful, but any hidden belt tool additions remain reconstructed.",
+    "Back strap and rear pocket details cannot be verified from the roster."
+  ],
+  "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+}

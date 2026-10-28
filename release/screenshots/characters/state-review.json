@@ -1,0 +1,1565 @@
+{
+    "states": [
+        {
+            "character_id": "tavi",
+            "state": "Idle",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/tavi-idle.png",
+                    "sha256": "36d36688dfcd654f57cad11624241851ee515d809cc54dae659b632357ee016c",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "tavi",
+            "state": "Walk",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/tavi-walk.png",
+                    "sha256": "9dc10a4c5e907c0ff46cc9afffc460639ccb84a4bce4bb9cd9eeb13a0e7bad07",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "tavi",
+            "state": "Run",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/tavi-run.png",
+                    "sha256": "050b1a5c49235e4f996fb0abb56876211236a6061e777727882f54e64c43e88c",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "tavi",
+            "state": "Mine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/tavi-mine.png",
+                    "sha256": "b1bab3bd360b275198f5e5b7ccbacf578a7cd7b68b69c7da5f3e78c13c6a4f9a",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "tavi",
+            "state": "Carry",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/tavi-carry.png",
+                    "sha256": "f57f54ca8c15abfe3be367f99fbfa44cb9980c9e19bb7a679b27de0d7bf9d750",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "tavi",
+            "state": "Collect",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/tavi-collect.png",
+                    "sha256": "be55f180205b30aa894a0ae3a5b68efbf846541c4e161257027b41a96b3db6e3",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "tavi",
+            "state": "Wave",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/tavi-wave.png",
+                    "sha256": "e126d27d9399ca2839129e930e09334ecb0acfe49b3b175bb88b4edeb37ee8c7",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "tavi",
+            "state": "Celebrate",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/tavi-celebrate.png",
+                    "sha256": "c8a8e088ed7a1223272200ea1cba4ec6da64bfecbbcf0e7f4bf5218f992c2762",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "tavi",
+            "state": "Machine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/tavi-machine.png",
+                    "sha256": "28e00d688980a91e8c6e92727eca90f690bb56fd57cb10ebb7486204b3877656",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "tavi",
+            "state": "Craft",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/tavi-craft.png",
+                    "sha256": "7d6928740d4d6467bfb96d3856b7c573eb1711a0a6312b4c9c19502180972948",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "mira",
+            "state": "Idle",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/mira-idle.png",
+                    "sha256": "43c2f19b3dd7b7226bec07703e3876366b1a719d0d29972399e6c5168766aa32",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "mira",
+            "state": "Walk",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/mira-walk.png",
+                    "sha256": "f7c2b424833b574600bfeca4bac1f86b4c8d0eca484a6c28badae5330466bfe6",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "mira",
+            "state": "Run",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/mira-run.png",
+                    "sha256": "6cae56373c72cbd79847e4959bb3e805a9eb7ec66dcd6221fb5d226b7594b0c8",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "mira",
+            "state": "Mine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/mira-mine.png",
+                    "sha256": "d3ff8b09ea92e01b306b148b115e274d23ec050e7eec6687e5fe83d3af8f74ce",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "mira",
+            "state": "Carry",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/mira-carry.png",
+                    "sha256": "6f056dea991617fda17321582794eb8cce07bc7ae93247c026998ddc4f620e0e",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "mira",
+            "state": "Collect",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/mira-collect.png",
+                    "sha256": "a7a6ea15b86d273ee436ce889e5d6c9176ebf0e5fa4b726b113a179917afc59c",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "mira",
+            "state": "Wave",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/mira-wave.png",
+                    "sha256": "e2c3e6a1578ca8782317002d32fab90b3f2508f19773d761a42ce01dfcedd497",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "mira",
+            "state": "Celebrate",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/mira-celebrate.png",
+                    "sha256": "b5c2aeb0eb5c9bff36acab05b87bd8a6cf28e8696ad928e21ccec715aef71390",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "mira",
+            "state": "Machine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/mira-machine.png",
+                    "sha256": "d3399b66079532d414bc31e7fb99b3f2649804ebdef05ed800fb58675be1574f",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "mira",
+            "state": "Craft",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/mira-craft.png",
+                    "sha256": "b69e78489de468b5e9cd1efa300f3c17b1a37d9762168f2ddc8841cfc244f664",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "oren",
+            "state": "Idle",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/oren-idle.png",
+                    "sha256": "48e0584617d06d462a9e277c83c551167f94712eda241cc2a8be12e02b4a3c76",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "oren",
+            "state": "Walk",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/oren-walk.png",
+                    "sha256": "a31e3d47980b86937bcd757cda74cf9140ce7dfd0473a49aa0a8e5331b161515",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "oren",
+            "state": "Run",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/oren-run.png",
+                    "sha256": "8791f47aa09faa73fc0d6c163e32e3c9f523c8031639b6e3e232294ead857888",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "oren",
+            "state": "Mine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/oren-mine.png",
+                    "sha256": "7e3cff27c8a01749e2ab71ec05ebf626e36c079c374d1da2a0ce0a2ccb70bf6c",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "oren",
+            "state": "Carry",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/oren-carry.png",
+                    "sha256": "a5730c5df52493b806cf48c78f96c9ddcc6b0a606f122901d83c66807ceaf40c",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "oren",
+            "state": "Collect",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/oren-collect.png",
+                    "sha256": "83e1c2eda4249643d012d8821c7649ebc24a081157dc8c207af6d831fcc24af0",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "oren",
+            "state": "Wave",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/oren-wave.png",
+                    "sha256": "bbd4c55923e02d773b1e7c98ebb2cbfbe4f6b5782e05d01c4a567cfa8fe7f805",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "oren",
+            "state": "Celebrate",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/oren-celebrate.png",
+                    "sha256": "79941adbc5753b05544fec02dc71ed00530b3681a55e3f27428a5ab3ce9c6b60",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "oren",
+            "state": "Machine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/oren-machine.png",
+                    "sha256": "e12527e67286c1ad6d8549e6f07d292500023caaf1079059737a242e7c9e8aca",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "oren",
+            "state": "Craft",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/oren-craft.png",
+                    "sha256": "4d893204757dc02163336254d66bdfa873afec23f2b704a8204bff01e857a7fe",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "sola",
+            "state": "Idle",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/sola-idle.png",
+                    "sha256": "41dd3404292620f4ee11ff13c678f2c2ef37eb4cd9e7305d633b71d2347a95ae",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "sola",
+            "state": "Walk",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/sola-walk.png",
+                    "sha256": "ea3391395ab9ff5a814d2ea4a130074911daacc6a7f92dd569dd87e37ec94b93",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "sola",
+            "state": "Run",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/sola-run.png",
+                    "sha256": "f763082a8b1b58094459d7d53bc9531f4510c9f3d069d7aed2bc1043e9c94a72",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "sola",
+            "state": "Mine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/sola-mine.png",
+                    "sha256": "f28d22e6510ed265f836fbb57b732c0a560c47ace3a1fe252cf23e0e4f056cba",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "sola",
+            "state": "Carry",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/sola-carry.png",
+                    "sha256": "ee11d46e33842964d20d973f5882d9bfbaf07e74fafaf55b1c6a881e4224bcca",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "sola",
+            "state": "Collect",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/sola-collect.png",
+                    "sha256": "d9fd71618b365be2a3c22900917dfba0cf1fe7eecdcdb76b21d93fff4b4eb669",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "sola",
+            "state": "Wave",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/sola-wave.png",
+                    "sha256": "1a54562b16f0a4af1f6f34cef5aa2945b1ae138067932a9ccbf9c9cd43539717",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "sola",
+            "state": "Celebrate",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/sola-celebrate.png",
+                    "sha256": "5789f969c7ff259a7c94d5a5bc373e7613bbb2b3d1999ae896e10968dde36afb",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "sola",
+            "state": "Machine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/sola-machine.png",
+                    "sha256": "c0ec2bafada25d13267eec0f3e9d1c37b1756187984aca47de46c7c7fbef2968",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "sola",
+            "state": "Craft",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/sola-craft.png",
+                    "sha256": "484f1e18c2267a566d2d25933ec1fbe045e8abc415b27ae2c0c2f83b6cb390f6",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "zela",
+            "state": "Idle",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/zela-idle.png",
+                    "sha256": "38a0ed3eb594caf25ddbac3a62507fbfb1fbb87a0ffddc150c27449bb94234e0",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "zela",
+            "state": "Walk",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/zela-walk.png",
+                    "sha256": "0f4dbf7f89c14c85bc994864e92e24fa6dbf67b662725c0337077ed46eca9f9b",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "zela",
+            "state": "Run",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/zela-run.png",
+                    "sha256": "2bf0f6edb003e74f6c1712609d9c2973a5fd5b35bbe0738988904610b05d4bf7",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "zela",
+            "state": "Mine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/zela-mine.png",
+                    "sha256": "97515d3e08ef4f865a2873f9e9c151a5fb22e7e7cf7201f87d67193c2ba03ce7",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "zela",
+            "state": "Carry",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/zela-carry.png",
+                    "sha256": "b989542d76ce540927c1e34cd3efc7b2d0f3ba475544af6149f917baae273c87",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "zela",
+            "state": "Collect",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/zela-collect.png",
+                    "sha256": "3430660e1c07111cc05f90dcec90ea097b88908519423308a9d8c438630740de",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "zela",
+            "state": "Wave",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/zela-wave.png",
+                    "sha256": "753f9c8c0a3221a420fe73fedb7a51abe6e9f09d07c4aaccea560084a68304e2",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "zela",
+            "state": "Celebrate",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/zela-celebrate.png",
+                    "sha256": "3504ed3283de590cdefea687ebf28cc479d5f0c0d79b65e111b0cc9a3421d601",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "zela",
+            "state": "Machine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/zela-machine.png",
+                    "sha256": "4c4c40b3f1abb4d1e9e7edc15cfede75ab7700c999cc488450780621566c32e6",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "zela",
+            "state": "Craft",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/zela-craft.png",
+                    "sha256": "98aef0bbb448f53378c21fc6e1f7d746bc52b73c2d9daf3fd0c14f0abf5d512b",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "pavi",
+            "state": "Idle",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/pavi-idle.png",
+                    "sha256": "37035f7dfcf1b8bd28530a6b689f97d03264902bb5818c224879a8caf836ccce",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "pavi",
+            "state": "Walk",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/pavi-walk.png",
+                    "sha256": "a55047b91cc7feb6a9bb7064d7b2456b2041a82d03703521cf2a7d7671e80124",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "pavi",
+            "state": "Run",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/pavi-run.png",
+                    "sha256": "956be043acde39a1568323d5d491d360aa25225ef80b320601e85b100541cd9b",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "pavi",
+            "state": "Mine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/pavi-mine.png",
+                    "sha256": "d6e41327f973c55ec6541f3cf80730a1bac5a6fde1c17d52901dbdb312ea45c9",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "pavi",
+            "state": "Carry",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/pavi-carry.png",
+                    "sha256": "b8e8431024797938821fdcde91a5ca8662d5ab7c077ee18e0d14a757398d0d07",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "pavi",
+            "state": "Collect",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/pavi-collect.png",
+                    "sha256": "e806041c0fbebf5bc72ad1da71aa629cea393e6589b488dd10a4dca3f6bbeaa0",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "pavi",
+            "state": "Wave",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/pavi-wave.png",
+                    "sha256": "106e781fd2357363b68526fe8e2da01669665e555d265a47b73517a6508f124a",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "pavi",
+            "state": "Celebrate",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/pavi-celebrate.png",
+                    "sha256": "a3b087ed427f526850bc0f8890d512ba935ce222e03ebf5b606bd00218316bc0",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "pavi",
+            "state": "Machine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/pavi-machine.png",
+                    "sha256": "3f9eccc045e16b574555020ffabf0784aa45b3c2b6e36744587c7c3147feb24d",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "pavi",
+            "state": "Craft",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/pavi-craft.png",
+                    "sha256": "f054cd674ea4185b11ab3af2a7124305835c5917a3c7063412ab7f28a85d3846",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "nilo",
+            "state": "Idle",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/nilo-idle.png",
+                    "sha256": "1f4a98632fdee711bc7fc698cb0fc9f0d722141a8b4fe5122416dc10ae12fa5a",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "nilo",
+            "state": "Walk",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/nilo-walk.png",
+                    "sha256": "5c359ca22292f7420298dc643aac8656bd76ea5e715fe1be8af749b08411407c",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "nilo",
+            "state": "Run",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/nilo-run.png",
+                    "sha256": "83848ba54a710a579841fa028f0dbbf30fa1ca23d89b997610b562f77496731a",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "nilo",
+            "state": "Mine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/nilo-mine.png",
+                    "sha256": "2743d04d07d9df8c42b28e6d6d767a64866f49c861b0a2a0fd6b7ae5747c1e1a",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "nilo",
+            "state": "Carry",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/nilo-carry.png",
+                    "sha256": "8b872c75c5c83ee7bb62b5b1c89e500209ad62cca1ea5dc62a4131fe942d5403",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "nilo",
+            "state": "Collect",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/nilo-collect.png",
+                    "sha256": "0eaf3844fbf41378efa2eaab1abbc3251334e7c85480b30a37f02543d7ce727c",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "nilo",
+            "state": "Wave",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/nilo-wave.png",
+                    "sha256": "2a887545593bf68313821fdb0ba2ef327ce8d3aa30a9d852a57d65e8caba1db6",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "nilo",
+            "state": "Celebrate",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/nilo-celebrate.png",
+                    "sha256": "40d330c917417e4b507746ae8a9564cb12578922e0edeb53154e67b4fb03bed4",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "nilo",
+            "state": "Machine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/nilo-machine.png",
+                    "sha256": "a679dfd688ab1344252a22b14d852a9036c9e44118e0931269c0d0f7d58a6a12",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "nilo",
+            "state": "Craft",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/nilo-craft.png",
+                    "sha256": "39e4a0052c84a77c323a0bdbf1361472365f79f8ed52cdf534ce69447e1bc935",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "etta",
+            "state": "Idle",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/etta-idle.png",
+                    "sha256": "2eeb34bdf81b49505b01ec24959f409f0f3a4be1a82b676fb2eefd6106241c6d",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "etta",
+            "state": "Walk",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/etta-walk.png",
+                    "sha256": "2bf50d12222b2b5b53f1fe8f7d76c9c32029b9c140dbaa4b5d2cd8be36322889",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "etta",
+            "state": "Run",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/etta-run.png",
+                    "sha256": "8fc01eab85bf6acc76e5c4a33897b8a5658412b6182f2ca8d2208ad5b47ac07b",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "etta",
+            "state": "Mine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/etta-mine.png",
+                    "sha256": "19324775df5efce24cd51318454af36f453aa83058378cf0e09ad012edcdf79d",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "etta",
+            "state": "Carry",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/etta-carry.png",
+                    "sha256": "c65d6652fb328e172f6b563db1c5832a5f3b54c632eaa921c3b5d449d0f04ebf",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "etta",
+            "state": "Collect",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/etta-collect.png",
+                    "sha256": "26477260b85d3d4d96f1e90f300e87727fa464f00c35150f7f268eec42216d6a",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "etta",
+            "state": "Wave",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/etta-wave.png",
+                    "sha256": "7c0788461565c9053a69b01c2ed0601805a1f1cf402531939f2bc2fdf14fa8f3",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "etta",
+            "state": "Celebrate",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/etta-celebrate.png",
+                    "sha256": "a4e394612422d15921d4d2e2911266be7ce7b0f23f29304a09568f63fbb13ccb",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "etta",
+            "state": "Machine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/etta-machine.png",
+                    "sha256": "ec04e6e414295efcef311709860ab884ea256f0588e7b98407749668bca66306",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "etta",
+            "state": "Craft",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/etta-craft.png",
+                    "sha256": "80f5f6a74f4579826a3a6085145f6d1bb1f2decb09cb22abc9afdebdd9377af9",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "rumi",
+            "state": "Idle",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/rumi-idle.png",
+                    "sha256": "3458f8273b0c0e7547e5e0ca8e584a3cb939cd3180338a8cf3c33d9f5b29b0f5",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "rumi",
+            "state": "Walk",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/rumi-walk.png",
+                    "sha256": "146d969f7901be9c821b96ca4a13f2a1aa3950a2e4850de7a19bec8fcb368913",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "rumi",
+            "state": "Run",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/rumi-run.png",
+                    "sha256": "a73be3ccdc53aeef28747913aae4a6c32cefe348bafa99fc876d08a9d571c79b",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "rumi",
+            "state": "Mine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/rumi-mine.png",
+                    "sha256": "e06590819903c5b16915e7cee1720a80d7d881c30e49c21d69d5b37ec6dbc0a5",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "rumi",
+            "state": "Carry",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/rumi-carry.png",
+                    "sha256": "b2932eabafd17185779b6d014e9d50844b66d72e37e00376d9996bd365d9e128",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "rumi",
+            "state": "Collect",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/rumi-collect.png",
+                    "sha256": "d7bac67dcd794e9de4c2c365607acce9d0fbfe24dbbbd9d8b7423435aa90d135",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "rumi",
+            "state": "Wave",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/rumi-wave.png",
+                    "sha256": "fd0e5e606400acfd8854a34906a5fee89df4f81a493f2d96b26d46fa753c90c0",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "rumi",
+            "state": "Celebrate",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/rumi-celebrate.png",
+                    "sha256": "4f30d3483fa67700e1d85a035e0da5f45cd96d6b9a2fa0bf16f00edbcecd6fc8",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "rumi",
+            "state": "Machine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/rumi-machine.png",
+                    "sha256": "0e934916b58654e5c4a1ec33bae9f23948d4461b3cd4c5dbeb6316af8221e6f2",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "rumi",
+            "state": "Craft",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/rumi-craft.png",
+                    "sha256": "f87d3f02ef65adf761029b1ae4586c8c42cd02c1b2594dd00244fba8aba631e3",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "kavi",
+            "state": "Idle",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/kavi-idle.png",
+                    "sha256": "682b6cc28d0a95e4891e09dcf4f78a66fa656dc0751130fdb3ab177c92e97d7c",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "kavi",
+            "state": "Walk",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/kavi-walk.png",
+                    "sha256": "8b02fa0898814448f5703486cdea99f177f6e060e2e84694e84f272cb698dc7f",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "kavi",
+            "state": "Run",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/kavi-run.png",
+                    "sha256": "65eb96c2d02053bc92b1326398b7a476d25164847900aa52fdd71bdecd6fb496",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "kavi",
+            "state": "Mine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/kavi-mine.png",
+                    "sha256": "e4e62238080f0a35d896161840f79e25292e7e5f2513d01a00851e718671fbd7",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "kavi",
+            "state": "Carry",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/kavi-carry.png",
+                    "sha256": "8d2b3b60e5c123d02d33cf428f66cec08e8a06238f3d0d70a5291c8d9cfd3a90",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "kavi",
+            "state": "Collect",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/kavi-collect.png",
+                    "sha256": "054cbc638685cd920930315c941f64b3228c84fc55cb104a1f70e307a2c50ead",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "kavi",
+            "state": "Wave",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/kavi-wave.png",
+                    "sha256": "cbd6f15374530b40d22c5a7646c765d499afd48ebc4b5edc3d69a62fb022deef",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "kavi",
+            "state": "Celebrate",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/kavi-celebrate.png",
+                    "sha256": "541e5b0b21965888b86b6a7e7f31ac230e61758b207475ada89465d9c617fe9c",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "kavi",
+            "state": "Machine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/kavi-machine.png",
+                    "sha256": "fdcb7fdbd7c45c094ba29cffaf9ef99ae2b0d589aa244e98e1c81d162dcd11a5",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "kavi",
+            "state": "Craft",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/kavi-craft.png",
+                    "sha256": "2b423c44c54459bdb2d6d7b9dbf174909fdcec56a910b1a23acb212a8eadbcf3",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "beni",
+            "state": "Idle",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/beni-idle.png",
+                    "sha256": "dcd8a88b326854a8c09b58d41e38a35ad70cea71e41a5fe7c8f77010e51810ef",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "beni",
+            "state": "Walk",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/beni-walk.png",
+                    "sha256": "94c4161f32a10cdf7b94793d3c123e08b916da59c1de4198a2acdd8d34daac58",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "beni",
+            "state": "Run",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/beni-run.png",
+                    "sha256": "aa13dbfc2f035ef6e9124d6c9e8fb414852938d303631af8df00b5dde9f112e2",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "beni",
+            "state": "Mine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/beni-mine.png",
+                    "sha256": "10a14ee7ebc3c99cb5c8814be12e2c11ae2b33afe0b6e9bb8eba67a2c018f3e0",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "beni",
+            "state": "Carry",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/beni-carry.png",
+                    "sha256": "2306790596fd6f697c551fa71571e3df2891898bdb04770a60316f6ca21bf5b9",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "beni",
+            "state": "Collect",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/beni-collect.png",
+                    "sha256": "f2ae563a1c0e9c2f2b475de0ba39d31bc15b2748443feb2214bd0bcbf4b8ce3a",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "beni",
+            "state": "Wave",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/beni-wave.png",
+                    "sha256": "caf1b27bb4bfaa139025192bb9940f129527fa25e4ae7c5faeee4bd2853a77a8",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "beni",
+            "state": "Celebrate",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/beni-celebrate.png",
+                    "sha256": "619d290894d66804141f016f0abffd2a0fb2f3f9e734cbd18edf0db7fd1b1be2",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "beni",
+            "state": "Machine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/beni-machine.png",
+                    "sha256": "d76caedda13c6b7838d9a9aba3693f7afda0d5b745d31f08ad87ef140e2141d7",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "beni",
+            "state": "Craft",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/beni-craft.png",
+                    "sha256": "7eee85ef3b257212ca3f4a9083565aa161d3dfca38d82f9f2a64e7562f25666e",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "daro",
+            "state": "Idle",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/daro-idle.png",
+                    "sha256": "9a0212fa024fb8b4932ed3035d27f93a8c3079f3bd61376e9c3db1acb8c9379f",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "daro",
+            "state": "Walk",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/daro-walk.png",
+                    "sha256": "3630e81a3054ed4af11142d133ca89891cbbca17ea151fcb9a63c16d15eda931",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "daro",
+            "state": "Run",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/daro-run.png",
+                    "sha256": "bfea6aba76fb0fec691554bb03540ec8ae3f64b409b0feb8dbee6444a3c01488",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "daro",
+            "state": "Mine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/daro-mine.png",
+                    "sha256": "b252a53bc0cc13fd0da4cc182726dfd66e7ca82573c4f90bd649800195327a4c",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "daro",
+            "state": "Carry",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/daro-carry.png",
+                    "sha256": "4fb42673611b69e7e4d23db8deb507bc0e182d6651c82404477a0090f7f74c2d",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "daro",
+            "state": "Collect",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/daro-collect.png",
+                    "sha256": "612dcf0686de6a8ccd97d63b8e9b9881cd1a250a6e5e45e33a44cf697b4c0f93",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "daro",
+            "state": "Wave",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/daro-wave.png",
+                    "sha256": "25973920dc56f21625b0ea9dc9d0d7c966cd85afdc6587d1b18407411e3b3801",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "daro",
+            "state": "Celebrate",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/daro-celebrate.png",
+                    "sha256": "8058c9dfaaffeeb4d974c556db4f09f6d03bf207cd1eeadd3cdcbf4cbb63309f",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "daro",
+            "state": "Machine",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/daro-machine.png",
+                    "sha256": "db573d059a0948cdcb4c95b81cb19298475c022dab41eedc88a65fb288637bfc",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        },
+        {
+            "character_id": "daro",
+            "state": "Craft",
+            "passed": true,
+            "outputs": [
+                {
+                    "file": "release/screenshots/characters/poses/daro-craft.png",
+                    "sha256": "21e1e5bc17466769e7973f003a0652e25ead5c4c11901a000063371e24df1e90",
+                    "kind": "Unity pose sample",
+                    "note": "Imported reconstruction; illustration likeness remains unaccepted."
+                }
+            ]
+        }
+    ],
+    "method": "Actual Unity Generic Animator state sampled at normalized time 0.35 in Main Play mode. Native 400x550 per pose; continuous-motion quality remains a separate review."
+}

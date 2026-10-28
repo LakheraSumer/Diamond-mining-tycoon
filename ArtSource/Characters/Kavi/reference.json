@@ -1,0 +1,213 @@
+{
+  "id": "kavi",
+  "name": "Kavi",
+  "source_crop_rect_xyxy": [
+    334,
+    350,
+    499,
+    644
+  ],
+  "source_crop_dimensions": [
+    165,
+    294
+  ],
+  "source_crop_sha256": "a87b011ace28dc2dccd8258bc20ab194458825f24b48761945d5cfe5ef9a3d9a",
+  "decoded_pixel_copy_verified": true,
+  "auxiliary_source": "D:\\games\\chartcter image\\k.png",
+  "auxiliary_sha256": "578243bda776ca9dc5ffe3689bb8e646dedd3cb5e040f99b2be14a7bb3b5a70e",
+  "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+  "source_palette": [
+    {
+      "rgb": [
+        133,
+        71,
+        58
+      ],
+      "pixels": 4449
+    },
+    {
+      "rgb": [
+        249,
+        238,
+        223
+      ],
+      "pixels": 4238
+    },
+    {
+      "rgb": [
+        81,
+        54,
+        43
+      ],
+      "pixels": 3941
+    },
+    {
+      "rgb": [
+        146,
+        93,
+        69
+      ],
+      "pixels": 3279
+    },
+    {
+      "rgb": [
+        182,
+        131,
+        98
+      ],
+      "pixels": 3218
+    },
+    {
+      "rgb": [
+        57,
+        25,
+        17
+      ],
+      "pixels": 3196
+    },
+    {
+      "rgb": [
+        230,
+        199,
+        165
+      ],
+      "pixels": 3028
+    },
+    {
+      "rgb": [
+        123,
+        54,
+        47
+      ],
+      "pixels": 2817
+    }
+  ],
+  "labelled_source_samples": [
+    {
+      "label": "Dark hair",
+      "crop_pixel_rect_xyxy": [
+        60,
+        26,
+        65,
+        31
+      ],
+      "rgb": [
+        35,
+        15,
+        7
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Skin",
+      "crop_pixel_rect_xyxy": [
+        82,
+        34,
+        87,
+        39
+      ],
+      "rgb": [
+        192,
+        111,
+        79
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark beard",
+      "crop_pixel_rect_xyxy": [
+        84,
+        51,
+        89,
+        56
+      ],
+      "rgb": [
+        105,
+        63,
+        50
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Sand shirt",
+      "crop_pixel_rect_xyxy": [
+        43,
+        86,
+        48,
+        91
+      ],
+      "rgb": [
+        232,
+        189,
+        134
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Maroon apron",
+      "crop_pixel_rect_xyxy": [
+        87,
+        100,
+        92,
+        105
+      ],
+      "rgb": [
+        134,
+        59,
+        56
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Brown trousers",
+      "crop_pixel_rect_xyxy": [
+        39,
+        219,
+        44,
+        224
+      ],
+      "rgb": [
+        106,
+        77,
+        64
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Brown boot",
+      "crop_pixel_rect_xyxy": [
+        34,
+        264,
+        39,
+        269
+      ],
+      "rgb": [
+        163,
+        117,
+        88
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Gold tool loop",
+      "crop_pixel_rect_xyxy": [
+        79,
+        166,
+        84,
+        171
+      ],
+      "rgb": [
+        133,
+        62,
+        53
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    }
+  ],
+  "decisions": [
+    "No helmet: retain the original dark wavy hair and beard.",
+    "The original sand shirt and maroon leather apron, ring-shaped belt tools and raised ring determine identity. Auxiliary rear cross-straps and knots are inferred.",
+    "Keep the original visible face and hairstyle rather than inventing a generic combed crown."
+  ],
+  "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+}

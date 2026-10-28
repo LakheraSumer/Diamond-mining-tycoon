@@ -1,0 +1,551 @@
+{
+  "scope": "One authored timber bunker, terrain, track and cart in the existing Diamond Mine Tycoon project",
+  "blender": {
+    "blender": "4.5.9 LTS",
+    "seed": 41027,
+    "assemblies": {
+      "TimberBunker": {
+        "meshes": 17,
+        "vertices": 8587,
+        "triangles": 16650,
+        "uv_meshes": 17
+      },
+      "TerrainPatch": {
+        "meshes": 11,
+        "vertices": 17109,
+        "triangles": 31818,
+        "uv_meshes": 11
+      },
+      "MineTrack": {
+        "meshes": 4,
+        "vertices": 11856,
+        "triangles": 23200,
+        "uv_meshes": 4
+      },
+      "OreCart": {
+        "meshes": 9,
+        "vertices": 12584,
+        "triangles": 24620,
+        "uv_meshes": 9
+      }
+    }
+  },
+  "unity": "6000.3.26f1",
+  "main_play_mode_checks_passed": 20,
+  "main_play_mode_errors": 0,
+  "simulation_tests": {
+    "total": "85",
+    "executed": "85",
+    "passed": "85",
+    "failed": "0",
+    "error": "0",
+    "timeout": "0",
+    "aborted": "0",
+    "inconclusive": "0",
+    "passedButRunAborted": "0",
+    "notRunnable": "0",
+    "notExecuted": "0",
+    "disconnected": "0",
+    "warning": "0",
+    "completed": "0",
+    "inProgress": "0",
+    "pending": "0"
+  },
+  "asset_references": "resolved against root Assets metadata",
+  "root_assets_match_review_workspace": true,
+  "limitations": [
+    "Other areas/characters/screens retain their existing presentation.",
+    "Editor UI input is synthetic; no physical Android/iOS results.",
+    "No new APK or iOS export was produced for this art pass."
+  ],
+  "files": {
+    "ArtSource/TimberBunker/mesh-audit.json": {
+      "bytes": 571,
+      "sha256": "33022864d7184dc11c7bb2976a9d6757d00d49847802e23d70908f37fd7be652"
+    },
+    "ArtSource/TimberBunker/README.md": {
+      "bytes": 2065,
+      "sha256": "7bac2b22e4abaab3b128866a37e9c89f154d3c956c0f785e61cb69e3c916fc7a"
+    },
+    "ArtSource/TimberBunker/TimberBunker.blend": {
+      "bytes": 7921434,
+      "sha256": "54e53f05c7d5e3a9c1d7ce7ff45920c77ce289b9b55493d49b3a723b548ae9c1"
+    },
+    "Assets/_Project/Art/Shaders/TimberSurface.shader": {
+      "bytes": 1627,
+      "sha256": "9b1b32a001692507bf209bdc4af4407d16db3cb48c88438ab96dc8b8a3216628"
+    },
+    "Assets/_Project/Art/Shaders/TimberSurface.shader.meta": {
+      "bytes": 204,
+      "sha256": "770ad4c9713c40d359224c06d7241ac98e765283d24630439917e9bbb4c06882"
+    },
+    "Assets/_Project/Art/TimberBunker/material-spec.json": {
+      "bytes": 4709,
+      "sha256": "1b3fdf733537f4358872a97d9c8e8c16e68d4d8a27e994f63aa2c702ca6b3376"
+    },
+    "Assets/_Project/Art/TimberBunker/material-spec.json.meta": {
+      "bytes": 158,
+      "sha256": "9b7b55eabbf38348900b17027e1f3bab1feccdeff9f9033ea80b61f213a77b91"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/BlackIron.mat": {
+      "bytes": 1131,
+      "sha256": "1d32cd1a9153fe7e1aeaac2d181599b1d4c035a6a57e914f310e40f3f0341199"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/BlackIron.mat.meta": {
+      "bytes": 188,
+      "sha256": "0f80e466698030dea9267c3e82ec32daea6bffb71d2c399f830c580a463c8937"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Brass.mat": {
+      "bytes": 1120,
+      "sha256": "b0b003a628b58b62193f7e229737613470d7d8d49b9941d51c71fca908c45084"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Brass.mat.meta": {
+      "bytes": 188,
+      "sha256": "62b9d87a486944de8e07b33954725588f0df24fc2e4027f086df03d8c684a3a8"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/EarthCut.mat": {
+      "bytes": 1128,
+      "sha256": "b4afabdb4e7dbda02a484dd2408cb200ce22d10ace2c4ab55a1baa54ec082412"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/EarthCut.mat.meta": {
+      "bytes": 188,
+      "sha256": "9b6f64a29c588198ccdc5ca1f5ae63a1a38f2f0a21a5f731e71ac215f2efba32"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Flower.mat": {
+      "bytes": 1118,
+      "sha256": "fe344ae333a7307a25f52e652e82ec830273a25c4b2889ab6af653635518335c"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Flower.mat.meta": {
+      "bytes": 188,
+      "sha256": "35c3b2fa045f8c82cd8dd709e39109429662307182b3c4313af4d604405907b4"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Grass.mat": {
+      "bytes": 1124,
+      "sha256": "ca6fbc5b102826949b67346aa8ba876d5dd20907b5bc9d626c9347a3d380f722"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Grass.mat.meta": {
+      "bytes": 188,
+      "sha256": "e00c6d526060c0859986764cf6cba31c64864c62a6342d7258b3e5ebffb5696f"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/LanternGlow.mat": {
+      "bytes": 1139,
+      "sha256": "ac162cf0c96af0158df23ad45f9a8b84df6100aa61d9138e8b4ff5b461bf1159"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/LanternGlow.mat.meta": {
+      "bytes": 188,
+      "sha256": "9b8931f5b4bf36c7be4bfc4bac78d1df14ae477081bb16e04804674662e7c8f6"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Leaf.mat": {
+      "bytes": 1117,
+      "sha256": "383ac5a9aec080b4f3a8c4430ef0a591f3f59c535a0008b48b36c79f46437697"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Leaf.mat.meta": {
+      "bytes": 188,
+      "sha256": "9f5c83f9d02596980c4ef0fc317b9f2384625d0d9d0c6a3b92acd76d7b84dd37"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/LeafDark.mat": {
+      "bytes": 1128,
+      "sha256": "333ec0b16ee199bb203dad1aad76afa477e952848b1844ee67282e91af9fad85"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/LeafDark.mat.meta": {
+      "bytes": 188,
+      "sha256": "3850e68a8aba1574a4a3e6a80a441041b752580cb93c7aadc5f4a4f735eb1a49"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/LeafLight.mat": {
+      "bytes": 1123,
+      "sha256": "6de7d6ace33cc998b70c693d33cfaad59656f9f0bc0ea29452459ff16483bae4"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/LeafLight.mat.meta": {
+      "bytes": 188,
+      "sha256": "55d029dbeafb6e2d14d06b02f42564c1ee45011b843989ecd3ec2ecebbae9751"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Moss.mat": {
+      "bytes": 1123,
+      "sha256": "ee1b1e0f88b52fec8047d55dac5cec6ec1a812adbe7440a55d7783014da6d3a9"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Moss.mat.meta": {
+      "bytes": 188,
+      "sha256": "d936c30a88386c831c5ca9ca272e33951ff80d37e00ca886490646f12e23681a"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Oak.mat": {
+      "bytes": 1223,
+      "sha256": "a28ad9928529286907ea3754c14347b2301b9b3c9ef5503657f30e6926cd6e8a"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Oak.mat.meta": {
+      "bytes": 188,
+      "sha256": "195bbf505d7f0dff84e72ca436f79057bd522508dbf50c58caabf2dcf996ec9c"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/OakEnd.mat": {
+      "bytes": 1125,
+      "sha256": "c1f38a673f8ce48550dd76c380c2f05ad81e8347846fa95b6a337efe56ba964b"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/OakEnd.mat.meta": {
+      "bytes": 188,
+      "sha256": "30b2fbddb02db9aa21abdc8626ebe12529408be657003e5b56eca7ebd5ef6823"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Ore.mat": {
+      "bytes": 1122,
+      "sha256": "64ac57c4617cb3bb42c307e9478c7b77f4ecc9d279516c9ba4eb2ee5d50073ec"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Ore.mat.meta": {
+      "bytes": 188,
+      "sha256": "17752bcda4974e768fbf3533d7f8e53423cced2089b67136f92d65a8baf70f2b"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/OreLight.mat": {
+      "bytes": 1119,
+      "sha256": "111acb7967dda3eb4780e9af8b420032f74cb28b64349ff324482527564c1026"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/OreLight.mat.meta": {
+      "bytes": 188,
+      "sha256": "1273e3e3d1d4aabd60c511161539badceed727f02144c19c02c67d4c2e0eafa6"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Oxide.mat": {
+      "bytes": 1128,
+      "sha256": "a71798c9ad1e1ccd8c185ed95da65a8a41a5ec124514884e7af5d9673e195280"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Oxide.mat.meta": {
+      "bytes": 188,
+      "sha256": "103621d93eeedb1f618699679464350de3759e410e7efd76645f2f4838296e5d"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/PlaqueLetter.mat": {
+      "bytes": 1131,
+      "sha256": "ed492188c33f64616aae71f53a97b5df446131b988a4ee31df6a0c359d2597b6"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/PlaqueLetter.mat.meta": {
+      "bytes": 188,
+      "sha256": "5b98a5914e3e8f543783c6005a463ff5fbdcc0f212a95d3ac47255b70ac501d0"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Rock.mat": {
+      "bytes": 1218,
+      "sha256": "c9918d7e9bee3e2d2b4decf1f76f40c44eea4c34b1ca13db60e6e22f61c8a6a3"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Rock.mat.meta": {
+      "bytes": 188,
+      "sha256": "b643c5db5330372f640799908a1cfc99bfbf18efad7af29b2be2a0c0b592d7cd"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/RockLight.mat": {
+      "bytes": 1129,
+      "sha256": "d9d6af69a6c7b45887aeabc224bef43084626c4b4a6c6dc30c870295c35d595e"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/RockLight.mat.meta": {
+      "bytes": 188,
+      "sha256": "684a8bec0ba43fccb72655f6148711c5d063ef21501cbef714633e71c0c6f2e2"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/RockShadow.mat": {
+      "bytes": 1130,
+      "sha256": "19051bcec783ece4927d25f7416ec8cc5c8cfb2b44f984560e93356cb849e15b"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/RockShadow.mat.meta": {
+      "bytes": 188,
+      "sha256": "738941496c0217d05ad8ed97e2cc1e18663327c4318eae12a482940fd29714a4"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Soil.mat": {
+      "bytes": 1225,
+      "sha256": "6e436323e1093f7471fd5add9a37338240c5a3ab943e83a1b374851986dacd7c"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Soil.mat.meta": {
+      "bytes": 188,
+      "sha256": "b26b2d5fd849c823c49c493f1eed77131751c1e1b45ce936bd83ec6f54486769"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Steel.mat": {
+      "bytes": 1228,
+      "sha256": "982aaf749dff54c61558623e2f887c44e303b22693a977c036890ff457a2153d"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/Steel.mat.meta": {
+      "bytes": 188,
+      "sha256": "65b582be86c3f7a107d66da9a94512313b896db0acbcfd9d042c227fcba43ba2"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/TunnelBlack.mat": {
+      "bytes": 1124,
+      "sha256": "d4438cf2296c7d7cc3afa9db5faa103484db08bda3312846d6370abaa9f21f20"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/TunnelBlack.mat.meta": {
+      "bytes": 188,
+      "sha256": "a46edfe320fda95942ab6cbe41df44800a2b21b0459c4f0adab5823090315255"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/TunnelOak.mat": {
+      "bytes": 1128,
+      "sha256": "a0c09aaf1d7319110103b54a34c999e62eeeacc954c7920ddbf0e9484bba3e8c"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/TunnelOak.mat.meta": {
+      "bytes": 188,
+      "sha256": "96a4222fe5dfecca64ac16106df5ba3b308a65706057dd351c238f13651d72b7"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/WornSteel.mat": {
+      "bytes": 1124,
+      "sha256": "974c16afda64eead420f7c35281847fbd8caf6bd02f2b34a77171bc975e8474d"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials/WornSteel.mat.meta": {
+      "bytes": 188,
+      "sha256": "076a11c53699bb0f8657a0283d39fbb018dbdc3df5e078eae2e1a7c432aff6ec"
+    },
+    "Assets/_Project/Art/TimberBunker/Materials.meta": {
+      "bytes": 172,
+      "sha256": "6645dd5178cc9a534b22f0ff8b87d1c119d9e90600e33266dc491dd6235229c0"
+    },
+    "Assets/_Project/Art/TimberBunker/Models/MineTrack.fbx": {
+      "bytes": 1761308,
+      "sha256": "362d572252382c53e214e2cb8468f63cf0a1e30f37848acc12ab87f6b6b53dcf"
+    },
+    "Assets/_Project/Art/TimberBunker/Models/MineTrack.fbx.meta": {
+      "bytes": 2891,
+      "sha256": "e157838cd6304b1021d80b8dee2f3c2043584755745172cda0d63628efe5c9bf"
+    },
+    "Assets/_Project/Art/TimberBunker/Models/OreCart.fbx": {
+      "bytes": 2060796,
+      "sha256": "7f1a0992df7ab17eda02a5e2fa23efb3f1bbbcdbc8ad3fd20f910c11ddcde2dc"
+    },
+    "Assets/_Project/Art/TimberBunker/Models/OreCart.fbx.meta": {
+      "bytes": 2891,
+      "sha256": "9bf8b85aa30ad9246bbb5e18be574a5a861ae7e6a2526511f91c4bfe75259c0d"
+    },
+    "Assets/_Project/Art/TimberBunker/Models/TerrainPatch.fbx": {
+      "bytes": 2759468,
+      "sha256": "280986d0bfe6cd30e45e33c00d781fbecce62a195a9eeeb8e90bd5923e2b63e1"
+    },
+    "Assets/_Project/Art/TimberBunker/Models/TerrainPatch.fbx.meta": {
+      "bytes": 2891,
+      "sha256": "e141ac1761dcc58aea833f5201e2d8bc2e2f62220a9da9d9cad55ecfd7501a88"
+    },
+    "Assets/_Project/Art/TimberBunker/Models/TimberBunker.fbx": {
+      "bytes": 1464412,
+      "sha256": "da341c959ab37316c475e41d80dd383d9e598703ac8f86e98acd6ff090b5e7df"
+    },
+    "Assets/_Project/Art/TimberBunker/Models/TimberBunker.fbx.meta": {
+      "bytes": 2891,
+      "sha256": "931e1db2692d1103a09120587650cdb9ca1b0826cbd746e988062ec8d10fdb83"
+    },
+    "Assets/_Project/Art/TimberBunker/Models.meta": {
+      "bytes": 172,
+      "sha256": "09d741893597dbc378c248c2bebac8c17bfd17d98704cd06c2c2b2a3be9d820a"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/AgedOak_BaseColor.png": {
+      "bytes": 639546,
+      "sha256": "066583d3136a147aca778f14d57bced2d01377280157e72485c68323f39b3032"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/AgedOak_BaseColor.png.meta": {
+      "bytes": 3362,
+      "sha256": "4e40251cfc12cf4c855b1052b863f3b6885ced17776a88500f8e4a1c6a40cbd2"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/AgedOak_Normal.png": {
+      "bytes": 703312,
+      "sha256": "71c8d3686b1f9c7dd912776e5a159db02d7b4861652e298242cb7c7c517f80ef"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/AgedOak_Normal.png.meta": {
+      "bytes": 3362,
+      "sha256": "682b7cebdb50e09aee6ed3d14ed1b30786c4298a2aa7caa82a6e7b01f6e0ed77"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/ForgedSteel_BaseColor.png": {
+      "bytes": 760236,
+      "sha256": "bfa77fea7e274a7401b1bcf07259b552473d0377a4a3ec183813c98c765f00cb"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/ForgedSteel_BaseColor.png.meta": {
+      "bytes": 3362,
+      "sha256": "d377fb9a2e33c8da49736b57a7b44e92c5200ea71e8945107476e934f95c3bd7"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/ForgedSteel_Normal.png": {
+      "bytes": 1309527,
+      "sha256": "867dbde8015487f9103d5db1c72a724eea9933af3b74bbb8aa9d734cc8b107f8"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/ForgedSteel_Normal.png.meta": {
+      "bytes": 3362,
+      "sha256": "b9f96d85b5d6bbd06634a6eb8d15c0b39bf0f6f6e7aac2cde373e8df6592c09c"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/PackedEarth_BaseColor.png": {
+      "bytes": 1413409,
+      "sha256": "e38420ff7e8ab6625a6fd056e35cdecd3b28856f4427a0e14fa7e714e0c3fa95"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/PackedEarth_BaseColor.png.meta": {
+      "bytes": 3362,
+      "sha256": "761dc98aa2743c0658e7562b874ff4453cd4cddac0260872d6045bd7eea6e96f"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/PackedEarth_Normal.png": {
+      "bytes": 1650141,
+      "sha256": "d5a834d9fabd2089df52156f59090bde11f8fdf9dfb3921ae881c394285ef266"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/PackedEarth_Normal.png.meta": {
+      "bytes": 3362,
+      "sha256": "e8f056f46a39cd66bed722e908cc4518892051664f509f3633922565c890c1ea"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/SoftSkyReflection.asset": {
+      "bytes": 525406,
+      "sha256": "44dbab2c6759019a65c162bc9849b2145d9f32b3709cd31e435441dad6b11bc4"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/SoftSkyReflection.asset.meta": {
+      "bytes": 188,
+      "sha256": "0b37de04af7e9926c56697ec08cfb80f81456790037ffef47a8d9e32e0f7b103"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/StratifiedStone_BaseColor.png": {
+      "bytes": 568060,
+      "sha256": "d6d22ba89e2b36115d41afc7f60bc5710b8c22e3b3bc5ae80b43b17b0eb2d7c7"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/StratifiedStone_BaseColor.png.meta": {
+      "bytes": 3362,
+      "sha256": "c335d15df5dde341763a37a7d9e6f9da0032fc54f3256cc8ca0bd82529ca1931"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/StratifiedStone_Normal.png": {
+      "bytes": 332380,
+      "sha256": "f52b39e13834e98c5f01a4881b2ee46df18c464f7ac07133ffe7ed2c0edf4ae7"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures/StratifiedStone_Normal.png.meta": {
+      "bytes": 3362,
+      "sha256": "6fac159d330215c65b6b4d8e5e12f583e91eacf83f341408e31dc9180c28cbed"
+    },
+    "Assets/_Project/Art/TimberBunker/Textures.meta": {
+      "bytes": 172,
+      "sha256": "516fb1aaef8705c2965a1a980c555544ce9e26e81d9ac44f69f0cb6ddba44aa5"
+    },
+    "Assets/_Project/Art/TimberBunker.meta": {
+      "bytes": 172,
+      "sha256": "439a6dc28f007aca7286bf9ae810caa298c2d434482b341a8e468ba47c839c39"
+    },
+    "Assets/_Project/Editor/TimberAssetPipeline.cs": {
+      "bytes": 10899,
+      "sha256": "8568936c74bfcac1b74511e188e0607fe1dca9216d445ea0032041cacd44bdde"
+    },
+    "Assets/_Project/Editor/TimberAssetPipeline.cs.meta": {
+      "bytes": 59,
+      "sha256": "dfbb3c2af1c06dad89acb91ffa50818f75449bff46e4c14fa8dd83999fd695f1"
+    },
+    "Assets/_Project/Editor/TimberManualPreview.cs": {
+      "bytes": 3234,
+      "sha256": "efb21ac2c82636030c0b30e78feca8c0bf9eaab728993847b3d435696f698187"
+    },
+    "Assets/_Project/Editor/TimberManualPreview.cs.meta": {
+      "bytes": 59,
+      "sha256": "55a1dce3371b92265886c914742d60df9df9fceb00a83af79c25446270f0e83b"
+    },
+    "Assets/_Project/Editor/TimberVisualReview.cs": {
+      "bytes": 18304,
+      "sha256": "61392f73bb50695b1f57d036c0a3111c4cb95fdf30f34e42ecbac6f42d5a17a3"
+    },
+    "Assets/_Project/Editor/TimberVisualReview.cs.meta": {
+      "bytes": 59,
+      "sha256": "596140384aeba119b9b8ad697839a6082d50f2fa69a6cec4743f01a6072fc801"
+    },
+    "Assets/_Project/Resources/Yard/OreCart.prefab": {
+      "bytes": 8748,
+      "sha256": "0ed7ee13eb3ebaac14438043a0fddb78b75033ce64c916c4d82953326afeceba"
+    },
+    "Assets/_Project/Resources/Yard/OreCart.prefab.meta": {
+      "bytes": 154,
+      "sha256": "aeaa03e7b65c2b4db31f221b92a7634cd3e2c623da85395f2d5603752bd539cb"
+    },
+    "Assets/_Project/Resources/Yard/TimberBunker.prefab": {
+      "bytes": 24390,
+      "sha256": "9cc02b5d1be61d5eba09499da3af8fab8572ce3d1d8539ad3e0b018392f9e7f7"
+    },
+    "Assets/_Project/Resources/Yard/TimberBunker.prefab.meta": {
+      "bytes": 154,
+      "sha256": "46709309584bdba8a239cf9bf45cd584a925815361b6f9aa2c2d878c33836283"
+    },
+    "Assets/_Project/Resources/Yard.meta": {
+      "bytes": 172,
+      "sha256": "c5ca1f626704827ce0d176ba9908a41f184c4e7b515a8208d4ae8be43fc868d2"
+    },
+    "Assets/_Project/Scripts/Runtime/MinePresenter.cs": {
+      "bytes": 18904,
+      "sha256": "606259209b0efa569fed19cb21ec32d6b63447c1cda0e75503511382710321da"
+    },
+    "Assets/_Project/Scripts/Runtime/MinePresenter.cs.meta": {
+      "bytes": 243,
+      "sha256": "10c37a10b111944cea6bf366e1230c6c56d18220f2a8d5a4c81d126da0aaed75"
+    },
+    "Assets/_Project/Scripts/Runtime/TimberBunkerArea.cs": {
+      "bytes": 2074,
+      "sha256": "bc43d3c254a96b1ecbeac11d162310de842c702c761a2562638f60c43dc40b42"
+    },
+    "Assets/_Project/Scripts/Runtime/TimberBunkerArea.cs.meta": {
+      "bytes": 59,
+      "sha256": "fdc88b749699af6887b8c049138aa171b2ae05fc30a1c6b8160f1cea33c2bd36"
+    },
+    "Assets/_Project/Scripts/Runtime/YardArt.cs": {
+      "bytes": 34495,
+      "sha256": "e5378b7f1a8c46852a8ff17a0913cef16f8cce8107b18ed4bfe46c8de52bc744"
+    },
+    "Assets/_Project/Scripts/Runtime/YardArt.cs.meta": {
+      "bytes": 59,
+      "sha256": "0024637957600062c41f03f8531cfb172424aec3378a0a625860976cbc55f0a7"
+    },
+    "Assets/_Project/Scripts/Runtime/YardWorld.cs": {
+      "bytes": 21905,
+      "sha256": "717c8e4c5e4ef20a6775ca2578bf57bae9838218c5dac5c9cd41dd5b596ae3c8"
+    },
+    "Assets/_Project/Scripts/Runtime/YardWorld.cs.meta": {
+      "bytes": 59,
+      "sha256": "fc2aad923f2c4783905530b46772a88e3028a7527cdb2ff947aaa407a06e6f97"
+    },
+    "Docs/Timber-Bunker.md": {
+      "bytes": 6190,
+      "sha256": "82b4eefd079743dd2f3ea3dc09c3f60745202b86d847bc38942651500bafecbf"
+    },
+    "release/screenshots/timber-bunker/blender-lookdev.png": {
+      "bytes": 1644301,
+      "sha256": "758c5a86cad2481ceafb753d368a2651f56ac1f9ce2921b3c63a4fe000973219"
+    },
+    "release/screenshots/timber-bunker/checks.txt": {
+      "bytes": 786,
+      "sha256": "db87bed26b704007e402e2505a836712be1e8c6e872c233fa924c05829b3ae1f"
+    },
+    "release/screenshots/timber-bunker/comparison.txt": {
+      "bytes": 241,
+      "sha256": "15b579a1608be24eba965eabcb579ea373e7faf70bc0df905a081ee9734a9f7d"
+    },
+    "release/screenshots/timber-bunker/interaction-results.txt": {
+      "bytes": 1062,
+      "sha256": "4cb50e174de5d61ffc68fac204903c4ec14d824d6e830cd42eddda6ff4bae078"
+    },
+    "release/screenshots/timber-bunker/play-mode-cart-moving.png": {
+      "bytes": 520418,
+      "sha256": "c0cf3eeb9b7dff5f2bec827a8f2cea89a9d329b9daf3cb381cf92fd8c16f5b57"
+    },
+    "release/screenshots/timber-bunker/play-mode-cart-moving.txt": {
+      "bytes": 125,
+      "sha256": "a940875948cb987b0f3134259cd31b7f9dd25a3ae82e53040bcb9ecfbcd2be36"
+    },
+    "release/screenshots/timber-bunker/play-mode-main.png": {
+      "bytes": 528192,
+      "sha256": "3f1c47935ffd006c2712c37563a43caecff8a2f99a0112036848c0116217d38c"
+    },
+    "release/screenshots/timber-bunker/play-mode-main.txt": {
+      "bytes": 125,
+      "sha256": "0f1aa1ce27420655ccfe8fbe262be4e848a7f9ce292e8203600c85973031adf3"
+    },
+    "release/screenshots/timber-bunker/play-mode-mine-interaction.png": {
+      "bytes": 186296,
+      "sha256": "d549ecc58feb3e22940d442acb85baef23737eb046210ec4ead531eba78cc670"
+    },
+    "release/screenshots/timber-bunker/play-mode-mine-interaction.txt": {
+      "bytes": 125,
+      "sha256": "4116a1210eace9eb90d29ba7f56ef583ba9849be8a2f7797f10c84f8ad38e87d"
+    },
+    "release/screenshots/timber-bunker/reference-vs-unity.png": {
+      "bytes": 1952262,
+      "sha256": "184eb950cd0be629b826aad812af8d5901584cd32bd79eba4764498ed061954b"
+    },
+    "release/screenshots/timber-bunker/review-errors.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "release/screenshots/timber-bunker/unity-closeup.png": {
+      "bytes": 814622,
+      "sha256": "bffdf8fd7f9515575e1f678ffa180f834836f02be4523a96030d47d0a22b8b22"
+    },
+    "release/screenshots/timber-bunker/unity-closeup.txt": {
+      "bytes": 308,
+      "sha256": "47fdac376c3f2b8f583979a64827600c7d560dfab5e4273bc09e94898b2b9c81"
+    },
+    "tools/art/Create-TimberBunker.py": {
+      "bytes": 28073,
+      "sha256": "eaec31a4d4d21d73e67d1b055dad8cf8cb53981d7994c2fff60a4d7b5029092b"
+    },
+    "tools/art/Package-TimberBunker.py": {
+      "bytes": 4443,
+      "sha256": "78aa3b7c93989b80cecf8a8b6a5ee99330807bd15c7db2d7b9700ef4e27c2423"
+    },
+    "tools/Run-TimberReview.ps1": {
+      "bytes": 1084,
+      "sha256": "d7c30d3fd49ad66d320f41569a929fcc26aa6995c0b936d287675fb466f2ad2f"
+    }
+  }
+}

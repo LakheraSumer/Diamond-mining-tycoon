@@ -1,0 +1,11 @@
+Actual Main Play mode, isolated save, real imported world and uGUI.
+explore: 11 measured elements within 0.5% of recorded JPEG rectangle bounds. Measurement uncertainty remains separate; visual identity is unscored.
+mine: 17 measured elements within 0.5% of recorded JPEG rectangle bounds. Measurement uncertainty remains separate; visual identity is unscored.
+factory: 26 measured elements within 0.5% of recorded JPEG rectangle bounds. Measurement uncertainty remains separate; visual identity is unscored.
+craft: 22 measured elements within 0.5% of recorded JPEG rectangle bounds. Measurement uncertainty remains separate; visual identity is unscored.
+shop: 11 measured elements within 0.5% of recorded JPEG rectangle bounds. Measurement uncertainty remains separate; visual identity is unscored.
+map: 24 measured elements within 0.5% of recorded JPEG rectangle bounds. Measurement uncertainty remains separate; visual identity is unscored.
+tasks: 48 measured elements within 0.5% of recorded JPEG rectangle bounds. Measurement uncertainty remains separate; visual identity is unscored.
+rank: 62 measured elements within 0.5% of recorded JPEG rectangle bounds. Measurement uncertainty remains separate; visual identity is unscored.
+Native Game-view portrait capture requested at 2160x3840; exact dimensions recorded beside image.
+Tablet portrait layout captured at 1536x2048; no cross-aspect pixel identity claim.

@@ -1,0 +1,1158 @@
+{
+  "scope": "File completeness, source SHA and render/composite provenance only. Does not establish visual acceptance, actual Unity deformation or mobile performance.",
+  "characters": {
+    "tavi": {
+      "passed": true,
+      "model_source_sha256": "d780df9ac8b1314df1f4374d95be4cf5dfcd3dc46f8a1d75bfbefc765c904246",
+      "exporter_report_not_independent_unity_validation": {
+        "vertices": 47687,
+        "triangles": 89486,
+        "skinned_meshes": 4,
+        "bones": 47,
+        "clips": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Mine",
+          "Collect",
+          "Carry",
+          "Wave",
+          "Celebrate",
+          "Machine",
+          "Craft"
+        ],
+        "reference_based_reconstruction": true
+      },
+      "outputs": {
+        "01_SourceCrop.png": {
+          "sha256": "4e6aa505b3968bfb26037fdede0bedc4ce2e1a5f40e08a31fd64deab662ec44d",
+          "dimensions": [
+            154,
+            276
+          ]
+        },
+        "02_Beauty.png": {
+          "sha256": "add91b23876f53ac5276337712d371ea2b5059d626c59a457d3a8859d6495c7f",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "03_Front.png": {
+          "sha256": "b6b333ab76027c15d969c99d068074fa57adf091b573f43231bade1832a52998",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "04_Left.png": {
+          "sha256": "eb9050fd3ea53c067770f9f38539303306effce876f822d098bd0fa4fdd24f41",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "05_Right.png": {
+          "sha256": "b69fc30679a004d11aa1fc97d2bca29e632fddb330e25d0907a50dbf4bc76fb1",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "06_Back.png": {
+          "sha256": "07237d0ced187c713bc3dcc35569755dd0dc9c89063e6f776d954517a8a6276e",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "07_Face.png": {
+          "sha256": "87f6614c447b9e41e3bb529fa3830ecd332f4bdea87bb8f5baaff54ba9d12ec9",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        },
+        "08_Accessories.png": {
+          "sha256": "91deea70f1ba32802b71348e91ddbcaef4a5b6593b89287845004a7b717351d0",
+          "dimensions": [
+            1600,
+            1200
+          ]
+        },
+        "09_Materials.png": {
+          "sha256": "59409bf680cc3ac2a72494db87a0d225aabf0b083e95fff15d44515ecbe4fbc1",
+          "dimensions": [
+            1600,
+            1320
+          ]
+        },
+        "10_Turnaround.png": {
+          "sha256": "3644f0f7af30e00746195662b2d7b498335016373f0f6cc59e67cf9e8425ba6d",
+          "dimensions": [
+            2400,
+            1540
+          ]
+        }
+      },
+      "problems": []
+    },
+    "mira": {
+      "passed": true,
+      "model_source_sha256": "b7b0eec8a74e83836333e66f6714b9948b94f816ab0e3bee952d10ab40ff71f9",
+      "exporter_report_not_independent_unity_validation": {
+        "vertices": 48435,
+        "triangles": 90796,
+        "skinned_meshes": 4,
+        "bones": 47,
+        "clips": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Mine",
+          "Collect",
+          "Carry",
+          "Wave",
+          "Celebrate",
+          "Machine",
+          "Craft"
+        ],
+        "reference_based_reconstruction": true
+      },
+      "outputs": {
+        "01_SourceCrop.png": {
+          "sha256": "01d51025b4b00ac80b6a9dbecc6b4d24372d2e0d7132c9ddbe79d1a9d762c845",
+          "dimensions": [
+            186,
+            276
+          ]
+        },
+        "02_Beauty.png": {
+          "sha256": "f21ef2d9d48b30ccc84c1d89db2d99c110758972339d526a2a0c275e92530c5b",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "03_Front.png": {
+          "sha256": "5190dd7b858476eead2b5b7e200336cb2d276bec3a6634297df89f210d5bf110",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "04_Left.png": {
+          "sha256": "6d0f9167619b100d0eca2e3aa07c271482033c322a2aca427254b3ab5d6ba112",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "05_Right.png": {
+          "sha256": "924542ed05fa24162a2ae190adf630fa6a0225a428991f7b9c350a288facde95",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "06_Back.png": {
+          "sha256": "85371366b9ba56945dda574803ca02a355d41288abd55139da8c889df8d50b68",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "07_Face.png": {
+          "sha256": "0c05c0d590c86c2eb874a5c1b18a6d854bcdac8947a65039cfd82d4acde9dba8",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        },
+        "08_Accessories.png": {
+          "sha256": "894374cec6069335b73d77782840fbf8071bb68ff3603391545f468d13cecff1",
+          "dimensions": [
+            1600,
+            1200
+          ]
+        },
+        "09_Materials.png": {
+          "sha256": "d33a8bd0306faabd8f85578a43ecf1bd58c30264fc46f06a5ae1b140c39f9930",
+          "dimensions": [
+            1600,
+            1320
+          ]
+        },
+        "10_Turnaround.png": {
+          "sha256": "cc6a5e7b3eab3a378f0073f41661f7ccdbafe8fe544e0975cf854164fccb0b8a",
+          "dimensions": [
+            2400,
+            1540
+          ]
+        }
+      },
+      "problems": []
+    },
+    "oren": {
+      "passed": true,
+      "model_source_sha256": "d91bbae31f272a5cf4f4f9b79415c98070844c54aca568e983373e288b87db80",
+      "exporter_report_not_independent_unity_validation": {
+        "vertices": 40848,
+        "triangles": 76164,
+        "skinned_meshes": 4,
+        "bones": 47,
+        "clips": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Mine",
+          "Collect",
+          "Carry",
+          "Wave",
+          "Celebrate",
+          "Machine",
+          "Craft"
+        ],
+        "reference_based_reconstruction": true
+      },
+      "outputs": {
+        "01_SourceCrop.png": {
+          "sha256": "ae34d2c83b94d6e4e7fe13cb5b801b7a3694edbc5439df2c924ee86a27143294",
+          "dimensions": [
+            158,
+            267
+          ]
+        },
+        "02_Beauty.png": {
+          "sha256": "2666e7ae2cd38155490201b0c8f397339939f9da3aa06add66a869067793719c",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "03_Front.png": {
+          "sha256": "95bae4578cf3da56a5704056952cf0201f3f8d1aa8ec13f70825449bb72a184c",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "04_Left.png": {
+          "sha256": "8111e782c53d8947e675b84b75948a2840bb06862ca8a21ef5c7960896fef904",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "05_Right.png": {
+          "sha256": "b4dd22387c160e82a761987f424097f23bc5b57da3505250a317dcdd96d96ec5",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "06_Back.png": {
+          "sha256": "0587ada04fe898c965e8ecac27782c416043e40881cb4639bfc342613493851e",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "07_Face.png": {
+          "sha256": "6c81cd2b8747074cb534ae8a36136ab87208c13d248cff0ce915aaf1f274294c",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        },
+        "08_Accessories.png": {
+          "sha256": "fbe7380240faf63d452e4c75567d3f09466836f3baa2f7121ed1484b685dc521",
+          "dimensions": [
+            1600,
+            1200
+          ]
+        },
+        "09_Materials.png": {
+          "sha256": "b1af39ef4d9914b8641daa29c9e5958bf910f180b0bfdefca7faaac3e9afa10c",
+          "dimensions": [
+            1600,
+            1320
+          ]
+        },
+        "10_Turnaround.png": {
+          "sha256": "e4bb2332f6dbdc4d21316574527115cab078f04326660e2127de6fb87814d261",
+          "dimensions": [
+            2400,
+            1540
+          ]
+        }
+      },
+      "problems": []
+    },
+    "zela": {
+      "passed": true,
+      "model_source_sha256": "88576556744db106873b7e0bd575a2a9c0030bf8e8cff742d2156d73a213fa58",
+      "exporter_report_not_independent_unity_validation": {
+        "vertices": 41064,
+        "triangles": 77066,
+        "skinned_meshes": 4,
+        "bones": 47,
+        "clips": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Mine",
+          "Collect",
+          "Carry",
+          "Wave",
+          "Celebrate",
+          "Machine",
+          "Craft"
+        ],
+        "reference_based_reconstruction": true
+      },
+      "outputs": {
+        "01_SourceCrop.png": {
+          "sha256": "bf1e5993dcf1594652718cf00330b01c530104c3abd74d606874ecec5288f504",
+          "dimensions": [
+            163,
+            267
+          ]
+        },
+        "02_Beauty.png": {
+          "sha256": "fb8285f717dabb7da5f9f3af540393e3d6391e3b947398cd73f8af97e78e8823",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "03_Front.png": {
+          "sha256": "20d2356b225d25e6dd9d74bf125b78355957c7a58e9e43ed6c110718ae3ca2fa",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "04_Left.png": {
+          "sha256": "c43f6a6c1792f4a7eda61bb7beab71871f18cc2a6f88bd017b07b009951f5951",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "05_Right.png": {
+          "sha256": "9fd072ddf8b4650b406a7134dea358c049767944fbd2ca520d15225a5ebe2bb8",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "06_Back.png": {
+          "sha256": "dd0c2e6c5890017ee16d424a109d25550eb9dab02dbe60b44d2988fc8c8aa65a",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "07_Face.png": {
+          "sha256": "30e07d9bf83df0c53686e31e4e54078419cdd0d0551f4bba48cbb8df6694ea71",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        },
+        "08_Accessories.png": {
+          "sha256": "810bd2efcbbfb59e205acb7a6ede9bc018a2756fd722b0ec173c14519e78817e",
+          "dimensions": [
+            1600,
+            1200
+          ]
+        },
+        "09_Materials.png": {
+          "sha256": "2939fc4fc61a36903f7d349e3feb4ea3d597e00e7c9878be441cb133eae17cf1",
+          "dimensions": [
+            1600,
+            1320
+          ]
+        },
+        "10_Turnaround.png": {
+          "sha256": "8c47bcd223a4b3d0b30667df0e6e94ce498b70f07096a757ecb01334881e13e1",
+          "dimensions": [
+            2400,
+            1540
+          ]
+        }
+      },
+      "problems": []
+    },
+    "pavi": {
+      "passed": true,
+      "model_source_sha256": "37c8fdf42856b35b7d1bc12329777f2bb11327073532bf904c47adaf53dbff11",
+      "exporter_report_not_independent_unity_validation": {
+        "vertices": 35827,
+        "triangles": 67198,
+        "skinned_meshes": 4,
+        "bones": 47,
+        "clips": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Mine",
+          "Collect",
+          "Carry",
+          "Wave",
+          "Celebrate",
+          "Machine",
+          "Craft"
+        ],
+        "reference_based_reconstruction": true
+      },
+      "outputs": {
+        "01_SourceCrop.png": {
+          "sha256": "b57f323dad52980910176535eab8244125c7f87ddf1c531029a903ea226f14d6",
+          "dimensions": [
+            180,
+            276
+          ]
+        },
+        "02_Beauty.png": {
+          "sha256": "76657cb6080acac2d14e3306c7082582ba97c40ff3c811cfe2aa761a11506eb5",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "03_Front.png": {
+          "sha256": "677016fa0295953bd3ff5d53d33b53292a36e805edb9a9e2483189e7b8bb1167",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "04_Left.png": {
+          "sha256": "934132e2a4ad75d63fbad43e80af6f9447eb513319f28fff3357f9359b2eba9a",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "05_Right.png": {
+          "sha256": "5acbfc697898031c0d1c70e65b3357e37d02b9195c7a6548dcdf872c6c733f7d",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "06_Back.png": {
+          "sha256": "eb03da568ec1de8cd2f295379481d67f1d386db5e0b7f844adcde4f828783f82",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "07_Face.png": {
+          "sha256": "c4c992c85190cd8821f5c81b3b68187928b1078efa67d1f57e68cd429d4ae969",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        },
+        "08_Accessories.png": {
+          "sha256": "edb5576dfd12cc78a4d9affb41743b0dd1da6224eb922d65bd3838842d9ffb9a",
+          "dimensions": [
+            1600,
+            1200
+          ]
+        },
+        "09_Materials.png": {
+          "sha256": "addc21026523fbe196382f966fd6b9eaee89286c48671713b1c54d251ea5cbbf",
+          "dimensions": [
+            1600,
+            1320
+          ]
+        },
+        "10_Turnaround.png": {
+          "sha256": "6fbeddf99eed8225ba9325f9cb15802b3b73a8cdf3f8010968cc3fcfa3786350",
+          "dimensions": [
+            2400,
+            1540
+          ]
+        }
+      },
+      "problems": []
+    },
+    "nilo": {
+      "passed": true,
+      "model_source_sha256": "1a19078a23b1ca8a1cb0c5d53b574ff3bfe03d1dd1fbc3cfedbf2a7223c7f011",
+      "exporter_report_not_independent_unity_validation": {
+        "vertices": 36929,
+        "triangles": 68612,
+        "skinned_meshes": 4,
+        "bones": 47,
+        "clips": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Mine",
+          "Collect",
+          "Carry",
+          "Wave",
+          "Celebrate",
+          "Machine",
+          "Craft"
+        ],
+        "reference_based_reconstruction": true
+      },
+      "outputs": {
+        "01_SourceCrop.png": {
+          "sha256": "8f4f46f10a7d72a1cb72e6f2c17929f974f8e9b43f06074443a141e14a571dec",
+          "dimensions": [
+            148,
+            280
+          ]
+        },
+        "02_Beauty.png": {
+          "sha256": "b053887c9a892ce926260379a709eb7dbcc2dae7ddcaf3d93582a011e9595ed9",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "03_Front.png": {
+          "sha256": "084de610973e26f0cd1c158d99d6898e9f30b87bf16034921d9dbf7ab656dfe5",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "04_Left.png": {
+          "sha256": "0f597d198ab2db6070e4146fc68d6b41b19cd092717244d598e2c72e53fe9080",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "05_Right.png": {
+          "sha256": "a73991caa29c54448eeab9c749dfb7facd777dde6098b1ea08aedd55ea35e28b",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "06_Back.png": {
+          "sha256": "d64351d154a9b5bb0c4b390be3a5fe7a10ad62b85a13e7168770da774496025a",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "07_Face.png": {
+          "sha256": "499254e4533628cf7833d9d97872c4b531f19c71c1f02c5cf9df1d713ac29764",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        },
+        "08_Accessories.png": {
+          "sha256": "1f987e5988d55b6be5734aa00d9b4a3da771011931f4edab1edaae872f4aaeb2",
+          "dimensions": [
+            1600,
+            1200
+          ]
+        },
+        "09_Materials.png": {
+          "sha256": "c8d40fb619f37d6e636f6ff80a6eee032a2c99365c8275d1e6fe4cc06209aff1",
+          "dimensions": [
+            1600,
+            1320
+          ]
+        },
+        "10_Turnaround.png": {
+          "sha256": "65bd0f4a78e85e36202600baf9e07a834aed0cc070d7fd5d849c88949ef4d2c2",
+          "dimensions": [
+            2400,
+            1540
+          ]
+        }
+      },
+      "problems": []
+    },
+    "etta": {
+      "passed": true,
+      "model_source_sha256": "3cd6579d479899f03da51d593aee5c4b2cf2fc05fa1e471ab47981672de34a29",
+      "exporter_report_not_independent_unity_validation": {
+        "vertices": 48500,
+        "triangles": 91434,
+        "skinned_meshes": 4,
+        "bones": 47,
+        "clips": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Mine",
+          "Collect",
+          "Carry",
+          "Wave",
+          "Celebrate",
+          "Machine",
+          "Craft"
+        ],
+        "reference_based_reconstruction": true
+      },
+      "outputs": {
+        "01_SourceCrop.png": {
+          "sha256": "e72dc9ad5c683b54061ad9e4175d794dd14145fb7f099b24e0f555bd8f9ec2c4",
+          "dimensions": [
+            146,
+            292
+          ]
+        },
+        "02_Beauty.png": {
+          "sha256": "ab5adac993e3d3052e6617352465749fdf3e65fd79d080e58c5dcbac124427ae",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "03_Front.png": {
+          "sha256": "a3079f18649115ae31b237b375ae512b089759ac2af31e4d7a2147124816b8e2",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "04_Left.png": {
+          "sha256": "babff853cb1c685bd351188a8cce87414c9112943cb4e34b390245e571841631",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "05_Right.png": {
+          "sha256": "c248f32821d3e33392ccd4a52b43a2c3a5427f815a2b68a86de0f96cc81f7b02",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "06_Back.png": {
+          "sha256": "6a39b78cc0c67ac5684a766cb85b356a30bba0491796a544597299da97620824",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "07_Face.png": {
+          "sha256": "31e074ce662784a51a0a2179adcd25d8fcfbf801805999d861c6ee9b294bbebc",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        },
+        "08_Accessories.png": {
+          "sha256": "812f5bbafd78e86a12521be3db821c060c674b19f1db17bd1b7fe832b0144ccf",
+          "dimensions": [
+            1600,
+            1200
+          ]
+        },
+        "09_Materials.png": {
+          "sha256": "f8a9155a4ee687e414e23a516ae0f6072ad2560d06c8a1ff3dea6b1590e77516",
+          "dimensions": [
+            1600,
+            1320
+          ]
+        },
+        "10_Turnaround.png": {
+          "sha256": "96ba0cf9dd7463463b639a7278f2962f98ceb277b633c22dce8b826016953afd",
+          "dimensions": [
+            2400,
+            1540
+          ]
+        }
+      },
+      "problems": []
+    },
+    "rumi": {
+      "passed": true,
+      "model_source_sha256": "da94c2882eba499865b132c97fe78ca231a600edcd279c79509c8e3bd9479b55",
+      "exporter_report_not_independent_unity_validation": {
+        "vertices": 37631,
+        "triangles": 70306,
+        "skinned_meshes": 4,
+        "bones": 47,
+        "clips": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Mine",
+          "Collect",
+          "Carry",
+          "Wave",
+          "Celebrate",
+          "Machine",
+          "Craft"
+        ],
+        "reference_based_reconstruction": true
+      },
+      "outputs": {
+        "01_SourceCrop.png": {
+          "sha256": "cfcd67460bd08c21cc16a6adf62e51ca80bf88e5a48b02d86d922cf1d6b23d25",
+          "dimensions": [
+            152,
+            294
+          ]
+        },
+        "02_Beauty.png": {
+          "sha256": "658cfd8f7bb64ec9ba7c1815735bec29dad6fa6c706226133e915a5f657ea9e1",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "03_Front.png": {
+          "sha256": "8329055f68878f9f531f0d028469a9e9bf73d04863a2cd95d873763b79d52e4d",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "04_Left.png": {
+          "sha256": "cd1f269652c281b5b54704921edd327c86799634530c930ccaa0a4841201867c",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "05_Right.png": {
+          "sha256": "8bcc5985a03dd2965aea6220b4332e0a0bd59d91e198f0a95083948d0afb9707",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "06_Back.png": {
+          "sha256": "005fe6bcef62b6303f088c3a000504c0bbc54a203cdf384b72086c51187d222c",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "07_Face.png": {
+          "sha256": "cb6055211e97a739205c3f09e53f307574a9dfce278ec19fe20781b809e0fc41",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        },
+        "08_Accessories.png": {
+          "sha256": "b5d6c0843aa24c5c1102d6f101debeb4c489edaf2baa8878599a774ab5f998ec",
+          "dimensions": [
+            1600,
+            1200
+          ]
+        },
+        "09_Materials.png": {
+          "sha256": "76e3974f1b346ed4d0cbc72bb9c52fb3f217cc3e6b8959383dc8fc01dede7350",
+          "dimensions": [
+            1600,
+            1320
+          ]
+        },
+        "10_Turnaround.png": {
+          "sha256": "0d58765e48aedc92c5e1009ef70df5b9c3b8388afc9cced647f37ced585d7b85",
+          "dimensions": [
+            2400,
+            1540
+          ]
+        }
+      },
+      "problems": []
+    },
+    "kavi": {
+      "passed": true,
+      "model_source_sha256": "c6ec7b57214a55f80c708eb7bd7e716ba704bc24912df0c4b029f517e03bd216",
+      "exporter_report_not_independent_unity_validation": {
+        "vertices": 38548,
+        "triangles": 71658,
+        "skinned_meshes": 4,
+        "bones": 47,
+        "clips": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Mine",
+          "Collect",
+          "Carry",
+          "Wave",
+          "Celebrate",
+          "Machine",
+          "Craft"
+        ],
+        "reference_based_reconstruction": true
+      },
+      "outputs": {
+        "01_SourceCrop.png": {
+          "sha256": "a87b011ace28dc2dccd8258bc20ab194458825f24b48761945d5cfe5ef9a3d9a",
+          "dimensions": [
+            165,
+            294
+          ]
+        },
+        "02_Beauty.png": {
+          "sha256": "477912cae1a914dc4073cd8757787c062c92c3d02502a4464a2151c4dfd78cc9",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "03_Front.png": {
+          "sha256": "421f8bf9bca1094849c69fdb2859c4589d292f6464745ba6b7b56c0a1e9c708f",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "04_Left.png": {
+          "sha256": "8ac83f978c8b73be79175eee211223943e11f97416ba1144b0cef2d60d8956b8",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "05_Right.png": {
+          "sha256": "cea696c4c5f199e89fdd939b36966f5f4d1c9fb9b6a9f61326a2327a9f36ffa6",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "06_Back.png": {
+          "sha256": "bb32bc4037802178e46f059bc359629ae057b65a06982db4869e8ca0363bca9a",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "07_Face.png": {
+          "sha256": "0ad502fa52cb37b4970a964353f14209b201cefddeeb317d71741380ebc40984",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        },
+        "08_Accessories.png": {
+          "sha256": "acaa9337869aba5822d2179e1faca0bcf02b27afe02bc6a0e2b8f65c75b2e534",
+          "dimensions": [
+            1600,
+            1200
+          ]
+        },
+        "09_Materials.png": {
+          "sha256": "049d2634fe7a4dc5f96cf9d62cb36eef132c1b3de10df807fe0071611da136fd",
+          "dimensions": [
+            1600,
+            1320
+          ]
+        },
+        "10_Turnaround.png": {
+          "sha256": "cdd5696e02944921eb06440cb78efc01b83ac35323eb81cca44ae2a16ef0adfa",
+          "dimensions": [
+            2400,
+            1540
+          ]
+        }
+      },
+      "problems": []
+    },
+    "sola": {
+      "passed": true,
+      "model_source_sha256": "0dabbfad57659ee566cbdf7ae57882edf4852eeac47e0ab98c5321130e6b069c",
+      "exporter_report_not_independent_unity_validation": {
+        "vertices": 32539,
+        "triangles": 60680,
+        "skinned_meshes": 4,
+        "bones": 47,
+        "clips": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Mine",
+          "Collect",
+          "Carry",
+          "Wave",
+          "Celebrate",
+          "Machine",
+          "Craft"
+        ],
+        "reference_based_reconstruction": true
+      },
+      "outputs": {
+        "01_SourceCrop.png": {
+          "sha256": "b1f7b6eb9c21106c3ea291dab29fe60d758723ca3675d5af6234f70f6b2399df",
+          "dimensions": [
+            159,
+            291
+          ]
+        },
+        "02_Beauty.png": {
+          "sha256": "4d226d540fd5684b79f28b87d59508501373a61239be8098701c6a64da38c10a",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "03_Front.png": {
+          "sha256": "a39bc0f60b5f3748cbe7517b06976cc0a236b7b3d43289cbe23907fe61ee31c2",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "04_Left.png": {
+          "sha256": "43e869a4458c4d9cced18f8392e5cc6448e191e9e49f96cb1fc725c0fd0e8386",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "05_Right.png": {
+          "sha256": "168eece40f585865b0ed0b90cf18f9933f2d18dd803e77db9f98b3608d7591a8",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "06_Back.png": {
+          "sha256": "6f264ab0a547a6a9fdd401bb0a062386454779a660433afed67e3cf768be3059",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "07_Face.png": {
+          "sha256": "892fc60bad46f69da79b087094f7482b40f198496efafa37927a69cda3d477c7",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        },
+        "08_Accessories.png": {
+          "sha256": "7e7cd535a78cdb3b9e9c79bd86cb65ef0f167fb4ae3e27d2eecec414f9dab107",
+          "dimensions": [
+            1600,
+            1200
+          ]
+        },
+        "09_Materials.png": {
+          "sha256": "3e41072c086c02268b115cbaf70e8037a3f4984272aa9e7545246525ac5d528a",
+          "dimensions": [
+            1600,
+            1320
+          ]
+        },
+        "10_Turnaround.png": {
+          "sha256": "d50d77b6cea579801920a6933116150973de1c8a087194fe86f9827c0bf62d45",
+          "dimensions": [
+            2400,
+            1540
+          ]
+        }
+      },
+      "problems": []
+    },
+    "beni": {
+      "passed": true,
+      "model_source_sha256": "500881858b893b22f5352752d9c7e65856819c7cab59c5ebad5108253ea9d809",
+      "exporter_report_not_independent_unity_validation": {
+        "vertices": 38172,
+        "triangles": 71260,
+        "skinned_meshes": 4,
+        "bones": 47,
+        "clips": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Mine",
+          "Collect",
+          "Carry",
+          "Wave",
+          "Celebrate",
+          "Machine",
+          "Craft"
+        ],
+        "reference_based_reconstruction": true
+      },
+      "outputs": {
+        "01_SourceCrop.png": {
+          "sha256": "94728e641854a854d55c07a3b3832c4343258da91a93babf1b285557c62a11b0",
+          "dimensions": [
+            195,
+            297
+          ]
+        },
+        "02_Beauty.png": {
+          "sha256": "a1b7dbd045aa9ebb5a3596d72cf1e8acfc0b405ddcc3a8df987f72dcb176b694",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "03_Front.png": {
+          "sha256": "1a83e33afd0f0f183b501a6a7106cd97b9c657063b74cd9707282bec31f60c73",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "04_Left.png": {
+          "sha256": "7532c883b1f303f722b731b486b2db86f5ddbff1ec7650954d8d369dbd97e2a1",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "05_Right.png": {
+          "sha256": "3b8ef38a7d08fae07eb4ff27ec647ed0660002f3a5bd3ca70ea56490af7e058b",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "06_Back.png": {
+          "sha256": "65e2b47ce955816da07f480cce76532d190883200406a285c0abba1877e65e8e",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "07_Face.png": {
+          "sha256": "b34f4a7a1421305440ccc8430930bf02567dd638ef3c3e13e331711380fb3945",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        },
+        "08_Accessories.png": {
+          "sha256": "ddc956356ca986fbed433efa9f64135bd28c2d3e5f9620277293924d8224d1b6",
+          "dimensions": [
+            1600,
+            1200
+          ]
+        },
+        "09_Materials.png": {
+          "sha256": "7eed4cf6879da51819b6375b408595e80c49bb881cb8466b63781725857899bb",
+          "dimensions": [
+            1600,
+            1320
+          ]
+        },
+        "10_Turnaround.png": {
+          "sha256": "af90aae7e7eea13229295b53fa23c45303c4500182ccb28df234be8bb9dc29f5",
+          "dimensions": [
+            2400,
+            1540
+          ]
+        }
+      },
+      "problems": []
+    },
+    "daro": {
+      "passed": true,
+      "model_source_sha256": "1d3c2bd37e3c69c81634688a9f37529f7a305d91b0ddf1d5ae0af95eb8994997",
+      "exporter_report_not_independent_unity_validation": {
+        "vertices": 38910,
+        "triangles": 72488,
+        "skinned_meshes": 4,
+        "bones": 47,
+        "clips": [
+          "Idle",
+          "Walk",
+          "Run",
+          "Mine",
+          "Collect",
+          "Carry",
+          "Wave",
+          "Celebrate",
+          "Machine",
+          "Craft"
+        ],
+        "reference_based_reconstruction": true
+      },
+      "outputs": {
+        "01_SourceCrop.png": {
+          "sha256": "30b497b555e4604e8b6ea8ff051bc8a35f4af256617b9986a4ae45a69f1c6637",
+          "dimensions": [
+            166,
+            298
+          ]
+        },
+        "02_Beauty.png": {
+          "sha256": "d0bb206ae952a3ba360e57caafe46afe179d0cc0ff95c933f43fab499ca9d1c3",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "03_Front.png": {
+          "sha256": "58e47cb428cd0c044642b0a2a4d0664632d955f830db4f287e09415b2a10613d",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "04_Left.png": {
+          "sha256": "93ed5ad63e0ed31c8a118727def67568be3b79bb6ec1cfbdbe75dbffd7e0ebff",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "05_Right.png": {
+          "sha256": "c588ecc252d44b0ae45c949269843fb973d39b22a6c3c02bc488155820bb54df",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "06_Back.png": {
+          "sha256": "90f3bc5f042195567008824d0998408c5d72709351bf9d2b9293ebdaec0f06e0",
+          "dimensions": [
+            1200,
+            1600
+          ]
+        },
+        "07_Face.png": {
+          "sha256": "47c356d8abb54a21e8cd7b95b9b30bfdc611eed76f7fe565f49412fc2e5ae333",
+          "dimensions": [
+            1200,
+            1200
+          ]
+        },
+        "08_Accessories.png": {
+          "sha256": "a7246996d11945f3285176a95a87680fc8d5199e189ea9c89fa114cc94744606",
+          "dimensions": [
+            1600,
+            1200
+          ]
+        },
+        "09_Materials.png": {
+          "sha256": "6090c85e376b7ebe081ea47be0eb6e3deb3c2624179131cbc98d401232910cf9",
+          "dimensions": [
+            1600,
+            1320
+          ]
+        },
+        "10_Turnaround.png": {
+          "sha256": "ea4c33695861476306ef077746b29ce6751a9cf4fcb602d5e6d784bc404d8905",
+          "dimensions": [
+            2400,
+            1540
+          ]
+        }
+      },
+      "problems": []
+    }
+  },
+  "passed": true
+}

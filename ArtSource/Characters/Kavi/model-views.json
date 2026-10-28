@@ -1,0 +1,392 @@
+{
+  "character_id": "kavi",
+  "name": "Kavi",
+  "model_source": "ArtSource/Characters/kavi.blend",
+  "model_source_sha256": "c6ec7b57214a55f80c708eb7bd7e716ba704bc24912df0c4b029f517e03bd216",
+  "status": "Actual-model review of this source revision; not a recovered original model, not a fidelity score.",
+  "engine": "CYCLES",
+  "samples": 8,
+  "renderer_sha256": "a5144c8f6a6f4ce9257eaf324dc9832d0ac73381e0ae8ddc0d737d7cbf807d40",
+  "full_body_dimensions": [
+    1200,
+    1600
+  ],
+  "colour_management": "AgX",
+  "lighting": "Neutral white area key/fill/back and neutral world, shared across characters.",
+  "full_body_scale": "All front/left/right/back/beauty views use the same 2.65m orthographic camera scale, without per-character stretching.",
+  "inferred_views": [
+    "04_Left.png",
+    "05_Right.png",
+    "06_Back.png"
+  ],
+  "views": {
+    "02_Beauty.png": {
+      "camera": [
+        -3.0,
+        6.5,
+        1.600000023841858
+      ],
+      "look_at": [
+        0,
+        0,
+        1.03
+      ],
+      "ortho_scale": 2.65,
+      "pose": "Actual authored Idle frame 1",
+      "props_visible": true,
+      "native_dimensions": [
+        1200,
+        1600
+      ]
+    },
+    "03_Front.png": {
+      "camera": [
+        0.0,
+        7.0,
+        1.0299999713897705
+      ],
+      "look_at": [
+        0,
+        0,
+        1.03
+      ],
+      "ortho_scale": 2.65,
+      "pose": "Actual bind/rest A-pose",
+      "props_visible": false,
+      "native_dimensions": [
+        1200,
+        1600
+      ],
+      "orientation": "front"
+    },
+    "04_Left.png": {
+      "camera": [
+        7.0,
+        0.0,
+        1.0299999713897705
+      ],
+      "look_at": [
+        0,
+        0,
+        1.03
+      ],
+      "ortho_scale": 2.65,
+      "pose": "Actual bind/rest A-pose",
+      "props_visible": false,
+      "native_dimensions": [
+        1200,
+        1600
+      ],
+      "orientation": "character left"
+    },
+    "05_Right.png": {
+      "camera": [
+        -7.0,
+        0.0,
+        1.0299999713897705
+      ],
+      "look_at": [
+        0,
+        0,
+        1.03
+      ],
+      "ortho_scale": 2.65,
+      "pose": "Actual bind/rest A-pose",
+      "props_visible": false,
+      "native_dimensions": [
+        1200,
+        1600
+      ],
+      "orientation": "character right"
+    },
+    "06_Back.png": {
+      "camera": [
+        0.0,
+        -7.0,
+        1.0299999713897705
+      ],
+      "look_at": [
+        0,
+        0,
+        1.03
+      ],
+      "ortho_scale": 2.65,
+      "pose": "Actual bind/rest A-pose",
+      "props_visible": false,
+      "native_dimensions": [
+        1200,
+        1600
+      ],
+      "orientation": "back"
+    },
+    "07_Face.png": {
+      "camera": [
+        -0.2199999988079071,
+        5.0,
+        1.7243359088897705
+      ],
+      "look_at": [
+        0,
+        0.02,
+        1.6943358778953552
+      ],
+      "ortho_scale": 0.85,
+      "pose": "Neutral A-pose head",
+      "native_dimensions": [
+        1200,
+        1200
+      ]
+    },
+    "08_Accessories.png": {
+      "native_dimensions": [
+        1600,
+        1200
+      ],
+      "method": "Actual evaluated role mesh and whole loose Body islands selected by material and anatomical region; UVs and materials preserved. Assemblies are laid out for inspection, not redesigned.",
+      "assemblies": [
+        {
+          "label": "Signature role equipment",
+          "world_center": [
+            -0.949999988079071,
+            0.0,
+            1.4500000476837158
+          ],
+          "label_anchor_normalized": [
+            0.9042555689811707,
+            0.22767001390457153
+          ]
+        },
+        {
+          "label": "Belt / pouches",
+          "world_center": [
+            0.0,
+            0.0,
+            1.4500000476837158
+          ],
+          "label_anchor_normalized": [
+            0.5000002384185791,
+            0.22767001390457153
+          ]
+        },
+        {
+          "label": "Boots",
+          "world_center": [
+            0.949999988079071,
+            0.0,
+            1.4500000476837158
+          ],
+          "label_anchor_normalized": [
+            0.09574492275714874,
+            0.2276700735092163
+          ]
+        }
+      ],
+      "missing_in_current_model": [
+        "Helmet / eyewear",
+        "Gloves"
+      ]
+    }
+  },
+  "material_samples": [
+    {
+      "key": "Face",
+      "material": "kavi_Face",
+      "world_center": [
+        -0.62,
+        0,
+        1.65
+      ],
+      "label_anchor_normalized": [
+        0.76382976770401,
+        0.1851065754890442
+      ]
+    },
+    {
+      "key": "Hair",
+      "material": "kavi_Hair",
+      "world_center": [
+        0.0,
+        0,
+        1.65
+      ],
+      "label_anchor_normalized": [
+        0.4999999403953552,
+        0.18510663509368896
+      ]
+    },
+    {
+      "key": "Pants",
+      "material": "kavi_Pants",
+      "world_center": [
+        0.62,
+        0,
+        1.65
+      ],
+      "label_anchor_normalized": [
+        0.23617014288902283,
+        0.18510669469833374
+      ]
+    },
+    {
+      "key": "Leather",
+      "material": "kavi_Leather",
+      "world_center": [
+        -0.62,
+        0,
+        1.13
+      ],
+      "label_anchor_normalized": [
+        0.76382976770401,
+        0.4063831567764282
+      ]
+    },
+    {
+      "key": "Metal",
+      "material": "kavi_Metal",
+      "world_center": [
+        0.0,
+        0,
+        1.13
+      ],
+      "label_anchor_normalized": [
+        0.5,
+        0.406383216381073
+      ]
+    },
+    {
+      "key": "Brass",
+      "material": "kavi_Brass",
+      "world_center": [
+        0.62,
+        0,
+        1.13
+      ],
+      "label_anchor_normalized": [
+        0.23617017269134521,
+        0.4063832759857178
+      ]
+    },
+    {
+      "key": "Gem",
+      "material": "kavi_Gem",
+      "world_center": [
+        -0.62,
+        0,
+        0.6099999999999999
+      ],
+      "label_anchor_normalized": [
+        0.7638298273086548,
+        0.6276597678661346
+      ]
+    }
+  ],
+  "source_preserved": true,
+  "model_saved_by_this_renderer": false,
+  "raw_render_outputs": {
+    "02_Beauty.png": {
+      "sha256": "477912cae1a914dc4073cd8757787c062c92c3d02502a4464a2151c4dfd78cc9"
+    },
+    "03_Front.png": {
+      "sha256": "421f8bf9bca1094849c69fdb2859c4589d292f6464745ba6b7b56c0a1e9c708f"
+    },
+    "04_Left.png": {
+      "sha256": "8ac83f978c8b73be79175eee211223943e11f97416ba1144b0cef2d60d8956b8"
+    },
+    "05_Right.png": {
+      "sha256": "cea696c4c5f199e89fdd939b36966f5f4d1c9fb9b6a9f61326a2327a9f36ffa6"
+    },
+    "06_Back.png": {
+      "sha256": "bb32bc4037802178e46f059bc359629ae057b65a06982db4869e8ca0363bca9a"
+    },
+    "07_Face.png": {
+      "sha256": "0ad502fa52cb37b4970a964353f14209b201cefddeeb317d71741380ebc40984"
+    },
+    "_08_Accessories.png": {
+      "sha256": "7005b3201e956650e16a3e2712190a440084270309b6f8a74ba6f4ac92345060"
+    },
+    "_09_MaterialPreview.png": {
+      "sha256": "d8f9b9d0cc26af6706fa7e55a19359110ff9bec74cf8424331eb4a2d7625042c"
+    }
+  },
+  "compositing": "Labels, uniform image fitting and contact-sheet layout only. No generated/painted replacement of actual model renders.",
+  "assembler_sha256": "5c0b91ff3da022afd418a68d6668d5afa885bd20051bd72b8b9237d822880287",
+  "outputs": {
+    "01_SourceCrop.png": {
+      "sha256": "a87b011ace28dc2dccd8258bc20ab194458825f24b48761945d5cfe5ef9a3d9a",
+      "dimensions": [
+        165,
+        294
+      ]
+    },
+    "02_Beauty.png": {
+      "sha256": "477912cae1a914dc4073cd8757787c062c92c3d02502a4464a2151c4dfd78cc9",
+      "dimensions": [
+        1200,
+        1600
+      ]
+    },
+    "03_Front.png": {
+      "sha256": "421f8bf9bca1094849c69fdb2859c4589d292f6464745ba6b7b56c0a1e9c708f",
+      "dimensions": [
+        1200,
+        1600
+      ]
+    },
+    "04_Left.png": {
+      "sha256": "8ac83f978c8b73be79175eee211223943e11f97416ba1144b0cef2d60d8956b8",
+      "dimensions": [
+        1200,
+        1600
+      ]
+    },
+    "05_Right.png": {
+      "sha256": "cea696c4c5f199e89fdd939b36966f5f4d1c9fb9b6a9f61326a2327a9f36ffa6",
+      "dimensions": [
+        1200,
+        1600
+      ]
+    },
+    "06_Back.png": {
+      "sha256": "bb32bc4037802178e46f059bc359629ae057b65a06982db4869e8ca0363bca9a",
+      "dimensions": [
+        1200,
+        1600
+      ]
+    },
+    "07_Face.png": {
+      "sha256": "0ad502fa52cb37b4970a964353f14209b201cefddeeb317d71741380ebc40984",
+      "dimensions": [
+        1200,
+        1200
+      ]
+    },
+    "08_Accessories.png": {
+      "sha256": "acaa9337869aba5822d2179e1faca0bcf02b27afe02bc6a0e2b8f65c75b2e534",
+      "dimensions": [
+        1600,
+        1200
+      ]
+    },
+    "09_Materials.png": {
+      "sha256": "049d2634fe7a4dc5f96cf9d62cb36eef132c1b3de10df807fe0071611da136fd",
+      "dimensions": [
+        1600,
+        1320
+      ]
+    },
+    "10_Turnaround.png": {
+      "sha256": "cdd5696e02944921eb06440cb78efc01b83ac35323eb81cca44ae2a16ef0adfa",
+      "dimensions": [
+        2400,
+        1540
+      ]
+    },
+    "11_ReferenceVsModel.png": {
+      "sha256": "6b0cd1a6f95028ff7a280e0b5717ffcb774575eab02f169a8e45495188068b47",
+      "dimensions": [
+        1600,
+        1210
+      ]
+    }
+  }
+}

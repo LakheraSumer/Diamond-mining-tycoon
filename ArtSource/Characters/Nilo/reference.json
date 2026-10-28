@@ -1,0 +1,213 @@
+{
+  "id": "nilo",
+  "name": "Nilo",
+  "source_crop_rect_xyxy": [
+    876,
+    45,
+    1024,
+    325
+  ],
+  "source_crop_dimensions": [
+    148,
+    280
+  ],
+  "source_crop_sha256": "8f4f46f10a7d72a1cb72e6f2c17929f974f8e9b43f06074443a141e14a571dec",
+  "decoded_pixel_copy_verified": true,
+  "auxiliary_source": "D:\\games\\chartcter image\\e.png",
+  "auxiliary_sha256": "387bc2b75b9fd4bfbba5dc48516a593b4a6d430fe2383027d3a29ae43f3215fc",
+  "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+  "source_palette": [
+    {
+      "rgb": [
+        83,
+        72,
+        82
+      ],
+      "pixels": 3171
+    },
+    {
+      "rgb": [
+        49,
+        44,
+        52
+      ],
+      "pixels": 3001
+    },
+    {
+      "rgb": [
+        236,
+        230,
+        214
+      ],
+      "pixels": 2813
+    },
+    {
+      "rgb": [
+        201,
+        172,
+        146
+      ],
+      "pixels": 2796
+    },
+    {
+      "rgb": [
+        98,
+        94,
+        107
+      ],
+      "pixels": 2753
+    },
+    {
+      "rgb": [
+        68,
+        55,
+        59
+      ],
+      "pixels": 2702
+    },
+    {
+      "rgb": [
+        154,
+        117,
+        100
+      ],
+      "pixels": 2378
+    },
+    {
+      "rgb": [
+        30,
+        21,
+        25
+      ],
+      "pixels": 2361
+    }
+  ],
+  "labelled_source_samples": [
+    {
+      "label": "Mint helmet",
+      "crop_pixel_rect_xyxy": [
+        51,
+        17,
+        56,
+        22
+      ],
+      "rgb": [
+        145,
+        189,
+        174
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Skin",
+      "crop_pixel_rect_xyxy": [
+        68,
+        55,
+        73,
+        60
+      ],
+      "rgb": [
+        227,
+        138,
+        100
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark hair",
+      "crop_pixel_rect_xyxy": [
+        54,
+        35,
+        59,
+        40
+      ],
+      "rgb": [
+        44,
+        26,
+        19
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Indigo vest",
+      "crop_pixel_rect_xyxy": [
+        78,
+        103,
+        83,
+        108
+      ],
+      "rgb": [
+        76,
+        75,
+        120
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Cream sleeve",
+      "crop_pixel_rect_xyxy": [
+        20,
+        125,
+        25,
+        130
+      ],
+      "rgb": [
+        194,
+        159,
+        121
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Indigo trousers",
+      "crop_pixel_rect_xyxy": [
+        84,
+        178,
+        89,
+        183
+      ],
+      "rgb": [
+        48,
+        42,
+        57
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark boot",
+      "crop_pixel_rect_xyxy": [
+        115,
+        252,
+        120,
+        257
+      ],
+      "rgb": [
+        246,
+        238,
+        227
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark glove",
+      "crop_pixel_rect_xyxy": [
+        50,
+        146,
+        55,
+        151
+      ],
+      "rgb": [
+        43,
+        29,
+        23
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    }
+  ],
+  "decisions": [
+    "Keep the original short swept hair, indigo vest/trousers, cream sleeves, dark gloves and divided sorting tray.",
+    "The auxiliary front/back pocket seams and patch shapes may guide hidden construction, but must not change the original narrow youthful-adult silhouette.",
+    "Tray underside and compartment depth are reconstructed."
+  ],
+  "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+}

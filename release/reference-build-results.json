@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-25T08:20:06.483013+00:00",
+  "android_apk": {
+    "file": "Builds/Android/DiamondMineTycoon-0.1.1-dev.apk",
+    "sha256": "440f4d0be1d84fcf4b29d857fabe26237a1f3d773db430d3ee4713e9bbbd05a6",
+    "bytes": 94246063,
+    "package": "com.diamondmine.tycoon.qa",
+    "version": "0.1.1-qa-dev",
+    "minimum_sdk": 25,
+    "target_sdk": 36,
+    "abis": [
+      "arm64-v8a",
+      "x86_64"
+    ],
+    "development": true,
+    "signing_verified": true,
+    "zipalign_16kb_verified": true,
+    "native_elf_16kb_static_checks": true,
+    "build_input_source_mismatches": []
+  },
+  "verification": {
+    "simulation_passed": 85,
+    "unity_api_configurations": 6,
+    "main_play_checks": 517,
+    "main_play_errors": "",
+    "sampled_animation_states": 120,
+    "measured_ui_rectangles": 221,
+    "ui_errors": ""
+  },
+  "limits": [
+    "No physical Android device installation, FPS, thermal or touch test was performed.",
+    "Visual reference matching remains unfinished.",
+    "Development APK is signed for local testing, not store release.",
+    "iOS export was not requested in this run."
+  ]
+}

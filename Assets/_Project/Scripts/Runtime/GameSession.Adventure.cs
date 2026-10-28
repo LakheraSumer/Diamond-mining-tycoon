@@ -28,6 +28,14 @@ namespace DiamondMine.Runtime
             });
         }
 
+        public bool TrySendCart()
+        {
+            return Play(delegate (GameState clone, out string message)
+            {
+                return AdventureRules.TrySendCart(clone, out message);
+            });
+        }
+
         public bool TryPocket()
         {
             return Play(delegate (GameState clone, out string message)
@@ -57,6 +65,14 @@ namespace DiamondMine.Runtime
             return Play(delegate (GameState clone, out string message)
             {
                 return AdventureRules.TryCollectMachine(clone, machineId, out message);
+            });
+        }
+
+        public bool TryImproveMachine(string machineId)
+        {
+            return Play(delegate (GameState clone, out string message)
+            {
+                return AdventureRules.TryUpgradeMachine(clone, machineId, out message);
             });
         }
 

@@ -1,0 +1,173 @@
+{
+  "reference": "Assets/_Project/Resources/Ui/crew-lineup.jpg",
+  "reference_sha256": "1a704bf26640122533f4295851a3a64b93a70269c62744304bb4d9e5d9854431",
+  "operations": "Exact preserved character crops, uniform resize, layout and labels only. No generated/painted replacement of Unity screenshots.",
+  "camera_pose_alignment": "Approximate; composites do not certify matched camera, pose or lighting.",
+  "source_limitation": "Available preserved JPEG roster copy; named original PNG was not found. Side/back geometry is reconstructed.",
+  "tool_sha256": "e720f1fc1062fdce898d5b083837614d13ea53b5fc7d35c3249f2531ce950aa2",
+  "inputs": [
+    {
+      "file": "ArtSource/Characters/Tavi/01_SourceCrop.png",
+      "sha256": "4e6aa505b3968bfb26037fdede0bedc4ce2e1a5f40e08a31fd64deab662ec44d"
+    },
+    {
+      "file": "release/screenshots/characters/tavi-unity.png",
+      "sha256": "cdaeba34ab0f520f3562881a124aa50f8cd96e6320fa36ac6b064729b9c3767f"
+    },
+    {
+      "file": "ArtSource/Characters/Mira/01_SourceCrop.png",
+      "sha256": "01d51025b4b00ac80b6a9dbecc6b4d24372d2e0d7132c9ddbe79d1a9d762c845"
+    },
+    {
+      "file": "release/screenshots/characters/mira-unity.png",
+      "sha256": "7d593154e3e65abc4a717b2d8182fc3d3fe33fe2a4b9742c9569e1fac47badc2"
+    },
+    {
+      "file": "ArtSource/Characters/Oren/01_SourceCrop.png",
+      "sha256": "ae34d2c83b94d6e4e7fe13cb5b801b7a3694edbc5439df2c924ee86a27143294"
+    },
+    {
+      "file": "release/screenshots/characters/oren-unity.png",
+      "sha256": "1e558f1628b43558179f421e3078b649855519598f83a44c8a3215e944e4f30b"
+    },
+    {
+      "file": "ArtSource/Characters/Zela/01_SourceCrop.png",
+      "sha256": "bf1e5993dcf1594652718cf00330b01c530104c3abd74d606874ecec5288f504"
+    },
+    {
+      "file": "release/screenshots/characters/zela-unity.png",
+      "sha256": "83fd8edde6ab8bebe2aeb03975dc559f515ff4c43a2236c72bbacb43d7e935ad"
+    },
+    {
+      "file": "ArtSource/Characters/Pavi/01_SourceCrop.png",
+      "sha256": "b57f323dad52980910176535eab8244125c7f87ddf1c531029a903ea226f14d6"
+    },
+    {
+      "file": "release/screenshots/characters/pavi-unity.png",
+      "sha256": "17b2e082e32767cee540b63fce2070f1b47b084128f2260633b6e0a22acc147a"
+    },
+    {
+      "file": "ArtSource/Characters/Nilo/01_SourceCrop.png",
+      "sha256": "8f4f46f10a7d72a1cb72e6f2c17929f974f8e9b43f06074443a141e14a571dec"
+    },
+    {
+      "file": "release/screenshots/characters/nilo-unity.png",
+      "sha256": "8c2a5ca58f6661a0a722de2bbfb249d0ae644fb994c74d73929b4d555303319c"
+    },
+    {
+      "file": "ArtSource/Characters/Etta/01_SourceCrop.png",
+      "sha256": "e72dc9ad5c683b54061ad9e4175d794dd14145fb7f099b24e0f555bd8f9ec2c4"
+    },
+    {
+      "file": "release/screenshots/characters/etta-unity.png",
+      "sha256": "d60b6823acc3b7885b56056f5dd42331da01912013b13eb416312c4c080fd0be"
+    },
+    {
+      "file": "ArtSource/Characters/Rumi/01_SourceCrop.png",
+      "sha256": "cfcd67460bd08c21cc16a6adf62e51ca80bf88e5a48b02d86d922cf1d6b23d25"
+    },
+    {
+      "file": "release/screenshots/characters/rumi-unity.png",
+      "sha256": "7fc969000c0af178f3d3b86899c536510ec10f24f0a5d805354a958c16e82d63"
+    },
+    {
+      "file": "ArtSource/Characters/Kavi/01_SourceCrop.png",
+      "sha256": "a87b011ace28dc2dccd8258bc20ab194458825f24b48761945d5cfe5ef9a3d9a"
+    },
+    {
+      "file": "release/screenshots/characters/kavi-unity.png",
+      "sha256": "4dd5254f39a7a284422abcfecb3b2f92f1e9fd50467369c2b5b3a74508bad0f7"
+    },
+    {
+      "file": "ArtSource/Characters/Sola/01_SourceCrop.png",
+      "sha256": "b1f7b6eb9c21106c3ea291dab29fe60d758723ca3675d5af6234f70f6b2399df"
+    },
+    {
+      "file": "release/screenshots/characters/sola-unity.png",
+      "sha256": "b16b9de363fe8cfe80b169c4ffbb06965852a16a78242322650a596360026654"
+    },
+    {
+      "file": "ArtSource/Characters/Beni/01_SourceCrop.png",
+      "sha256": "94728e641854a854d55c07a3b3832c4343258da91a93babf1b285557c62a11b0"
+    },
+    {
+      "file": "release/screenshots/characters/beni-unity.png",
+      "sha256": "497ad954f780f9f11caa14346b629dab9922119088767fc4ce480077e846b6d8"
+    },
+    {
+      "file": "ArtSource/Characters/Daro/01_SourceCrop.png",
+      "sha256": "30b497b555e4604e8b6ea8ff051bc8a35f4af256617b9986a4ae45a69f1c6637"
+    },
+    {
+      "file": "release/screenshots/characters/daro-unity.png",
+      "sha256": "1dff98d223a4e3e24fa9b97577b34ffd4a0332db9e86ac1fbc403265bada1f1f"
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew-lineup.jpg",
+      "sha256": "1a704bf26640122533f4295851a3a64b93a70269c62744304bb4d9e5d9854431"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "release/screenshots/characters/tavi-reference-vs-unity.png",
+      "sha256": "b0e783ce0e8ff9bbfac82ab2d4e13eba67414175fb608550a421d720a9b89ee9"
+    },
+    {
+      "file": "release/screenshots/characters/mira-reference-vs-unity.png",
+      "sha256": "4b163244a8ffe3c877560fb4382837e20e0abd25472b360113e1fce4e7be0c2a"
+    },
+    {
+      "file": "release/screenshots/characters/oren-reference-vs-unity.png",
+      "sha256": "8f4f5c1dc0316a473448c161da44d458642818148c6337ecd5bb12c894fa90d9"
+    },
+    {
+      "file": "release/screenshots/characters/zela-reference-vs-unity.png",
+      "sha256": "504c9aed0d6e3ffd8f7b3111e57f9a208e9c0845f67cd98ce7318eb29b2e0123"
+    },
+    {
+      "file": "release/screenshots/characters/pavi-reference-vs-unity.png",
+      "sha256": "5355bb885a54cc10ca6621186fe25ef228cb1b55e87d67f544092cb00d7b8a43"
+    },
+    {
+      "file": "release/screenshots/characters/nilo-reference-vs-unity.png",
+      "sha256": "b4a26a33813cda7f03425d74af54c147d3c77da5a49ec46131473df7ee0a8e7c"
+    },
+    {
+      "file": "release/screenshots/characters/etta-reference-vs-unity.png",
+      "sha256": "0b3523a292b8c1d1d347f198722f5793f1da3dd5aaf49fabff8d15ff377e9cdb"
+    },
+    {
+      "file": "release/screenshots/characters/rumi-reference-vs-unity.png",
+      "sha256": "6b68e0ff1d07fc5d21fc22b1a95249925f06a248de8413b5c6197a010e091694"
+    },
+    {
+      "file": "release/screenshots/characters/kavi-reference-vs-unity.png",
+      "sha256": "2583342a200e2dd5ca8ca399ec3b6aff6a36210ef0e25f0b8315b92e62023acd"
+    },
+    {
+      "file": "release/screenshots/characters/sola-reference-vs-unity.png",
+      "sha256": "4fc1e671640426688e89fcc57641ef3a09310776def6c807a2800918705669a0"
+    },
+    {
+      "file": "release/screenshots/characters/beni-reference-vs-unity.png",
+      "sha256": "47cd5b6e93c49ffb6493efeb817377e65e61fab021bb534eda54c6a5a4fa3ac2"
+    },
+    {
+      "file": "release/screenshots/characters/daro-reference-vs-unity.png",
+      "sha256": "ad6205e7dbb98cd2397b7965ba5dae021286c82ed75e69278c6c4a7f75f95b3a"
+    },
+    {
+      "file": "release/screenshots/characters/crew-unity-lineup.png",
+      "sha256": "7522c2774f72185a0a8d163f1d51d4679b3561934e2b33bb50796c08b51b4b39"
+    },
+    {
+      "file": "release/screenshots/characters/reference-vs-unity-crew.png",
+      "sha256": "9b55d5dcc0ad47cb58087ee9f317ca3db896b86ed4353871106bfb3338fab2d2"
+    },
+    {
+      "file": "release/screenshots/characters/crew-reference-vs-unity-contact-sheet.png",
+      "sha256": "b23d80db7ace06b4866d371f59a67c71ea91326a9a851886617088faf653a99f"
+    }
+  ],
+  "likeness_score": null
+}

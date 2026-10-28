@@ -1,0 +1,26 @@
+Unity 6000.3.26f1
+Scene: Main.unity
+Actual Play mode: true
+Input: synthetic Unity UI pointer events and existing tap-to-move control; not a physical device test.
+Save: D:\games\DiamondMineTycoon\.cache\timber-workspace\.cache\qa-saves\timber-20261024-082435
+Cart item: stone; carried/delivered: 2
+PASS: Main scene in Play mode
+PASS: Save isolated
+PASS: Imported bunker prefab instantiated
+PASS: Metal reflection environment is authored
+PASS: Imported cart prefab instantiated
+PASS: Four authored wheels retain axle pivots
+PASS: Authored area uses FBX meshes with UV0 and vertex AO
+PASS: FBX portal faces the playable path
+PASS: Character selection
+PASS: Tap-to-move controls move player
+PASS: Walking actor retains full height
+PASS: Bunker interaction radius unchanged
+PASS: Interact opens bunker 1
+PASS: Mine button grants real carried ore
+PASS: Cart UI starts transaction
+PASS: Imported cart moves along haul route
+PASS: Parked cart hidden during haul
+PASS: Cart delivers exact load to warehouse
+PASS: Moving cart stops after delivery
+PASS: Parked cart returns

@@ -1,0 +1,7 @@
+{
+  "file": "ArtSource/Fonts/DiamondMineRounded-Bold.ttf",
+  "upstream_file": "Assets/_Project/Resources/Fonts/Nunito.ttf",
+  "license": "SIL Open Font License 1.1; upstream Nunito copyright and license retained.",
+  "modifications": "FontTools static instance at wght=800; family renamed DiamondMine Rounded; naming only beyond weight instancing.",
+  "sha256": "27d5db6f9e04850c568694e302cc114336ad94af9507f32166ac9af2beabba72"
+}

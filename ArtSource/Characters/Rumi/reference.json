@@ -1,0 +1,213 @@
+{
+  "id": "rumi",
+  "name": "Rumi",
+  "source_crop_rect_xyxy": [
+    174,
+    350,
+    326,
+    644
+  ],
+  "source_crop_dimensions": [
+    152,
+    294
+  ],
+  "source_crop_sha256": "cfcd67460bd08c21cc16a6adf62e51ca80bf88e5a48b02d86d922cf1d6b23d25",
+  "decoded_pixel_copy_verified": true,
+  "auxiliary_source": "D:\\games\\chartcter image\\g.png",
+  "auxiliary_sha256": "768ba56928c07ee44b899752eba9f1b7aee9ae40bd07ef64222407b73a9dec3f",
+  "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+  "source_palette": [
+    {
+      "rgb": [
+        152,
+        141,
+        170
+      ],
+      "pixels": 3904
+    },
+    {
+      "rgb": [
+        243,
+        231,
+        214
+      ],
+      "pixels": 3124
+    },
+    {
+      "rgb": [
+        80,
+        62,
+        67
+      ],
+      "pixels": 3116
+    },
+    {
+      "rgb": [
+        108,
+        93,
+        113
+      ],
+      "pixels": 2734
+    },
+    {
+      "rgb": [
+        211,
+        193,
+        189
+      ],
+      "pixels": 2724
+    },
+    {
+      "rgb": [
+        144,
+        115,
+        136
+      ],
+      "pixels": 2719
+    },
+    {
+      "rgb": [
+        41,
+        29,
+        31
+      ],
+      "pixels": 2714
+    },
+    {
+      "rgb": [
+        190,
+        155,
+        163
+      ],
+      "pixels": 2232
+    }
+  ],
+  "labelled_source_samples": [
+    {
+      "label": "Pale-blue helmet",
+      "crop_pixel_rect_xyxy": [
+        64,
+        15,
+        69,
+        20
+      ],
+      "rgb": [
+        185,
+        215,
+        237
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Skin",
+      "crop_pixel_rect_xyxy": [
+        87,
+        52,
+        92,
+        57
+      ],
+      "rgb": [
+        226,
+        159,
+        124
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark bob",
+      "crop_pixel_rect_xyxy": [
+        32,
+        61,
+        37,
+        66
+      ],
+      "rgb": [
+        35,
+        25,
+        20
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Lavender workwear",
+      "crop_pixel_rect_xyxy": [
+        92,
+        167,
+        97,
+        172
+      ],
+      "rgb": [
+        156,
+        132,
+        183
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Pale-blue sleeve",
+      "crop_pixel_rect_xyxy": [
+        34,
+        120,
+        39,
+        125
+      ],
+      "rgb": [
+        151,
+        176,
+        202
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Grey glove",
+      "crop_pixel_rect_xyxy": [
+        70,
+        109,
+        75,
+        114
+      ],
+      "rgb": [
+        164,
+        151,
+        136
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Cream cloth",
+      "crop_pixel_rect_xyxy": [
+        112,
+        116,
+        117,
+        121
+      ],
+      "rgb": [
+        247,
+        219,
+        175
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Brown boot",
+      "crop_pixel_rect_xyxy": [
+        106,
+        269,
+        111,
+        274
+      ],
+      "rgb": [
+        100,
+        78,
+        65
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    }
+  ],
+  "decisions": [
+    "The original visible hair is a short bob/compact hair mass under the pale-blue helmet. The auxiliary sheet proposes a larger tied-back ponytail; prefer the original visible bob silhouette.",
+    "Keep the original lavender workwear, pale-blue sleeves, grey gloves and cream cloth. Do not use Tavi\u2019s face solely because both wear similar helmets.",
+    "Back trouser pockets and hidden belt tools are reconstructed, not verified."
+  ],
+  "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+}

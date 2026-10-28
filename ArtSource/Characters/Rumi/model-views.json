@@ -1,0 +1,416 @@
+{
+  "character_id": "rumi",
+  "name": "Rumi",
+  "model_source": "ArtSource/Characters/rumi.blend",
+  "model_source_sha256": "da94c2882eba499865b132c97fe78ca231a600edcd279c79509c8e3bd9479b55",
+  "status": "Actual-model review of this source revision; not a recovered original model, not a fidelity score.",
+  "engine": "CYCLES",
+  "samples": 8,
+  "renderer_sha256": "a5144c8f6a6f4ce9257eaf324dc9832d0ac73381e0ae8ddc0d737d7cbf807d40",
+  "full_body_dimensions": [
+    1200,
+    1600
+  ],
+  "colour_management": "AgX",
+  "lighting": "Neutral white area key/fill/back and neutral world, shared across characters.",
+  "full_body_scale": "All front/left/right/back/beauty views use the same 2.65m orthographic camera scale, without per-character stretching.",
+  "inferred_views": [
+    "04_Left.png",
+    "05_Right.png",
+    "06_Back.png"
+  ],
+  "views": {
+    "02_Beauty.png": {
+      "camera": [
+        -3.0,
+        6.5,
+        1.600000023841858
+      ],
+      "look_at": [
+        0,
+        0,
+        1.03
+      ],
+      "ortho_scale": 2.65,
+      "pose": "Actual authored Idle frame 1",
+      "props_visible": true,
+      "native_dimensions": [
+        1200,
+        1600
+      ]
+    },
+    "03_Front.png": {
+      "camera": [
+        0.0,
+        7.0,
+        1.0299999713897705
+      ],
+      "look_at": [
+        0,
+        0,
+        1.03
+      ],
+      "ortho_scale": 2.65,
+      "pose": "Actual bind/rest A-pose",
+      "props_visible": false,
+      "native_dimensions": [
+        1200,
+        1600
+      ],
+      "orientation": "front"
+    },
+    "04_Left.png": {
+      "camera": [
+        7.0,
+        0.0,
+        1.0299999713897705
+      ],
+      "look_at": [
+        0,
+        0,
+        1.03
+      ],
+      "ortho_scale": 2.65,
+      "pose": "Actual bind/rest A-pose",
+      "props_visible": false,
+      "native_dimensions": [
+        1200,
+        1600
+      ],
+      "orientation": "character left"
+    },
+    "05_Right.png": {
+      "camera": [
+        -7.0,
+        0.0,
+        1.0299999713897705
+      ],
+      "look_at": [
+        0,
+        0,
+        1.03
+      ],
+      "ortho_scale": 2.65,
+      "pose": "Actual bind/rest A-pose",
+      "props_visible": false,
+      "native_dimensions": [
+        1200,
+        1600
+      ],
+      "orientation": "character right"
+    },
+    "06_Back.png": {
+      "camera": [
+        0.0,
+        -7.0,
+        1.0299999713897705
+      ],
+      "look_at": [
+        0,
+        0,
+        1.03
+      ],
+      "ortho_scale": 2.65,
+      "pose": "Actual bind/rest A-pose",
+      "props_visible": false,
+      "native_dimensions": [
+        1200,
+        1600
+      ],
+      "orientation": "back"
+    },
+    "07_Face.png": {
+      "camera": [
+        -0.2199999988079071,
+        5.0,
+        1.7161747217178345
+      ],
+      "look_at": [
+        0,
+        0.02,
+        1.6861746907234192
+      ],
+      "ortho_scale": 0.85,
+      "pose": "Neutral A-pose head",
+      "native_dimensions": [
+        1200,
+        1200
+      ]
+    },
+    "08_Accessories.png": {
+      "native_dimensions": [
+        1600,
+        1200
+      ],
+      "method": "Actual evaluated role mesh and whole loose Body islands selected by material and anatomical region; UVs and materials preserved. Assemblies are laid out for inspection, not redesigned.",
+      "assemblies": [
+        {
+          "label": "Signature role equipment",
+          "world_center": [
+            -0.949999988079071,
+            0.0,
+            1.4500000476837158
+          ],
+          "label_anchor_normalized": [
+            0.9042555689811707,
+            0.22767001390457153
+          ]
+        },
+        {
+          "label": "Helmet / eyewear",
+          "world_center": [
+            0.0,
+            0.0,
+            1.4500000476837158
+          ],
+          "label_anchor_normalized": [
+            0.5000002384185791,
+            0.22767001390457153
+          ]
+        },
+        {
+          "label": "Belt / pouches",
+          "world_center": [
+            0.949999988079071,
+            0.0,
+            1.4500000476837158
+          ],
+          "label_anchor_normalized": [
+            0.09574492275714874,
+            0.2276700735092163
+          ]
+        },
+        {
+          "label": "Boots",
+          "world_center": [
+            -0.949999988079071,
+            0.0,
+            0.44999998807907104
+          ],
+          "label_anchor_normalized": [
+            0.9042556285858154,
+            0.7950250804424286
+          ]
+        }
+      ],
+      "missing_in_current_model": [
+        "Gloves"
+      ]
+    }
+  },
+  "material_samples": [
+    {
+      "key": "Face",
+      "material": "rumi_Face",
+      "world_center": [
+        -0.62,
+        0,
+        1.65
+      ],
+      "label_anchor_normalized": [
+        0.76382976770401,
+        0.1851065754890442
+      ]
+    },
+    {
+      "key": "Hair",
+      "material": "rumi_Hair",
+      "world_center": [
+        0.0,
+        0,
+        1.65
+      ],
+      "label_anchor_normalized": [
+        0.4999999403953552,
+        0.18510663509368896
+      ]
+    },
+    {
+      "key": "Helmet",
+      "material": "rumi_Helmet",
+      "world_center": [
+        0.62,
+        0,
+        1.65
+      ],
+      "label_anchor_normalized": [
+        0.23617014288902283,
+        0.18510669469833374
+      ]
+    },
+    {
+      "key": "Pants",
+      "material": "rumi_Pants",
+      "world_center": [
+        -0.62,
+        0,
+        1.13
+      ],
+      "label_anchor_normalized": [
+        0.76382976770401,
+        0.4063831567764282
+      ]
+    },
+    {
+      "key": "Leather",
+      "material": "rumi_Leather",
+      "world_center": [
+        0.0,
+        0,
+        1.13
+      ],
+      "label_anchor_normalized": [
+        0.5,
+        0.406383216381073
+      ]
+    },
+    {
+      "key": "Metal",
+      "material": "rumi_Metal",
+      "world_center": [
+        0.62,
+        0,
+        1.13
+      ],
+      "label_anchor_normalized": [
+        0.23617017269134521,
+        0.4063832759857178
+      ]
+    },
+    {
+      "key": "Brass",
+      "material": "rumi_Brass",
+      "world_center": [
+        -0.62,
+        0,
+        0.6099999999999999
+      ],
+      "label_anchor_normalized": [
+        0.7638298273086548,
+        0.6276597678661346
+      ]
+    },
+    {
+      "key": "Gem",
+      "material": "rumi_Gem",
+      "world_center": [
+        0.0,
+        0,
+        0.6099999999999999
+      ],
+      "label_anchor_normalized": [
+        0.5,
+        0.6276598274707794
+      ]
+    }
+  ],
+  "source_preserved": true,
+  "model_saved_by_this_renderer": false,
+  "raw_render_outputs": {
+    "02_Beauty.png": {
+      "sha256": "658cfd8f7bb64ec9ba7c1815735bec29dad6fa6c706226133e915a5f657ea9e1"
+    },
+    "03_Front.png": {
+      "sha256": "8329055f68878f9f531f0d028469a9e9bf73d04863a2cd95d873763b79d52e4d"
+    },
+    "04_Left.png": {
+      "sha256": "cd1f269652c281b5b54704921edd327c86799634530c930ccaa0a4841201867c"
+    },
+    "05_Right.png": {
+      "sha256": "8bcc5985a03dd2965aea6220b4332e0a0bd59d91e198f0a95083948d0afb9707"
+    },
+    "06_Back.png": {
+      "sha256": "005fe6bcef62b6303f088c3a000504c0bbc54a203cdf384b72086c51187d222c"
+    },
+    "07_Face.png": {
+      "sha256": "cb6055211e97a739205c3f09e53f307574a9dfce278ec19fe20781b809e0fc41"
+    },
+    "_08_Accessories.png": {
+      "sha256": "b32179f29b39853e1afc75abcee00d71bbf9eb3d1657855f954e79d21c58b951"
+    },
+    "_09_MaterialPreview.png": {
+      "sha256": "816f432edb3ad688072202c5b7e3c1c6c992709cd830b0cc4ad9ae38f58619c8"
+    }
+  },
+  "compositing": "Labels, uniform image fitting and contact-sheet layout only. No generated/painted replacement of actual model renders.",
+  "assembler_sha256": "5c0b91ff3da022afd418a68d6668d5afa885bd20051bd72b8b9237d822880287",
+  "outputs": {
+    "01_SourceCrop.png": {
+      "sha256": "cfcd67460bd08c21cc16a6adf62e51ca80bf88e5a48b02d86d922cf1d6b23d25",
+      "dimensions": [
+        152,
+        294
+      ]
+    },
+    "02_Beauty.png": {
+      "sha256": "658cfd8f7bb64ec9ba7c1815735bec29dad6fa6c706226133e915a5f657ea9e1",
+      "dimensions": [
+        1200,
+        1600
+      ]
+    },
+    "03_Front.png": {
+      "sha256": "8329055f68878f9f531f0d028469a9e9bf73d04863a2cd95d873763b79d52e4d",
+      "dimensions": [
+        1200,
+        1600
+      ]
+    },
+    "04_Left.png": {
+      "sha256": "cd1f269652c281b5b54704921edd327c86799634530c930ccaa0a4841201867c",
+      "dimensions": [
+        1200,
+        1600
+      ]
+    },
+    "05_Right.png": {
+      "sha256": "8bcc5985a03dd2965aea6220b4332e0a0bd59d91e198f0a95083948d0afb9707",
+      "dimensions": [
+        1200,
+        1600
+      ]
+    },
+    "06_Back.png": {
+      "sha256": "005fe6bcef62b6303f088c3a000504c0bbc54a203cdf384b72086c51187d222c",
+      "dimensions": [
+        1200,
+        1600
+      ]
+    },
+    "07_Face.png": {
+      "sha256": "cb6055211e97a739205c3f09e53f307574a9dfce278ec19fe20781b809e0fc41",
+      "dimensions": [
+        1200,
+        1200
+      ]
+    },
+    "08_Accessories.png": {
+      "sha256": "b5d6c0843aa24c5c1102d6f101debeb4c489edaf2baa8878599a774ab5f998ec",
+      "dimensions": [
+        1600,
+        1200
+      ]
+    },
+    "09_Materials.png": {
+      "sha256": "76e3974f1b346ed4d0cbc72bb9c52fb3f217cc3e6b8959383dc8fc01dede7350",
+      "dimensions": [
+        1600,
+        1320
+      ]
+    },
+    "10_Turnaround.png": {
+      "sha256": "0d58765e48aedc92c5e1009ef70df5b9c3b8388afc9cced647f37ced585d7b85",
+      "dimensions": [
+        2400,
+        1540
+      ]
+    },
+    "11_ReferenceVsModel.png": {
+      "sha256": "1c793e8f2051f6df65f4906ebe46495b5667fcfd4faaee08917cfecc823c454b",
+      "dimensions": [
+        1600,
+        1210
+      ]
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+    "unity": "6000.3.26f1",
+    "version": "0.1.1",
+    "saveRoot": "D:\\games\\DiamondMineTycoon\\.cache\\qa-workspace\\.cache\\qa-saves\\after-20261020-095747",
+    "scope": "Editor integration; synthetic UI pointer events; later progression uses explicitly credited QA fixture coins. No device results.",
+    "results": [
+        {
+            "check": "Isolated save configured",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Fresh state",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Camera independent of scenery",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Mine machinery inside camera frustum",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Full screen background clear",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Manual mining through UI",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Transport processing and first sale",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Buy one persists",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Hire automation",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Buy ten persists",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Buy maximum persists",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Tutorial completion",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Objective claims paid once",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Order claim persists and rejects duplicate",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Second mine unlock persists",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Third mine unlock persists",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Select mine persists",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Second mine automation",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Other mines produce while switching",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Failed mine switch does not change live state",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Failed settings save does not change live state",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Settings persist immediately",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Reduced motion stops machinery swing",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Reload retains upgrades orders and settings",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Offline earnings committed before report",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Offline reload does not duplicate coins",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Modal blocks pointer to mining control",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Covered UI click does not mine",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Closed modal releases pointer",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Prestige requires confirmation",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Prestige cancel preserves run",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Prestige confirmation enabled after arming",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        },
+        {
+            "check": "Prestige committed and permanent order retained",
+            "status": "passed",
+            "detail": "Real editor runtime / isolated QA save"
+        }
+    ]
+}

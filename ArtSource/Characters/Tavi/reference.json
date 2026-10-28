@@ -1,0 +1,213 @@
+{
+  "id": "tavi",
+  "name": "Tavi",
+  "source_crop_rect_xyxy": [
+    0,
+    48,
+    154,
+    324
+  ],
+  "source_crop_dimensions": [
+    154,
+    276
+  ],
+  "source_crop_sha256": "4e6aa505b3968bfb26037fdede0bedc4ce2e1a5f40e08a31fd64deab662ec44d",
+  "decoded_pixel_copy_verified": true,
+  "auxiliary_source": "D:\\games\\chartcter image\\a.png",
+  "auxiliary_sha256": "f00ddd4031ab8d2dd28cca23d165fcff54f01a9278ba110e08455f0c57805f8c",
+  "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+  "source_palette": [
+    {
+      "rgb": [
+        141,
+        99,
+        66
+      ],
+      "pixels": 3768
+    },
+    {
+      "rgb": [
+        195,
+        143,
+        104
+      ],
+      "pixels": 3455
+    },
+    {
+      "rgb": [
+        249,
+        229,
+        209
+      ],
+      "pixels": 3256
+    },
+    {
+      "rgb": [
+        42,
+        23,
+        13
+      ],
+      "pixels": 2919
+    },
+    {
+      "rgb": [
+        113,
+        71,
+        44
+      ],
+      "pixels": 2901
+    },
+    {
+      "rgb": [
+        70,
+        64,
+        55
+      ],
+      "pixels": 2875
+    },
+    {
+      "rgb": [
+        208,
+        191,
+        167
+      ],
+      "pixels": 2498
+    },
+    {
+      "rgb": [
+        133,
+        129,
+        110
+      ],
+      "pixels": 2144
+    }
+  ],
+  "labelled_source_samples": [
+    {
+      "label": "Teal helmet",
+      "crop_pixel_rect_xyxy": [
+        63,
+        12,
+        68,
+        17
+      ],
+      "rgb": [
+        149,
+        200,
+        205
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Skin",
+      "crop_pixel_rect_xyxy": [
+        84,
+        57,
+        89,
+        62
+      ],
+      "rgb": [
+        247,
+        161,
+        117
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark hair",
+      "crop_pixel_rect_xyxy": [
+        51,
+        59,
+        56,
+        64
+      ],
+      "rgb": [
+        76,
+        45,
+        33
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Teal jacket",
+      "crop_pixel_rect_xyxy": [
+        124,
+        112,
+        129,
+        117
+      ],
+      "rgb": [
+        90,
+        131,
+        137
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Cream scarf",
+      "crop_pixel_rect_xyxy": [
+        84,
+        77,
+        89,
+        82
+      ],
+      "rgb": [
+        230,
+        196,
+        158
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Tan trousers",
+      "crop_pixel_rect_xyxy": [
+        61,
+        176,
+        66,
+        181
+      ],
+      "rgb": [
+        171,
+        127,
+        79
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Orange-brown boots",
+      "crop_pixel_rect_xyxy": [
+        125,
+        249,
+        130,
+        254
+      ],
+      "rgb": [
+        168,
+        91,
+        57
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Leather pouch",
+      "crop_pixel_rect_xyxy": [
+        122,
+        152,
+        127,
+        157
+      ],
+      "rgb": [
+        80,
+        40,
+        23
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    }
+  ],
+  "decisions": [
+    "The original roster has goggles resting on the teal helmet. The auxiliary sheet omits those goggles; retain the roster goggles and circular lamp.",
+    "Use the original asymmetrical map pouch, scarf wrapping, wavy hair and orange-brown boot silhouette. Extra backpack/harness complexity is guidance only where it does not alter the original visible silhouette.",
+    "Side/back hair and scarf tails are reconstructed, not verified geometry."
+  ],
+  "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+}

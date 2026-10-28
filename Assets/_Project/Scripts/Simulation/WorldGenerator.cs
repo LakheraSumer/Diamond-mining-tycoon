@@ -50,7 +50,7 @@ namespace DiamondMine.Simulation
 
         static readonly string[] Themes =
         {
-            "Warm clay", "Moss bank", "Sand shelf", "River blue",
+            "Sunridge", "Moss bank", "Sand shelf", "River blue",
             "Plum rock", "Copper ridge", "Mint shelf", "Amber lamp"
         };
 

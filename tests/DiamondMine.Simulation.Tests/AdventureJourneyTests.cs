@@ -377,6 +377,45 @@ namespace DiamondMine.Simulation.Tests
             Assert.That(AdventureRules.PreviewPlot(state.Adventure, 80), Does.Contain("Price"));
         }
 
+        [Test]
+        public void Cart_DeliversTheSameLoadOnce_AfterReload_AndWaitsWhenTheMillIsFull()
+        {
+            GameState state = GameFactory.NewGame(config);
+            string message;
+            Assert.That(AdventureRules.TrySelectCharacter(state, "tavi", out message), Is.True, message);
+            Assert.That(Dig(state, 2, JourneyCatalog.DiamondOre), Is.True);
+            Assert.That(AdventureRules.TrySendCart(state, out message), Is.True, message);
+            Assert.That(state.Adventure.HandsAmount, Is.EqualTo(0d));
+            Assert.That(AdventureRules.TrySendCart(state, out message), Is.False);
+            AdventureRules.Advance(state, 1d);
+            Assert.That(AdventureRules.Count(state.Adventure, JourneyCatalog.DiamondOre), Is.EqualTo(0d));
+
+            GameState copy = state.Clone();
+            AdventureRules.Advance(copy, 5d);
+            Assert.That(AdventureRules.Count(state.Adventure, JourneyCatalog.DiamondOre), Is.EqualTo(0d));
+            Assert.That(AdventureRules.Count(copy.Adventure, JourneyCatalog.DiamondOre), Is.EqualTo(2d));
+
+            string json = SaveCodec.Write(state);
+            GameState resumed = SaveCodec.Read(json, config);
+            AdventureRules.Advance(resumed, 3d);
+            Assert.That(AdventureRules.Count(resumed.Adventure, JourneyCatalog.DiamondOre), Is.EqualTo(2d));
+            AdventureRules.Advance(resumed, 5d);
+            Assert.That(AdventureRules.Count(resumed.Adventure, JourneyCatalog.DiamondOre), Is.EqualTo(2d));
+
+            resumed.Adventure.WarehouseCapacity = 1;
+            Assert.That(Dig(resumed, 2, JourneyCatalog.DiamondOre), Is.True);
+            Assert.That(AdventureRules.TrySendCart(resumed, out message), Is.True, message);
+            AdventureRules.Advance(resumed, 5d);
+            Assert.That(AdventureRules.Count(resumed.Adventure, JourneyCatalog.DiamondOre), Is.EqualTo(2d));
+            Assert.That(resumed.Adventure.CartLoad, Is.EqualTo(2d));
+            resumed.Adventure.WarehouseCapacity = 400;
+            AdventureRules.Advance(resumed, 0d);
+            Assert.That(AdventureRules.Count(resumed.Adventure, JourneyCatalog.DiamondOre), Is.EqualTo(4d));
+            Assert.That(resumed.Adventure.CartLoad, Is.EqualTo(0d));
+            AdventureRules.Advance(resumed, 0d);
+            Assert.That(AdventureRules.Count(resumed.Adventure, JourneyCatalog.DiamondOre), Is.EqualTo(4d));
+        }
+
         static bool Dig(GameState state, int plot, string item)
         {
             string message;

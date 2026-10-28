@@ -102,6 +102,7 @@ namespace DiamondMine.Simulation
         public const int WarehouseCapacity = 400;
         public const int RecoveryStone = 8;
         public const double RecoveryCooldownSeconds = 15d;
+        public const double CartTripSeconds = 3d;
         public const int HireCost = 200;
         public const double WorkerRate = 0.4d;
         public const int PerfectGrade = 5;
@@ -132,6 +133,18 @@ namespace DiamondMine.Simulation
         {
             ItemDef item = FindItem(id);
             return item == null ? id : item.Name;
+        }
+
+        public static string Mark(string id)
+        {
+            if (id == RoughDiamond || id == CutDiamond || GradeOf(id) > 0 || id == DiamondOre)
+                return "Diamond";
+            if (id == Ring || id == Bracelet || id == Necklace || id == Pendant || id == Earrings || id == Bangle || id == Brooch || id == Anklet || id == Tiara || id == JewelSet)
+                return "Jewel";
+            ItemDef item = FindItem(id);
+            if (item != null && item.Ore)
+                return "Ore";
+            return "Goods";
         }
 
         public static int SellValue(string id)

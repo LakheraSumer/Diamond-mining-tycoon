@@ -1,0 +1,857 @@
+{
+  "unity": "6000.3.26f1",
+  "scene": "Assets/_Project/Scenes/Main.unity",
+  "utc": "2026-10-25T08:46:32.5370743Z",
+  "saveRoot": "D:\\games\\DiamondMineTycoon\\.cache\\timber-workspace\\.cache/qa-saves/ui-reference-20261025-084602",
+  "images": [
+    {
+      "file": "release/screenshots/ui-reference/reference/craft.png",
+      "sha256": "f92a0c9e967d73b25979b3648f54cd36d30048805604a960e074a515bdc0394f",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Deterministic UI-only demonstration values; source crop aspect; actions disabled; visible DEMO label.",
+      "group": "Reference review screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/reference/explore.png",
+      "sha256": "77e6aea776bd9d4c6834e10a1e8a000d65f9dcad4ea043961bf52d6008a9438a",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Deterministic UI-only demonstration values; source crop aspect; actions disabled; visible DEMO label.",
+      "group": "Reference review screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/reference/factory.png",
+      "sha256": "b96233ca38527df013dc39cdc8d292462579d1c724855030d1431b7564709222",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Deterministic UI-only demonstration values; source crop aspect; actions disabled; visible DEMO label.",
+      "group": "Reference review screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/reference/map.png",
+      "sha256": "4d767acbef77c0775dfe0b366b473fb98b11863fcd1dcd7983e1f7513b64c9a0",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Deterministic UI-only demonstration values; source crop aspect; actions disabled; visible DEMO label.",
+      "group": "Reference review screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/reference/mine.png",
+      "sha256": "2a3c6dee77ae8ac8ce4399b3c4ccc206844755e252412471d716682e1c587e72",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Deterministic UI-only demonstration values; source crop aspect; actions disabled; visible DEMO label.",
+      "group": "Reference review screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/reference/rank.png",
+      "sha256": "80ac46d83ddcc932010807377788956dac5f1074bf5605854c21dbb906c85bea",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Deterministic UI-only demonstration values; source crop aspect; actions disabled; visible DEMO label.",
+      "group": "Reference review screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/reference/shop.png",
+      "sha256": "0a41f17f7cf3ccfe97f2bee9cccf70b2fdaf23504fba724d4ae3f51259e0ecc8",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Deterministic UI-only demonstration values; source crop aspect; actions disabled; visible DEMO label.",
+      "group": "Reference review screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/reference/tasks.png",
+      "sha256": "85220ffa28c56a626efd102d5a151823b0a23664bb74b7e0ad3664e011305e3c",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Deterministic UI-only demonstration values; source crop aspect; actions disabled; visible DEMO label.",
+      "group": "Reference review screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/live/craft.png",
+      "sha256": "8317bc74d085afd9b45e5ac07eb9719670b8661f120c693d1edc696e15d19ab7",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Live authoritative values in isolated starter save; native dimensions recorded in adjacent text file.",
+      "group": "Live gameplay screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/live/explore-native-2160x3840.png",
+      "sha256": "4b178d20d3c13726281e938caf6add48b0f86d1112712734047240f4d0074b57",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Live authoritative values in isolated starter save; native dimensions recorded in adjacent text file.",
+      "group": "Live gameplay screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/live/explore.png",
+      "sha256": "9d17aa893ca03299829c2087b8a7ea61dee90d2d1d70e3dd68a996d842277799",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Live authoritative values in isolated starter save; native dimensions recorded in adjacent text file.",
+      "group": "Live gameplay screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/live/factory.png",
+      "sha256": "445253aa8c17718b7c0db738856a9204cb5b96e1a3b5f3aebbceff0122622542",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Live authoritative values in isolated starter save; native dimensions recorded in adjacent text file.",
+      "group": "Live gameplay screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/live/map-tablet-1536x2048.png",
+      "sha256": "46f95ea2367b763d38e514358dbfef0817e4fbf1c56aeef4f7667d41e0e1751d",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Live authoritative values in isolated starter save; native dimensions recorded in adjacent text file.",
+      "group": "Live gameplay screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/live/map.png",
+      "sha256": "f9407ded0646277718072045d9e71f997187dc6c1859ecce18dfd199c83c22e3",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Live authoritative values in isolated starter save; native dimensions recorded in adjacent text file.",
+      "group": "Live gameplay screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/live/mine.png",
+      "sha256": "80417d9c398d053002cd1a5e93adccf890a8e22a90bd4882a700c8bba82c21bf",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Live authoritative values in isolated starter save; native dimensions recorded in adjacent text file.",
+      "group": "Live gameplay screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/live/rank.png",
+      "sha256": "8c2f6a7135f031f5383f66a9c470bc41ed675cd86afa5360ad3439b680825b86",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Live authoritative values in isolated starter save; native dimensions recorded in adjacent text file.",
+      "group": "Live gameplay screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/live/shop.png",
+      "sha256": "a3321c5bf400e30f0cfec5ade18c7363b996c47d6a47a69a33204cdce5cedfd9",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Live authoritative values in isolated starter save; native dimensions recorded in adjacent text file.",
+      "group": "Live gameplay screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/live/tasks.png",
+      "sha256": "5b262c3b21ef3d47500ffdec646779aa9f1589608e2277462a460c7900ca659b",
+      "kind": "Actual Main Play-mode Game-view screenshot",
+      "note": "Live authoritative values in isolated starter save; native dimensions recorded in adjacent text file.",
+      "group": "Live gameplay screens"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/craft-bounds-overlay.png",
+      "sha256": "cd2838983847e44f304befa64dc62a263e1d489945d00047ce9b78703ec950c7",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/craft-difference.png",
+      "sha256": "0881abca077f90f9f2a96999a3f71adfcb3a77ce419baaa8f1ab83d1f42197fb",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/craft-overlay50.png",
+      "sha256": "1b443e989d9823ac38c599539bd261093e4249e1b3b434960ed41cb0bed86899",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/craft-side-by-side.png",
+      "sha256": "d5416539c47d454ae60e94525a442e0bcd6539c842f7e6c988b5f416fe2096e8",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/explore-bounds-overlay.png",
+      "sha256": "58f89025672b6b87cc7bb274e3da27c9dab7c557fb4931759e481fd27eb7c516",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/explore-difference.png",
+      "sha256": "a26d9a7f0dcb5ca19016a306a61a54253554a0e6fe1d182530b99de7a833920c",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/explore-overlay50.png",
+      "sha256": "b73cd4b0a086d1e13cb050d6c082bed4b04b89f46a1ca4990fa7ad4acc2c63bc",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/explore-side-by-side.png",
+      "sha256": "8aadc3e269b9439071253e7292c722257a174b7c9176a3f641023f8a9103ca20",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/factory-bounds-overlay.png",
+      "sha256": "7f01f2c5822e0e41f27d37f8040701f6931acf0f8aab29520f131c5821b4276e",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/factory-difference.png",
+      "sha256": "30ad4bfd2feb9e9d2c6ccbddb0b3e6c333a6d4070a528e02f1209db70474994d",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/factory-overlay50.png",
+      "sha256": "663fdee660f197b2787f51ad62f0075af051c796b37e3ff1c649ccea78449ff5",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/factory-side-by-side.png",
+      "sha256": "7ca99dc497c1086d8a622cf39600e5fea221851f85a7d052ae86123af18f4598",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/map-bounds-overlay.png",
+      "sha256": "a6d96ea81b2d81d1d992cc31ceead7cda8a1c50f8469ae0ca7c7ea0112ef5d85",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/map-difference.png",
+      "sha256": "1ae641ffa9e4caa0173a1bff0fa052b9a9f566c53f1cf933b76b3f123a7e8545",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/map-overlay50.png",
+      "sha256": "0a96743d96533f3d47057f66c591ae0599d4bb49f7f31df27a0f623dabf29c3c",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/map-side-by-side.png",
+      "sha256": "9bc326651a8bd5323f98f85213cb6f3d3fbd8e306a7d7d4f923d9dba75902900",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/mine-bounds-overlay.png",
+      "sha256": "964c41d4bcf7d1258090620f08ddc6e1df910d5b2904a578cbb6d196ba562c76",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/mine-difference.png",
+      "sha256": "03985a3c6263e5ac51a856c22525e49ebb5c64066ad14d10f46beba344f59f67",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/mine-overlay50.png",
+      "sha256": "ef8b917d9013385bc852cd037a2889a7c59b5b05ca94f448dea0a0e810806433",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/mine-side-by-side.png",
+      "sha256": "a13834f9d35fd3ece1d0efb76df1cd00d9f58b2c0d4b1cc3031606731a48063c",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/rank-bounds-overlay.png",
+      "sha256": "f9496fe2d3206621b88fdd90ac0bd7d8f7755bf76a9d659f7509c03262dbcaa9",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/rank-difference.png",
+      "sha256": "58fb31c0fb401335a9c9e3bbaccdbb36300f4d1505a8d5cf5d1f06f431bbe4fd",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/rank-overlay50.png",
+      "sha256": "3b14406808cad544adfd7cfc91efc3c0ee8aa74c4d682e36b7fae33c3d552a59",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/rank-side-by-side.png",
+      "sha256": "13c5cb9d161e9f7981bff4224a5628da0a6f6028a3b2e3dd60f245cc7e9112c2",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/shop-bounds-overlay.png",
+      "sha256": "4c75ca50c2a08809111972e0a4a6132d9722cd15187851710a56165a53e50238",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/shop-difference.png",
+      "sha256": "e368bb7735a655430896c74cd2b69e9bc8fcb161318b7e368d51b2c704347454",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/shop-overlay50.png",
+      "sha256": "c5e6995ba036b289e3e7338731ea1295cfdf294d1f7e687f6c7941ae803b1734",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/shop-side-by-side.png",
+      "sha256": "78b9e050b6ec2cb5ac703633df66549a4dce966e3b87124e2df652c43c00b0cf",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/tasks-bounds-overlay.png",
+      "sha256": "bd1d1b5be44aa99a1b2ee25ec6d9ce136a8d32a57f2826104dce7ee5bb9427ae",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/tasks-difference.png",
+      "sha256": "134976874114edc1f5c338de2089a13a2dfbcfaeca337aff77c738e9bc1c8303",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/tasks-overlay50.png",
+      "sha256": "31425799d1d29c80a3e5728e7f9cb36f13fa14ffade0aa56d02893f6cedb9a8a",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    },
+    {
+      "file": "release/screenshots/ui-reference/comparisons/tasks-side-by-side.png",
+      "sha256": "f8934f2afdce76ee1694ea9ee170c2a9ac97e4a6b57ca3c4a200826cc5f53dd8",
+      "kind": "Diagnostic comparison composite",
+      "note": "Labelled source + actual Unity comparison, overlay, bounds or absolute difference. Not a raw game screenshot; no likeness score.",
+      "group": "UI diagnostic comparisons"
+    }
+  ],
+  "inputs": [
+    {
+      "file": "Assets/_Project/Scripts/Runtime/YardControls.cs",
+      "sha256": "d8d190e7c417d84d4e1b66eb39d96cdf3d05d40ef50ab288088fb370e193c5a0",
+      "kind": "Capture input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Scripts/Runtime/YardReferenceUi.cs",
+      "sha256": "91d8fd70bd08635db291bc71e40aba2b3cb0f07960cddd35157262273a6e9a32",
+      "kind": "Capture input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Scripts/Runtime/ReferenceUiGlyph.cs",
+      "sha256": "cd248610e4826eb3f8cedad00082c99099c5f16c1cc8e28d6b8a12c66a99f948",
+      "kind": "Capture input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Scripts/Runtime/UiFactory.cs",
+      "sha256": "493ab7c0c1afecea1b9d737100f2cc631975f4106017b5ec5016430309869a8d",
+      "kind": "Capture input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Scripts/Runtime/YardWorld.cs",
+      "sha256": "ed51a6216b39bdab48af751aaa62d9ef2befba48e40ad6332f34a90fdada8d1f",
+      "kind": "Capture input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/reference-layout-runtime.json",
+      "sha256": "37389093ff1af0918bcbd7568db82f0d610bf650b2b1d4a53266ea5bb6f53f02",
+      "kind": "Capture input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Fonts/Nunito.ttf",
+      "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207",
+      "kind": "Capture input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Fonts/DiamondMineRounded-Bold.ttf",
+      "sha256": "27d5db6f9e04850c568694e302cc114336ad94af9507f32166ac9af2beabba72",
+      "kind": "Capture input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/Crew/Models/beni.fbx",
+      "sha256": "bddbcdbe4ee971c65d2752c2607173a6942cc8acb45ede7ce95a745d97b942d0",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/Crew/Models/daro.fbx",
+      "sha256": "ac81fbfe27daf6e1ac08f09458e950294ead48a82a8e7f495630567b0ea7229f",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/Crew/Models/etta.fbx",
+      "sha256": "a7cb9a252380a184845f76a58899e8186c6ec9115e0e3e74af27ab467794ac61",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/Crew/Models/kavi.fbx",
+      "sha256": "060cf381c6f19b670c21f877687a75817ede456c0f135bb0d2ed32623f9ba85b",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/Crew/Models/mira.fbx",
+      "sha256": "0981ef45834af3ee1360838f1780872cecb7096d51b2e9d165174f3347536e6c",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/Crew/Models/nilo.fbx",
+      "sha256": "053d9c0e41d15bb4773c0aa1257f68fbe322123d7e79bf28c7763d57a3084872",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/Crew/Models/oren.fbx",
+      "sha256": "eedec58aa22eae66613ba518b0b38078fb50c7ad73cceb9ebe04d2c908650511",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/Crew/Models/pavi.fbx",
+      "sha256": "62b39a46ff63de3f298bbaeac9065d2bda30b80cba8179de61a76c51d089d855",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/Crew/Models/rumi.fbx",
+      "sha256": "e94c27b5076f0b786a537144663022301425e8356bed5a2d435266900651cb4d",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/Crew/Models/sola.fbx",
+      "sha256": "d2bd9b0129bc51d850d60ef9079d53909b0ca091d070c434feb62659bd914708",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/Crew/Models/tavi.fbx",
+      "sha256": "350ede3b2f2711e70ca231f4d20f9f87908be10fa52e105699d5b7c2217e3d8f",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/Crew/Models/zela.fbx",
+      "sha256": "de872e6cb7183c9ed680e577d9416d13ec9ca25e66cb0494e0a12ea247d90a1f",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/GameplayEnvironments/Models/Boutique.fbx",
+      "sha256": "805cbcc89f39ce9f5ef41a08a98aa9b0ead40a468597dbdda248c60fb4d0f003",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/GameplayEnvironments/Models/Explore.fbx",
+      "sha256": "4720e22df4937b46b86f1724e4ae332e5f4d5a73c6e56fb95a1bc5614e2d5356",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/GameplayEnvironments/Models/Factory.fbx",
+      "sha256": "ed3f67d6a454cc3ecc1bac2d5b328620c26674aeacd3c645d247545b98dd2cea",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/GameplayEnvironments/Models/Mine.fbx",
+      "sha256": "9752749fc24ade8b07730834c47b67403e13e6ffa627bdd266abb90ffe1b02a6",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/GameplayEnvironments/Models/RegionMap.fbx",
+      "sha256": "71ebf218b8f1dbac5b0b0d9b363624857d6ef2036ef28c88248c1d553ab59996",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Art/GameplayEnvironments/Models/Workshop.fbx",
+      "sha256": "c033e2288aea2ceb7f5503efdeebd474c682c914333372dfab62f69ed85ce153",
+      "kind": "Imported model input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/avatar_fox.png",
+      "sha256": "9663692bdae59e22c2fe01e52b861c5a0e1b52f95aa9a8a466c6021697a221dd",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/avatar_lynx.png",
+      "sha256": "764d0a9d1f129b43fb81122e05d63a230aa3ebaa2ffbf57bfbf93c55dabd2e13",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/avatar_maven.png",
+      "sha256": "e9e26a7df95da4ce9d48c8f0b66e539379ba6a6f25f239971bca50597f45413f",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/avatar_otter.png",
+      "sha256": "4a7af0582a64020d24b2467aaa900090ef7a5813cda1efd18f646dbfc0b2a79c",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/avatar_panda.png",
+      "sha256": "73145b35247b07cb602fa2d61539de59ea0b07095dff5c1da35a5017eb613e36",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/avatar_raccoon.png",
+      "sha256": "b2a29e2b899cae4dd4abf1fead0d0c37c881b0f0cf069bce6667d7868ed540d4",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/avatar_sunny.png",
+      "sha256": "fcea83a6068422b88365134a3b627a94fe23a50bdb11fbccd63e4352d5e4825b",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/avatar_whale.png",
+      "sha256": "dcd87d43d8b24c243fa26d181316800898fa481122e946ef74d9ff7189cf000c",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/avatar_you.png",
+      "sha256": "2aa6dc51071d0295177518ba6e6fb245a34f8daa1fac162e27faccabd24562d1",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/btn_blue.png",
+      "sha256": "e02b59232c4972a694d2ae44a8d6ca602f497a7de27b272f87e6373f3f5d443f",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/btn_circle.png",
+      "sha256": "5055fd603414c9bd26708451bb8b1f536b1e3bd597b6343138a2e46aab4378f3",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/btn_green.png",
+      "sha256": "4a99b8e5b80d51b2d36f7d3aabf2ae4b03f2d59b183ff3d3086d49f5aee63378",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/card_bg.png",
+      "sha256": "8feadf9032c6637e1ad30abc654358fd7f5ac12f8eff43622b41dbb0727ec10f",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew_avatar_beni.png",
+      "sha256": "fbde4ff5549e6acaf4a378fdfa81e6c5db82a1ca82b23cbd2d02febad1c63913",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew_avatar_daro.png",
+      "sha256": "46e106047c5c34fbe1466289a10645c8e4b4df564f68ae4c9d572115169b0cc0",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew_avatar_etta.png",
+      "sha256": "daa9d28d87248593c9048514a5dc1ec0d29846efdb92698c78133915121456a2",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew_avatar_kavi.png",
+      "sha256": "f6c31f97da08532edd6ba840a87fa26fd47c95700a59cf064170d98993b4c1d3",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew_avatar_mira.png",
+      "sha256": "7f3f9dca0261f47aff70f2c332fe51c9019ecc3457e27bfb48986adaee238ce1",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew_avatar_nilo.png",
+      "sha256": "35080580374c80a8f3017523b625bc5fad8a080d9d4d388a42dd5870c92d9d42",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew_avatar_oren.png",
+      "sha256": "5e2bebfba901777ed6d9dbe94841896629f4fa8ffdad71cc95d9dfc9b374899b",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew_avatar_pavi.png",
+      "sha256": "5e11bef310f54df22fa97a12f9bf117d801775d452cac97a9ef3fc699961b1a7",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew_avatar_rumi.png",
+      "sha256": "aa12195493dbf52b2b4c5efc715d297085e7de986070c8d371084916351b2516",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew_avatar_sola.png",
+      "sha256": "71ec1c1bd29b332c953cf51cf0cef61f9da5087981380b747b5fb17599400ecd",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew_avatar_tavi.png",
+      "sha256": "ab40f789c6f5f0a63c927242bdcb2da47f67c5f1b330c2adc4ed070842628fc0",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/crew_avatar_zela.png",
+      "sha256": "7907c3d26c49f72cbc836548a1044bb29681f3a7e7d009f32f875df58fc0334a",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/dark_pill.png",
+      "sha256": "6979df532a88307b86c6f21c68e5348f881786f0fed4b93270261a67787f43ee",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_cart_diamonds.png",
+      "sha256": "b88ea2b2c8a99c9ec1d07b853a870864ccc272216a1c78058554212575644430",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_coin.png",
+      "sha256": "647a020523ad659beb004068611047d35c9b6cd428053b963c7f4e9ae0ffa637",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_crusher.png",
+      "sha256": "10f95e93e4a47accb03287735dd6fd53e5b9c6117801775454abb30623786dc6",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_diamond.png",
+      "sha256": "c10d1e95a0def947f8f601f0a347f52598cc7e9b51b2f60cd02e9204f1bd830f",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_earrings.png",
+      "sha256": "3d193e0fdb0350d4f7683f23a6583f713e42ffdb4d53c58d1b3941d75ae5f5da",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_gear.png",
+      "sha256": "dd2a42293dce4c2db9305da8f0d34acccd50f1dea0080daab80678c176013c38",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_gold_bar.png",
+      "sha256": "bf795f633088b10e1cff7cfc079dab02e2581c212809fe4599640ab1aad6fc8a",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_hand.png",
+      "sha256": "9db3b60b634bfeade67cb3ed25a42bd0fd23d4ed12fc084b0618316aaa81a279",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_necklace.png",
+      "sha256": "628c3d52be83786da24c95c634d22849603939a8dda473bc1221b260f848b156",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_ore.png",
+      "sha256": "b70cc05136a2845da4df7cc99cb3137db6d1125831e851c1c83b7ea6ab33edaf",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_pickaxe.png",
+      "sha256": "b411a67a5dfd148c8cb79813d17c64a6979793a599d98c61aefa8fb8b94c49cb",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_ring.png",
+      "sha256": "670ecf01baef43a3fdb0ae6aa4509d8060e2795418d01f763b9e4d86cbdb81c5",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/icon_sack.png",
+      "sha256": "416241fb61f19279768697593ff20ce08e2da86a7f1d779e7b7acb0cb5264808",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/joystick_base.png",
+      "sha256": "a301bd0ee8b8e6a92225b373b213c67404d09c367eb3b2050b1f01861ae69972",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/joystick_knob.png",
+      "sha256": "08a6c176484f54f4eaffaf8a920c500e417f25471afdc1c06016affa40847db8",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/speech_bubble.png",
+      "sha256": "df51d052b180ea7d72826e992b09660173253ef22f47d9ad92e28d0cdf6c2c1e",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/trophy_bronze.png",
+      "sha256": "74b55d0be5c71f84b930ec1abfaaac02a4769bee713fe2de1451ad1b8d00e919",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/trophy_gold.png",
+      "sha256": "fefb824adc8de86d96e13662bb3a4a8b62b66cc1b72ac73ebb119b3c16588f99",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    },
+    {
+      "file": "Assets/_Project/Resources/Ui/trophy_silver.png",
+      "sha256": "b700bbdc0efefe1cfc1ba1513af394432bd184d2adb21c4ced9f4b741b1a96fc",
+      "kind": "UI illustration input",
+      "note": "",
+      "group": ""
+    }
+  ]
+}

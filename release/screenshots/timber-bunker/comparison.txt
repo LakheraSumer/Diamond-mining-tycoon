@@ -1,0 +1,2 @@
+LEFT: supplied yard-board.jpg, mine 1 crop x=10,y=111,width=120,height=133 (top-left coordinates), enlarged.
+RIGHT: Unity Play-mode camera render. Same camera angle family and single-entrance composition; not a pixel-identical reproduction.

@@ -1,0 +1,213 @@
+{
+  "id": "mira",
+  "name": "Mira",
+  "source_crop_rect_xyxy": [
+    160,
+    48,
+    346,
+    324
+  ],
+  "source_crop_dimensions": [
+    186,
+    276
+  ],
+  "source_crop_sha256": "01d51025b4b00ac80b6a9dbecc6b4d24372d2e0d7132c9ddbe79d1a9d762c845",
+  "decoded_pixel_copy_verified": true,
+  "auxiliary_source": "D:\\games\\chartcter image\\c.png",
+  "auxiliary_sha256": "bc6d97df497f120b8fa0bcd6143e142390bdce253849472f515e1bc0b8a247f8",
+  "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+  "source_palette": [
+    {
+      "rgb": [
+        64,
+        55,
+        46
+      ],
+      "pixels": 5124
+    },
+    {
+      "rgb": [
+        111,
+        106,
+        92
+      ],
+      "pixels": 4989
+    },
+    {
+      "rgb": [
+        187,
+        107,
+        69
+      ],
+      "pixels": 4438
+    },
+    {
+      "rgb": [
+        234,
+        216,
+        199
+      ],
+      "pixels": 3779
+    },
+    {
+      "rgb": [
+        39,
+        23,
+        15
+      ],
+      "pixels": 3671
+    },
+    {
+      "rgb": [
+        180,
+        148,
+        123
+      ],
+      "pixels": 3277
+    },
+    {
+      "rgb": [
+        128,
+        81,
+        61
+      ],
+      "pixels": 2785
+    },
+    {
+      "rgb": [
+        109,
+        57,
+        37
+      ],
+      "pixels": 2422
+    }
+  ],
+  "labelled_source_samples": [
+    {
+      "label": "Green helmet",
+      "crop_pixel_rect_xyxy": [
+        65,
+        16,
+        70,
+        21
+      ],
+      "rgb": [
+        134,
+        138,
+        124
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Skin",
+      "crop_pixel_rect_xyxy": [
+        88,
+        49,
+        93,
+        54
+      ],
+      "rgb": [
+        250,
+        179,
+        138
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Tied dark hair",
+      "crop_pixel_rect_xyxy": [
+        40,
+        56,
+        45,
+        61
+      ],
+      "rgb": [
+        64,
+        44,
+        35
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Green shirt",
+      "crop_pixel_rect_xyxy": [
+        40,
+        90,
+        45,
+        95
+      ],
+      "rgb": [
+        98,
+        111,
+        79
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Rust bib",
+      "crop_pixel_rect_xyxy": [
+        90,
+        106,
+        95,
+        111
+      ],
+      "rgb": [
+        190,
+        109,
+        70
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Orange trousers",
+      "crop_pixel_rect_xyxy": [
+        106,
+        167,
+        111,
+        172
+      ],
+      "rgb": [
+        218,
+        109,
+        73
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Brown boots",
+      "crop_pixel_rect_xyxy": [
+        106,
+        248,
+        111,
+        253
+      ],
+      "rgb": [
+        94,
+        59,
+        36
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Grey knee protection",
+      "crop_pixel_rect_xyxy": [
+        118,
+        193,
+        123,
+        198
+      ],
+      "rgb": [
+        152,
+        134,
+        124
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    }
+  ],
+  "decisions": [
+    "Retain the original forest-green rolled sleeves, rust bib overalls and bulky grey knee protection. Do not copy Tavi\u2019s scarf or face.",
+    "The small cart is part of the original identity. The auxiliary cart details are useful for unseen hardware; keep the original compact ore-cart scale and hand-on-cart stance.",
+    "Rear overall strap routing and rear pouches are conservative reconstructions."
+  ],
+  "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+}

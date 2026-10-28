@@ -9,6 +9,7 @@ namespace DiamondMine.Runtime
     public sealed class MinePresenter : MonoBehaviour
     {
         const int CartPool = 8;
+        public const int WorldLayer = 29;
 
         Camera view;
         Camera backdrop;
@@ -49,6 +50,7 @@ namespace DiamondMine.Runtime
 
         public void SetRendering(bool enabled)
         {
+            if (sun != null) sun.enabled = enabled;
             if (view != null)
                 view.enabled = enabled;
             if (backdrop != null)
@@ -82,6 +84,7 @@ namespace DiamondMine.Runtime
             cameraObject.transform.SetParent(transform, false);
             view = cameraObject.AddComponent<Camera>();
             view.depth = -1;
+            view.cullingMask = 1 << WorldLayer;
             if (FindAnyObjectByType<AudioListener>() == null)
                 cameraObject.AddComponent<AudioListener>();
             view.clearFlags = CameraClearFlags.SolidColor;
@@ -96,12 +99,17 @@ namespace DiamondMine.Runtime
             lightObject.transform.SetParent(transform, false);
             lightObject.transform.rotation = Quaternion.Euler(48f, -30f, 0f);
             sun = lightObject.AddComponent<Light>();
+            sun.cullingMask = 1 << WorldLayer;
             sun.type = LightType.Directional;
             sun.color = new Color(1f, 0.9f, 0.75f);
             sun.intensity = 1.05f;
             sun.shadows = LightShadows.Hard;
 
             BuildScenery();
+            // Works and the authored yard occupy overlapping coordinates. Keep
+            // their geometry and shadows on separate camera/light layers.
+            foreach (Transform child in GetComponentsInChildren<Transform>(true))
+                child.gameObject.layer = WorldLayer;
         }
 
         public void SetViewport(Rect rect)

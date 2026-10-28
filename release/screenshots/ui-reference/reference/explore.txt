@@ -1,0 +1,3 @@
+Actual Main Play-mode Game-view ScreenCapture. Unity 6000.3.26f1; 988x1136; frame 151.
+UI-only deterministic demonstration values; actions disabled; visible DEMO label. Exact individual source crop aspect.
+No raster reference background, UI text baked into backdrop or image-generation substitution.

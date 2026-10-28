@@ -1,0 +1,213 @@
+{
+  "id": "sola",
+  "name": "Sola",
+  "source_crop_rect_xyxy": [
+    512,
+    353,
+    671,
+    644
+  ],
+  "source_crop_dimensions": [
+    159,
+    291
+  ],
+  "source_crop_sha256": "b1f7b6eb9c21106c3ea291dab29fe60d758723ca3675d5af6234f70f6b2399df",
+  "decoded_pixel_copy_verified": true,
+  "auxiliary_source": "D:\\games\\chartcter image\\i.png",
+  "auxiliary_sha256": "6752126a18a7bdb5f76defec15a70f5e19199660b8476fa45b865b1ea552c952",
+  "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+  "source_palette": [
+    {
+      "rgb": [
+        86,
+        82,
+        71
+      ],
+      "pixels": 4785
+    },
+    {
+      "rgb": [
+        221,
+        150,
+        117
+      ],
+      "pixels": 3657
+    },
+    {
+      "rgb": [
+        252,
+        223,
+        203
+      ],
+      "pixels": 3107
+    },
+    {
+      "rgb": [
+        88,
+        63,
+        47
+      ],
+      "pixels": 2642
+    },
+    {
+      "rgb": [
+        232,
+        214,
+        199
+      ],
+      "pixels": 2511
+    },
+    {
+      "rgb": [
+        146,
+        131,
+        112
+      ],
+      "pixels": 2423
+    },
+    {
+      "rgb": [
+        123,
+        93,
+        74
+      ],
+      "pixels": 2384
+    },
+    {
+      "rgb": [
+        50,
+        43,
+        39
+      ],
+      "pixels": 2343
+    }
+  ],
+  "labelled_source_samples": [
+    {
+      "label": "Blonde hair",
+      "crop_pixel_rect_xyxy": [
+        35,
+        37,
+        40,
+        42
+      ],
+      "rgb": [
+        187,
+        137,
+        100
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Skin",
+      "crop_pixel_rect_xyxy": [
+        62,
+        51,
+        67,
+        56
+      ],
+      "rgb": [
+        228,
+        136,
+        103
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Peach blouse",
+      "crop_pixel_rect_xyxy": [
+        33,
+        92,
+        38,
+        97
+      ],
+      "rgb": [
+        250,
+        185,
+        157
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Sage waistcoat",
+      "crop_pixel_rect_xyxy": [
+        73,
+        103,
+        78,
+        108
+      ],
+      "rgb": [
+        99,
+        101,
+        65
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark trousers",
+      "crop_pixel_rect_xyxy": [
+        79,
+        175,
+        84,
+        180
+      ],
+      "rgb": [
+        80,
+        73,
+        65
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Brown loafer",
+      "crop_pixel_rect_xyxy": [
+        101,
+        271,
+        106,
+        276
+      ],
+      "rgb": [
+        111,
+        73,
+        55
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Leather pouch",
+      "crop_pixel_rect_xyxy": [
+        28,
+        156,
+        33,
+        161
+      ],
+      "rgb": [
+        94,
+        60,
+        42
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Jewellery-box lining",
+      "crop_pixel_rect_xyxy": [
+        130,
+        76,
+        135,
+        81
+      ],
+      "rgb": [
+        49,
+        45,
+        62
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    }
+  ],
+  "decisions": [
+    "The original has a short wavy blonde bob. The auxiliary sheet proposes an elaborate back bun; prefer a conservative bob reconstruction consistent with the roster.",
+    "Retain the peach blouse, sage fitted waistcoat, diamond badge, tailored trousers, loafers and open jewel box. Do not add work boots or a helmet.",
+    "The box hinge, lining and hidden hair surfaces are reconstructed details."
+  ],
+  "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+}

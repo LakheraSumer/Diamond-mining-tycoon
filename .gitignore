@@ -37,3 +37,5 @@ diamond-mine-save.json*
 *.corrupt-*
 __pycache__/
 *.pyc
+*.blend1
+*.blend2

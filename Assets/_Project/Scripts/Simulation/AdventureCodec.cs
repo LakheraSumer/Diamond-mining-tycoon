@@ -17,6 +17,10 @@ namespace DiamondMine.Simulation
             json.Prop("owned", adventure.Owned.ToHex());
             json.Prop("handsItem", adventure.HandsItem ?? "");
             json.Prop("handsAmount", adventure.HandsAmount);
+            json.Prop("cartItem", adventure.CartItem ?? "");
+            json.Prop("cartLoad", adventure.CartLoad);
+            json.Prop("cartSeconds", adventure.CartSeconds);
+            json.Prop("cartGranted", adventure.CartGranted);
             json.Prop("carryCapacity", adventure.CarryCapacity);
             json.Prop("warehouseCapacity", adventure.WarehouseCapacity);
             json.Prop("actionClock", adventure.ActionClock);
@@ -70,6 +74,10 @@ namespace DiamondMine.Simulation
                 Owned = OwnershipBits.FromHex(node.Str("owned", "")),
                 HandsItem = node.Str("handsItem", ""),
                 HandsAmount = Whole(node, "handsAmount", 0d, JourneyCatalog.CarryCapacity),
+                CartItem = node.Str("cartItem", ""),
+                CartLoad = Whole(node, "cartLoad", 0d, JourneyCatalog.CarryCapacity),
+                CartSeconds = Whole(node, "cartSeconds", 0d, 30d),
+                CartGranted = node.Bool("cartGranted", false),
                 CarryCapacity = Math.Max(1, Math.Min(40, node.Int("carryCapacity", JourneyCatalog.CarryCapacity))),
                 WarehouseCapacity = Math.Max(1, Math.Min(5000, node.Int("warehouseCapacity", JourneyCatalog.WarehouseCapacity))),
                 ActionClock = NonNegative(node, "actionClock"),
@@ -105,6 +113,8 @@ namespace DiamondMine.Simulation
             ReadMachines(node, adventure);
             ReadJobs(node, adventure);
             ReadDeposits(node, adventure);
+            if (!string.IsNullOrEmpty(adventure.CartItem) && JourneyCatalog.FindItem(adventure.CartItem) == null)
+                throw new InvalidSaveException("Cart load is unknown.");
             AdventureRules.EnsureMachines(adventure);
             for (int i = 0; i < JourneyCatalog.AllCharacters.Count; i++)
             {

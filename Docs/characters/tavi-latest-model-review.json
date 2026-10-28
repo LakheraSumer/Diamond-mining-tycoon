@@ -1,0 +1,50 @@
+{
+  "character_id": "tavi",
+  "review_date": "2026-10-25",
+  "reviewer": "Codex visual inspection",
+  "status": "Unscored. Latest look-development improvement is visible; requested 95/100 fidelity is not accepted or certified.",
+  "scope": "Actual latest saved Blender source, face render; Main and animation evidence require separate review.",
+  "model_source": "ArtSource/Characters/tavi.blend",
+  "model_source_sha256": "d780df9ac8b1314df1f4374d95be4cf5dfcd3dc46f8a1d75bfbefc765c904246",
+  "rendered_model_source_sha256": "d780df9ac8b1314df1f4374d95be4cf5dfcd3dc46f8a1d75bfbefc765c904246",
+  "model_source_matches_render": true,
+  "face_image": "ArtSource/Characters/Tavi/07_Face.png",
+  "face_sha256": "87f6614c447b9e41e3bb529fa3830ecd332f4bdea87bb8f5baaff54ba9d12ec9",
+  "capture": {
+    "camera": [
+      -0.2199999988079071,
+      5.0,
+      1.7383246421813965
+    ],
+    "look_at": [
+      0,
+      0.02,
+      1.708324670791626
+    ],
+    "ortho_scale": 0.85,
+    "pose": "Neutral A-pose head",
+    "native_dimensions": [
+      1200,
+      1200
+    ]
+  },
+  "source_crop": "ArtSource/Characters/Tavi/01_SourceCrop.png",
+  "source_crop_sha256": "4e6aa505b3968bfb26037fdede0bedc4ce2e1a5f40e08a31fd64deab662ec44d",
+  "improvements": [
+    "Visible separate skin-colour rings around the eyes have been removed.",
+    "Mouth now has a clearer upward smile rather than the earlier flat/downturned shape."
+  ],
+  "remaining_differences": [
+    "Eye, eyebrow, cheek and jaw construction still differs from the source identity; eyelashes, sculpted eyelid thickness, soft cheek volume and facial detail are simplified.",
+    "Hair remains a small set of repeated tubular locks rather than the dense flowing/wavy source hair mass.",
+    "Scarf remains a bulky angular wrapped collar with simplified cloth folding.",
+    "Helmet strap, lamp housing and goggle fittings are present but differ in small silhouette and surface wear details.",
+    "Shoulder/sleeve faceting visible at the lower edge of the face capture still requires full-body animation and construction review."
+  ],
+  "limitations": [
+    "Source camera and lighting were not recovered exactly.",
+    "Render appearance alone cannot certify Unity import, all animation transitions or mobile performance.",
+    "Side/back geometry is reconstructed."
+  ],
+  "score": null
+}

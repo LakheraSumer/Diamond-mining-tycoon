@@ -1,0 +1,30 @@
+{
+  "blender": "4.5.9 LTS",
+  "seed": 41027,
+  "assemblies": {
+    "TimberBunker": {
+      "meshes": 17,
+      "vertices": 8587,
+      "triangles": 16650,
+      "uv_meshes": 17
+    },
+    "TerrainPatch": {
+      "meshes": 11,
+      "vertices": 17109,
+      "triangles": 31818,
+      "uv_meshes": 11
+    },
+    "MineTrack": {
+      "meshes": 4,
+      "vertices": 11856,
+      "triangles": 23200,
+      "uv_meshes": 4
+    },
+    "OreCart": {
+      "meshes": 9,
+      "vertices": 12584,
+      "triangles": 24620,
+      "uv_meshes": 9
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source": "https://github.com/makehumancommunity/mpfb2",
+  "asset_license": "CC0-1.0",
+  "scope": "Base anatomical facial/hand topology and morph target data only; no addon code is embedded.",
+  "files": {
+    "LICENSE.ASSETS.md": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c",
+    "LICENSE.md": "5cefb60680cb9efd4550a2e65d719021cfbec9dad3658481d11d48ae863ce04d",
+    "src\\mpfb\\data\\3dobjs\\base.obj": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c",
+    "src\\mpfb\\data\\mesh_metadata\\basemesh_vertex_groups.json": "8cb1417bc55ae5ec8aa99f90734e81ed5fbb556511ff6a2c00e0534b70911444",
+    "src\\mpfb\\data\\rigs\\standard\\weights.mixamo_unity.json": "0cfa562682fe27dab69cd3abd287cc971fbe576e03297d702798ac85813fb102",
+    "src\\mpfb\\data\\targets\\eyes\\l-eye-scale-incr.target.gz": "2d2d2d088931ce206eb6dad91e26318f045c7e4e6b6580acc812750b0f18f4bc",
+    "src\\mpfb\\data\\targets\\eyes\\l-eye-trans-out.target.gz": "b74b2e4266f3db6122baaad9a4f793b81285cb2ac405f9fa4163bc72e72e56fc",
+    "src\\mpfb\\data\\targets\\eyes\\r-eye-scale-incr.target.gz": "af556b9a6f930ce74f86d64f32b2f801bb5f4bb91f49c3ed37225b7d0413c5af",
+    "src\\mpfb\\data\\targets\\eyes\\r-eye-trans-out.target.gz": "1fc70679c7c086d10adc405b57be80d757417e925f1884625d6bc24b6a9fd05d",
+    "src\\mpfb\\data\\targets\\macrodetails\\african-female-young.target.gz": "1147ae55ecb0f66bade3f45176b3af187e265878322db172ad1090e9f3108e84",
+    "src\\mpfb\\data\\targets\\macrodetails\\african-male-young.target.gz": "05ed84d6df36e788cdfa8da0be15376850524b960cf2f17f3e592b9cf7d21c85",
+    "src\\mpfb\\data\\targets\\macrodetails\\asian-female-young.target.gz": "ee17da733288434e5b6fa120497f1fa6e72bf7faad5d694b0431d7275139170d",
+    "src\\mpfb\\data\\targets\\macrodetails\\asian-male-young.target.gz": "0928ed8b9f08f60afb9884cf9e9f33a939ed3a85d7f136de9ccc88a76981d6d7",
+    "src\\mpfb\\data\\targets\\macrodetails\\caucasian-female-young.target.gz": "e9d6212373ac5f1e2c596fa145e363385f4d169c3c6c88ede3bab93b681af041",
+    "src\\mpfb\\data\\targets\\macrodetails\\caucasian-male-young.target.gz": "ffe69537e53148edff2776204ba48cf3bf1f3cbc72966592c8a562ab80b07333",
+    "src\\mpfb\\data\\targets\\mouth\\mouth-trans-up.target.gz": "9b67400e12688a236a88319ce8fa10b1668def63f0fa3cba0e7279cfaaae56c9"
+  }
+}

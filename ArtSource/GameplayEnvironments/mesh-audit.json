@@ -1,0 +1,50 @@
+{
+  "Explore": {
+    "meshes": 32,
+    "vertices": 81249,
+    "triangles": 154682,
+    "uv_meshes": 32,
+    "source": "authored meshes; original timber portal reused for the starter row",
+    "inferred_composition": true
+  },
+  "Mine": {
+    "meshes": 12,
+    "vertices": 18329,
+    "triangles": 35694,
+    "uv_meshes": 12,
+    "source": "authored meshes; original timber portal reused for the starter row",
+    "inferred_composition": true
+  },
+  "Factory": {
+    "meshes": 15,
+    "vertices": 17472,
+    "triangles": 33202,
+    "uv_meshes": 15,
+    "source": "authored meshes; original timber portal reused for the starter row",
+    "inferred_composition": true
+  },
+  "Workshop": {
+    "meshes": 13,
+    "vertices": 10463,
+    "triangles": 20222,
+    "uv_meshes": 13,
+    "source": "authored meshes; original timber portal reused for the starter row",
+    "inferred_composition": true
+  },
+  "Boutique": {
+    "meshes": 17,
+    "vertices": 12498,
+    "triangles": 23948,
+    "uv_meshes": 17,
+    "source": "authored meshes; original timber portal reused for the starter row",
+    "inferred_composition": true
+  },
+  "RegionMap": {
+    "meshes": 11,
+    "vertices": 16651,
+    "triangles": 30060,
+    "uv_meshes": 11,
+    "source": "authored meshes; original timber portal reused for the starter row",
+    "inferred_composition": true
+  }
+}

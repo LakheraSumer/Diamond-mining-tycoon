@@ -1,0 +1,213 @@
+{
+  "id": "etta",
+  "name": "Etta",
+  "source_crop_rect_xyxy": [
+    8,
+    352,
+    154,
+    644
+  ],
+  "source_crop_dimensions": [
+    146,
+    292
+  ],
+  "source_crop_sha256": "e72dc9ad5c683b54061ad9e4175d794dd14145fb7f099b24e0f555bd8f9ec2c4",
+  "decoded_pixel_copy_verified": true,
+  "auxiliary_source": "D:\\games\\chartcter image\\h.png",
+  "auxiliary_sha256": "626bcb791b5551188ed05f1114bd6e3d3c562f993ea7b3337a0bf0dc0d2d6530",
+  "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+  "source_palette": [
+    {
+      "rgb": [
+        96,
+        74,
+        67
+      ],
+      "pixels": 3963
+    },
+    {
+      "rgb": [
+        61,
+        49,
+        46
+      ],
+      "pixels": 3779
+    },
+    {
+      "rgb": [
+        240,
+        226,
+        211
+      ],
+      "pixels": 3159
+    },
+    {
+      "rgb": [
+        211,
+        157,
+        131
+      ],
+      "pixels": 3072
+    },
+    {
+      "rgb": [
+        163,
+        111,
+        89
+      ],
+      "pixels": 3045
+    },
+    {
+      "rgb": [
+        113,
+        94,
+        89
+      ],
+      "pixels": 2872
+    },
+    {
+      "rgb": [
+        38,
+        22,
+        19
+      ],
+      "pixels": 2736
+    },
+    {
+      "rgb": [
+        88,
+        58,
+        49
+      ],
+      "pixels": 2597
+    }
+  ],
+  "labelled_source_samples": [
+    {
+      "label": "Textured dark hair",
+      "crop_pixel_rect_xyxy": [
+        31,
+        28,
+        36,
+        33
+      ],
+      "rgb": [
+        34,
+        19,
+        16
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Skin",
+      "crop_pixel_rect_xyxy": [
+        66,
+        50,
+        71,
+        55
+      ],
+      "rgb": [
+        130,
+        72,
+        46
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Violet glasses",
+      "crop_pixel_rect_xyxy": [
+        62,
+        40,
+        67,
+        45
+      ],
+      "rgb": [
+        96,
+        59,
+        97
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Apricot shirt",
+      "crop_pixel_rect_xyxy": [
+        41,
+        93,
+        46,
+        98
+      ],
+      "rgb": [
+        219,
+        127,
+        77
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark trousers",
+      "crop_pixel_rect_xyxy": [
+        53,
+        181,
+        58,
+        186
+      ],
+      "rgb": [
+        87,
+        74,
+        72
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Grey knee protection",
+      "crop_pixel_rect_xyxy": [
+        40,
+        201,
+        45,
+        206
+      ],
+      "rgb": [
+        123,
+        104,
+        91
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark boot",
+      "crop_pixel_rect_xyxy": [
+        102,
+        267,
+        107,
+        272
+      ],
+      "rgb": [
+        66,
+        53,
+        56
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Leather belt",
+      "crop_pixel_rect_xyxy": [
+        88,
+        130,
+        93,
+        135
+      ],
+      "rgb": [
+        132,
+        104,
+        80
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    }
+  ],
+  "decisions": [
+    "The original Etta has textured hair, a violet headband/lamp and protective glasses, not a miner helmet. The auxiliary sheet\u2019s headband supports this.",
+    "Keep the original hair gathered upward, apricot shirt, dark trousers and purple-laced boots. Do not replace the distinctive volume with a smooth cap.",
+    "Retain the original raised gem and precision tool pose; added gem-case trays and rear hair geometry are reconstructions."
+  ],
+  "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+}

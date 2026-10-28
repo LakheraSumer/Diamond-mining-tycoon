@@ -1,0 +1,3 @@
+Unity 6000.3.26f1; actual Main Play mode; 11 current interface screenshots and one world camera overview.
+Fresh starter save: D:\games\DiamondMineTycoon\.cache\timber-workspace\.cache/qa-saves/gallery-20261025-084644
+Current working art; no claim of matching the supplied concept.

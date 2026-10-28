@@ -1,0 +1,213 @@
+{
+  "id": "pavi",
+  "name": "Pavi",
+  "source_crop_rect_xyxy": [
+    688,
+    48,
+    868,
+    324
+  ],
+  "source_crop_dimensions": [
+    180,
+    276
+  ],
+  "source_crop_sha256": "b57f323dad52980910176535eab8244125c7f87ddf1c531029a903ea226f14d6",
+  "decoded_pixel_copy_verified": true,
+  "auxiliary_source": "D:\\games\\chartcter image\\f.png",
+  "auxiliary_sha256": "dec684450daad940f95673228ffb3633b6381a50cecf842b92b6192ddb1ed93a",
+  "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+  "source_palette": [
+    {
+      "rgb": [
+        132,
+        103,
+        98
+      ],
+      "pixels": 5737
+    },
+    {
+      "rgb": [
+        66,
+        78,
+        79
+      ],
+      "pixels": 5472
+    },
+    {
+      "rgb": [
+        242,
+        221,
+        203
+      ],
+      "pixels": 4914
+    },
+    {
+      "rgb": [
+        180,
+        131,
+        116
+      ],
+      "pixels": 4149
+    },
+    {
+      "rgb": [
+        89,
+        131,
+        133
+      ],
+      "pixels": 4072
+    },
+    {
+      "rgb": [
+        44,
+        40,
+        38
+      ],
+      "pixels": 3948
+    },
+    {
+      "rgb": [
+        151,
+        181,
+        175
+      ],
+      "pixels": 2721
+    },
+    {
+      "rgb": [
+        126,
+        79,
+        68
+      ],
+      "pixels": 2315
+    }
+  ],
+  "labelled_source_samples": [
+    {
+      "label": "Teal helmet",
+      "crop_pixel_rect_xyxy": [
+        57,
+        23,
+        62,
+        28
+      ],
+      "rgb": [
+        136,
+        161,
+        146
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Skin",
+      "crop_pixel_rect_xyxy": [
+        79,
+        57,
+        84,
+        62
+      ],
+      "rgb": [
+        202,
+        120,
+        96
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark hair",
+      "crop_pixel_rect_xyxy": [
+        45,
+        52,
+        50,
+        57
+      ],
+      "rgb": [
+        23,
+        31,
+        27
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Cream sleeve",
+      "crop_pixel_rect_xyxy": [
+        33,
+        94,
+        38,
+        99
+      ],
+      "rgb": [
+        222,
+        200,
+        177
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Turquoise apron",
+      "crop_pixel_rect_xyxy": [
+        77,
+        178,
+        82,
+        183
+      ],
+      "rgb": [
+        59,
+        115,
+        115
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Coral glove",
+      "crop_pixel_rect_xyxy": [
+        58,
+        132,
+        63,
+        137
+      ],
+      "rgb": [
+        219,
+        116,
+        92
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Coral rubber boot",
+      "crop_pixel_rect_xyxy": [
+        50,
+        241,
+        55,
+        246
+      ],
+      "rgb": [
+        227,
+        106,
+        76
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark washing pan",
+      "crop_pixel_rect_xyxy": [
+        128,
+        119,
+        133,
+        124
+      ],
+      "rgb": [
+        48,
+        42,
+        46
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    }
+  ],
+  "decisions": [
+    "The roster\u2019s teal waterproof apron is a long garment with visible volume; the auxiliary sheet supports the apron. Do not reduce it to a small bib.",
+    "Retain the roster\u2019s large round goggles, cream sleeves, coral gauntlets/boots and pan held by both hands.",
+    "The auxiliary rear apron bow and hood construction are inferred; use only where consistent with the original cream neckline and apron straps."
+  ],
+  "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+}

@@ -12,6 +12,43 @@ import zipfile
 ROOT = Path(__file__).resolve().parent.parent
 TOOLS = ROOT / '.cache/android-tools'
 BUILD_TOOLS = TOOLS / 'SDK/build-tools/36.0.0'
+PAGE_16KB = 16384
+
+
+def relro_status(section, loads):
+    """Apply Android's RELRO end rule and its documented own-LOAD exception.
+
+    https://developer.android.com/guide/practices/page-sizes#check-relro
+    A non-aligned RELRO end is safe when RELRO occupies its entire LOAD and
+    rounding its protection to 16 KB pages cannot cover another writable LOAD.
+    This is a static header check, not a runtime/device compatibility claim.
+    """
+    start = section['address']
+    end = start + section['memory_size']
+    page_start = start // PAGE_16KB * PAGE_16KB
+    page_end = (end + PAGE_16KB - 1) // PAGE_16KB * PAGE_16KB
+    own_index = next((index for index, load in enumerate(loads)
+                      if load['address'] == start and load['memory_size'] == section['memory_size']), None)
+    overlaps = [index for index, load in enumerate(loads)
+                if index != own_index and load['flags'] & 2
+                and load['address'] < page_end
+                and load['address'] + load['memory_size'] > page_start]
+    end_aligned = end % PAGE_16KB == 0
+    own_load_exception = own_index is not None and not overlaps
+    safe = end_aligned or own_load_exception
+    return {
+        **section,
+        'end_aligned_16kb': end_aligned,
+        'protection_page_start': page_start,
+        'protection_page_end': page_end,
+        'own_load_index': own_index,
+        'overlapping_other_writable_load_indices': overlaps,
+        'own_load_exception': own_load_exception,
+        'relro_16kb_pass': safe,
+        'reason': 'end aligned to 16 KB' if end_aligned else
+                  'entire own LOAD; no other writable LOAD overlaps rounded protection pages' if own_load_exception else
+                  'non-aligned end with no safe own-LOAD exception'
+    }
 
 
 def elf_segments(data):
@@ -24,16 +61,22 @@ def elf_segments(data):
     for index in range(count):
         pos = phoff + entry_size * index
         kind = struct.unpack_from('<I', data, pos)[0]
+        flags = struct.unpack_from('<I', data, pos + 4)[0]
         offset, address, _, file_size, memory_size, alignment = struct.unpack_from('<QQQQQQ', data, pos + 8)
         if kind == 1:
             segments.append({'offset': offset, 'address': address, 'alignment': alignment,
-                             'aligned_16kb': alignment >= 16384 and offset % 16384 == address % 16384})
+                             'flags': flags, 'file_size': file_size, 'memory_size': memory_size,
+                             'aligned_16kb': alignment >= PAGE_16KB and offset % PAGE_16KB == address % PAGE_16KB})
         if kind == 0x6474e552:
-            relro.append({'address': address, 'memory_size': memory_size,
-                          'end_aligned_16kb': (address + memory_size) % 16384 == 0})
+            relro.append({'address': address, 'memory_size': memory_size})
+    relro = [relro_status(section, segments) for section in relro]
+    failures = ([] if segments else ['No LOAD segments found'])
+    failures.extend(f'LOAD {index}: alignment or file/virtual-address congruence is not 16 KB compatible'
+                    for index, segment in enumerate(segments) if not segment['aligned_16kb'])
+    failures.extend(f'RELRO {index}: {section["reason"]}'
+                    for index, section in enumerate(relro) if not section['relro_16kb_pass'])
     return {'load_segments': segments, 'relro': relro,
-            'elf_16kb_pass': bool(segments) and all(s['aligned_16kb'] for s in segments)
-            and all(s['end_aligned_16kb'] for s in relro)}
+            'elf_16kb_pass': not failures, 'elf_16kb_failure_reasons': failures}
 
 
 def main():
@@ -81,12 +124,17 @@ def main():
         'package': package.group(1) if package else None,
         'version_code': package.group(2) if package else None,
         'version_name': package.group(3) if package else None,
+        'minimum_sdk': int(re.search(r"^sdkVersion:'(\d+)'",badging,re.M).group(1)) if re.search(r"^sdkVersion:'(\d+)'",badging,re.M) else None,
+        'target_sdk': int(re.search(r"^targetSdkVersion:'(\d+)'",badging,re.M).group(1)) if re.search(r"^targetSdkVersion:'(\d+)'",badging,re.M) else None,
+        'native_abis': sorted({item['name'].split('/')[1] for item in libraries}),
         'permissions': re.findall(r"uses-permission:\s*name='([^']+)'", permissions),
         'debuggable': bool(re.search(r'debuggable[^\n]*0xffffffff', manifest)),
         'tools': results, 'native_libraries': libraries,
         'all_native_elf_16kb_pass': bool(libraries) and all(i['elf_16kb_pass'] for i in libraries),
+        'elf_alignment_reference': 'https://developer.android.com/guide/practices/page-sizes#check-relro',
         'dex_ad_purchase_analytics_marker_matches': sorted(set(sdk_markers)),
         'limitations': ['Static packaging checks; no device launch, network traffic or physical 16 KB test.',
+                        'Aligned headers do not rule out runtime code or allocator assumptions about 4 KB pages.',
                         'DEX marker scan checks the listed namespaces only; release feature policy is inspected separately.']
     }
     (destination / 'summary.json').write_text(json.dumps(summary, indent=2), encoding='utf-8')

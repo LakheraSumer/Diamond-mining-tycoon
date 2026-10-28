@@ -1,0 +1,230 @@
+{
+  "tavi": {
+    "vertices": 47687,
+    "triangles": 89486,
+    "skinned_meshes": 4,
+    "bones": 47,
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Mine",
+      "Collect",
+      "Carry",
+      "Wave",
+      "Celebrate",
+      "Machine",
+      "Craft"
+    ],
+    "reference_based_reconstruction": true
+  },
+  "mira": {
+    "vertices": 48435,
+    "triangles": 90796,
+    "skinned_meshes": 4,
+    "bones": 47,
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Mine",
+      "Collect",
+      "Carry",
+      "Wave",
+      "Celebrate",
+      "Machine",
+      "Craft"
+    ],
+    "reference_based_reconstruction": true
+  },
+  "oren": {
+    "vertices": 40848,
+    "triangles": 76164,
+    "skinned_meshes": 4,
+    "bones": 47,
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Mine",
+      "Collect",
+      "Carry",
+      "Wave",
+      "Celebrate",
+      "Machine",
+      "Craft"
+    ],
+    "reference_based_reconstruction": true
+  },
+  "zela": {
+    "vertices": 41064,
+    "triangles": 77066,
+    "skinned_meshes": 4,
+    "bones": 47,
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Mine",
+      "Collect",
+      "Carry",
+      "Wave",
+      "Celebrate",
+      "Machine",
+      "Craft"
+    ],
+    "reference_based_reconstruction": true
+  },
+  "pavi": {
+    "vertices": 35827,
+    "triangles": 67198,
+    "skinned_meshes": 4,
+    "bones": 47,
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Mine",
+      "Collect",
+      "Carry",
+      "Wave",
+      "Celebrate",
+      "Machine",
+      "Craft"
+    ],
+    "reference_based_reconstruction": true
+  },
+  "nilo": {
+    "vertices": 36929,
+    "triangles": 68612,
+    "skinned_meshes": 4,
+    "bones": 47,
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Mine",
+      "Collect",
+      "Carry",
+      "Wave",
+      "Celebrate",
+      "Machine",
+      "Craft"
+    ],
+    "reference_based_reconstruction": true
+  },
+  "etta": {
+    "vertices": 48500,
+    "triangles": 91434,
+    "skinned_meshes": 4,
+    "bones": 47,
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Mine",
+      "Collect",
+      "Carry",
+      "Wave",
+      "Celebrate",
+      "Machine",
+      "Craft"
+    ],
+    "reference_based_reconstruction": true
+  },
+  "rumi": {
+    "vertices": 37631,
+    "triangles": 70306,
+    "skinned_meshes": 4,
+    "bones": 47,
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Mine",
+      "Collect",
+      "Carry",
+      "Wave",
+      "Celebrate",
+      "Machine",
+      "Craft"
+    ],
+    "reference_based_reconstruction": true
+  },
+  "kavi": {
+    "vertices": 38548,
+    "triangles": 71658,
+    "skinned_meshes": 4,
+    "bones": 47,
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Mine",
+      "Collect",
+      "Carry",
+      "Wave",
+      "Celebrate",
+      "Machine",
+      "Craft"
+    ],
+    "reference_based_reconstruction": true
+  },
+  "sola": {
+    "vertices": 32539,
+    "triangles": 60680,
+    "skinned_meshes": 4,
+    "bones": 47,
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Mine",
+      "Collect",
+      "Carry",
+      "Wave",
+      "Celebrate",
+      "Machine",
+      "Craft"
+    ],
+    "reference_based_reconstruction": true
+  },
+  "beni": {
+    "vertices": 38172,
+    "triangles": 71260,
+    "skinned_meshes": 4,
+    "bones": 47,
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Mine",
+      "Collect",
+      "Carry",
+      "Wave",
+      "Celebrate",
+      "Machine",
+      "Craft"
+    ],
+    "reference_based_reconstruction": true
+  },
+  "daro": {
+    "vertices": 38910,
+    "triangles": 72488,
+    "skinned_meshes": 4,
+    "bones": 47,
+    "clips": [
+      "Idle",
+      "Walk",
+      "Run",
+      "Mine",
+      "Collect",
+      "Carry",
+      "Wave",
+      "Celebrate",
+      "Machine",
+      "Craft"
+    ],
+    "reference_based_reconstruction": true
+  }
+}

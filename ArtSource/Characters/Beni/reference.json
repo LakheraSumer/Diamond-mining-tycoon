@@ -1,0 +1,213 @@
+{
+  "id": "beni",
+  "name": "Beni",
+  "source_crop_rect_xyxy": [
+    674,
+    347,
+    869,
+    644
+  ],
+  "source_crop_dimensions": [
+    195,
+    297
+  ],
+  "source_crop_sha256": "94728e641854a854d55c07a3b3832c4343258da91a93babf1b285557c62a11b0",
+  "decoded_pixel_copy_verified": true,
+  "auxiliary_source": "D:\\games\\chartcter image\\l.png",
+  "auxiliary_sha256": "f2471eb6a2931ea1690d13c9c13b6920c67f60ba25f245a6fc471ca22841aa3f",
+  "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+  "source_palette": [
+    {
+      "rgb": [
+        110,
+        138,
+        174
+      ],
+      "pixels": 5538
+    },
+    {
+      "rgb": [
+        175,
+        140,
+        112
+      ],
+      "pixels": 5509
+    },
+    {
+      "rgb": [
+        73,
+        56,
+        45
+      ],
+      "pixels": 4848
+    },
+    {
+      "rgb": [
+        130,
+        97,
+        75
+      ],
+      "pixels": 4554
+    },
+    {
+      "rgb": [
+        76,
+        88,
+        107
+      ],
+      "pixels": 4513
+    },
+    {
+      "rgb": [
+        237,
+        225,
+        210
+      ],
+      "pixels": 4368
+    },
+    {
+      "rgb": [
+        33,
+        33,
+        38
+      ],
+      "pixels": 4213
+    },
+    {
+      "rgb": [
+        166,
+        170,
+        178
+      ],
+      "pixels": 3224
+    }
+  ],
+  "labelled_source_samples": [
+    {
+      "label": "Amber helmet",
+      "crop_pixel_rect_xyxy": [
+        89,
+        26,
+        94,
+        31
+      ],
+      "rgb": [
+        145,
+        84,
+        26
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Skin",
+      "crop_pixel_rect_xyxy": [
+        92,
+        54,
+        97,
+        59
+      ],
+      "rgb": [
+        178,
+        104,
+        74
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark hair",
+      "crop_pixel_rect_xyxy": [
+        70,
+        37,
+        75,
+        42
+      ],
+      "rgb": [
+        32,
+        22,
+        5
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Blue jacket",
+      "crop_pixel_rect_xyxy": [
+        116,
+        111,
+        121,
+        116
+      ],
+      "rgb": [
+        117,
+        160,
+        209
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Blue trousers",
+      "crop_pixel_rect_xyxy": [
+        85,
+        203,
+        90,
+        208
+      ],
+      "rgb": [
+        73,
+        96,
+        126
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Work glove",
+      "crop_pixel_rect_xyxy": [
+        48,
+        143,
+        53,
+        148
+      ],
+      "rgb": [
+        167,
+        134,
+        104
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Brown boot",
+      "crop_pixel_rect_xyxy": [
+        41,
+        266,
+        46,
+        271
+      ],
+      "rgb": [
+        115,
+        96,
+        74
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Delivery-case metal",
+      "crop_pixel_rect_xyxy": [
+        148,
+        198,
+        153,
+        203
+      ],
+      "rgb": [
+        177,
+        160,
+        150
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    }
+  ],
+  "decisions": [
+    "The original Beni wears a blue delivery jacket and trousers, not a bib-overall chest. The auxiliary jacket front supports preserving that construction.",
+    "Keep the original broad rounded silhouette, amber helmet, gloves and wheeled trolley with stacked protective cases. A floating single suitcase is a mismatch.",
+    "Extra backpack hardware in the auxiliary sheet is lower authority and should not change the original visible silhouette."
+  ],
+  "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+}

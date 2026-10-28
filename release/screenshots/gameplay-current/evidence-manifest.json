@@ -1,0 +1,92 @@
+{
+    "images": [
+        {
+            "file": "release/screenshots/gameplay-current/01-explore.png",
+            "sha256": "c949034fb92f0450b29f6570c267b410d54621c6a8585f81a1afebfc5a742c3e",
+            "kind": "Actual Main Play-mode capture",
+            "note": "Current imported development assets; fresh isolated starter save; illustration match remains unfinished.",
+            "group": "Gameplay"
+        },
+        {
+            "file": "release/screenshots/gameplay-current/02-mine.png",
+            "sha256": "c1c88b5aa4876d34a28e18a1395a501b5da2c0e0b4a330c2f7ea272f36f5a0a2",
+            "kind": "Actual Main Play-mode capture",
+            "note": "Current imported development assets; fresh isolated starter save; illustration match remains unfinished.",
+            "group": "Gameplay"
+        },
+        {
+            "file": "release/screenshots/gameplay-current/03-process.png",
+            "sha256": "dfde8fbb8a08d3a39b926583b8831ba2c51b0f82e0e696441005baf6d1e00ba3",
+            "kind": "Actual Main Play-mode capture",
+            "note": "Current imported development assets; fresh isolated starter save; illustration match remains unfinished.",
+            "group": "Gameplay"
+        },
+        {
+            "file": "release/screenshots/gameplay-current/04-craft.png",
+            "sha256": "42d52208484af7bf225ed4adc13061056153e0268b4bed97783e4e7d7ccf51e7",
+            "kind": "Actual Main Play-mode capture",
+            "note": "Current imported development assets; fresh isolated starter save; illustration match remains unfinished.",
+            "group": "Gameplay"
+        },
+        {
+            "file": "release/screenshots/gameplay-current/05-sell.png",
+            "sha256": "8fd1656169631fbc469a979644900035447d06f0f17c09f47dfe26866229f5a7",
+            "kind": "Actual Main Play-mode capture",
+            "note": "Current imported development assets; fresh isolated starter save; illustration match remains unfinished.",
+            "group": "Gameplay"
+        },
+        {
+            "file": "release/screenshots/gameplay-current/06-expand.png",
+            "sha256": "f9407ded0646277718072045d9e71f997187dc6c1859ecce18dfd199c83c22e3",
+            "kind": "Actual Main Play-mode capture",
+            "note": "Current imported development assets; fresh isolated starter save; illustration match remains unfinished.",
+            "group": "Gameplay"
+        },
+        {
+            "file": "release/screenshots/gameplay-current/07-progress.png",
+            "sha256": "30319a3012edc70641dfbed3e94e9178c6bfd0161204ea84ff167057a773ed54",
+            "kind": "Actual Main Play-mode capture",
+            "note": "Current imported development assets; fresh isolated starter save; illustration match remains unfinished.",
+            "group": "Gameplay"
+        },
+        {
+            "file": "release/screenshots/gameplay-current/08-rankings.png",
+            "sha256": "8faf53a7af410f29412153bd150d62ceaeb243b13209856025dd799297d8be95",
+            "kind": "Actual Main Play-mode capture",
+            "note": "Current imported development assets; fresh isolated starter save; illustration match remains unfinished.",
+            "group": "Gameplay"
+        },
+        {
+            "file": "release/screenshots/gameplay-current/09-character-selection.png",
+            "sha256": "cafa98bb38cae861f13f504c842070bd76a56094fa89e34a4f216c7f140933c4",
+            "kind": "Actual Main Play-mode capture",
+            "note": "Current imported development assets; fresh isolated starter save; illustration match remains unfinished.",
+            "group": "Gameplay"
+        },
+        {
+            "file": "release/screenshots/gameplay-current/10-inventory.png",
+            "sha256": "368d458ce90fb263fd2a56732ab4461a7836dec09d756992c3c045d39ff40f3b",
+            "kind": "Actual Main Play-mode capture",
+            "note": "Current imported development assets; fresh isolated starter save; illustration match remains unfinished.",
+            "group": "Gameplay"
+        },
+        {
+            "file": "release/screenshots/gameplay-current/11-more.png",
+            "sha256": "d73134f5a840ca9e0bb6629d82e884a56cbd84ba4780f79b48c0e797fe85eeab",
+            "kind": "Actual Main Play-mode capture",
+            "note": "Current imported development assets; fresh isolated starter save; illustration match remains unfinished.",
+            "group": "Gameplay"
+        },
+        {
+            "file": "release/screenshots/gameplay-current/12-entire-yard.png",
+            "sha256": "ac90061caa3a26ccebe92f103177b315df03be58fb7f7e312faad40c03dba579",
+            "kind": "Actual Main Play-mode capture",
+            "note": "Current imported development assets; fresh isolated starter save; illustration match remains unfinished.",
+            "group": "Environment"
+        }
+    ],
+    "unity": "6000.3.26f1",
+    "scene": "Assets/_Project/Scenes/Main.unity",
+    "utc": "2026-10-25T08:47:01.0084831Z",
+    "saveRoot": "D:\\games\\DiamondMineTycoon\\.cache\\timber-workspace\\.cache/qa-saves/gallery-20261025-084644"
+}

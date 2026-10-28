@@ -1,0 +1,4 @@
+Actual Main Play-mode uGUI + imported 3D.
+Private QA save: D:\games\DiamondMineTycoon\.cache\timber-workspace\.cache/qa-saves/ui-reference-20261025-084602
+Reference images: source per-panel aspects at 4x native crop. Live images: 720x1280 adaptive portrait.
+Bounds equality checks layout implementation against manually measured source rectangles. It does not certify total visual identity.

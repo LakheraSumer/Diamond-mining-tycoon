@@ -9,33 +9,66 @@ namespace DiamondMine.Runtime
     public sealed class YardWorld : MonoBehaviour
     {
         Camera view;
+        Light yardSun;
+        TimberBunkerArea timberArea;
+        GameplayEnvironmentSet environments;
+        bool shown;
+        bool cartWasRiding;
+        Vector3[] haulRoute;
+        Vector3 previousCartPosition;
+        Transform[] cartWheels;
+        bool areaFraming;
+        public TimberBunkerArea TimberArea { get { return timberArea; } }
+        public Transform TransportCart { get { return cart; } }
+        public Transform Player { get { return player; } }
+
+        // Also used by the art review camera. This changes presentation only.
+        public void FrameTimberArea(bool enabled) { areaFraming = enabled; cameraReady = false; }
+        string screenMode = "";
+        public void SetScreenMode(string nextMode)
+        {
+            screenMode = nextMode ?? "";
+            cameraReady = false;
+            if (environments != null) environments.SetMode(screenMode);
+            if (screenMode.Length > 0) ClearMove();
+        }
         Transform player;
-        Transform arm;
-        Transform toolSocket;
-        Transform helmet;
-        Transform cloth;
-        Transform accent;
-        Transform head;
-        Renderer[] accessoryRenderers;
+        CrewActor crewActor;
         string shownCharacter = "";
         string pose = "idle";
-        float poseTime;
         Vector3 cameraPosition;
         bool cameraReady;
+        TextMesh[] bunkerLabels;
+        Transform cart;
+        bool hasMove;
+        Vector3 moveTarget;
+        public float Facing;
+
+        public bool HasMove { get { return hasMove; } }
+        public Vector3 MoveTarget { get { return moveTarget; } }
+
+        public void SetMoveTarget(float x, float z)
+        {
+            hasMove = true;
+            moveTarget = new Vector3(x, 0f, z);
+        }
+
+        public void ClearMove()
+        {
+            hasMove = false;
+        }
 
         public Camera View { get { return view; } }
 
         void Awake()
         {
-            Shader shader = Shader.Find("Unlit/Color");
-            if (shader == null)
-                shader = Shader.Find("Sprites/Default");
             var cameraObject = new GameObject("YardCamera");
             cameraObject.transform.SetParent(transform, false);
             view = cameraObject.AddComponent<Camera>();
             view.depth = 1f;
+            view.cullingMask = ~(1 << MinePresenter.WorldLayer);
             view.clearFlags = CameraClearFlags.SolidColor;
-            view.backgroundColor = new Color(0.45f, 0.62f, 0.42f);
+            view.backgroundColor = new Color(0.55f, 0.78f, 0.92f);
             view.fieldOfView = 42f;
             view.nearClipPlane = 0.05f;
             view.farClipPlane = 80f;
@@ -45,49 +78,75 @@ namespace DiamondMine.Runtime
             sunObject.transform.SetParent(transform, false);
             sunObject.transform.rotation = Quaternion.Euler(52f, -28f, 0f);
             Light sun = sunObject.AddComponent<Light>();
+            yardSun = sun;
+            sun.cullingMask = ~(1 << MinePresenter.WorldLayer);
             sun.type = LightType.Directional;
-            sun.intensity = 1.05f;
-            sun.shadows = LightShadows.None;
-
-            BuildBlock(shader, "Ground", new Vector3(0f, -0.2f, 6f), new Vector3(18f, 0.4f, 24f), new Color(0.55f, 0.62f, 0.38f));
-            BuildBlock(shader, "Factory", new Vector3(0f, 0.7f, 0.8f), new Vector3(2.2f, 1.4f, 1.6f), new Color(0.35f, 0.4f, 0.48f));
-            BuildBlock(shader, "Shop", new Vector3(4.2f, 0.55f, -1.2f), new Vector3(1.6f, 1.1f, 1.4f), new Color(0.62f, 0.45f, 0.32f));
-            BuildBlock(shader, "Gate", new Vector3(-6.2f, 0.8f, -1.2f), new Vector3(0.4f, 1.6f, 1.8f), new Color(0.85f, 0.72f, 0.35f));
-            for (int i = 0; i < YardLayout.RockCount; i++)
+            sun.color = new Color(1f, 0.94f, 0.84f);
+            sun.intensity = 1.12f;
+            sun.shadows = LightShadows.Soft;
+            sun.shadowStrength = .80f;
+            sun.shadowBias = .035f;
+            sun.shadowNormalBias = .16f;
+            sun.enabled = false;
+            environments = GameplayEnvironmentSet.Create(transform);
+            timberArea = environments != null ? environments.TimberArea : null;
+            bunkerLabels = environments != null ? environments.BunkerLabels : null;
+            cart = TimberBunkerArea.CreateCart(transform);
+            if (cart != null)
             {
-                YardPoint rock = YardLayout.Rock(i);
-                BuildBlock(shader, "Rock", new Vector3((float)rock.X, 0.35f, (float)rock.Z), new Vector3(0.9f, 0.7f, 0.9f), new Color(0.45f, 0.42f, 0.4f));
+                var wheels = new System.Collections.Generic.List<Transform>();
+                foreach (Transform part in cart.GetComponentsInChildren<Transform>())
+                    if (part.name.StartsWith("Wheel_",System.StringComparison.Ordinal)) wheels.Add(part);
+                cartWheels = wheels.ToArray();
+                cart.gameObject.SetActive(false);
             }
-            for (int plot = 0; plot < WorldGenerator.VisibleYardPlots; plot++)
-            {
-                YardPoint door = YardLayout.Entrance(plot);
-                Color color = plot < WorldGenerator.StarterCount
-                    ? new Color(0.2f, 0.55f, 0.52f)
-                    : new Color(0.35f, 0.32f, 0.3f);
-                BuildBlock(shader, "Bunker" + plot, new Vector3((float)door.X, 0.55f, (float)door.Z), new Vector3(1.1f, 1.1f, 1.1f), color);
-            }
-            BuildPlayer(shader);
         }
 
         public void SetShown(bool shown)
         {
+            this.shown = shown;
             if (view != null)
                 view.enabled = shown;
+            if (yardSun != null) yardSun.enabled = shown;
+            if (environments != null) environments.SetShown(shown);
+            if (player != null) player.gameObject.SetActive(shown && (environments == null || environments.InYard));
+            if (cart != null && !shown) cart.gameObject.SetActive(false);
+            if (timberArea != null) timberArea.Present(cartWasRiding, shown);
+            if (shown)
+            {
+                RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Trilight;
+                RenderSettings.ambientSkyColor = new Color(.53f,.62f,.73f);
+                RenderSettings.ambientEquatorColor = new Color(.40f,.42f,.40f);
+                RenderSettings.ambientGroundColor = new Color(.23f,.20f,.16f);
+                QualitySettings.pixelLightCount = Mathf.Max(2, QualitySettings.pixelLightCount);
+            }
         }
 
         public void Present(GameSession session)
         {
-            if (session == null || !session.Ready || session.State == null || session.State.Adventure == null || player == null)
+            if (session == null || !session.Ready || session.State == null || session.State.Adventure == null)
                 return;
             AdventureState adventure = session.State.Adventure;
+            if (player == null || shownCharacter != (adventure.SelectedCharacter ?? ""))
+                ApplyLook(adventure);
+            if (player == null)
+                return;
+            bool inYard = environments != null && environments.InYard;
+            player.gameObject.SetActive(shown && inYard);
             player.position = new Vector3((float)adventure.PlayerX, 0f, (float)adventure.PlayerZ);
-            ApplyLook(adventure);
+            player.rotation = Quaternion.Euler(0f, Facing, 0f);
+            PaintBunkers(adventure);
+            PlaceCart(adventure);
             PoseInput input = BuildPose(adventure);
             pose = PuppetPose.Resolve(input);
             float dt = session.State.Settings.ReducedMotion ? 0f : Time.unscaledDeltaTime;
-            poseTime += dt;
             Animate(dt <= 0f);
-            FollowCamera(player.position, session.State.Settings.ReducedMotion);
+            if (environments != null) environments.Present(adventure, session.State.Settings.ReducedMotion);
+            if (environments == null || !environments.Frame(view))
+                FollowCamera(player.position, session.State.Settings.ReducedMotion);
+            if (bunkerLabels != null)
+                foreach (TextMesh label in bunkerLabels)
+                    if (label != null) label.transform.rotation = view.transform.rotation;
         }
 
         static PoseInput BuildPose(AdventureState adventure)
@@ -118,43 +177,51 @@ namespace DiamondMine.Runtime
 
         void ApplyLook(AdventureState adventure)
         {
-            if (shownCharacter == adventure.SelectedCharacter)
-                return;
-            shownCharacter = adventure.SelectedCharacter ?? "";
-            CharacterDef person = JourneyCatalog.FindCharacter(shownCharacter);
-            if (person == null)
-                person = JourneyCatalog.AllCharacters[0];
-            Paint(helmet, person.Helmet);
-            Paint(cloth, person.Cloth);
-            Paint(head, person.Skin);
-            Paint(accent, person.Accent);
-            if (accessoryRenderers != null)
-            {
-                for (int i = 0; i < accessoryRenderers.Length; i++)
-                    accessoryRenderers[i].enabled = accessoryRenderers[i].gameObject.name == person.Accessory;
-            }
+            string nextCharacter = adventure.SelectedCharacter ?? "";
+            CharacterDef person = JourneyCatalog.FindCharacter(nextCharacter) ?? JourneyCatalog.AllCharacters[0];
+            YardArt.Crew crew = YardArt.BuildCrew(person, transform);
+            if (crew.Root == null) return;
+            Vector3 position = player != null ? player.position : Vector3.zero;
+            float yaw = player != null ? player.eulerAngles.y : Facing;
+            if (player != null) Destroy(player.gameObject);
+            player = crew.Root;
+            crewActor = crew.Actor;
+            shownCharacter = nextCharacter;
+            player.position = position;
+            player.rotation = Quaternion.Euler(0f, yaw, 0f);
         }
 
         void Animate(bool frozen)
         {
-            float swing = frozen ? 0f : Mathf.Sin(poseTime * 6f) * 25f;
-            if (arm == null)
-                return;
-            if (pose == "mine" || pose == "machine" || pose == "craft")
-                arm.localRotation = Quaternion.Euler(frozen ? -40f : -40f + swing, 0f, 0f);
-            else if (pose == "walk" || pose == "run" || pose == "carry")
-                arm.localRotation = Quaternion.Euler(frozen ? 0f : swing * 0.4f, 0f, 0f);
-            else if (pose == "wave" || pose == "celebrate")
-                arm.localRotation = Quaternion.Euler(-120f, 0f, frozen ? 20f : 20f + swing);
-            else
-                arm.localRotation = Quaternion.identity;
+            if (crewActor != null) crewActor.Present(pose, frozen);
         }
 
         void FollowCamera(Vector3 target, bool reducedMotion)
         {
-            Vector3 desired = target + new Vector3(-4.2f, 8.4f, -5.4f);
-            desired.x = Mathf.Clamp(desired.x, -6f, 6f);
-            desired.z = Mathf.Clamp(desired.z, -8f, 12f);
+            view.backgroundColor = new Color(.55f,.78f,.92f);
+            // ScreenMode == "" or general Explore / Tasks / Rank / Characters
+            YardPoint entrance = YardLayout.Entrance(0);
+            Vector3 timberFocus = new Vector3((float)entrance.X - 0.15f, 1.1f, (float)entrance.Z - 0.28f);
+            bool nearTimber = areaFraming || Vector2.Distance(new Vector2(target.x, target.z),
+                new Vector2((float)entrance.X, (float)entrance.Z)) < 2.8f;
+            if (nearTimber)
+            {
+                view.orthographic = true;
+                view.orthographicSize = Mathf.Max(2.65f, 2.65f / Mathf.Max(0.3f, view.aspect));
+                Vector3 position = timberFocus + new Vector3(4.8f, 3.7f, -7.2f);
+                PositionCamera(position, timberFocus, reducedMotion);
+                return;
+            }
+            view.orthographic = false;
+            view.fieldOfView = 42f;
+            Vector3 desiredYard = target + new Vector3(-6.5f, 9.5f, -7.2f);
+            desiredYard.x = Mathf.Clamp(desiredYard.x, -6f, 6f);
+            desiredYard.z = Mathf.Clamp(desiredYard.z, -8f, 12f);
+            PositionCamera(desiredYard, target + new Vector3(0f, 0.8f, 0f), reducedMotion);
+        }
+
+        void PositionCamera(Vector3 desired, Vector3 lookTarget, bool reducedMotion)
+        {
             if (!cameraReady || reducedMotion)
             {
                 cameraPosition = desired;
@@ -165,62 +232,104 @@ namespace DiamondMine.Runtime
                 cameraPosition = Vector3.Lerp(cameraPosition, desired, 1f - Mathf.Exp(-6f * Time.unscaledDeltaTime));
             }
             view.transform.position = cameraPosition;
-            view.transform.LookAt(target + new Vector3(0f, 0.8f, 0f));
+            view.transform.LookAt(lookTarget);
         }
 
-        void BuildPlayer(Shader shader)
+        static string BunkerWord(int plot)
         {
-            player = BuildBlock(shader, "Miner", Vector3.zero, new Vector3(0.55f, 0.9f, 0.4f), new Color(0.3f, 0.45f, 0.55f)).transform;
-            cloth = player;
-            head = BuildBlock(shader, "Head", new Vector3(0f, 0.72f, 0f), new Vector3(0.38f, 0.38f, 0.38f), new Color(0.8f, 0.64f, 0.45f)).transform;
-            head.SetParent(player, false);
-            helmet = BuildBlock(shader, "Helmet", new Vector3(0f, 0.22f, 0f), new Vector3(0.46f, 0.22f, 0.46f), Color.cyan).transform;
-            helmet.SetParent(head, false);
-            arm = BuildBlock(shader, "Arm", new Vector3(0.38f, 0.15f, 0.1f), new Vector3(0.16f, 0.45f, 0.16f), new Color(0.8f, 0.64f, 0.45f)).transform;
-            arm.SetParent(player, false);
-            toolSocket = new GameObject("ToolSocket").transform;
-            toolSocket.SetParent(arm, false);
-            toolSocket.localPosition = new Vector3(0f, -0.28f, 0.1f);
-            accent = BuildBlock(shader, "Tool", Vector3.zero, new Vector3(0.12f, 0.28f, 0.12f), Color.gray).transform;
-            accent.SetParent(toolSocket, false);
-            string[] names = { "scarf", "pouch", "pads", "tubes", "gloves", "goggles", "tray", "glasses", "cloth", "loop", "badge", "cart", "blueprint" };
-            accessoryRenderers = new Renderer[names.Length];
-            for (int i = 0; i < names.Length; i++)
+            if (plot == 0)
+                return "Stone";
+            if (plot == 1)
+                return "Copper";
+            if (plot == 2)
+                return "Diamond";
+            if (plot == 3)
+                return "Silver";
+            if (plot == 4)
+                return "Mixed";
+            return "Buy";
+        }
+
+        void PaintBunkers(AdventureState adventure)
+        {
+            if (bunkerLabels == null)
+                return;
+            for (int plot = 0; plot < bunkerLabels.Length; plot++)
             {
-                GameObject piece = BuildBlock(shader, names[i], new Vector3(0f, 0.2f, 0.28f), new Vector3(0.22f, 0.12f, 0.08f), Color.white);
-                piece.transform.SetParent(player, false);
-                accessoryRenderers[i] = piece.GetComponent<Renderer>();
-                accessoryRenderers[i].enabled = false;
+                bool owned = adventure.Owned.Get(plot);
+                if (bunkerLabels[plot] != null)
+                {
+                    string word = plot < WorldGenerator.StarterCount ? BunkerWord(plot) : (owned ? "Yours" : "Buy");
+                    bunkerLabels[plot].text = (plot + 1) + "\n" + word;
+                }
             }
         }
 
-        static void Paint(Transform target, int hex)
+        void PlaceCart(AdventureState adventure)
         {
-            if (target == null)
+            if (cart == null)
                 return;
-            Renderer renderer = target.GetComponent<Renderer>();
-            if (renderer != null)
-                renderer.material.color = Hex(hex);
+            bool riding = adventure.CartLoad > 0d && !adventure.CartGranted;
+            if (timberArea != null) timberArea.Present(riding && adventure.FocusPlotId == 0, shown);
+            cart.gameObject.SetActive(riding && shown && environments != null && environments.InYard);
+            if (!riding)
+            {
+                cartWasRiding = false;
+                return;
+            }
+            if (!cartWasRiding)
+            {
+                BuildHaulRoute(adventure);
+                previousCartPosition = RoutePoint(0f);
+            }
+            cartWasRiding = true;
+            float span = (float)JourneyCatalog.CartTripSeconds;
+            float along = span <= 0f ? 1f : 1f - Mathf.Clamp01((float)adventure.CartSeconds / span);
+            Vector3 next = RoutePoint(along);
+            Vector3 ahead = RoutePoint(Mathf.Min(1f,along+.005f))-next;
+            if (ahead.sqrMagnitude>.00001f) cart.rotation=Quaternion.LookRotation(ahead.normalized,Vector3.up);
+            float distance=Vector3.Distance(previousCartPosition,next);
+            if(cartWheels!=null) foreach(Transform wheel in cartWheels)
+                wheel.Rotate(cart.right,distance/.125f*Mathf.Rad2Deg,Space.World);
+            cart.position = next;
+            previousCartPosition = next;
         }
 
-        static Color Hex(int hex)
+        void BuildHaulRoute(AdventureState adventure)
         {
-            return new Color(((hex >> 16) & 255) / 255f, ((hex >> 8) & 255) / 255f, (hex & 255) / 255f, 1f);
+            var points = new System.Collections.Generic.List<Vector3>();
+            if (adventure.FocusPlotId == 0)
+            {
+                YardPoint door=YardLayout.Entrance(0);
+                float x=(float)door.X,z=(float)door.Z;
+                points.Add(new Vector3(x,0,z-.98f));
+                points.Add(new Vector3(x,0,z-1.09f));
+                for(int i=1;i<=12;i++)
+                {
+                    float a=i/12f*Mathf.PI*.5f;
+                    points.Add(new Vector3(x+.85f-.85f*Mathf.Cos(a),0,z-1.09f-.85f*Mathf.Sin(a)));
+                }
+                points.Add(new Vector3(0,0,z-1.94f));
+            }
+            else points.Add(new Vector3((float)adventure.PlayerX,0,(float)adventure.PlayerZ));
+            points.Add(new Vector3(0,0,.8f));
+            haulRoute=points.ToArray();
         }
 
-        static GameObject BuildBlock(Shader shader, string name, Vector3 position, Vector3 scale, Color color)
+        Vector3 RoutePoint(float t)
         {
-            GameObject block = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            block.name = name;
-            Collider collider = block.GetComponent<Collider>();
-            if (collider != null)
-                Destroy(collider);
-            block.transform.position = position;
-            block.transform.localScale = scale;
-            Renderer renderer = block.GetComponent<Renderer>();
-            renderer.sharedMaterial = new Material(shader);
-            renderer.sharedMaterial.color = color;
-            return block;
+            if(haulRoute==null || haulRoute.Length<2) return Vector3.zero;
+            float total=0;
+            for(int i=1;i<haulRoute.Length;i++) total+=Vector3.Distance(haulRoute[i-1],haulRoute[i]);
+            float remaining=Mathf.Clamp01(t)*total;
+            for(int i=1;i<haulRoute.Length;i++)
+            {
+                float length=Vector3.Distance(haulRoute[i-1],haulRoute[i]);
+                if(remaining<=length) return Vector3.Lerp(haulRoute[i-1],haulRoute[i],length<.0001f?1:remaining/length);
+                remaining-=length;
+            }
+            return haulRoute[haulRoute.Length-1];
         }
+
     }
 }

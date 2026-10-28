@@ -1,0 +1,213 @@
+{
+  "id": "oren",
+  "name": "Oren",
+  "source_crop_rect_xyxy": [
+    342,
+    57,
+    500,
+    324
+  ],
+  "source_crop_dimensions": [
+    158,
+    267
+  ],
+  "source_crop_sha256": "ae34d2c83b94d6e4e7fe13cb5b801b7a3694edbc5439df2c924ee86a27143294",
+  "decoded_pixel_copy_verified": true,
+  "auxiliary_source": "D:\\games\\chartcter image\\b.png",
+  "auxiliary_sha256": "8c6ed80be7967015c406e7515f86686eca8cad3c65a08e32acb362cdef8d858b",
+  "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+  "source_palette": [
+    {
+      "rgb": [
+        245,
+        233,
+        218
+      ],
+      "pixels": 3939
+    },
+    {
+      "rgb": [
+        106,
+        70,
+        63
+      ],
+      "pixels": 3758
+    },
+    {
+      "rgb": [
+        152,
+        103,
+        84
+      ],
+      "pixels": 3710
+    },
+    {
+      "rgb": [
+        67,
+        47,
+        39
+      ],
+      "pixels": 3566
+    },
+    {
+      "rgb": [
+        111,
+        89,
+        80
+      ],
+      "pixels": 3466
+    },
+    {
+      "rgb": [
+        95,
+        54,
+        47
+      ],
+      "pixels": 3138
+    },
+    {
+      "rgb": [
+        44,
+        19,
+        15
+      ],
+      "pixels": 3063
+    },
+    {
+      "rgb": [
+        194,
+        167,
+        142
+      ],
+      "pixels": 2526
+    }
+  ],
+  "labelled_source_samples": [
+    {
+      "label": "Yellow helmet",
+      "crop_pixel_rect_xyxy": [
+        54,
+        21,
+        59,
+        26
+      ],
+      "rgb": [
+        122,
+        102,
+        60
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Skin",
+      "crop_pixel_rect_xyxy": [
+        74,
+        35,
+        79,
+        40
+      ],
+      "rgb": [
+        142,
+        76,
+        45
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark beard",
+      "crop_pixel_rect_xyxy": [
+        80,
+        48,
+        85,
+        53
+      ],
+      "rgb": [
+        155,
+        85,
+        54
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Plum shirt",
+      "crop_pixel_rect_xyxy": [
+        33,
+        92,
+        38,
+        97
+      ],
+      "rgb": [
+        125,
+        65,
+        89
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Cream inner shirt",
+      "crop_pixel_rect_xyxy": [
+        82,
+        111,
+        87,
+        116
+      ],
+      "rgb": [
+        211,
+        183,
+        162
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Brown trousers",
+      "crop_pixel_rect_xyxy": [
+        55,
+        179,
+        60,
+        184
+      ],
+      "rgb": [
+        122,
+        97,
+        91
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Work boots",
+      "crop_pixel_rect_xyxy": [
+        111,
+        242,
+        116,
+        247
+      ],
+      "rgb": [
+        128,
+        88,
+        67
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Backpack leather",
+      "crop_pixel_rect_xyxy": [
+        23,
+        63,
+        28,
+        68
+      ],
+      "rgb": [
+        67,
+        35,
+        19
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    }
+  ],
+  "decisions": [
+    "Original plum outer shirt remains the dominant torso colour over the light inner shirt. The auxiliary front sheet supports this; a large brown vest that hides it is a mismatch.",
+    "Retain the original beard outline, raised rock sample, magnifier, tubes and visible backpack straps. Match the original bulk before adding the auxiliary bedroll and extra buckles.",
+    "Backpack rear construction and rolled blanket are inferred if not visible in the roster."
+  ],
+  "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+}

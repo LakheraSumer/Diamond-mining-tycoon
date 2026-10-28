@@ -1,0 +1,1 @@
+Actual imported hero area during Main Play mode; native Unity camera render 1000x1120; orthographic size3.12, offset(4.8,3.7,-7.2), entrance+(0,1.23,-.35). Reference framing is approximate, not recovered calibration. No pixel identity claim.

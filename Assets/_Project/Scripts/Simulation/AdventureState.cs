@@ -83,6 +83,10 @@ namespace DiamondMine.Simulation
         public readonly Dictionary<string, int> Crafted = new Dictionary<string, int>();
         public string HandsItem = "";
         public double HandsAmount;
+        public string CartItem = "";
+        public double CartLoad;
+        public double CartSeconds;
+        public bool CartGranted;
         public int CarryCapacity = JourneyCatalog.CarryCapacity;
         public int WarehouseCapacity = JourneyCatalog.WarehouseCapacity;
         public double ActionClock;
@@ -133,6 +137,10 @@ namespace DiamondMine.Simulation
                 Owned = Owned.Clone(),
                 HandsItem = HandsItem,
                 HandsAmount = HandsAmount,
+                CartItem = CartItem,
+                CartLoad = CartLoad,
+                CartSeconds = CartSeconds,
+                CartGranted = CartGranted,
                 CarryCapacity = CarryCapacity,
                 WarehouseCapacity = WarehouseCapacity,
                 ActionClock = ActionClock,
@@ -205,8 +213,8 @@ namespace DiamondMine.Simulation
         public const double ShopZ = -1.2d;
         public const double GateX = -6.2d;
         public const double GateZ = -1.2d;
-        public const double MinX = -8.5d;
-        public const double MaxX = 8.5d;
+        public const double MinX = -11d;
+        public const double MaxX = 11d;
         public const double MinZ = -4.5d;
         public const double MaxZ = 16.5d;
         public const double InteractRadius = 1.55d;
@@ -221,9 +229,9 @@ namespace DiamondMine.Simulation
 
         static readonly YardPoint[] Rocks =
         {
-            new YardPoint { X = -3.2d, Z = 3.4d },
-            new YardPoint { X = 3.1d, Z = 5.2d },
-            new YardPoint { X = -2.4d, Z = 9.6d }
+            new YardPoint { X = -7.4d, Z = 3.2d },
+            new YardPoint { X = 7.4d, Z = 3.2d },
+            new YardPoint { X = 7.2d, Z = 9.4d }
         };
 
         public static YardPoint Entrance(int plotId)
@@ -231,9 +239,14 @@ namespace DiamondMine.Simulation
             int local = plotId;
             if (local < 0)
                 local = 0;
-            int col = local % 4;
-            int row = local / 4;
-            return new YardPoint { X = -4.5d + col * 3d, Z = 4.2d + row * 3.4d };
+            if (local < 5)
+                return new YardPoint { X = -8.2d + local * 2.7d, Z = 6.8d };
+            if (local == 5)
+                return new YardPoint { X = 8.2d, Z = 6.8d };
+            int extra = local - 6;
+            int col = extra % 4;
+            int row = extra / 4;
+            return new YardPoint { X = -6d + col * 3d, Z = 10.2d + row * 3.2d };
         }
 
         public static bool Blocked(double x, double z)

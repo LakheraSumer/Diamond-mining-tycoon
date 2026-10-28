@@ -1,0 +1,2576 @@
+{
+  "authority_order": [
+    "Original roster visible identity",
+    "Original gameplay board composition",
+    "Auxiliary character sheets",
+    "Conservative unseen-surface reconstruction"
+  ],
+  "requested_original_filename": "496f83af-1898-4619-aed4-5ced82552533.png",
+  "source": "D:\\games\\DiamondMineTycoon\\Assets\\_Project\\Resources\\Ui\\crew-lineup.jpg",
+  "source_sha256": "1a704bf26640122533f4295851a3a64b93a70269c62744304bb4d9e5d9854431",
+  "source_dimensions": [
+    1024,
+    682
+  ],
+  "original_png_available": false,
+  "limitation": "The named original PNG was not found in the project, D:/games or Codex attachments. These crops preserve exact decoded pixels from the available 1024x682 JPEG copy; they cannot certify pixel equality to the missing original PNG.",
+  "crop_operation": "Pillow RGB decode followed by rectangular crop; saved lossless PNG. No resampling, enhancement, masking or generated content.",
+  "characters": {
+    "tavi": {
+      "id": "tavi",
+      "name": "Tavi",
+      "source_crop_rect_xyxy": [
+        0,
+        48,
+        154,
+        324
+      ],
+      "source_crop_dimensions": [
+        154,
+        276
+      ],
+      "source_crop_sha256": "4e6aa505b3968bfb26037fdede0bedc4ce2e1a5f40e08a31fd64deab662ec44d",
+      "decoded_pixel_copy_verified": true,
+      "auxiliary_source": "D:\\games\\chartcter image\\a.png",
+      "auxiliary_sha256": "f00ddd4031ab8d2dd28cca23d165fcff54f01a9278ba110e08455f0c57805f8c",
+      "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+      "source_palette": [
+        {
+          "rgb": [
+            141,
+            99,
+            66
+          ],
+          "pixels": 3768
+        },
+        {
+          "rgb": [
+            195,
+            143,
+            104
+          ],
+          "pixels": 3455
+        },
+        {
+          "rgb": [
+            249,
+            229,
+            209
+          ],
+          "pixels": 3256
+        },
+        {
+          "rgb": [
+            42,
+            23,
+            13
+          ],
+          "pixels": 2919
+        },
+        {
+          "rgb": [
+            113,
+            71,
+            44
+          ],
+          "pixels": 2901
+        },
+        {
+          "rgb": [
+            70,
+            64,
+            55
+          ],
+          "pixels": 2875
+        },
+        {
+          "rgb": [
+            208,
+            191,
+            167
+          ],
+          "pixels": 2498
+        },
+        {
+          "rgb": [
+            133,
+            129,
+            110
+          ],
+          "pixels": 2144
+        }
+      ],
+      "labelled_source_samples": [
+        {
+          "label": "Teal helmet",
+          "crop_pixel_rect_xyxy": [
+            63,
+            12,
+            68,
+            17
+          ],
+          "rgb": [
+            149,
+            200,
+            205
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Skin",
+          "crop_pixel_rect_xyxy": [
+            84,
+            57,
+            89,
+            62
+          ],
+          "rgb": [
+            247,
+            161,
+            117
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark hair",
+          "crop_pixel_rect_xyxy": [
+            51,
+            59,
+            56,
+            64
+          ],
+          "rgb": [
+            76,
+            45,
+            33
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Teal jacket",
+          "crop_pixel_rect_xyxy": [
+            124,
+            112,
+            129,
+            117
+          ],
+          "rgb": [
+            90,
+            131,
+            137
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Cream scarf",
+          "crop_pixel_rect_xyxy": [
+            84,
+            77,
+            89,
+            82
+          ],
+          "rgb": [
+            230,
+            196,
+            158
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Tan trousers",
+          "crop_pixel_rect_xyxy": [
+            61,
+            176,
+            66,
+            181
+          ],
+          "rgb": [
+            171,
+            127,
+            79
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Orange-brown boots",
+          "crop_pixel_rect_xyxy": [
+            125,
+            249,
+            130,
+            254
+          ],
+          "rgb": [
+            168,
+            91,
+            57
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Leather pouch",
+          "crop_pixel_rect_xyxy": [
+            122,
+            152,
+            127,
+            157
+          ],
+          "rgb": [
+            80,
+            40,
+            23
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        }
+      ],
+      "decisions": [
+        "The original roster has goggles resting on the teal helmet. The auxiliary sheet omits those goggles; retain the roster goggles and circular lamp.",
+        "Use the original asymmetrical map pouch, scarf wrapping, wavy hair and orange-brown boot silhouette. Extra backpack/harness complexity is guidance only where it does not alter the original visible silhouette.",
+        "Side/back hair and scarf tails are reconstructed, not verified geometry."
+      ],
+      "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+    },
+    "mira": {
+      "id": "mira",
+      "name": "Mira",
+      "source_crop_rect_xyxy": [
+        160,
+        48,
+        346,
+        324
+      ],
+      "source_crop_dimensions": [
+        186,
+        276
+      ],
+      "source_crop_sha256": "01d51025b4b00ac80b6a9dbecc6b4d24372d2e0d7132c9ddbe79d1a9d762c845",
+      "decoded_pixel_copy_verified": true,
+      "auxiliary_source": "D:\\games\\chartcter image\\c.png",
+      "auxiliary_sha256": "bc6d97df497f120b8fa0bcd6143e142390bdce253849472f515e1bc0b8a247f8",
+      "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+      "source_palette": [
+        {
+          "rgb": [
+            64,
+            55,
+            46
+          ],
+          "pixels": 5124
+        },
+        {
+          "rgb": [
+            111,
+            106,
+            92
+          ],
+          "pixels": 4989
+        },
+        {
+          "rgb": [
+            187,
+            107,
+            69
+          ],
+          "pixels": 4438
+        },
+        {
+          "rgb": [
+            234,
+            216,
+            199
+          ],
+          "pixels": 3779
+        },
+        {
+          "rgb": [
+            39,
+            23,
+            15
+          ],
+          "pixels": 3671
+        },
+        {
+          "rgb": [
+            180,
+            148,
+            123
+          ],
+          "pixels": 3277
+        },
+        {
+          "rgb": [
+            128,
+            81,
+            61
+          ],
+          "pixels": 2785
+        },
+        {
+          "rgb": [
+            109,
+            57,
+            37
+          ],
+          "pixels": 2422
+        }
+      ],
+      "labelled_source_samples": [
+        {
+          "label": "Green helmet",
+          "crop_pixel_rect_xyxy": [
+            65,
+            16,
+            70,
+            21
+          ],
+          "rgb": [
+            134,
+            138,
+            124
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Skin",
+          "crop_pixel_rect_xyxy": [
+            88,
+            49,
+            93,
+            54
+          ],
+          "rgb": [
+            250,
+            179,
+            138
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Tied dark hair",
+          "crop_pixel_rect_xyxy": [
+            40,
+            56,
+            45,
+            61
+          ],
+          "rgb": [
+            64,
+            44,
+            35
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Green shirt",
+          "crop_pixel_rect_xyxy": [
+            40,
+            90,
+            45,
+            95
+          ],
+          "rgb": [
+            98,
+            111,
+            79
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Rust bib",
+          "crop_pixel_rect_xyxy": [
+            90,
+            106,
+            95,
+            111
+          ],
+          "rgb": [
+            190,
+            109,
+            70
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Orange trousers",
+          "crop_pixel_rect_xyxy": [
+            106,
+            167,
+            111,
+            172
+          ],
+          "rgb": [
+            218,
+            109,
+            73
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Brown boots",
+          "crop_pixel_rect_xyxy": [
+            106,
+            248,
+            111,
+            253
+          ],
+          "rgb": [
+            94,
+            59,
+            36
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Grey knee protection",
+          "crop_pixel_rect_xyxy": [
+            118,
+            193,
+            123,
+            198
+          ],
+          "rgb": [
+            152,
+            134,
+            124
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        }
+      ],
+      "decisions": [
+        "Retain the original forest-green rolled sleeves, rust bib overalls and bulky grey knee protection. Do not copy Tavi\u2019s scarf or face.",
+        "The small cart is part of the original identity. The auxiliary cart details are useful for unseen hardware; keep the original compact ore-cart scale and hand-on-cart stance.",
+        "Rear overall strap routing and rear pouches are conservative reconstructions."
+      ],
+      "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+    },
+    "oren": {
+      "id": "oren",
+      "name": "Oren",
+      "source_crop_rect_xyxy": [
+        342,
+        57,
+        500,
+        324
+      ],
+      "source_crop_dimensions": [
+        158,
+        267
+      ],
+      "source_crop_sha256": "ae34d2c83b94d6e4e7fe13cb5b801b7a3694edbc5439df2c924ee86a27143294",
+      "decoded_pixel_copy_verified": true,
+      "auxiliary_source": "D:\\games\\chartcter image\\b.png",
+      "auxiliary_sha256": "8c6ed80be7967015c406e7515f86686eca8cad3c65a08e32acb362cdef8d858b",
+      "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+      "source_palette": [
+        {
+          "rgb": [
+            245,
+            233,
+            218
+          ],
+          "pixels": 3939
+        },
+        {
+          "rgb": [
+            106,
+            70,
+            63
+          ],
+          "pixels": 3758
+        },
+        {
+          "rgb": [
+            152,
+            103,
+            84
+          ],
+          "pixels": 3710
+        },
+        {
+          "rgb": [
+            67,
+            47,
+            39
+          ],
+          "pixels": 3566
+        },
+        {
+          "rgb": [
+            111,
+            89,
+            80
+          ],
+          "pixels": 3466
+        },
+        {
+          "rgb": [
+            95,
+            54,
+            47
+          ],
+          "pixels": 3138
+        },
+        {
+          "rgb": [
+            44,
+            19,
+            15
+          ],
+          "pixels": 3063
+        },
+        {
+          "rgb": [
+            194,
+            167,
+            142
+          ],
+          "pixels": 2526
+        }
+      ],
+      "labelled_source_samples": [
+        {
+          "label": "Yellow helmet",
+          "crop_pixel_rect_xyxy": [
+            54,
+            21,
+            59,
+            26
+          ],
+          "rgb": [
+            122,
+            102,
+            60
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Skin",
+          "crop_pixel_rect_xyxy": [
+            74,
+            35,
+            79,
+            40
+          ],
+          "rgb": [
+            142,
+            76,
+            45
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark beard",
+          "crop_pixel_rect_xyxy": [
+            80,
+            48,
+            85,
+            53
+          ],
+          "rgb": [
+            155,
+            85,
+            54
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Plum shirt",
+          "crop_pixel_rect_xyxy": [
+            33,
+            92,
+            38,
+            97
+          ],
+          "rgb": [
+            125,
+            65,
+            89
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Cream inner shirt",
+          "crop_pixel_rect_xyxy": [
+            82,
+            111,
+            87,
+            116
+          ],
+          "rgb": [
+            211,
+            183,
+            162
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Brown trousers",
+          "crop_pixel_rect_xyxy": [
+            55,
+            179,
+            60,
+            184
+          ],
+          "rgb": [
+            122,
+            97,
+            91
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Work boots",
+          "crop_pixel_rect_xyxy": [
+            111,
+            242,
+            116,
+            247
+          ],
+          "rgb": [
+            128,
+            88,
+            67
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Backpack leather",
+          "crop_pixel_rect_xyxy": [
+            23,
+            63,
+            28,
+            68
+          ],
+          "rgb": [
+            67,
+            35,
+            19
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        }
+      ],
+      "decisions": [
+        "Original plum outer shirt remains the dominant torso colour over the light inner shirt. The auxiliary front sheet supports this; a large brown vest that hides it is a mismatch.",
+        "Retain the original beard outline, raised rock sample, magnifier, tubes and visible backpack straps. Match the original bulk before adding the auxiliary bedroll and extra buckles.",
+        "Backpack rear construction and rolled blanket are inferred if not visible in the roster."
+      ],
+      "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+    },
+    "zela": {
+      "id": "zela",
+      "name": "Zela",
+      "source_crop_rect_xyxy": [
+        516,
+        57,
+        679,
+        324
+      ],
+      "source_crop_dimensions": [
+        163,
+        267
+      ],
+      "source_crop_sha256": "bf1e5993dcf1594652718cf00330b01c530104c3abd74d606874ecec5288f504",
+      "decoded_pixel_copy_verified": true,
+      "auxiliary_source": "D:\\games\\chartcter image\\d.png",
+      "auxiliary_sha256": "00a73a5186251596e32c91c2171847a877e52a171300c350d522a3009a672afe",
+      "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+      "source_palette": [
+        {
+          "rgb": [
+            99,
+            105,
+            141
+          ],
+          "pixels": 4370
+        },
+        {
+          "rgb": [
+            174,
+            113,
+            80
+          ],
+          "pixels": 3827
+        },
+        {
+          "rgb": [
+            48,
+            52,
+            80
+          ],
+          "pixels": 3533
+        },
+        {
+          "rgb": [
+            28,
+            21,
+            32
+          ],
+          "pixels": 3424
+        },
+        {
+          "rgb": [
+            239,
+            224,
+            209
+          ],
+          "pixels": 3289
+        },
+        {
+          "rgb": [
+            90,
+            53,
+            40
+          ],
+          "pixels": 3057
+        },
+        {
+          "rgb": [
+            101,
+            80,
+            85
+          ],
+          "pixels": 2738
+        },
+        {
+          "rgb": [
+            187,
+            151,
+            140
+          ],
+          "pixels": 2430
+        }
+      ],
+      "labelled_source_samples": [
+        {
+          "label": "Cobalt helmet",
+          "crop_pixel_rect_xyxy": [
+            70,
+            14,
+            75,
+            19
+          ],
+          "rgb": [
+            97,
+            137,
+            222
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Skin",
+          "crop_pixel_rect_xyxy": [
+            96,
+            50,
+            101,
+            55
+          ],
+          "rgb": [
+            251,
+            178,
+            147
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Red hair",
+          "crop_pixel_rect_xyxy": [
+            55,
+            53,
+            60,
+            58
+          ],
+          "rgb": [
+            198,
+            91,
+            42
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Blue workwear",
+          "crop_pixel_rect_xyxy": [
+            91,
+            104,
+            96,
+            109
+          ],
+          "rgb": [
+            95,
+            105,
+            161
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Orange glove",
+          "crop_pixel_rect_xyxy": [
+            52,
+            133,
+            57,
+            138
+          ],
+          "rgb": [
+            234,
+            130,
+            75
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Grey knee pad",
+          "crop_pixel_rect_xyxy": [
+            57,
+            205,
+            62,
+            210
+          ],
+          "rgb": [
+            156,
+            142,
+            126
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark boot",
+          "crop_pixel_rect_xyxy": [
+            50,
+            246,
+            55,
+            251
+          ],
+          "rgb": [
+            140,
+            116,
+            102
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Backpack metal",
+          "crop_pixel_rect_xyxy": [
+            25,
+            94,
+            30,
+            99
+          ],
+          "rgb": [
+            161,
+            113,
+            53
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        }
+      ],
+      "decisions": [
+        "Use the original red waves, cobalt protection, orange gauntlets and grey knee pads. The auxiliary sheet is consistent in broad colour regions.",
+        "The drill and backpack hose follow the original visible arrangement. Added vents, hose sockets and underside detail are reconstructed.",
+        "Avoid enlarging the backpack until it changes the original visible silhouette."
+      ],
+      "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+    },
+    "pavi": {
+      "id": "pavi",
+      "name": "Pavi",
+      "source_crop_rect_xyxy": [
+        688,
+        48,
+        868,
+        324
+      ],
+      "source_crop_dimensions": [
+        180,
+        276
+      ],
+      "source_crop_sha256": "b57f323dad52980910176535eab8244125c7f87ddf1c531029a903ea226f14d6",
+      "decoded_pixel_copy_verified": true,
+      "auxiliary_source": "D:\\games\\chartcter image\\f.png",
+      "auxiliary_sha256": "dec684450daad940f95673228ffb3633b6381a50cecf842b92b6192ddb1ed93a",
+      "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+      "source_palette": [
+        {
+          "rgb": [
+            132,
+            103,
+            98
+          ],
+          "pixels": 5737
+        },
+        {
+          "rgb": [
+            66,
+            78,
+            79
+          ],
+          "pixels": 5472
+        },
+        {
+          "rgb": [
+            242,
+            221,
+            203
+          ],
+          "pixels": 4914
+        },
+        {
+          "rgb": [
+            180,
+            131,
+            116
+          ],
+          "pixels": 4149
+        },
+        {
+          "rgb": [
+            89,
+            131,
+            133
+          ],
+          "pixels": 4072
+        },
+        {
+          "rgb": [
+            44,
+            40,
+            38
+          ],
+          "pixels": 3948
+        },
+        {
+          "rgb": [
+            151,
+            181,
+            175
+          ],
+          "pixels": 2721
+        },
+        {
+          "rgb": [
+            126,
+            79,
+            68
+          ],
+          "pixels": 2315
+        }
+      ],
+      "labelled_source_samples": [
+        {
+          "label": "Teal helmet",
+          "crop_pixel_rect_xyxy": [
+            57,
+            23,
+            62,
+            28
+          ],
+          "rgb": [
+            136,
+            161,
+            146
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Skin",
+          "crop_pixel_rect_xyxy": [
+            79,
+            57,
+            84,
+            62
+          ],
+          "rgb": [
+            202,
+            120,
+            96
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark hair",
+          "crop_pixel_rect_xyxy": [
+            45,
+            52,
+            50,
+            57
+          ],
+          "rgb": [
+            23,
+            31,
+            27
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Cream sleeve",
+          "crop_pixel_rect_xyxy": [
+            33,
+            94,
+            38,
+            99
+          ],
+          "rgb": [
+            222,
+            200,
+            177
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Turquoise apron",
+          "crop_pixel_rect_xyxy": [
+            77,
+            178,
+            82,
+            183
+          ],
+          "rgb": [
+            59,
+            115,
+            115
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Coral glove",
+          "crop_pixel_rect_xyxy": [
+            58,
+            132,
+            63,
+            137
+          ],
+          "rgb": [
+            219,
+            116,
+            92
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Coral rubber boot",
+          "crop_pixel_rect_xyxy": [
+            50,
+            241,
+            55,
+            246
+          ],
+          "rgb": [
+            227,
+            106,
+            76
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark washing pan",
+          "crop_pixel_rect_xyxy": [
+            128,
+            119,
+            133,
+            124
+          ],
+          "rgb": [
+            48,
+            42,
+            46
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        }
+      ],
+      "decisions": [
+        "The roster\u2019s teal waterproof apron is a long garment with visible volume; the auxiliary sheet supports the apron. Do not reduce it to a small bib.",
+        "Retain the roster\u2019s large round goggles, cream sleeves, coral gauntlets/boots and pan held by both hands.",
+        "The auxiliary rear apron bow and hood construction are inferred; use only where consistent with the original cream neckline and apron straps."
+      ],
+      "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+    },
+    "nilo": {
+      "id": "nilo",
+      "name": "Nilo",
+      "source_crop_rect_xyxy": [
+        876,
+        45,
+        1024,
+        325
+      ],
+      "source_crop_dimensions": [
+        148,
+        280
+      ],
+      "source_crop_sha256": "8f4f46f10a7d72a1cb72e6f2c17929f974f8e9b43f06074443a141e14a571dec",
+      "decoded_pixel_copy_verified": true,
+      "auxiliary_source": "D:\\games\\chartcter image\\e.png",
+      "auxiliary_sha256": "387bc2b75b9fd4bfbba5dc48516a593b4a6d430fe2383027d3a29ae43f3215fc",
+      "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+      "source_palette": [
+        {
+          "rgb": [
+            83,
+            72,
+            82
+          ],
+          "pixels": 3171
+        },
+        {
+          "rgb": [
+            49,
+            44,
+            52
+          ],
+          "pixels": 3001
+        },
+        {
+          "rgb": [
+            236,
+            230,
+            214
+          ],
+          "pixels": 2813
+        },
+        {
+          "rgb": [
+            201,
+            172,
+            146
+          ],
+          "pixels": 2796
+        },
+        {
+          "rgb": [
+            98,
+            94,
+            107
+          ],
+          "pixels": 2753
+        },
+        {
+          "rgb": [
+            68,
+            55,
+            59
+          ],
+          "pixels": 2702
+        },
+        {
+          "rgb": [
+            154,
+            117,
+            100
+          ],
+          "pixels": 2378
+        },
+        {
+          "rgb": [
+            30,
+            21,
+            25
+          ],
+          "pixels": 2361
+        }
+      ],
+      "labelled_source_samples": [
+        {
+          "label": "Mint helmet",
+          "crop_pixel_rect_xyxy": [
+            51,
+            17,
+            56,
+            22
+          ],
+          "rgb": [
+            145,
+            189,
+            174
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Skin",
+          "crop_pixel_rect_xyxy": [
+            68,
+            55,
+            73,
+            60
+          ],
+          "rgb": [
+            227,
+            138,
+            100
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark hair",
+          "crop_pixel_rect_xyxy": [
+            54,
+            35,
+            59,
+            40
+          ],
+          "rgb": [
+            44,
+            26,
+            19
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Indigo vest",
+          "crop_pixel_rect_xyxy": [
+            78,
+            103,
+            83,
+            108
+          ],
+          "rgb": [
+            76,
+            75,
+            120
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Cream sleeve",
+          "crop_pixel_rect_xyxy": [
+            20,
+            125,
+            25,
+            130
+          ],
+          "rgb": [
+            194,
+            159,
+            121
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Indigo trousers",
+          "crop_pixel_rect_xyxy": [
+            84,
+            178,
+            89,
+            183
+          ],
+          "rgb": [
+            48,
+            42,
+            57
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark boot",
+          "crop_pixel_rect_xyxy": [
+            115,
+            252,
+            120,
+            257
+          ],
+          "rgb": [
+            246,
+            238,
+            227
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark glove",
+          "crop_pixel_rect_xyxy": [
+            50,
+            146,
+            55,
+            151
+          ],
+          "rgb": [
+            43,
+            29,
+            23
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        }
+      ],
+      "decisions": [
+        "Keep the original short swept hair, indigo vest/trousers, cream sleeves, dark gloves and divided sorting tray.",
+        "The auxiliary front/back pocket seams and patch shapes may guide hidden construction, but must not change the original narrow youthful-adult silhouette.",
+        "Tray underside and compartment depth are reconstructed."
+      ],
+      "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+    },
+    "etta": {
+      "id": "etta",
+      "name": "Etta",
+      "source_crop_rect_xyxy": [
+        8,
+        352,
+        154,
+        644
+      ],
+      "source_crop_dimensions": [
+        146,
+        292
+      ],
+      "source_crop_sha256": "e72dc9ad5c683b54061ad9e4175d794dd14145fb7f099b24e0f555bd8f9ec2c4",
+      "decoded_pixel_copy_verified": true,
+      "auxiliary_source": "D:\\games\\chartcter image\\h.png",
+      "auxiliary_sha256": "626bcb791b5551188ed05f1114bd6e3d3c562f993ea7b3337a0bf0dc0d2d6530",
+      "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+      "source_palette": [
+        {
+          "rgb": [
+            96,
+            74,
+            67
+          ],
+          "pixels": 3963
+        },
+        {
+          "rgb": [
+            61,
+            49,
+            46
+          ],
+          "pixels": 3779
+        },
+        {
+          "rgb": [
+            240,
+            226,
+            211
+          ],
+          "pixels": 3159
+        },
+        {
+          "rgb": [
+            211,
+            157,
+            131
+          ],
+          "pixels": 3072
+        },
+        {
+          "rgb": [
+            163,
+            111,
+            89
+          ],
+          "pixels": 3045
+        },
+        {
+          "rgb": [
+            113,
+            94,
+            89
+          ],
+          "pixels": 2872
+        },
+        {
+          "rgb": [
+            38,
+            22,
+            19
+          ],
+          "pixels": 2736
+        },
+        {
+          "rgb": [
+            88,
+            58,
+            49
+          ],
+          "pixels": 2597
+        }
+      ],
+      "labelled_source_samples": [
+        {
+          "label": "Textured dark hair",
+          "crop_pixel_rect_xyxy": [
+            31,
+            28,
+            36,
+            33
+          ],
+          "rgb": [
+            34,
+            19,
+            16
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Skin",
+          "crop_pixel_rect_xyxy": [
+            66,
+            50,
+            71,
+            55
+          ],
+          "rgb": [
+            130,
+            72,
+            46
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Violet glasses",
+          "crop_pixel_rect_xyxy": [
+            62,
+            40,
+            67,
+            45
+          ],
+          "rgb": [
+            96,
+            59,
+            97
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Apricot shirt",
+          "crop_pixel_rect_xyxy": [
+            41,
+            93,
+            46,
+            98
+          ],
+          "rgb": [
+            219,
+            127,
+            77
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark trousers",
+          "crop_pixel_rect_xyxy": [
+            53,
+            181,
+            58,
+            186
+          ],
+          "rgb": [
+            87,
+            74,
+            72
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Grey knee protection",
+          "crop_pixel_rect_xyxy": [
+            40,
+            201,
+            45,
+            206
+          ],
+          "rgb": [
+            123,
+            104,
+            91
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark boot",
+          "crop_pixel_rect_xyxy": [
+            102,
+            267,
+            107,
+            272
+          ],
+          "rgb": [
+            66,
+            53,
+            56
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Leather belt",
+          "crop_pixel_rect_xyxy": [
+            88,
+            130,
+            93,
+            135
+          ],
+          "rgb": [
+            132,
+            104,
+            80
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        }
+      ],
+      "decisions": [
+        "The original Etta has textured hair, a violet headband/lamp and protective glasses, not a miner helmet. The auxiliary sheet\u2019s headband supports this.",
+        "Keep the original hair gathered upward, apricot shirt, dark trousers and purple-laced boots. Do not replace the distinctive volume with a smooth cap.",
+        "Retain the original raised gem and precision tool pose; added gem-case trays and rear hair geometry are reconstructions."
+      ],
+      "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+    },
+    "rumi": {
+      "id": "rumi",
+      "name": "Rumi",
+      "source_crop_rect_xyxy": [
+        174,
+        350,
+        326,
+        644
+      ],
+      "source_crop_dimensions": [
+        152,
+        294
+      ],
+      "source_crop_sha256": "cfcd67460bd08c21cc16a6adf62e51ca80bf88e5a48b02d86d922cf1d6b23d25",
+      "decoded_pixel_copy_verified": true,
+      "auxiliary_source": "D:\\games\\chartcter image\\g.png",
+      "auxiliary_sha256": "768ba56928c07ee44b899752eba9f1b7aee9ae40bd07ef64222407b73a9dec3f",
+      "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+      "source_palette": [
+        {
+          "rgb": [
+            152,
+            141,
+            170
+          ],
+          "pixels": 3904
+        },
+        {
+          "rgb": [
+            243,
+            231,
+            214
+          ],
+          "pixels": 3124
+        },
+        {
+          "rgb": [
+            80,
+            62,
+            67
+          ],
+          "pixels": 3116
+        },
+        {
+          "rgb": [
+            108,
+            93,
+            113
+          ],
+          "pixels": 2734
+        },
+        {
+          "rgb": [
+            211,
+            193,
+            189
+          ],
+          "pixels": 2724
+        },
+        {
+          "rgb": [
+            144,
+            115,
+            136
+          ],
+          "pixels": 2719
+        },
+        {
+          "rgb": [
+            41,
+            29,
+            31
+          ],
+          "pixels": 2714
+        },
+        {
+          "rgb": [
+            190,
+            155,
+            163
+          ],
+          "pixels": 2232
+        }
+      ],
+      "labelled_source_samples": [
+        {
+          "label": "Pale-blue helmet",
+          "crop_pixel_rect_xyxy": [
+            64,
+            15,
+            69,
+            20
+          ],
+          "rgb": [
+            185,
+            215,
+            237
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Skin",
+          "crop_pixel_rect_xyxy": [
+            87,
+            52,
+            92,
+            57
+          ],
+          "rgb": [
+            226,
+            159,
+            124
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark bob",
+          "crop_pixel_rect_xyxy": [
+            32,
+            61,
+            37,
+            66
+          ],
+          "rgb": [
+            35,
+            25,
+            20
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Lavender workwear",
+          "crop_pixel_rect_xyxy": [
+            92,
+            167,
+            97,
+            172
+          ],
+          "rgb": [
+            156,
+            132,
+            183
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Pale-blue sleeve",
+          "crop_pixel_rect_xyxy": [
+            34,
+            120,
+            39,
+            125
+          ],
+          "rgb": [
+            151,
+            176,
+            202
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Grey glove",
+          "crop_pixel_rect_xyxy": [
+            70,
+            109,
+            75,
+            114
+          ],
+          "rgb": [
+            164,
+            151,
+            136
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Cream cloth",
+          "crop_pixel_rect_xyxy": [
+            112,
+            116,
+            117,
+            121
+          ],
+          "rgb": [
+            247,
+            219,
+            175
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Brown boot",
+          "crop_pixel_rect_xyxy": [
+            106,
+            269,
+            111,
+            274
+          ],
+          "rgb": [
+            100,
+            78,
+            65
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        }
+      ],
+      "decisions": [
+        "The original visible hair is a short bob/compact hair mass under the pale-blue helmet. The auxiliary sheet proposes a larger tied-back ponytail; prefer the original visible bob silhouette.",
+        "Keep the original lavender workwear, pale-blue sleeves, grey gloves and cream cloth. Do not use Tavi\u2019s face solely because both wear similar helmets.",
+        "Back trouser pockets and hidden belt tools are reconstructed, not verified."
+      ],
+      "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+    },
+    "kavi": {
+      "id": "kavi",
+      "name": "Kavi",
+      "source_crop_rect_xyxy": [
+        334,
+        350,
+        499,
+        644
+      ],
+      "source_crop_dimensions": [
+        165,
+        294
+      ],
+      "source_crop_sha256": "a87b011ace28dc2dccd8258bc20ab194458825f24b48761945d5cfe5ef9a3d9a",
+      "decoded_pixel_copy_verified": true,
+      "auxiliary_source": "D:\\games\\chartcter image\\k.png",
+      "auxiliary_sha256": "578243bda776ca9dc5ffe3689bb8e646dedd3cb5e040f99b2be14a7bb3b5a70e",
+      "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+      "source_palette": [
+        {
+          "rgb": [
+            133,
+            71,
+            58
+          ],
+          "pixels": 4449
+        },
+        {
+          "rgb": [
+            249,
+            238,
+            223
+          ],
+          "pixels": 4238
+        },
+        {
+          "rgb": [
+            81,
+            54,
+            43
+          ],
+          "pixels": 3941
+        },
+        {
+          "rgb": [
+            146,
+            93,
+            69
+          ],
+          "pixels": 3279
+        },
+        {
+          "rgb": [
+            182,
+            131,
+            98
+          ],
+          "pixels": 3218
+        },
+        {
+          "rgb": [
+            57,
+            25,
+            17
+          ],
+          "pixels": 3196
+        },
+        {
+          "rgb": [
+            230,
+            199,
+            165
+          ],
+          "pixels": 3028
+        },
+        {
+          "rgb": [
+            123,
+            54,
+            47
+          ],
+          "pixels": 2817
+        }
+      ],
+      "labelled_source_samples": [
+        {
+          "label": "Dark hair",
+          "crop_pixel_rect_xyxy": [
+            60,
+            26,
+            65,
+            31
+          ],
+          "rgb": [
+            35,
+            15,
+            7
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Skin",
+          "crop_pixel_rect_xyxy": [
+            82,
+            34,
+            87,
+            39
+          ],
+          "rgb": [
+            192,
+            111,
+            79
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark beard",
+          "crop_pixel_rect_xyxy": [
+            84,
+            51,
+            89,
+            56
+          ],
+          "rgb": [
+            105,
+            63,
+            50
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Sand shirt",
+          "crop_pixel_rect_xyxy": [
+            43,
+            86,
+            48,
+            91
+          ],
+          "rgb": [
+            232,
+            189,
+            134
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Maroon apron",
+          "crop_pixel_rect_xyxy": [
+            87,
+            100,
+            92,
+            105
+          ],
+          "rgb": [
+            134,
+            59,
+            56
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Brown trousers",
+          "crop_pixel_rect_xyxy": [
+            39,
+            219,
+            44,
+            224
+          ],
+          "rgb": [
+            106,
+            77,
+            64
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Brown boot",
+          "crop_pixel_rect_xyxy": [
+            34,
+            264,
+            39,
+            269
+          ],
+          "rgb": [
+            163,
+            117,
+            88
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Gold tool loop",
+          "crop_pixel_rect_xyxy": [
+            79,
+            166,
+            84,
+            171
+          ],
+          "rgb": [
+            133,
+            62,
+            53
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        }
+      ],
+      "decisions": [
+        "No helmet: retain the original dark wavy hair and beard.",
+        "The original sand shirt and maroon leather apron, ring-shaped belt tools and raised ring determine identity. Auxiliary rear cross-straps and knots are inferred.",
+        "Keep the original visible face and hairstyle rather than inventing a generic combed crown."
+      ],
+      "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+    },
+    "sola": {
+      "id": "sola",
+      "name": "Sola",
+      "source_crop_rect_xyxy": [
+        512,
+        353,
+        671,
+        644
+      ],
+      "source_crop_dimensions": [
+        159,
+        291
+      ],
+      "source_crop_sha256": "b1f7b6eb9c21106c3ea291dab29fe60d758723ca3675d5af6234f70f6b2399df",
+      "decoded_pixel_copy_verified": true,
+      "auxiliary_source": "D:\\games\\chartcter image\\i.png",
+      "auxiliary_sha256": "6752126a18a7bdb5f76defec15a70f5e19199660b8476fa45b865b1ea552c952",
+      "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+      "source_palette": [
+        {
+          "rgb": [
+            86,
+            82,
+            71
+          ],
+          "pixels": 4785
+        },
+        {
+          "rgb": [
+            221,
+            150,
+            117
+          ],
+          "pixels": 3657
+        },
+        {
+          "rgb": [
+            252,
+            223,
+            203
+          ],
+          "pixels": 3107
+        },
+        {
+          "rgb": [
+            88,
+            63,
+            47
+          ],
+          "pixels": 2642
+        },
+        {
+          "rgb": [
+            232,
+            214,
+            199
+          ],
+          "pixels": 2511
+        },
+        {
+          "rgb": [
+            146,
+            131,
+            112
+          ],
+          "pixels": 2423
+        },
+        {
+          "rgb": [
+            123,
+            93,
+            74
+          ],
+          "pixels": 2384
+        },
+        {
+          "rgb": [
+            50,
+            43,
+            39
+          ],
+          "pixels": 2343
+        }
+      ],
+      "labelled_source_samples": [
+        {
+          "label": "Blonde hair",
+          "crop_pixel_rect_xyxy": [
+            35,
+            37,
+            40,
+            42
+          ],
+          "rgb": [
+            187,
+            137,
+            100
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Skin",
+          "crop_pixel_rect_xyxy": [
+            62,
+            51,
+            67,
+            56
+          ],
+          "rgb": [
+            228,
+            136,
+            103
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Peach blouse",
+          "crop_pixel_rect_xyxy": [
+            33,
+            92,
+            38,
+            97
+          ],
+          "rgb": [
+            250,
+            185,
+            157
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Sage waistcoat",
+          "crop_pixel_rect_xyxy": [
+            73,
+            103,
+            78,
+            108
+          ],
+          "rgb": [
+            99,
+            101,
+            65
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark trousers",
+          "crop_pixel_rect_xyxy": [
+            79,
+            175,
+            84,
+            180
+          ],
+          "rgb": [
+            80,
+            73,
+            65
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Brown loafer",
+          "crop_pixel_rect_xyxy": [
+            101,
+            271,
+            106,
+            276
+          ],
+          "rgb": [
+            111,
+            73,
+            55
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Leather pouch",
+          "crop_pixel_rect_xyxy": [
+            28,
+            156,
+            33,
+            161
+          ],
+          "rgb": [
+            94,
+            60,
+            42
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Jewellery-box lining",
+          "crop_pixel_rect_xyxy": [
+            130,
+            76,
+            135,
+            81
+          ],
+          "rgb": [
+            49,
+            45,
+            62
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        }
+      ],
+      "decisions": [
+        "The original has a short wavy blonde bob. The auxiliary sheet proposes an elaborate back bun; prefer a conservative bob reconstruction consistent with the roster.",
+        "Retain the peach blouse, sage fitted waistcoat, diamond badge, tailored trousers, loafers and open jewel box. Do not add work boots or a helmet.",
+        "The box hinge, lining and hidden hair surfaces are reconstructed details."
+      ],
+      "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+    },
+    "beni": {
+      "id": "beni",
+      "name": "Beni",
+      "source_crop_rect_xyxy": [
+        674,
+        347,
+        869,
+        644
+      ],
+      "source_crop_dimensions": [
+        195,
+        297
+      ],
+      "source_crop_sha256": "94728e641854a854d55c07a3b3832c4343258da91a93babf1b285557c62a11b0",
+      "decoded_pixel_copy_verified": true,
+      "auxiliary_source": "D:\\games\\chartcter image\\l.png",
+      "auxiliary_sha256": "f2471eb6a2931ea1690d13c9c13b6920c67f60ba25f245a6fc471ca22841aa3f",
+      "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+      "source_palette": [
+        {
+          "rgb": [
+            110,
+            138,
+            174
+          ],
+          "pixels": 5538
+        },
+        {
+          "rgb": [
+            175,
+            140,
+            112
+          ],
+          "pixels": 5509
+        },
+        {
+          "rgb": [
+            73,
+            56,
+            45
+          ],
+          "pixels": 4848
+        },
+        {
+          "rgb": [
+            130,
+            97,
+            75
+          ],
+          "pixels": 4554
+        },
+        {
+          "rgb": [
+            76,
+            88,
+            107
+          ],
+          "pixels": 4513
+        },
+        {
+          "rgb": [
+            237,
+            225,
+            210
+          ],
+          "pixels": 4368
+        },
+        {
+          "rgb": [
+            33,
+            33,
+            38
+          ],
+          "pixels": 4213
+        },
+        {
+          "rgb": [
+            166,
+            170,
+            178
+          ],
+          "pixels": 3224
+        }
+      ],
+      "labelled_source_samples": [
+        {
+          "label": "Amber helmet",
+          "crop_pixel_rect_xyxy": [
+            89,
+            26,
+            94,
+            31
+          ],
+          "rgb": [
+            145,
+            84,
+            26
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Skin",
+          "crop_pixel_rect_xyxy": [
+            92,
+            54,
+            97,
+            59
+          ],
+          "rgb": [
+            178,
+            104,
+            74
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark hair",
+          "crop_pixel_rect_xyxy": [
+            70,
+            37,
+            75,
+            42
+          ],
+          "rgb": [
+            32,
+            22,
+            5
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Blue jacket",
+          "crop_pixel_rect_xyxy": [
+            116,
+            111,
+            121,
+            116
+          ],
+          "rgb": [
+            117,
+            160,
+            209
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Blue trousers",
+          "crop_pixel_rect_xyxy": [
+            85,
+            203,
+            90,
+            208
+          ],
+          "rgb": [
+            73,
+            96,
+            126
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Work glove",
+          "crop_pixel_rect_xyxy": [
+            48,
+            143,
+            53,
+            148
+          ],
+          "rgb": [
+            167,
+            134,
+            104
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Brown boot",
+          "crop_pixel_rect_xyxy": [
+            41,
+            266,
+            46,
+            271
+          ],
+          "rgb": [
+            115,
+            96,
+            74
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Delivery-case metal",
+          "crop_pixel_rect_xyxy": [
+            148,
+            198,
+            153,
+            203
+          ],
+          "rgb": [
+            177,
+            160,
+            150
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        }
+      ],
+      "decisions": [
+        "The original Beni wears a blue delivery jacket and trousers, not a bib-overall chest. The auxiliary jacket front supports preserving that construction.",
+        "Keep the original broad rounded silhouette, amber helmet, gloves and wheeled trolley with stacked protective cases. A floating single suitcase is a mismatch.",
+        "Extra backpack hardware in the auxiliary sheet is lower authority and should not change the original visible silhouette."
+      ],
+      "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+    },
+    "daro": {
+      "id": "daro",
+      "name": "Daro",
+      "source_crop_rect_xyxy": [
+        858,
+        346,
+        1024,
+        644
+      ],
+      "source_crop_dimensions": [
+        166,
+        298
+      ],
+      "source_crop_sha256": "30b497b555e4604e8b6ea8ff051bc8a35f4af256617b9986a4ae45a69f1c6637",
+      "decoded_pixel_copy_verified": true,
+      "auxiliary_source": "D:\\games\\chartcter image\\j.png",
+      "auxiliary_sha256": "a9cda929b5b62a9d27422efd47d974af59d4d0c85354774db1759ec8b36d50bb",
+      "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+      "source_palette": [
+        {
+          "rgb": [
+            249,
+            233,
+            212
+          ],
+          "pixels": 4426
+        },
+        {
+          "rgb": [
+            116,
+            91,
+            61
+          ],
+          "pixels": 4320
+        },
+        {
+          "rgb": [
+            163,
+            130,
+            95
+          ],
+          "pixels": 4215
+        },
+        {
+          "rgb": [
+            78,
+            57,
+            39
+          ],
+          "pixels": 4100
+        },
+        {
+          "rgb": [
+            88,
+            79,
+            62
+          ],
+          "pixels": 3877
+        },
+        {
+          "rgb": [
+            119,
+            115,
+            85
+          ],
+          "pixels": 3628
+        },
+        {
+          "rgb": [
+            45,
+            33,
+            23
+          ],
+          "pixels": 3265
+        },
+        {
+          "rgb": [
+            183,
+            188,
+            176
+          ],
+          "pixels": 2406
+        }
+      ],
+      "labelled_source_samples": [
+        {
+          "label": "Mustard helmet",
+          "crop_pixel_rect_xyxy": [
+            61,
+            19,
+            66,
+            24
+          ],
+          "rgb": [
+            190,
+            137,
+            79
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Skin",
+          "crop_pixel_rect_xyxy": [
+            89,
+            42,
+            94,
+            47
+          ],
+          "rgb": [
+            223,
+            136,
+            103
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Facial hair",
+          "crop_pixel_rect_xyxy": [
+            84,
+            54,
+            89,
+            59
+          ],
+          "rgb": [
+            160,
+            119,
+            99
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Olive overalls",
+          "crop_pixel_rect_xyxy": [
+            105,
+            173,
+            110,
+            178
+          ],
+          "rgb": [
+            97,
+            92,
+            50
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Dark shirt",
+          "crop_pixel_rect_xyxy": [
+            136,
+            79,
+            141,
+            84
+          ],
+          "rgb": [
+            249,
+            242,
+            232
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Work glove",
+          "crop_pixel_rect_xyxy": [
+            146,
+            128,
+            151,
+            133
+          ],
+          "rgb": [
+            135,
+            104,
+            72
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Brown boot",
+          "crop_pixel_rect_xyxy": [
+            129,
+            273,
+            134,
+            278
+          ],
+          "rgb": [
+            74,
+            54,
+            47
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        },
+        {
+          "label": "Turquoise blueprint",
+          "crop_pixel_rect_xyxy": [
+            34,
+            86,
+            39,
+            91
+          ],
+          "rgb": [
+            100,
+            199,
+            236
+          ],
+          "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+        }
+      ],
+      "decisions": [
+        "Retain the original mustard helmet, glasses, beard, olive overalls, dark shirt, pale rolled cuffs, turquoise blueprint and dark planning board.",
+        "The auxiliary square frames and overall fittings are useful, but any hidden belt tool additions remain reconstructed.",
+        "Back strap and rear pocket details cannot be verified from the roster."
+      ],
+      "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+    }
+  }
+}

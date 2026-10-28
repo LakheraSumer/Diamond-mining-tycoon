@@ -1,0 +1,5903 @@
+{
+  "tavi_Top": {
+    "color": [
+      0.1568627450980392,
+      0.4235294117647059,
+      0.49411764705882355
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Shirt": {
+    "color": [
+      0.8470588235294118,
+      0.803921568627451,
+      0.7058823529411765
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Pants": {
+    "color": [
+      0.615686274509804,
+      0.5215686274509804,
+      0.36470588235294116
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Accent": {
+    "color": [
+      0.7843137254901961,
+      0.5411764705882353,
+      0.22745098039215686
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Leather": {
+    "color": [
+      0.4627450980392157,
+      0.3254901960784314,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Boots": {
+    "color": [
+      0.7568627450980392,
+      0.45098039215686275,
+      0.19215686274509805
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Skin": {
+    "color": [
+      0.8745098039215686,
+      0.6352941176470588,
+      0.48627450980392156
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Hair": {
+    "color": [
+      0.18823529411764706,
+      0.12549019607843137,
+      0.09411764705882353
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Metal": {
+    "color": [
+      0.4588235294117647,
+      0.5098039215686274,
+      0.5411764705882353
+    ],
+    "roughness": 0.28,
+    "metallic": 0.58,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Iron": {
+    "color": [
+      0.14901960784313725,
+      0.18823529411764706,
+      0.2235294117647059
+    ],
+    "roughness": 0.42,
+    "metallic": 0.5,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Brass": {
+    "color": [
+      0.7294117647058823,
+      0.5450980392156862,
+      0.2627450980392157
+    ],
+    "roughness": 0.25,
+    "metallic": 0.8,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Ivory": {
+    "color": [
+      0.9098039215686274,
+      0.8666666666666667,
+      0.7686274509803922
+    ],
+    "roughness": 0.69,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Black": {
+    "color": [
+      0.09019607843137255,
+      0.11764705882352941,
+      0.1411764705882353
+    ],
+    "roughness": 0.4,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_White": {
+    "color": [
+      0.9098039215686274,
+      0.9058823529411765,
+      0.8705882352941177
+    ],
+    "roughness": 0.22,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Iris": {
+    "color": [
+      0.3843137254901961,
+      0.23137254901960785,
+      0.13725490196078433
+    ],
+    "roughness": 0.27,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Pupil": {
+    "color": [
+      0.06666666666666667,
+      0.10196078431372549,
+      0.11372549019607843
+    ],
+    "roughness": 0.2,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Gem": {
+    "color": [
+      0.19607843137254902,
+      0.7176470588235294,
+      0.9098039215686274
+    ],
+    "roughness": 0.14,
+    "metallic": 0.24,
+    "texture": "",
+    "normal": "",
+    "emission": 0.25,
+    "alpha": 1
+  },
+  "tavi_Lip": {
+    "color": [
+      0.7215686274509804,
+      0.4588235294117647,
+      0.38823529411764707
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Helmet": {
+    "color": [
+      0.15294117647058825,
+      0.5372549019607843,
+      0.5450980392156862
+    ],
+    "roughness": 0.45,
+    "metallic": 0.09,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Lamp": {
+    "color": [
+      0.9568627450980393,
+      0.8705882352941177,
+      0.615686274509804
+    ],
+    "roughness": 0.24,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0.12,
+    "alpha": 1
+  },
+  "tavi_Map": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "texture": "SurveyMap_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Plan": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Blueprint_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Face": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.55,
+    "metallic": 0,
+    "texture": "tavi_Face_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_HairHighlight": {
+    "color": [
+      0.24705882352941178,
+      0.16862745098039217,
+      0.13333333333333333
+    ],
+    "roughness": 0.76,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Top": {
+    "color": [
+      0.7411764705882353,
+      0.396078431372549,
+      0.20392156862745098
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Shirt": {
+    "color": [
+      0.24313725490196078,
+      0.39215686274509803,
+      0.2784313725490196
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Pants": {
+    "color": [
+      0.7411764705882353,
+      0.396078431372549,
+      0.20392156862745098
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Accent": {
+    "color": [
+      0.4823529411764706,
+      0.29411764705882354,
+      0.1568627450980392
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Leather": {
+    "color": [
+      0.4627450980392157,
+      0.3254901960784314,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Boots": {
+    "color": [
+      0.47058823529411764,
+      0.3254901960784314,
+      0.2196078431372549
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Skin": {
+    "color": [
+      0.8627450980392157,
+      0.6274509803921569,
+      0.4745098039215686
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Hair": {
+    "color": [
+      0.2235294117647059,
+      0.1607843137254902,
+      0.11764705882352941
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_HairHighlight": {
+    "color": [
+      0.28627450980392155,
+      0.21176470588235294,
+      0.1607843137254902
+    ],
+    "roughness": 0.76,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Metal": {
+    "color": [
+      0.4588235294117647,
+      0.5098039215686274,
+      0.5411764705882353
+    ],
+    "roughness": 0.28,
+    "metallic": 0.58,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Iron": {
+    "color": [
+      0.14901960784313725,
+      0.18823529411764706,
+      0.2235294117647059
+    ],
+    "roughness": 0.42,
+    "metallic": 0.5,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Brass": {
+    "color": [
+      0.7294117647058823,
+      0.5450980392156862,
+      0.2627450980392157
+    ],
+    "roughness": 0.25,
+    "metallic": 0.8,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Ivory": {
+    "color": [
+      0.9098039215686274,
+      0.8666666666666667,
+      0.7686274509803922
+    ],
+    "roughness": 0.69,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Black": {
+    "color": [
+      0.09019607843137255,
+      0.11764705882352941,
+      0.1411764705882353
+    ],
+    "roughness": 0.4,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_White": {
+    "color": [
+      0.9098039215686274,
+      0.9058823529411765,
+      0.8705882352941177
+    ],
+    "roughness": 0.22,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Iris": {
+    "color": [
+      0.3843137254901961,
+      0.23137254901960785,
+      0.13725490196078433
+    ],
+    "roughness": 0.27,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Pupil": {
+    "color": [
+      0.06666666666666667,
+      0.10196078431372549,
+      0.11372549019607843
+    ],
+    "roughness": 0.2,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Gem": {
+    "color": [
+      0.19607843137254902,
+      0.7176470588235294,
+      0.9098039215686274
+    ],
+    "roughness": 0.14,
+    "metallic": 0.24,
+    "texture": "",
+    "normal": "",
+    "emission": 0.25,
+    "alpha": 1
+  },
+  "mira_Lip": {
+    "color": [
+      0.7215686274509804,
+      0.4588235294117647,
+      0.38823529411764707
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Helmet": {
+    "color": [
+      0.3058823529411765,
+      0.4392156862745098,
+      0.27058823529411763
+    ],
+    "roughness": 0.45,
+    "metallic": 0.09,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Lamp": {
+    "color": [
+      0.9568627450980393,
+      0.8705882352941177,
+      0.615686274509804
+    ],
+    "roughness": 0.24,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0.12,
+    "alpha": 1
+  },
+  "mira_Map": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "texture": "SurveyMap_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Plan": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Blueprint_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Face": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.55,
+    "metallic": 0,
+    "texture": "mira_Face_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Top": {
+    "color": [
+      0.4549019607843137,
+      0.2784313725490196,
+      0.41568627450980394
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Shirt": {
+    "color": [
+      0.8666666666666667,
+      0.8156862745098039,
+      0.7098039215686275
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Pants": {
+    "color": [
+      0.41568627450980394,
+      0.3803921568627451,
+      0.3137254901960784
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Accent": {
+    "color": [
+      0.6823529411764706,
+      0.4745098039215686,
+      0.26666666666666666
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Leather": {
+    "color": [
+      0.4627450980392157,
+      0.3254901960784314,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Boots": {
+    "color": [
+      0.4470588235294118,
+      0.3137254901960784,
+      0.19607843137254902
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Skin": {
+    "color": [
+      0.5647058823529412,
+      0.36470588235294116,
+      0.22745098039215686
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Hair": {
+    "color": [
+      0.1450980392156863,
+      0.12549019607843137,
+      0.10196078431372549
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_HairHighlight": {
+    "color": [
+      0.19215686274509805,
+      0.16862745098039217,
+      0.1411764705882353
+    ],
+    "roughness": 0.76,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Metal": {
+    "color": [
+      0.4588235294117647,
+      0.5098039215686274,
+      0.5411764705882353
+    ],
+    "roughness": 0.28,
+    "metallic": 0.58,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Iron": {
+    "color": [
+      0.14901960784313725,
+      0.18823529411764706,
+      0.2235294117647059
+    ],
+    "roughness": 0.42,
+    "metallic": 0.5,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Brass": {
+    "color": [
+      0.7294117647058823,
+      0.5450980392156862,
+      0.2627450980392157
+    ],
+    "roughness": 0.25,
+    "metallic": 0.8,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Ivory": {
+    "color": [
+      0.9098039215686274,
+      0.8666666666666667,
+      0.7686274509803922
+    ],
+    "roughness": 0.69,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Black": {
+    "color": [
+      0.09019607843137255,
+      0.11764705882352941,
+      0.1411764705882353
+    ],
+    "roughness": 0.4,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_White": {
+    "color": [
+      0.9098039215686274,
+      0.9058823529411765,
+      0.8705882352941177
+    ],
+    "roughness": 0.22,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Iris": {
+    "color": [
+      0.3843137254901961,
+      0.23137254901960785,
+      0.13725490196078433
+    ],
+    "roughness": 0.27,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Pupil": {
+    "color": [
+      0.06666666666666667,
+      0.10196078431372549,
+      0.11372549019607843
+    ],
+    "roughness": 0.2,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Gem": {
+    "color": [
+      0.19607843137254902,
+      0.7176470588235294,
+      0.9098039215686274
+    ],
+    "roughness": 0.14,
+    "metallic": 0.24,
+    "texture": "",
+    "normal": "",
+    "emission": 0.25,
+    "alpha": 1
+  },
+  "oren_Lip": {
+    "color": [
+      0.7215686274509804,
+      0.4588235294117647,
+      0.38823529411764707
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Helmet": {
+    "color": [
+      0.796078431372549,
+      0.5450980392156862,
+      0.13725490196078433
+    ],
+    "roughness": 0.45,
+    "metallic": 0.09,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Lamp": {
+    "color": [
+      0.9568627450980393,
+      0.8705882352941177,
+      0.615686274509804
+    ],
+    "roughness": 0.24,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0.12,
+    "alpha": 1
+  },
+  "oren_Map": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "texture": "SurveyMap_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Plan": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Blueprint_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Face": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.55,
+    "metallic": 0,
+    "texture": "oren_Face_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Top": {
+    "color": [
+      0.2196078431372549,
+      0.34509803921568627,
+      0.5019607843137255
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Shirt": {
+    "color": [
+      0.396078431372549,
+      0.4588235294117647,
+      0.5803921568627451
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Pants": {
+    "color": [
+      0.2196078431372549,
+      0.34509803921568627,
+      0.5019607843137255
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Accent": {
+    "color": [
+      0.7725490196078432,
+      0.4392156862745098,
+      0.19607843137254902
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Leather": {
+    "color": [
+      0.4627450980392157,
+      0.3254901960784314,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Boots": {
+    "color": [
+      0.2627450980392157,
+      0.26666666666666666,
+      0.2627450980392157
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Skin": {
+    "color": [
+      0.8823529411764706,
+      0.6352941176470588,
+      0.48627450980392156
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Hair": {
+    "color": [
+      0.6666666666666666,
+      0.2627450980392157,
+      0.10588235294117647
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_HairHighlight": {
+    "color": [
+      0.8196078431372549,
+      0.3333333333333333,
+      0.1450980392156863
+    ],
+    "roughness": 0.76,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Metal": {
+    "color": [
+      0.4588235294117647,
+      0.5098039215686274,
+      0.5411764705882353
+    ],
+    "roughness": 0.28,
+    "metallic": 0.58,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Iron": {
+    "color": [
+      0.14901960784313725,
+      0.18823529411764706,
+      0.2235294117647059
+    ],
+    "roughness": 0.42,
+    "metallic": 0.5,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Brass": {
+    "color": [
+      0.7294117647058823,
+      0.5450980392156862,
+      0.2627450980392157
+    ],
+    "roughness": 0.25,
+    "metallic": 0.8,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Ivory": {
+    "color": [
+      0.9098039215686274,
+      0.8666666666666667,
+      0.7686274509803922
+    ],
+    "roughness": 0.69,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Black": {
+    "color": [
+      0.09019607843137255,
+      0.11764705882352941,
+      0.1411764705882353
+    ],
+    "roughness": 0.4,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_White": {
+    "color": [
+      0.9098039215686274,
+      0.9058823529411765,
+      0.8705882352941177
+    ],
+    "roughness": 0.22,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Iris": {
+    "color": [
+      0.3843137254901961,
+      0.23137254901960785,
+      0.13725490196078433
+    ],
+    "roughness": 0.27,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Pupil": {
+    "color": [
+      0.06666666666666667,
+      0.10196078431372549,
+      0.11372549019607843
+    ],
+    "roughness": 0.2,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Gem": {
+    "color": [
+      0.19607843137254902,
+      0.7176470588235294,
+      0.9098039215686274
+    ],
+    "roughness": 0.14,
+    "metallic": 0.24,
+    "texture": "",
+    "normal": "",
+    "emission": 0.25,
+    "alpha": 1
+  },
+  "zela_Lip": {
+    "color": [
+      0.7215686274509804,
+      0.4588235294117647,
+      0.38823529411764707
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Helmet": {
+    "color": [
+      0.20392156862745098,
+      0.35294117647058826,
+      0.6549019607843137
+    ],
+    "roughness": 0.45,
+    "metallic": 0.09,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Lamp": {
+    "color": [
+      0.9568627450980393,
+      0.8705882352941177,
+      0.615686274509804
+    ],
+    "roughness": 0.24,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0.12,
+    "alpha": 1
+  },
+  "zela_Map": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "texture": "SurveyMap_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Plan": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Blueprint_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Face": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.55,
+    "metallic": 0,
+    "texture": "zela_Face_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Top": {
+    "color": [
+      0.1411764705882353,
+      0.48627450980392156,
+      0.4823529411764706
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Shirt": {
+    "color": [
+      0.8509803921568627,
+      0.792156862745098,
+      0.6941176470588235
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Pants": {
+    "color": [
+      0.4117647058823529,
+      0.37254901960784315,
+      0.29411764705882354
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Accent": {
+    "color": [
+      0.7529411764705882,
+      0.4235294117647059,
+      0.33725490196078434
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Leather": {
+    "color": [
+      0.4627450980392157,
+      0.3254901960784314,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Boots": {
+    "color": [
+      0.7647058823529411,
+      0.4588235294117647,
+      0.3803921568627451
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Skin": {
+    "color": [
+      0.6588235294117647,
+      0.45098039215686275,
+      0.2980392156862745
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Hair": {
+    "color": [
+      0.15294117647058825,
+      0.1411764705882353,
+      0.11372549019607843
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_HairHighlight": {
+    "color": [
+      0.20392156862745098,
+      0.18823529411764706,
+      0.1568627450980392
+    ],
+    "roughness": 0.76,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Metal": {
+    "color": [
+      0.4588235294117647,
+      0.5098039215686274,
+      0.5411764705882353
+    ],
+    "roughness": 0.28,
+    "metallic": 0.58,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Iron": {
+    "color": [
+      0.14901960784313725,
+      0.18823529411764706,
+      0.2235294117647059
+    ],
+    "roughness": 0.42,
+    "metallic": 0.5,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Brass": {
+    "color": [
+      0.7294117647058823,
+      0.5450980392156862,
+      0.2627450980392157
+    ],
+    "roughness": 0.25,
+    "metallic": 0.8,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Ivory": {
+    "color": [
+      0.9098039215686274,
+      0.8666666666666667,
+      0.7686274509803922
+    ],
+    "roughness": 0.69,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Black": {
+    "color": [
+      0.09019607843137255,
+      0.11764705882352941,
+      0.1411764705882353
+    ],
+    "roughness": 0.4,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_White": {
+    "color": [
+      0.9098039215686274,
+      0.9058823529411765,
+      0.8705882352941177
+    ],
+    "roughness": 0.22,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Iris": {
+    "color": [
+      0.3843137254901961,
+      0.23137254901960785,
+      0.13725490196078433
+    ],
+    "roughness": 0.27,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Pupil": {
+    "color": [
+      0.06666666666666667,
+      0.10196078431372549,
+      0.11372549019607843
+    ],
+    "roughness": 0.2,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Gem": {
+    "color": [
+      0.19607843137254902,
+      0.7176470588235294,
+      0.9098039215686274
+    ],
+    "roughness": 0.14,
+    "metallic": 0.24,
+    "texture": "",
+    "normal": "",
+    "emission": 0.25,
+    "alpha": 1
+  },
+  "pavi_Lip": {
+    "color": [
+      0.7215686274509804,
+      0.4588235294117647,
+      0.38823529411764707
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Helmet": {
+    "color": [
+      0.17647058823529413,
+      0.5803921568627451,
+      0.5764705882352941
+    ],
+    "roughness": 0.45,
+    "metallic": 0.09,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Lamp": {
+    "color": [
+      0.9568627450980393,
+      0.8705882352941177,
+      0.615686274509804
+    ],
+    "roughness": 0.24,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0.12,
+    "alpha": 1
+  },
+  "pavi_Map": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "texture": "SurveyMap_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Plan": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Blueprint_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Face": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.55,
+    "metallic": 0,
+    "texture": "pavi_Face_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Top": {
+    "color": [
+      0.23921568627450981,
+      0.27450980392156865,
+      0.4
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Shirt": {
+    "color": [
+      0.8117647058823529,
+      0.7490196078431373,
+      0.6274509803921569
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Pants": {
+    "color": [
+      0.27450980392156865,
+      0.27058823529411763,
+      0.32941176470588235
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Accent": {
+    "color": [
+      0.5843137254901961,
+      0.39215686274509803,
+      0.21568627450980393
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Leather": {
+    "color": [
+      0.4627450980392157,
+      0.3254901960784314,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Boots": {
+    "color": [
+      0.23921568627450981,
+      0.23137254901960785,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Skin": {
+    "color": [
+      0.8509803921568627,
+      0.6313725490196078,
+      0.48627450980392156
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Hair": {
+    "color": [
+      0.1411764705882353,
+      0.1568627450980392,
+      0.13333333333333333
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_HairHighlight": {
+    "color": [
+      0.18823529411764706,
+      0.20784313725490197,
+      0.1803921568627451
+    ],
+    "roughness": 0.76,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Metal": {
+    "color": [
+      0.4588235294117647,
+      0.5098039215686274,
+      0.5411764705882353
+    ],
+    "roughness": 0.28,
+    "metallic": 0.58,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Iron": {
+    "color": [
+      0.14901960784313725,
+      0.18823529411764706,
+      0.2235294117647059
+    ],
+    "roughness": 0.42,
+    "metallic": 0.5,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Brass": {
+    "color": [
+      0.7294117647058823,
+      0.5450980392156862,
+      0.2627450980392157
+    ],
+    "roughness": 0.25,
+    "metallic": 0.8,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Ivory": {
+    "color": [
+      0.9098039215686274,
+      0.8666666666666667,
+      0.7686274509803922
+    ],
+    "roughness": 0.69,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Black": {
+    "color": [
+      0.09019607843137255,
+      0.11764705882352941,
+      0.1411764705882353
+    ],
+    "roughness": 0.4,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_White": {
+    "color": [
+      0.9098039215686274,
+      0.9058823529411765,
+      0.8705882352941177
+    ],
+    "roughness": 0.22,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Iris": {
+    "color": [
+      0.3843137254901961,
+      0.23137254901960785,
+      0.13725490196078433
+    ],
+    "roughness": 0.27,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Pupil": {
+    "color": [
+      0.06666666666666667,
+      0.10196078431372549,
+      0.11372549019607843
+    ],
+    "roughness": 0.2,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Gem": {
+    "color": [
+      0.19607843137254902,
+      0.7176470588235294,
+      0.9098039215686274
+    ],
+    "roughness": 0.14,
+    "metallic": 0.24,
+    "texture": "",
+    "normal": "",
+    "emission": 0.25,
+    "alpha": 1
+  },
+  "nilo_Lip": {
+    "color": [
+      0.7215686274509804,
+      0.4588235294117647,
+      0.38823529411764707
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Helmet": {
+    "color": [
+      0.4745098039215686,
+      0.6588235294117647,
+      0.5490196078431373
+    ],
+    "roughness": 0.45,
+    "metallic": 0.09,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Lamp": {
+    "color": [
+      0.9568627450980393,
+      0.8705882352941177,
+      0.615686274509804
+    ],
+    "roughness": 0.24,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0.12,
+    "alpha": 1
+  },
+  "nilo_Map": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "texture": "SurveyMap_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Plan": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Blueprint_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Face": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.55,
+    "metallic": 0,
+    "texture": "nilo_Face_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Top": {
+    "color": [
+      0.8627450980392157,
+      0.5450980392156862,
+      0.3176470588235294
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Shirt": {
+    "color": [
+      0.7176470588235294,
+      0.48627450980392156,
+      0.34901960784313724
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Pants": {
+    "color": [
+      0.29411764705882354,
+      0.27450980392156865,
+      0.2627450980392157
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Accent": {
+    "color": [
+      0.4627450980392157,
+      0.3137254901960784,
+      0.6274509803921569
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Leather": {
+    "color": [
+      0.4627450980392157,
+      0.3254901960784314,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Boots": {
+    "color": [
+      0.3254901960784314,
+      0.2823529411764706,
+      0.24313725490196078
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Skin": {
+    "color": [
+      0.5254901960784314,
+      0.33725490196078434,
+      0.21568627450980393
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Hair": {
+    "color": [
+      0.1568627450980392,
+      0.12156862745098039,
+      0.11764705882352941
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_HairHighlight": {
+    "color": [
+      0.20784313725490197,
+      0.16470588235294117,
+      0.1607843137254902
+    ],
+    "roughness": 0.76,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Metal": {
+    "color": [
+      0.4588235294117647,
+      0.5098039215686274,
+      0.5411764705882353
+    ],
+    "roughness": 0.28,
+    "metallic": 0.58,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Iron": {
+    "color": [
+      0.14901960784313725,
+      0.18823529411764706,
+      0.2235294117647059
+    ],
+    "roughness": 0.42,
+    "metallic": 0.5,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Brass": {
+    "color": [
+      0.7294117647058823,
+      0.5450980392156862,
+      0.2627450980392157
+    ],
+    "roughness": 0.25,
+    "metallic": 0.8,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Ivory": {
+    "color": [
+      0.9098039215686274,
+      0.8666666666666667,
+      0.7686274509803922
+    ],
+    "roughness": 0.69,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Black": {
+    "color": [
+      0.09019607843137255,
+      0.11764705882352941,
+      0.1411764705882353
+    ],
+    "roughness": 0.4,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_White": {
+    "color": [
+      0.9098039215686274,
+      0.9058823529411765,
+      0.8705882352941177
+    ],
+    "roughness": 0.22,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Iris": {
+    "color": [
+      0.3843137254901961,
+      0.23137254901960785,
+      0.13725490196078433
+    ],
+    "roughness": 0.27,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Pupil": {
+    "color": [
+      0.06666666666666667,
+      0.10196078431372549,
+      0.11372549019607843
+    ],
+    "roughness": 0.2,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Gem": {
+    "color": [
+      0.19607843137254902,
+      0.7176470588235294,
+      0.9098039215686274
+    ],
+    "roughness": 0.14,
+    "metallic": 0.24,
+    "texture": "",
+    "normal": "",
+    "emission": 0.25,
+    "alpha": 1
+  },
+  "etta_Lip": {
+    "color": [
+      0.7215686274509804,
+      0.4588235294117647,
+      0.38823529411764707
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Helmet": {
+    "color": [
+      0.4392156862745098,
+      0.3333333333333333,
+      0.5529411764705883
+    ],
+    "roughness": 0.34,
+    "metallic": 0.12,
+    "texture": "",
+    "normal": "",
+    "emission": 0
+  },
+  "etta_Lamp": {
+    "color": [
+      0.9568627450980393,
+      0.8705882352941177,
+      0.615686274509804
+    ],
+    "roughness": 0.24,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0.12,
+    "alpha": 1
+  },
+  "etta_Map": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "texture": "SurveyMap_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Plan": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Blueprint_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Face": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.55,
+    "metallic": 0,
+    "texture": "etta_Face_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Top": {
+    "color": [
+      0.611764705882353,
+      0.5137254901960784,
+      0.6784313725490196
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Shirt": {
+    "color": [
+      0.6862745098039216,
+      0.7568627450980392,
+      0.8
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Pants": {
+    "color": [
+      0.611764705882353,
+      0.5137254901960784,
+      0.6784313725490196
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Accent": {
+    "color": [
+      0.8352941176470589,
+      0.8431372549019608,
+      0.807843137254902
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Leather": {
+    "color": [
+      0.4627450980392157,
+      0.3254901960784314,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Boots": {
+    "color": [
+      0.2901960784313726,
+      0.27058823529411763,
+      0.2549019607843137
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Skin": {
+    "color": [
+      0.8588235294117647,
+      0.6274509803921569,
+      0.4980392156862745
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Hair": {
+    "color": [
+      0.1607843137254902,
+      0.13725490196078433,
+      0.12549019607843137
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_HairHighlight": {
+    "color": [
+      0.21176470588235294,
+      0.1843137254901961,
+      0.16862745098039217
+    ],
+    "roughness": 0.76,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Metal": {
+    "color": [
+      0.4588235294117647,
+      0.5098039215686274,
+      0.5411764705882353
+    ],
+    "roughness": 0.28,
+    "metallic": 0.58,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Iron": {
+    "color": [
+      0.14901960784313725,
+      0.18823529411764706,
+      0.2235294117647059
+    ],
+    "roughness": 0.42,
+    "metallic": 0.5,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Brass": {
+    "color": [
+      0.7294117647058823,
+      0.5450980392156862,
+      0.2627450980392157
+    ],
+    "roughness": 0.25,
+    "metallic": 0.8,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Ivory": {
+    "color": [
+      0.9098039215686274,
+      0.8666666666666667,
+      0.7686274509803922
+    ],
+    "roughness": 0.69,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Black": {
+    "color": [
+      0.09019607843137255,
+      0.11764705882352941,
+      0.1411764705882353
+    ],
+    "roughness": 0.4,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_White": {
+    "color": [
+      0.9098039215686274,
+      0.9058823529411765,
+      0.8705882352941177
+    ],
+    "roughness": 0.22,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Iris": {
+    "color": [
+      0.3843137254901961,
+      0.23137254901960785,
+      0.13725490196078433
+    ],
+    "roughness": 0.27,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Pupil": {
+    "color": [
+      0.06666666666666667,
+      0.10196078431372549,
+      0.11372549019607843
+    ],
+    "roughness": 0.2,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Gem": {
+    "color": [
+      0.19607843137254902,
+      0.7176470588235294,
+      0.9098039215686274
+    ],
+    "roughness": 0.14,
+    "metallic": 0.24,
+    "texture": "",
+    "normal": "",
+    "emission": 0.25,
+    "alpha": 1
+  },
+  "rumi_Lip": {
+    "color": [
+      0.7215686274509804,
+      0.4588235294117647,
+      0.38823529411764707
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Helmet": {
+    "color": [
+      0.611764705882353,
+      0.7098039215686275,
+      0.7725490196078432
+    ],
+    "roughness": 0.45,
+    "metallic": 0.09,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Lamp": {
+    "color": [
+      0.9568627450980393,
+      0.8705882352941177,
+      0.615686274509804
+    ],
+    "roughness": 0.24,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0.12,
+    "alpha": 1
+  },
+  "rumi_Map": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "texture": "SurveyMap_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Plan": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Blueprint_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Face": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.55,
+    "metallic": 0,
+    "texture": "rumi_Face_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Top": {
+    "color": [
+      0.47058823529411764,
+      0.24705882352941178,
+      0.17647058823529413
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Shirt": {
+    "color": [
+      0.8117647058823529,
+      0.6784313725490196,
+      0.4745098039215686
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Pants": {
+    "color": [
+      0.40784313725490196,
+      0.35294117647058826,
+      0.2784313725490196
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Accent": {
+    "color": [
+      0.6470588235294118,
+      0.4627450980392157,
+      0.21568627450980393
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Leather": {
+    "color": [
+      0.4627450980392157,
+      0.3254901960784314,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Boots": {
+    "color": [
+      0.4392156862745098,
+      0.30980392156862746,
+      0.19607843137254902
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Skin": {
+    "color": [
+      0.7372549019607844,
+      0.5098039215686274,
+      0.3254901960784314
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Hair": {
+    "color": [
+      0.1568627450980392,
+      0.12549019607843137,
+      0.10196078431372549
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_HairHighlight": {
+    "color": [
+      0.20784313725490197,
+      0.16862745098039217,
+      0.1411764705882353
+    ],
+    "roughness": 0.76,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Metal": {
+    "color": [
+      0.4588235294117647,
+      0.5098039215686274,
+      0.5411764705882353
+    ],
+    "roughness": 0.28,
+    "metallic": 0.58,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Iron": {
+    "color": [
+      0.14901960784313725,
+      0.18823529411764706,
+      0.2235294117647059
+    ],
+    "roughness": 0.42,
+    "metallic": 0.5,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Brass": {
+    "color": [
+      0.7294117647058823,
+      0.5450980392156862,
+      0.2627450980392157
+    ],
+    "roughness": 0.25,
+    "metallic": 0.8,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Ivory": {
+    "color": [
+      0.9098039215686274,
+      0.8666666666666667,
+      0.7686274509803922
+    ],
+    "roughness": 0.69,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Black": {
+    "color": [
+      0.09019607843137255,
+      0.11764705882352941,
+      0.1411764705882353
+    ],
+    "roughness": 0.4,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_White": {
+    "color": [
+      0.9098039215686274,
+      0.9058823529411765,
+      0.8705882352941177
+    ],
+    "roughness": 0.22,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Iris": {
+    "color": [
+      0.3843137254901961,
+      0.23137254901960785,
+      0.13725490196078433
+    ],
+    "roughness": 0.27,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Pupil": {
+    "color": [
+      0.06666666666666667,
+      0.10196078431372549,
+      0.11372549019607843
+    ],
+    "roughness": 0.2,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Gem": {
+    "color": [
+      0.19607843137254902,
+      0.7176470588235294,
+      0.9098039215686274
+    ],
+    "roughness": 0.14,
+    "metallic": 0.24,
+    "texture": "",
+    "normal": "",
+    "emission": 0.25,
+    "alpha": 1
+  },
+  "kavi_Lip": {
+    "color": [
+      0.7215686274509804,
+      0.4588235294117647,
+      0.38823529411764707
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Lamp": {
+    "color": [
+      0.9568627450980393,
+      0.8705882352941177,
+      0.615686274509804
+    ],
+    "roughness": 0.24,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0.12,
+    "alpha": 1
+  },
+  "kavi_Map": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "texture": "SurveyMap_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Plan": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Blueprint_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Face": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.55,
+    "metallic": 0,
+    "texture": "kavi_Face_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Top": {
+    "color": [
+      0.4235294117647059,
+      0.4745098039215686,
+      0.3333333333333333
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Shirt": {
+    "color": [
+      0.8431372549019608,
+      0.5294117647058824,
+      0.42745098039215684
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Pants": {
+    "color": [
+      0.27450980392156865,
+      0.30196078431372547,
+      0.27058823529411763
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Accent": {
+    "color": [
+      0.7686274509803922,
+      0.6078431372549019,
+      0.29411764705882354
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Leather": {
+    "color": [
+      0.4627450980392157,
+      0.3254901960784314,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Boots": {
+    "color": [
+      0.3803921568627451,
+      0.3176470588235294,
+      0.22745098039215686
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Skin": {
+    "color": [
+      0.8862745098039215,
+      0.6901960784313725,
+      0.5490196078431373
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Hair": {
+    "color": [
+      0.7254901960784313,
+      0.5529411764705883,
+      0.27450980392156865
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_HairHighlight": {
+    "color": [
+      0.8901960784313725,
+      0.6823529411764706,
+      0.34901960784313724
+    ],
+    "roughness": 0.76,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Metal": {
+    "color": [
+      0.4588235294117647,
+      0.5098039215686274,
+      0.5411764705882353
+    ],
+    "roughness": 0.28,
+    "metallic": 0.58,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Iron": {
+    "color": [
+      0.14901960784313725,
+      0.18823529411764706,
+      0.2235294117647059
+    ],
+    "roughness": 0.42,
+    "metallic": 0.5,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Brass": {
+    "color": [
+      0.7294117647058823,
+      0.5450980392156862,
+      0.2627450980392157
+    ],
+    "roughness": 0.25,
+    "metallic": 0.8,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Ivory": {
+    "color": [
+      0.9098039215686274,
+      0.8666666666666667,
+      0.7686274509803922
+    ],
+    "roughness": 0.69,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Black": {
+    "color": [
+      0.09019607843137255,
+      0.11764705882352941,
+      0.1411764705882353
+    ],
+    "roughness": 0.4,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_White": {
+    "color": [
+      0.9098039215686274,
+      0.9058823529411765,
+      0.8705882352941177
+    ],
+    "roughness": 0.22,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Iris": {
+    "color": [
+      0.3843137254901961,
+      0.23137254901960785,
+      0.13725490196078433
+    ],
+    "roughness": 0.27,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Pupil": {
+    "color": [
+      0.06666666666666667,
+      0.10196078431372549,
+      0.11372549019607843
+    ],
+    "roughness": 0.2,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Gem": {
+    "color": [
+      0.19607843137254902,
+      0.7176470588235294,
+      0.9098039215686274
+    ],
+    "roughness": 0.14,
+    "metallic": 0.24,
+    "texture": "",
+    "normal": "",
+    "emission": 0.25,
+    "alpha": 1
+  },
+  "sola_Lip": {
+    "color": [
+      0.7215686274509804,
+      0.4588235294117647,
+      0.38823529411764707
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Lamp": {
+    "color": [
+      0.9568627450980393,
+      0.8705882352941177,
+      0.615686274509804
+    ],
+    "roughness": 0.24,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0.12,
+    "alpha": 1
+  },
+  "sola_Map": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "texture": "SurveyMap_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Plan": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Blueprint_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Face": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.55,
+    "metallic": 0,
+    "texture": "sola_Face_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Top": {
+    "color": [
+      0.403921568627451,
+      0.5882352941176471,
+      0.7019607843137254
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Shirt": {
+    "color": [
+      0.8392156862745098,
+      0.788235294117647,
+      0.6666666666666666
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Pants": {
+    "color": [
+      0.403921568627451,
+      0.5882352941176471,
+      0.7019607843137254
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Accent": {
+    "color": [
+      0.5450980392156862,
+      0.42745098039215684,
+      0.25882352941176473
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Leather": {
+    "color": [
+      0.4627450980392157,
+      0.3254901960784314,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Boots": {
+    "color": [
+      0.49019607843137253,
+      0.396078431372549,
+      0.23921568627450981
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Skin": {
+    "color": [
+      0.7098039215686275,
+      0.4823529411764706,
+      0.2980392156862745
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Hair": {
+    "color": [
+      0.18823529411764706,
+      0.15294117647058825,
+      0.12156862745098039
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_HairHighlight": {
+    "color": [
+      0.24705882352941178,
+      0.20392156862745098,
+      0.16470588235294117
+    ],
+    "roughness": 0.76,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Metal": {
+    "color": [
+      0.4588235294117647,
+      0.5098039215686274,
+      0.5411764705882353
+    ],
+    "roughness": 0.28,
+    "metallic": 0.58,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Iron": {
+    "color": [
+      0.14901960784313725,
+      0.18823529411764706,
+      0.2235294117647059
+    ],
+    "roughness": 0.42,
+    "metallic": 0.5,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Brass": {
+    "color": [
+      0.7294117647058823,
+      0.5450980392156862,
+      0.2627450980392157
+    ],
+    "roughness": 0.25,
+    "metallic": 0.8,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Ivory": {
+    "color": [
+      0.9098039215686274,
+      0.8666666666666667,
+      0.7686274509803922
+    ],
+    "roughness": 0.69,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Black": {
+    "color": [
+      0.09019607843137255,
+      0.11764705882352941,
+      0.1411764705882353
+    ],
+    "roughness": 0.4,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_White": {
+    "color": [
+      0.9098039215686274,
+      0.9058823529411765,
+      0.8705882352941177
+    ],
+    "roughness": 0.22,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Iris": {
+    "color": [
+      0.3843137254901961,
+      0.23137254901960785,
+      0.13725490196078433
+    ],
+    "roughness": 0.27,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Pupil": {
+    "color": [
+      0.06666666666666667,
+      0.10196078431372549,
+      0.11372549019607843
+    ],
+    "roughness": 0.2,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Gem": {
+    "color": [
+      0.19607843137254902,
+      0.7176470588235294,
+      0.9098039215686274
+    ],
+    "roughness": 0.14,
+    "metallic": 0.24,
+    "texture": "",
+    "normal": "",
+    "emission": 0.25,
+    "alpha": 1
+  },
+  "beni_Lip": {
+    "color": [
+      0.7215686274509804,
+      0.4588235294117647,
+      0.38823529411764707
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Helmet": {
+    "color": [
+      0.8392156862745098,
+      0.615686274509804,
+      0.20784313725490197
+    ],
+    "roughness": 0.45,
+    "metallic": 0.09,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Lamp": {
+    "color": [
+      0.9568627450980393,
+      0.8705882352941177,
+      0.615686274509804
+    ],
+    "roughness": 0.24,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0.12,
+    "alpha": 1
+  },
+  "beni_Map": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "texture": "SurveyMap_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Plan": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Blueprint_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Face": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.55,
+    "metallic": 0,
+    "texture": "beni_Face_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Top": {
+    "color": [
+      0.4392156862745098,
+      0.4666666666666667,
+      0.29411764705882354
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Shirt": {
+    "color": [
+      0.29411764705882354,
+      0.2980392156862745,
+      0.25098039215686274
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Pants": {
+    "color": [
+      0.4392156862745098,
+      0.4666666666666667,
+      0.29411764705882354
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Accent": {
+    "color": [
+      0.8313725490196079,
+      0.7725490196078432,
+      0.6392156862745098
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Leather": {
+    "color": [
+      0.4627450980392157,
+      0.3254901960784314,
+      0.20784313725490197
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Boots": {
+    "color": [
+      0.4,
+      0.3215686274509804,
+      0.23137254901960785
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Skin": {
+    "color": [
+      0.803921568627451,
+      0.6,
+      0.45098039215686275
+    ],
+    "roughness": 0.66,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Hair": {
+    "color": [
+      0.19607843137254902,
+      0.1607843137254902,
+      0.12941176470588237
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_HairHighlight": {
+    "color": [
+      0.2549019607843137,
+      0.21176470588235294,
+      0.17647058823529413
+    ],
+    "roughness": 0.76,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Metal": {
+    "color": [
+      0.4588235294117647,
+      0.5098039215686274,
+      0.5411764705882353
+    ],
+    "roughness": 0.28,
+    "metallic": 0.58,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Iron": {
+    "color": [
+      0.14901960784313725,
+      0.18823529411764706,
+      0.2235294117647059
+    ],
+    "roughness": 0.42,
+    "metallic": 0.5,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Brass": {
+    "color": [
+      0.7294117647058823,
+      0.5450980392156862,
+      0.2627450980392157
+    ],
+    "roughness": 0.25,
+    "metallic": 0.8,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Ivory": {
+    "color": [
+      0.9098039215686274,
+      0.8666666666666667,
+      0.7686274509803922
+    ],
+    "roughness": 0.69,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Black": {
+    "color": [
+      0.09019607843137255,
+      0.11764705882352941,
+      0.1411764705882353
+    ],
+    "roughness": 0.4,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_White": {
+    "color": [
+      0.9098039215686274,
+      0.9058823529411765,
+      0.8705882352941177
+    ],
+    "roughness": 0.22,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Iris": {
+    "color": [
+      0.3843137254901961,
+      0.23137254901960785,
+      0.13725490196078433
+    ],
+    "roughness": 0.27,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Pupil": {
+    "color": [
+      0.06666666666666667,
+      0.10196078431372549,
+      0.11372549019607843
+    ],
+    "roughness": 0.2,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Gem": {
+    "color": [
+      0.19607843137254902,
+      0.7176470588235294,
+      0.9098039215686274
+    ],
+    "roughness": 0.14,
+    "metallic": 0.24,
+    "texture": "",
+    "normal": "",
+    "emission": 0.25,
+    "alpha": 1
+  },
+  "daro_Lip": {
+    "color": [
+      0.7215686274509804,
+      0.4588235294117647,
+      0.38823529411764707
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Helmet": {
+    "color": [
+      0.7725490196078432,
+      0.5725490196078431,
+      0.1607843137254902
+    ],
+    "roughness": 0.45,
+    "metallic": 0.09,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Lamp": {
+    "color": [
+      0.9568627450980393,
+      0.8705882352941177,
+      0.615686274509804
+    ],
+    "roughness": 0.24,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0.12,
+    "alpha": 1
+  },
+  "daro_Map": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "texture": "SurveyMap_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Plan": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Blueprint_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Face": {
+    "color": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "roughness": 0.55,
+    "metallic": 0,
+    "texture": "daro_Face_BaseColor.png",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Wood": {
+    "color": [
+      0.3607843137254902,
+      0.22745098039215686,
+      0.12941176470588237
+    ],
+    "roughness": 0.62,
+    "metallic": 0.05,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Rubber": {
+    "color": [
+      0.1411764705882353,
+      0.16862745098039217,
+      0.17254901960784313
+    ],
+    "roughness": 0.81,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Velvet": {
+    "color": [
+      0.11764705882352941,
+      0.22745098039215686,
+      0.35294117647058826
+    ],
+    "roughness": 0.85,
+    "metallic": 0.02,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_VioletGlass": {
+    "color": [
+      0.47843137254901963,
+      0.24705882352941178,
+      0.6588235294117647
+    ],
+    "roughness": 0.15,
+    "metallic": 0.25,
+    "texture": "",
+    "normal": "",
+    "emission": 0.15,
+    "alpha": 1
+  },
+  "mira_Wood": {
+    "color": [
+      0.3607843137254902,
+      0.22745098039215686,
+      0.12941176470588237
+    ],
+    "roughness": 0.62,
+    "metallic": 0.05,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Rubber": {
+    "color": [
+      0.1411764705882353,
+      0.16862745098039217,
+      0.17254901960784313
+    ],
+    "roughness": 0.81,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Velvet": {
+    "color": [
+      0.11764705882352941,
+      0.22745098039215686,
+      0.35294117647058826
+    ],
+    "roughness": 0.85,
+    "metallic": 0.02,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_VioletGlass": {
+    "color": [
+      0.47843137254901963,
+      0.24705882352941178,
+      0.6588235294117647
+    ],
+    "roughness": 0.15,
+    "metallic": 0.25,
+    "texture": "",
+    "normal": "",
+    "emission": 0.15,
+    "alpha": 1
+  },
+  "oren_Wood": {
+    "color": [
+      0.3607843137254902,
+      0.22745098039215686,
+      0.12941176470588237
+    ],
+    "roughness": 0.62,
+    "metallic": 0.05,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Rubber": {
+    "color": [
+      0.1411764705882353,
+      0.16862745098039217,
+      0.17254901960784313
+    ],
+    "roughness": 0.81,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Velvet": {
+    "color": [
+      0.11764705882352941,
+      0.22745098039215686,
+      0.35294117647058826
+    ],
+    "roughness": 0.85,
+    "metallic": 0.02,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_VioletGlass": {
+    "color": [
+      0.47843137254901963,
+      0.24705882352941178,
+      0.6588235294117647
+    ],
+    "roughness": 0.15,
+    "metallic": 0.25,
+    "texture": "",
+    "normal": "",
+    "emission": 0.15,
+    "alpha": 1
+  },
+  "zela_Wood": {
+    "color": [
+      0.3607843137254902,
+      0.22745098039215686,
+      0.12941176470588237
+    ],
+    "roughness": 0.62,
+    "metallic": 0.05,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Rubber": {
+    "color": [
+      0.1411764705882353,
+      0.16862745098039217,
+      0.17254901960784313
+    ],
+    "roughness": 0.81,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Velvet": {
+    "color": [
+      0.11764705882352941,
+      0.22745098039215686,
+      0.35294117647058826
+    ],
+    "roughness": 0.85,
+    "metallic": 0.02,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_VioletGlass": {
+    "color": [
+      0.47843137254901963,
+      0.24705882352941178,
+      0.6588235294117647
+    ],
+    "roughness": 0.15,
+    "metallic": 0.25,
+    "texture": "",
+    "normal": "",
+    "emission": 0.15,
+    "alpha": 1
+  },
+  "pavi_Wood": {
+    "color": [
+      0.3607843137254902,
+      0.22745098039215686,
+      0.12941176470588237
+    ],
+    "roughness": 0.62,
+    "metallic": 0.05,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Rubber": {
+    "color": [
+      0.1411764705882353,
+      0.16862745098039217,
+      0.17254901960784313
+    ],
+    "roughness": 0.81,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Velvet": {
+    "color": [
+      0.11764705882352941,
+      0.22745098039215686,
+      0.35294117647058826
+    ],
+    "roughness": 0.85,
+    "metallic": 0.02,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_VioletGlass": {
+    "color": [
+      0.47843137254901963,
+      0.24705882352941178,
+      0.6588235294117647
+    ],
+    "roughness": 0.15,
+    "metallic": 0.25,
+    "texture": "",
+    "normal": "",
+    "emission": 0.15,
+    "alpha": 1
+  },
+  "nilo_Wood": {
+    "color": [
+      0.3607843137254902,
+      0.22745098039215686,
+      0.12941176470588237
+    ],
+    "roughness": 0.62,
+    "metallic": 0.05,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Rubber": {
+    "color": [
+      0.1411764705882353,
+      0.16862745098039217,
+      0.17254901960784313
+    ],
+    "roughness": 0.81,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Velvet": {
+    "color": [
+      0.11764705882352941,
+      0.22745098039215686,
+      0.35294117647058826
+    ],
+    "roughness": 0.85,
+    "metallic": 0.02,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_VioletGlass": {
+    "color": [
+      0.47843137254901963,
+      0.24705882352941178,
+      0.6588235294117647
+    ],
+    "roughness": 0.15,
+    "metallic": 0.25,
+    "texture": "",
+    "normal": "",
+    "emission": 0.15,
+    "alpha": 1
+  },
+  "etta_Wood": {
+    "color": [
+      0.3607843137254902,
+      0.22745098039215686,
+      0.12941176470588237
+    ],
+    "roughness": 0.62,
+    "metallic": 0.05,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Rubber": {
+    "color": [
+      0.1411764705882353,
+      0.16862745098039217,
+      0.17254901960784313
+    ],
+    "roughness": 0.81,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Velvet": {
+    "color": [
+      0.11764705882352941,
+      0.22745098039215686,
+      0.35294117647058826
+    ],
+    "roughness": 0.85,
+    "metallic": 0.02,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_VioletGlass": {
+    "color": [
+      0.47843137254901963,
+      0.24705882352941178,
+      0.6588235294117647
+    ],
+    "roughness": 0.15,
+    "metallic": 0.25,
+    "texture": "",
+    "normal": "",
+    "emission": 0.15,
+    "alpha": 1
+  },
+  "etta_Headband": {
+    "color": [
+      0.4627450980392157,
+      0.3137254901960784,
+      0.6274509803921569
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Wood": {
+    "color": [
+      0.3607843137254902,
+      0.22745098039215686,
+      0.12941176470588237
+    ],
+    "roughness": 0.62,
+    "metallic": 0.05,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Rubber": {
+    "color": [
+      0.1411764705882353,
+      0.16862745098039217,
+      0.17254901960784313
+    ],
+    "roughness": 0.81,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Velvet": {
+    "color": [
+      0.11764705882352941,
+      0.22745098039215686,
+      0.35294117647058826
+    ],
+    "roughness": 0.85,
+    "metallic": 0.02,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_VioletGlass": {
+    "color": [
+      0.47843137254901963,
+      0.24705882352941178,
+      0.6588235294117647
+    ],
+    "roughness": 0.15,
+    "metallic": 0.25,
+    "texture": "",
+    "normal": "",
+    "emission": 0.15,
+    "alpha": 1
+  },
+  "kavi_Wood": {
+    "color": [
+      0.3607843137254902,
+      0.22745098039215686,
+      0.12941176470588237
+    ],
+    "roughness": 0.62,
+    "metallic": 0.05,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Rubber": {
+    "color": [
+      0.1411764705882353,
+      0.16862745098039217,
+      0.17254901960784313
+    ],
+    "roughness": 0.81,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Velvet": {
+    "color": [
+      0.11764705882352941,
+      0.22745098039215686,
+      0.35294117647058826
+    ],
+    "roughness": 0.85,
+    "metallic": 0.02,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_VioletGlass": {
+    "color": [
+      0.47843137254901963,
+      0.24705882352941178,
+      0.6588235294117647
+    ],
+    "roughness": 0.15,
+    "metallic": 0.25,
+    "texture": "",
+    "normal": "",
+    "emission": 0.15,
+    "alpha": 1
+  },
+  "sola_Wood": {
+    "color": [
+      0.3607843137254902,
+      0.22745098039215686,
+      0.12941176470588237
+    ],
+    "roughness": 0.62,
+    "metallic": 0.05,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Rubber": {
+    "color": [
+      0.1411764705882353,
+      0.16862745098039217,
+      0.17254901960784313
+    ],
+    "roughness": 0.81,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Velvet": {
+    "color": [
+      0.11764705882352941,
+      0.22745098039215686,
+      0.35294117647058826
+    ],
+    "roughness": 0.85,
+    "metallic": 0.02,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_VioletGlass": {
+    "color": [
+      0.47843137254901963,
+      0.24705882352941178,
+      0.6588235294117647
+    ],
+    "roughness": 0.15,
+    "metallic": 0.25,
+    "texture": "",
+    "normal": "",
+    "emission": 0.15,
+    "alpha": 1
+  },
+  "beni_Wood": {
+    "color": [
+      0.3607843137254902,
+      0.22745098039215686,
+      0.12941176470588237
+    ],
+    "roughness": 0.62,
+    "metallic": 0.05,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Rubber": {
+    "color": [
+      0.1411764705882353,
+      0.16862745098039217,
+      0.17254901960784313
+    ],
+    "roughness": 0.81,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Velvet": {
+    "color": [
+      0.11764705882352941,
+      0.22745098039215686,
+      0.35294117647058826
+    ],
+    "roughness": 0.85,
+    "metallic": 0.02,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_VioletGlass": {
+    "color": [
+      0.47843137254901963,
+      0.24705882352941178,
+      0.6588235294117647
+    ],
+    "roughness": 0.15,
+    "metallic": 0.25,
+    "texture": "",
+    "normal": "",
+    "emission": 0.15,
+    "alpha": 1
+  },
+  "daro_Wood": {
+    "color": [
+      0.3607843137254902,
+      0.22745098039215686,
+      0.12941176470588237
+    ],
+    "roughness": 0.62,
+    "metallic": 0.05,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Rubber": {
+    "color": [
+      0.1411764705882353,
+      0.16862745098039217,
+      0.17254901960784313
+    ],
+    "roughness": 0.81,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Velvet": {
+    "color": [
+      0.11764705882352941,
+      0.22745098039215686,
+      0.35294117647058826
+    ],
+    "roughness": 0.85,
+    "metallic": 0.02,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_VioletGlass": {
+    "color": [
+      0.47843137254901963,
+      0.24705882352941178,
+      0.6588235294117647
+    ],
+    "roughness": 0.15,
+    "metallic": 0.25,
+    "texture": "",
+    "normal": "",
+    "emission": 0.15,
+    "alpha": 1
+  },
+  "tavi_Glove": {
+    "color": [
+      0.3137254901960784,
+      0.2627450980392157,
+      0.20784313725490197
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Stitch": {
+    "color": [
+      0.7333333333333333,
+      0.6470588235294118,
+      0.48627450980392156
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Ore": {
+    "color": [
+      0.5490196078431373,
+      0.5725490196078431,
+      0.5803921568627451
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "tavi_Glass": {
+    "color": [
+      0.6588235294117647,
+      0.796078431372549,
+      0.8196078431372549
+    ],
+    "roughness": 0.12,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 0.22
+  },
+  "mira_Glove": {
+    "color": [
+      0.3137254901960784,
+      0.2627450980392157,
+      0.20784313725490197
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Stitch": {
+    "color": [
+      0.7333333333333333,
+      0.6470588235294118,
+      0.48627450980392156
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Ore": {
+    "color": [
+      0.5490196078431373,
+      0.5725490196078431,
+      0.5803921568627451
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "mira_Glass": {
+    "color": [
+      0.6588235294117647,
+      0.796078431372549,
+      0.8196078431372549
+    ],
+    "roughness": 0.12,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 0.22
+  },
+  "oren_Glove": {
+    "color": [
+      0.3137254901960784,
+      0.2627450980392157,
+      0.20784313725490197
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Stitch": {
+    "color": [
+      0.7333333333333333,
+      0.6470588235294118,
+      0.48627450980392156
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Ore": {
+    "color": [
+      0.5490196078431373,
+      0.5725490196078431,
+      0.5803921568627451
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_Glass": {
+    "color": [
+      0.6588235294117647,
+      0.796078431372549,
+      0.8196078431372549
+    ],
+    "roughness": 0.12,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 0.22
+  },
+  "oren_RoleOuter": {
+    "color": [
+      0.4549019607843137,
+      0.2784313725490196,
+      0.41568627450980394
+    ],
+    "roughness": 0.71,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_RoleInner": {
+    "color": [
+      0.8666666666666667,
+      0.8156862745098039,
+      0.7098039215686275
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_RoleApron": {
+    "color": [
+      0.4549019607843137,
+      0.2784313725490196,
+      0.41568627450980394
+    ],
+    "roughness": 0.75,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_RoleGlove": {
+    "color": [
+      0.396078431372549,
+      0.32941176470588235,
+      0.23529411764705882
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_RoleRubber": {
+    "color": [
+      0.1568627450980392,
+      0.17254901960784313,
+      0.16470588235294117
+    ],
+    "roughness": 0.82,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_RoleBoot": {
+    "color": [
+      0.4470588235294118,
+      0.3137254901960784,
+      0.19607843137254902
+    ],
+    "roughness": 0.73,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "oren_RoleLace": {
+    "color": [
+      0.788235294117647,
+      0.6313725490196078,
+      0.3568627450980392
+    ],
+    "roughness": 0.83,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Glove": {
+    "color": [
+      0.3137254901960784,
+      0.2627450980392157,
+      0.20784313725490197
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Stitch": {
+    "color": [
+      0.7333333333333333,
+      0.6470588235294118,
+      0.48627450980392156
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Ore": {
+    "color": [
+      0.5490196078431373,
+      0.5725490196078431,
+      0.5803921568627451
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_Glass": {
+    "color": [
+      0.6588235294117647,
+      0.796078431372549,
+      0.8196078431372549
+    ],
+    "roughness": 0.12,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 0.22
+  },
+  "pavi_RoleOuter": {
+    "color": [
+      0.1411764705882353,
+      0.48627450980392156,
+      0.4823529411764706
+    ],
+    "roughness": 0.71,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_RoleInner": {
+    "color": [
+      0.8509803921568627,
+      0.792156862745098,
+      0.6941176470588235
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_RoleApron": {
+    "color": [
+      0.1411764705882353,
+      0.48627450980392156,
+      0.4823529411764706
+    ],
+    "roughness": 0.52,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_RoleGlove": {
+    "color": [
+      0.7529411764705882,
+      0.4235294117647059,
+      0.33725490196078434
+    ],
+    "roughness": 0.43,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_RoleRubber": {
+    "color": [
+      0.1568627450980392,
+      0.17254901960784313,
+      0.16470588235294117
+    ],
+    "roughness": 0.82,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_RoleBoot": {
+    "color": [
+      0.7647058823529411,
+      0.4588235294117647,
+      0.3803921568627451
+    ],
+    "roughness": 0.42,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "pavi_RoleLace": {
+    "color": [
+      0.788235294117647,
+      0.6313725490196078,
+      0.3568627450980392
+    ],
+    "roughness": 0.83,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Glove": {
+    "color": [
+      0.3137254901960784,
+      0.2627450980392157,
+      0.20784313725490197
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Stitch": {
+    "color": [
+      0.7333333333333333,
+      0.6470588235294118,
+      0.48627450980392156
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Ore": {
+    "color": [
+      0.5490196078431373,
+      0.5725490196078431,
+      0.5803921568627451
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_Glass": {
+    "color": [
+      0.6588235294117647,
+      0.796078431372549,
+      0.8196078431372549
+    ],
+    "roughness": 0.12,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 0.22
+  },
+  "sola_RoleOuter": {
+    "color": [
+      0.4235294117647059,
+      0.4745098039215686,
+      0.3333333333333333
+    ],
+    "roughness": 0.71,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_RoleInner": {
+    "color": [
+      0.8431372549019608,
+      0.5294117647058824,
+      0.42745098039215684
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_RoleApron": {
+    "color": [
+      0.4235294117647059,
+      0.4745098039215686,
+      0.3333333333333333
+    ],
+    "roughness": 0.75,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_RoleGlove": {
+    "color": [
+      0.396078431372549,
+      0.32941176470588235,
+      0.23529411764705882
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_RoleRubber": {
+    "color": [
+      0.1568627450980392,
+      0.17254901960784313,
+      0.16470588235294117
+    ],
+    "roughness": 0.82,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_RoleBoot": {
+    "color": [
+      0.3803921568627451,
+      0.3176470588235294,
+      0.22745098039215686
+    ],
+    "roughness": 0.73,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_RoleLace": {
+    "color": [
+      0.788235294117647,
+      0.6313725490196078,
+      0.3568627450980392
+    ],
+    "roughness": 0.83,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "sola_PresentationVelvet": {
+    "color": [
+      0.1568627450980392,
+      0.19607843137254902,
+      0.3607843137254902
+    ],
+    "roughness": 0.94,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Glove": {
+    "color": [
+      0.3137254901960784,
+      0.2627450980392157,
+      0.20784313725490197
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Stitch": {
+    "color": [
+      0.7333333333333333,
+      0.6470588235294118,
+      0.48627450980392156
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Ore": {
+    "color": [
+      0.5490196078431373,
+      0.5725490196078431,
+      0.5803921568627451
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_Glass": {
+    "color": [
+      0.6588235294117647,
+      0.796078431372549,
+      0.8196078431372549
+    ],
+    "roughness": 0.12,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 0.22
+  },
+  "beni_RoleOuter": {
+    "color": [
+      0.403921568627451,
+      0.5882352941176471,
+      0.7019607843137254
+    ],
+    "roughness": 0.71,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_RoleInner": {
+    "color": [
+      0.8392156862745098,
+      0.788235294117647,
+      0.6666666666666666
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_RoleApron": {
+    "color": [
+      0.403921568627451,
+      0.5882352941176471,
+      0.7019607843137254
+    ],
+    "roughness": 0.75,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_RoleGlove": {
+    "color": [
+      0.396078431372549,
+      0.32941176470588235,
+      0.23529411764705882
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_RoleRubber": {
+    "color": [
+      0.1568627450980392,
+      0.17254901960784313,
+      0.16470588235294117
+    ],
+    "roughness": 0.82,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_RoleBoot": {
+    "color": [
+      0.49019607843137253,
+      0.396078431372549,
+      0.23921568627450981
+    ],
+    "roughness": 0.73,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "beni_RoleLace": {
+    "color": [
+      0.788235294117647,
+      0.6313725490196078,
+      0.3568627450980392
+    ],
+    "roughness": 0.83,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Glove": {
+    "color": [
+      0.3137254901960784,
+      0.2627450980392157,
+      0.20784313725490197
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Stitch": {
+    "color": [
+      0.7333333333333333,
+      0.6470588235294118,
+      0.48627450980392156
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Ore": {
+    "color": [
+      0.5490196078431373,
+      0.5725490196078431,
+      0.5803921568627451
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_Glass": {
+    "color": [
+      0.6588235294117647,
+      0.796078431372549,
+      0.8196078431372549
+    ],
+    "roughness": 0.12,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 0.22
+  },
+  "zela_RoleOuter": {
+    "color": [
+      0.2196078431372549,
+      0.34509803921568627,
+      0.5019607843137255
+    ],
+    "roughness": 0.71,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_RoleInner": {
+    "color": [
+      0.396078431372549,
+      0.4588235294117647,
+      0.5803921568627451
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_RoleApron": {
+    "color": [
+      0.2196078431372549,
+      0.34509803921568627,
+      0.5019607843137255
+    ],
+    "roughness": 0.75,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_RoleGlove": {
+    "color": [
+      0.7725490196078432,
+      0.4392156862745098,
+      0.19607843137254902
+    ],
+    "roughness": 0.43,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_RoleRubber": {
+    "color": [
+      0.1568627450980392,
+      0.17254901960784313,
+      0.16470588235294117
+    ],
+    "roughness": 0.82,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_RoleBoot": {
+    "color": [
+      0.2627450980392157,
+      0.26666666666666666,
+      0.2627450980392157
+    ],
+    "roughness": 0.73,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "zela_RoleLace": {
+    "color": [
+      0.788235294117647,
+      0.6313725490196078,
+      0.3568627450980392
+    ],
+    "roughness": 0.83,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Glove": {
+    "color": [
+      0.3137254901960784,
+      0.2627450980392157,
+      0.20784313725490197
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Stitch": {
+    "color": [
+      0.7333333333333333,
+      0.6470588235294118,
+      0.48627450980392156
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Ore": {
+    "color": [
+      0.5490196078431373,
+      0.5725490196078431,
+      0.5803921568627451
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_Glass": {
+    "color": [
+      0.6588235294117647,
+      0.796078431372549,
+      0.8196078431372549
+    ],
+    "roughness": 0.12,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 0.22
+  },
+  "nilo_RoleOuter": {
+    "color": [
+      0.23921568627450981,
+      0.27450980392156865,
+      0.4
+    ],
+    "roughness": 0.71,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_RoleInner": {
+    "color": [
+      0.8117647058823529,
+      0.7490196078431373,
+      0.6274509803921569
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_RoleApron": {
+    "color": [
+      0.23921568627450981,
+      0.27450980392156865,
+      0.4
+    ],
+    "roughness": 0.75,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_RoleGlove": {
+    "color": [
+      0.2901960784313726,
+      0.2627450980392157,
+      0.2235294117647059
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_RoleRubber": {
+    "color": [
+      0.1568627450980392,
+      0.17254901960784313,
+      0.16470588235294117
+    ],
+    "roughness": 0.82,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_RoleBoot": {
+    "color": [
+      0.23921568627450981,
+      0.23137254901960785,
+      0.20784313725490197
+    ],
+    "roughness": 0.73,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "nilo_RoleLace": {
+    "color": [
+      0.788235294117647,
+      0.6313725490196078,
+      0.3568627450980392
+    ],
+    "roughness": 0.83,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Glove": {
+    "color": [
+      0.3137254901960784,
+      0.2627450980392157,
+      0.20784313725490197
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Stitch": {
+    "color": [
+      0.7333333333333333,
+      0.6470588235294118,
+      0.48627450980392156
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Ore": {
+    "color": [
+      0.5490196078431373,
+      0.5725490196078431,
+      0.5803921568627451
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_Glass": {
+    "color": [
+      0.6588235294117647,
+      0.796078431372549,
+      0.8196078431372549
+    ],
+    "roughness": 0.12,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 0.22
+  },
+  "etta_RoleOuter": {
+    "color": [
+      0.8627450980392157,
+      0.5450980392156862,
+      0.3176470588235294
+    ],
+    "roughness": 0.71,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_RoleInner": {
+    "color": [
+      0.7176470588235294,
+      0.48627450980392156,
+      0.34901960784313724
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_RoleApron": {
+    "color": [
+      0.8627450980392157,
+      0.5450980392156862,
+      0.3176470588235294
+    ],
+    "roughness": 0.75,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_RoleGlove": {
+    "color": [
+      0.2901960784313726,
+      0.2627450980392157,
+      0.2235294117647059
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_RoleRubber": {
+    "color": [
+      0.1568627450980392,
+      0.17254901960784313,
+      0.16470588235294117
+    ],
+    "roughness": 0.82,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_RoleBoot": {
+    "color": [
+      0.3254901960784314,
+      0.2823529411764706,
+      0.24313725490196078
+    ],
+    "roughness": 0.73,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "etta_RoleLace": {
+    "color": [
+      0.5294117647058824,
+      0.32941176470588235,
+      0.6784313725490196
+    ],
+    "roughness": 0.83,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Glove": {
+    "color": [
+      0.3137254901960784,
+      0.2627450980392157,
+      0.20784313725490197
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Stitch": {
+    "color": [
+      0.7333333333333333,
+      0.6470588235294118,
+      0.48627450980392156
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Ore": {
+    "color": [
+      0.5490196078431373,
+      0.5725490196078431,
+      0.5803921568627451
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_Glass": {
+    "color": [
+      0.6588235294117647,
+      0.796078431372549,
+      0.8196078431372549
+    ],
+    "roughness": 0.12,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 0.22
+  },
+  "rumi_RoleOuter": {
+    "color": [
+      0.611764705882353,
+      0.5137254901960784,
+      0.6784313725490196
+    ],
+    "roughness": 0.71,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_RoleInner": {
+    "color": [
+      0.6862745098039216,
+      0.7568627450980392,
+      0.8
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_RoleApron": {
+    "color": [
+      0.611764705882353,
+      0.5137254901960784,
+      0.6784313725490196
+    ],
+    "roughness": 0.75,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_RoleGlove": {
+    "color": [
+      0.2901960784313726,
+      0.2627450980392157,
+      0.2235294117647059
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_RoleRubber": {
+    "color": [
+      0.1568627450980392,
+      0.17254901960784313,
+      0.16470588235294117
+    ],
+    "roughness": 0.82,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_RoleBoot": {
+    "color": [
+      0.2901960784313726,
+      0.27058823529411763,
+      0.2549019607843137
+    ],
+    "roughness": 0.73,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "rumi_RoleLace": {
+    "color": [
+      0.788235294117647,
+      0.6313725490196078,
+      0.3568627450980392
+    ],
+    "roughness": 0.83,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Glove": {
+    "color": [
+      0.3137254901960784,
+      0.2627450980392157,
+      0.20784313725490197
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Stitch": {
+    "color": [
+      0.7333333333333333,
+      0.6470588235294118,
+      0.48627450980392156
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Ore": {
+    "color": [
+      0.5490196078431373,
+      0.5725490196078431,
+      0.5803921568627451
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_Glass": {
+    "color": [
+      0.6588235294117647,
+      0.796078431372549,
+      0.8196078431372549
+    ],
+    "roughness": 0.12,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 0.22
+  },
+  "kavi_RoleOuter": {
+    "color": [
+      0.4745098039215686,
+      0.23921568627450981,
+      0.19215686274509805
+    ],
+    "roughness": 0.71,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_RoleInner": {
+    "color": [
+      0.8117647058823529,
+      0.6784313725490196,
+      0.4745098039215686
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_RoleApron": {
+    "color": [
+      0.4745098039215686,
+      0.23921568627450981,
+      0.19215686274509805
+    ],
+    "roughness": 0.75,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_RoleGlove": {
+    "color": [
+      0.396078431372549,
+      0.32941176470588235,
+      0.23529411764705882
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_RoleRubber": {
+    "color": [
+      0.1568627450980392,
+      0.17254901960784313,
+      0.16470588235294117
+    ],
+    "roughness": 0.82,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_RoleBoot": {
+    "color": [
+      0.4392156862745098,
+      0.30980392156862746,
+      0.19607843137254902
+    ],
+    "roughness": 0.73,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "kavi_RoleLace": {
+    "color": [
+      0.788235294117647,
+      0.6313725490196078,
+      0.3568627450980392
+    ],
+    "roughness": 0.83,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Glove": {
+    "color": [
+      0.3137254901960784,
+      0.2627450980392157,
+      0.20784313725490197
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Stitch": {
+    "color": [
+      0.7333333333333333,
+      0.6470588235294118,
+      0.48627450980392156
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Ore": {
+    "color": [
+      0.5490196078431373,
+      0.5725490196078431,
+      0.5803921568627451
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_Glass": {
+    "color": [
+      0.6588235294117647,
+      0.796078431372549,
+      0.8196078431372549
+    ],
+    "roughness": 0.12,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 0.22
+  },
+  "daro_RoleOuter": {
+    "color": [
+      0.4392156862745098,
+      0.4666666666666667,
+      0.29411764705882354
+    ],
+    "roughness": 0.71,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_RoleInner": {
+    "color": [
+      0.29411764705882354,
+      0.2980392156862745,
+      0.25098039215686274
+    ],
+    "roughness": 0.79,
+    "metallic": 0,
+    "texture": "Canvas_BaseColor.png",
+    "normal": "Canvas_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_RoleApron": {
+    "color": [
+      0.4392156862745098,
+      0.4666666666666667,
+      0.29411764705882354
+    ],
+    "roughness": 0.75,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_RoleGlove": {
+    "color": [
+      0.396078431372549,
+      0.32941176470588235,
+      0.23529411764705882
+    ],
+    "roughness": 0.8,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_RoleRubber": {
+    "color": [
+      0.1568627450980392,
+      0.17254901960784313,
+      0.16470588235294117
+    ],
+    "roughness": 0.82,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_RoleBoot": {
+    "color": [
+      0.4,
+      0.3215686274509804,
+      0.23137254901960785
+    ],
+    "roughness": 0.73,
+    "metallic": 0,
+    "texture": "Leather_BaseColor.png",
+    "normal": "Leather_Normal.png",
+    "emission": 0,
+    "alpha": 1
+  },
+  "daro_RoleLace": {
+    "color": [
+      0.788235294117647,
+      0.6313725490196078,
+      0.3568627450980392
+    ],
+    "roughness": 0.83,
+    "metallic": 0,
+    "texture": "",
+    "normal": "",
+    "emission": 0,
+    "alpha": 1
+  }
+}

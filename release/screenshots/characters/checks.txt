@@ -1,0 +1,517 @@
+PASS: Actual Main scene Play mode
+PASS: Yard camera excludes legacy Works scenery
+PASS: Private review save
+PASS: tavi selection through existing game rule
+PASS: tavi instantiated as Main player
+PASS: tavi prefab exists
+PASS: tavi valid Generic avatar
+PASS: tavi four equipment/body meshes
+PASS: tavi Body rig/UV/bind poses
+PASS: tavi Body persistent materials
+PASS: tavi CarryLoad rig/UV/bind poses
+PASS: tavi CarryLoad persistent materials
+PASS: tavi MiningTool rig/UV/bind poses
+PASS: tavi MiningTool persistent materials
+PASS: tavi RoleProp rig/UV/bind poses
+PASS: tavi RoleProp persistent materials
+PASS: tavi walk actually moves leg bone
+PASS: tavi mine actually moves arm bone
+PASS: tavi animator state Idle
+PASS: tavi animation curves Idle
+PASS: tavi animator state Walk
+PASS: tavi animation curves Walk
+PASS: tavi animator state Run
+PASS: tavi animation curves Run
+PASS: tavi animator state Mine
+PASS: tavi animation curves Mine
+PASS: tavi animator state Carry
+PASS: tavi animation curves Carry
+PASS: tavi animator state Collect
+PASS: tavi animation curves Collect
+PASS: tavi animator state Wave
+PASS: tavi animation curves Wave
+PASS: tavi animator state Celebrate
+PASS: tavi animation curves Celebrate
+PASS: tavi animator state Machine
+PASS: tavi animation curves Machine
+PASS: tavi animator state Craft
+PASS: tavi animation curves Craft
+PASS: tavi articulated fingers imported
+PASS: tavi reduced motion freezes rig
+PASS: tavi carried ore visible
+PASS: tavi imported upright metre scale
+PASS: mira selection through existing game rule
+PASS: mira instantiated as Main player
+PASS: mira prefab exists
+PASS: mira valid Generic avatar
+PASS: mira four equipment/body meshes
+PASS: mira Body rig/UV/bind poses
+PASS: mira Body persistent materials
+PASS: mira CarryLoad rig/UV/bind poses
+PASS: mira CarryLoad persistent materials
+PASS: mira MiningTool rig/UV/bind poses
+PASS: mira MiningTool persistent materials
+PASS: mira RoleProp rig/UV/bind poses
+PASS: mira RoleProp persistent materials
+PASS: mira walk actually moves leg bone
+PASS: mira mine actually moves arm bone
+PASS: mira animator state Idle
+PASS: mira animation curves Idle
+PASS: mira animator state Walk
+PASS: mira animation curves Walk
+PASS: mira animator state Run
+PASS: mira animation curves Run
+PASS: mira animator state Mine
+PASS: mira animation curves Mine
+PASS: mira animator state Carry
+PASS: mira animation curves Carry
+PASS: mira animator state Collect
+PASS: mira animation curves Collect
+PASS: mira animator state Wave
+PASS: mira animation curves Wave
+PASS: mira animator state Celebrate
+PASS: mira animation curves Celebrate
+PASS: mira animator state Machine
+PASS: mira animation curves Machine
+PASS: mira animator state Craft
+PASS: mira animation curves Craft
+PASS: mira articulated fingers imported
+PASS: mira reduced motion freezes rig
+PASS: mira carried ore visible
+PASS: mira imported upright metre scale
+PASS: oren selection through existing game rule
+PASS: oren instantiated as Main player
+PASS: oren prefab exists
+PASS: oren valid Generic avatar
+PASS: oren four equipment/body meshes
+PASS: oren Body rig/UV/bind poses
+PASS: oren Body persistent materials
+PASS: oren CarryLoad rig/UV/bind poses
+PASS: oren CarryLoad persistent materials
+PASS: oren MiningTool rig/UV/bind poses
+PASS: oren MiningTool persistent materials
+PASS: oren RoleProp rig/UV/bind poses
+PASS: oren RoleProp persistent materials
+PASS: oren walk actually moves leg bone
+PASS: oren mine actually moves arm bone
+PASS: oren animator state Idle
+PASS: oren animation curves Idle
+PASS: oren animator state Walk
+PASS: oren animation curves Walk
+PASS: oren animator state Run
+PASS: oren animation curves Run
+PASS: oren animator state Mine
+PASS: oren animation curves Mine
+PASS: oren animator state Carry
+PASS: oren animation curves Carry
+PASS: oren animator state Collect
+PASS: oren animation curves Collect
+PASS: oren animator state Wave
+PASS: oren animation curves Wave
+PASS: oren animator state Celebrate
+PASS: oren animation curves Celebrate
+PASS: oren animator state Machine
+PASS: oren animation curves Machine
+PASS: oren animator state Craft
+PASS: oren animation curves Craft
+PASS: oren articulated fingers imported
+PASS: oren reduced motion freezes rig
+PASS: oren carried ore visible
+PASS: oren imported upright metre scale
+PASS: sola selection through existing game rule
+PASS: sola instantiated as Main player
+PASS: sola prefab exists
+PASS: sola valid Generic avatar
+PASS: sola four equipment/body meshes
+PASS: sola Body rig/UV/bind poses
+PASS: sola Body persistent materials
+PASS: sola CarryLoad rig/UV/bind poses
+PASS: sola CarryLoad persistent materials
+PASS: sola MiningTool rig/UV/bind poses
+PASS: sola MiningTool persistent materials
+PASS: sola RoleProp rig/UV/bind poses
+PASS: sola RoleProp persistent materials
+PASS: sola walk actually moves leg bone
+PASS: sola mine actually moves arm bone
+PASS: sola animator state Idle
+PASS: sola animation curves Idle
+PASS: sola animator state Walk
+PASS: sola animation curves Walk
+PASS: sola animator state Run
+PASS: sola animation curves Run
+PASS: sola animator state Mine
+PASS: sola animation curves Mine
+PASS: sola animator state Carry
+PASS: sola animation curves Carry
+PASS: sola animator state Collect
+PASS: sola animation curves Collect
+PASS: sola animator state Wave
+PASS: sola animation curves Wave
+PASS: sola animator state Celebrate
+PASS: sola animation curves Celebrate
+PASS: sola animator state Machine
+PASS: sola animation curves Machine
+PASS: sola animator state Craft
+PASS: sola animation curves Craft
+PASS: sola articulated fingers imported
+PASS: sola reduced motion freezes rig
+PASS: sola carried ore visible
+PASS: sola imported upright metre scale
+PASS: zela selection through existing game rule
+PASS: zela instantiated as Main player
+PASS: zela prefab exists
+PASS: zela valid Generic avatar
+PASS: zela four equipment/body meshes
+PASS: zela Body rig/UV/bind poses
+PASS: zela Body persistent materials
+PASS: zela CarryLoad rig/UV/bind poses
+PASS: zela CarryLoad persistent materials
+PASS: zela MiningTool rig/UV/bind poses
+PASS: zela MiningTool persistent materials
+PASS: zela RoleProp rig/UV/bind poses
+PASS: zela RoleProp persistent materials
+PASS: zela walk actually moves leg bone
+PASS: zela mine actually moves arm bone
+PASS: zela animator state Idle
+PASS: zela animation curves Idle
+PASS: zela animator state Walk
+PASS: zela animation curves Walk
+PASS: zela animator state Run
+PASS: zela animation curves Run
+PASS: zela animator state Mine
+PASS: zela animation curves Mine
+PASS: zela animator state Carry
+PASS: zela animation curves Carry
+PASS: zela animator state Collect
+PASS: zela animation curves Collect
+PASS: zela animator state Wave
+PASS: zela animation curves Wave
+PASS: zela animator state Celebrate
+PASS: zela animation curves Celebrate
+PASS: zela animator state Machine
+PASS: zela animation curves Machine
+PASS: zela animator state Craft
+PASS: zela animation curves Craft
+PASS: zela articulated fingers imported
+PASS: zela reduced motion freezes rig
+PASS: zela carried ore visible
+PASS: zela imported upright metre scale
+PASS: pavi selection through existing game rule
+PASS: pavi instantiated as Main player
+PASS: pavi prefab exists
+PASS: pavi valid Generic avatar
+PASS: pavi four equipment/body meshes
+PASS: pavi Body rig/UV/bind poses
+PASS: pavi Body persistent materials
+PASS: pavi CarryLoad rig/UV/bind poses
+PASS: pavi CarryLoad persistent materials
+PASS: pavi MiningTool rig/UV/bind poses
+PASS: pavi MiningTool persistent materials
+PASS: pavi RoleProp rig/UV/bind poses
+PASS: pavi RoleProp persistent materials
+PASS: pavi walk actually moves leg bone
+PASS: pavi mine actually moves arm bone
+PASS: pavi animator state Idle
+PASS: pavi animation curves Idle
+PASS: pavi animator state Walk
+PASS: pavi animation curves Walk
+PASS: pavi animator state Run
+PASS: pavi animation curves Run
+PASS: pavi animator state Mine
+PASS: pavi animation curves Mine
+PASS: pavi animator state Carry
+PASS: pavi animation curves Carry
+PASS: pavi animator state Collect
+PASS: pavi animation curves Collect
+PASS: pavi animator state Wave
+PASS: pavi animation curves Wave
+PASS: pavi animator state Celebrate
+PASS: pavi animation curves Celebrate
+PASS: pavi animator state Machine
+PASS: pavi animation curves Machine
+PASS: pavi animator state Craft
+PASS: pavi animation curves Craft
+PASS: pavi articulated fingers imported
+PASS: pavi reduced motion freezes rig
+PASS: pavi carried ore visible
+PASS: pavi imported upright metre scale
+PASS: nilo selection through existing game rule
+PASS: nilo instantiated as Main player
+PASS: nilo prefab exists
+PASS: nilo valid Generic avatar
+PASS: nilo four equipment/body meshes
+PASS: nilo Body rig/UV/bind poses
+PASS: nilo Body persistent materials
+PASS: nilo CarryLoad rig/UV/bind poses
+PASS: nilo CarryLoad persistent materials
+PASS: nilo MiningTool rig/UV/bind poses
+PASS: nilo MiningTool persistent materials
+PASS: nilo RoleProp rig/UV/bind poses
+PASS: nilo RoleProp persistent materials
+PASS: nilo walk actually moves leg bone
+PASS: nilo mine actually moves arm bone
+PASS: nilo animator state Idle
+PASS: nilo animation curves Idle
+PASS: nilo animator state Walk
+PASS: nilo animation curves Walk
+PASS: nilo animator state Run
+PASS: nilo animation curves Run
+PASS: nilo animator state Mine
+PASS: nilo animation curves Mine
+PASS: nilo animator state Carry
+PASS: nilo animation curves Carry
+PASS: nilo animator state Collect
+PASS: nilo animation curves Collect
+PASS: nilo animator state Wave
+PASS: nilo animation curves Wave
+PASS: nilo animator state Celebrate
+PASS: nilo animation curves Celebrate
+PASS: nilo animator state Machine
+PASS: nilo animation curves Machine
+PASS: nilo animator state Craft
+PASS: nilo animation curves Craft
+PASS: nilo articulated fingers imported
+PASS: nilo reduced motion freezes rig
+PASS: nilo carried ore visible
+PASS: nilo imported upright metre scale
+PASS: etta selection through existing game rule
+PASS: etta instantiated as Main player
+PASS: etta prefab exists
+PASS: etta valid Generic avatar
+PASS: etta four equipment/body meshes
+PASS: etta Body rig/UV/bind poses
+PASS: etta Body persistent materials
+PASS: etta CarryLoad rig/UV/bind poses
+PASS: etta CarryLoad persistent materials
+PASS: etta MiningTool rig/UV/bind poses
+PASS: etta MiningTool persistent materials
+PASS: etta RoleProp rig/UV/bind poses
+PASS: etta RoleProp persistent materials
+PASS: etta walk actually moves leg bone
+PASS: etta mine actually moves arm bone
+PASS: etta animator state Idle
+PASS: etta animation curves Idle
+PASS: etta animator state Walk
+PASS: etta animation curves Walk
+PASS: etta animator state Run
+PASS: etta animation curves Run
+PASS: etta animator state Mine
+PASS: etta animation curves Mine
+PASS: etta animator state Carry
+PASS: etta animation curves Carry
+PASS: etta animator state Collect
+PASS: etta animation curves Collect
+PASS: etta animator state Wave
+PASS: etta animation curves Wave
+PASS: etta animator state Celebrate
+PASS: etta animation curves Celebrate
+PASS: etta animator state Machine
+PASS: etta animation curves Machine
+PASS: etta animator state Craft
+PASS: etta animation curves Craft
+PASS: etta articulated fingers imported
+PASS: etta reduced motion freezes rig
+PASS: etta carried ore visible
+PASS: etta imported upright metre scale
+PASS: rumi selection through existing game rule
+PASS: rumi instantiated as Main player
+PASS: rumi prefab exists
+PASS: rumi valid Generic avatar
+PASS: rumi four equipment/body meshes
+PASS: rumi Body rig/UV/bind poses
+PASS: rumi Body persistent materials
+PASS: rumi CarryLoad rig/UV/bind poses
+PASS: rumi CarryLoad persistent materials
+PASS: rumi MiningTool rig/UV/bind poses
+PASS: rumi MiningTool persistent materials
+PASS: rumi RoleProp rig/UV/bind poses
+PASS: rumi RoleProp persistent materials
+PASS: rumi walk actually moves leg bone
+PASS: rumi mine actually moves arm bone
+PASS: rumi animator state Idle
+PASS: rumi animation curves Idle
+PASS: rumi animator state Walk
+PASS: rumi animation curves Walk
+PASS: rumi animator state Run
+PASS: rumi animation curves Run
+PASS: rumi animator state Mine
+PASS: rumi animation curves Mine
+PASS: rumi animator state Carry
+PASS: rumi animation curves Carry
+PASS: rumi animator state Collect
+PASS: rumi animation curves Collect
+PASS: rumi animator state Wave
+PASS: rumi animation curves Wave
+PASS: rumi animator state Celebrate
+PASS: rumi animation curves Celebrate
+PASS: rumi animator state Machine
+PASS: rumi animation curves Machine
+PASS: rumi animator state Craft
+PASS: rumi animation curves Craft
+PASS: rumi articulated fingers imported
+PASS: rumi reduced motion freezes rig
+PASS: rumi carried ore visible
+PASS: rumi imported upright metre scale
+PASS: kavi selection through existing game rule
+PASS: kavi instantiated as Main player
+PASS: kavi prefab exists
+PASS: kavi valid Generic avatar
+PASS: kavi four equipment/body meshes
+PASS: kavi Body rig/UV/bind poses
+PASS: kavi Body persistent materials
+PASS: kavi CarryLoad rig/UV/bind poses
+PASS: kavi CarryLoad persistent materials
+PASS: kavi MiningTool rig/UV/bind poses
+PASS: kavi MiningTool persistent materials
+PASS: kavi RoleProp rig/UV/bind poses
+PASS: kavi RoleProp persistent materials
+PASS: kavi walk actually moves leg bone
+PASS: kavi mine actually moves arm bone
+PASS: kavi animator state Idle
+PASS: kavi animation curves Idle
+PASS: kavi animator state Walk
+PASS: kavi animation curves Walk
+PASS: kavi animator state Run
+PASS: kavi animation curves Run
+PASS: kavi animator state Mine
+PASS: kavi animation curves Mine
+PASS: kavi animator state Carry
+PASS: kavi animation curves Carry
+PASS: kavi animator state Collect
+PASS: kavi animation curves Collect
+PASS: kavi animator state Wave
+PASS: kavi animation curves Wave
+PASS: kavi animator state Celebrate
+PASS: kavi animation curves Celebrate
+PASS: kavi animator state Machine
+PASS: kavi animation curves Machine
+PASS: kavi animator state Craft
+PASS: kavi animation curves Craft
+PASS: kavi articulated fingers imported
+PASS: kavi reduced motion freezes rig
+PASS: kavi carried ore visible
+PASS: kavi imported upright metre scale
+PASS: beni selection through existing game rule
+PASS: beni instantiated as Main player
+PASS: beni prefab exists
+PASS: beni valid Generic avatar
+PASS: beni four equipment/body meshes
+PASS: beni Body rig/UV/bind poses
+PASS: beni Body persistent materials
+PASS: beni CarryLoad rig/UV/bind poses
+PASS: beni CarryLoad persistent materials
+PASS: beni MiningTool rig/UV/bind poses
+PASS: beni MiningTool persistent materials
+PASS: beni RoleProp rig/UV/bind poses
+PASS: beni RoleProp persistent materials
+PASS: beni walk actually moves leg bone
+PASS: beni mine actually moves arm bone
+PASS: beni animator state Idle
+PASS: beni animation curves Idle
+PASS: beni animator state Walk
+PASS: beni animation curves Walk
+PASS: beni animator state Run
+PASS: beni animation curves Run
+PASS: beni animator state Mine
+PASS: beni animation curves Mine
+PASS: beni animator state Carry
+PASS: beni animation curves Carry
+PASS: beni animator state Collect
+PASS: beni animation curves Collect
+PASS: beni animator state Wave
+PASS: beni animation curves Wave
+PASS: beni animator state Celebrate
+PASS: beni animation curves Celebrate
+PASS: beni animator state Machine
+PASS: beni animation curves Machine
+PASS: beni animator state Craft
+PASS: beni animation curves Craft
+PASS: beni articulated fingers imported
+PASS: beni reduced motion freezes rig
+PASS: beni carried ore visible
+PASS: beni imported upright metre scale
+PASS: daro selection through existing game rule
+PASS: daro instantiated as Main player
+PASS: daro prefab exists
+PASS: daro valid Generic avatar
+PASS: daro four equipment/body meshes
+PASS: daro Body rig/UV/bind poses
+PASS: daro Body persistent materials
+PASS: daro CarryLoad rig/UV/bind poses
+PASS: daro CarryLoad persistent materials
+PASS: daro MiningTool rig/UV/bind poses
+PASS: daro MiningTool persistent materials
+PASS: daro RoleProp rig/UV/bind poses
+PASS: daro RoleProp persistent materials
+PASS: daro walk actually moves leg bone
+PASS: daro mine actually moves arm bone
+PASS: daro animator state Idle
+PASS: daro animation curves Idle
+PASS: daro animator state Walk
+PASS: daro animation curves Walk
+PASS: daro animator state Run
+PASS: daro animation curves Run
+PASS: daro animator state Mine
+PASS: daro animation curves Mine
+PASS: daro animator state Carry
+PASS: daro animation curves Carry
+PASS: daro animator state Collect
+PASS: daro animation curves Collect
+PASS: daro animator state Wave
+PASS: daro animation curves Wave
+PASS: daro animator state Celebrate
+PASS: daro animation curves Celebrate
+PASS: daro animator state Machine
+PASS: daro animation curves Machine
+PASS: daro animator state Craft
+PASS: daro animation curves Craft
+PASS: daro articulated fingers imported
+PASS: daro reduced motion freezes rig
+PASS: daro carried ore visible
+PASS: daro imported upright metre scale
+PASS: World NPCs use authored rigs
+PASS: Select Tavi through existing game rule
+PASS: Tap-to-move reaches target
+PASS: Walk pose ends at destination
+PASS: Destination is inside bunker interaction range
+PASS: Main player uses skinned Tavi
+PASS: No primitive MeshFilters in imported player
+PASS: Interact opens the approached starter bunker
+PASS: Mine grants carried ore
+PASS: Mining tool appears in actual mine gameplay
+PASS: Cart takes real carried load
+PASS: Authored cart still travels (distance=1.219, active=True)
+PASS: Cart delivers exact quantity
+PASS: crush UI starts a real batch and consumes exact inputs
+PASS: crush repeated Load does not consume twice
+PASS: crush UI collects exact output
+PASS: crush repeated Collect does not duplicate output
+PASS: wash UI starts a real batch and consumes exact inputs
+PASS: wash repeated Load does not consume twice
+PASS: wash UI collects exact output
+PASS: wash repeated Collect does not duplicate output
+PASS: recover UI starts a real batch and consumes exact inputs
+PASS: recover repeated Load does not consume twice
+PASS: recover UI collects exact output
+PASS: recover repeated Collect does not duplicate output
+PASS: cut UI starts a real batch and consumes exact inputs
+PASS: cut repeated Load does not consume twice
+PASS: cut UI collects exact output
+PASS: cut repeated Collect does not duplicate output
+PASS: polish UI starts a real batch and consumes exact inputs
+PASS: polish repeated Load does not consume twice
+PASS: polish UI collects exact output
+PASS: polish repeated Collect does not duplicate output
+PASS: Refinery UI consumes two real silver ore
+PASS: Refinery UI grants one silver bar
+PASS: Repeated refinery collection does not duplicate silver
+PASS: Craft UI consumes the diamond and silver once
+PASS: Repeated Craft with empty materials does not enqueue twice
+PASS: Craft completion grants one ring once
+PASS: Sell UI removes one ring and credits the catalogue price
+PASS: Repeated Sell with no stock does not credit twice
+PASS: Task UI claims its authoritative reward once
+PASS: Claimed task button is disabled
+PASS: Replayed task callback cannot duplicate reward
+PASS: Actual QA save reload retains sale and claimed task
+PASS: Reload cannot recreate the sold ring or refinery output

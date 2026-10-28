@@ -1,0 +1,3 @@
+Actual Main Play-mode Game-view ScreenCapture. Unity 6000.3.26f1; 720x1280; frame 1155.
+Live authoritative game values in a fresh isolated starter save. Source anchors adapted to the native viewport, safe area and live navigation dock.
+No raster reference background, UI text baked into backdrop or image-generation substitution.

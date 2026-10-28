@@ -1,0 +1,213 @@
+{
+  "id": "zela",
+  "name": "Zela",
+  "source_crop_rect_xyxy": [
+    516,
+    57,
+    679,
+    324
+  ],
+  "source_crop_dimensions": [
+    163,
+    267
+  ],
+  "source_crop_sha256": "bf1e5993dcf1594652718cf00330b01c530104c3abd74d606874ecec5288f504",
+  "decoded_pixel_copy_verified": true,
+  "auxiliary_source": "D:\\games\\chartcter image\\d.png",
+  "auxiliary_sha256": "00a73a5186251596e32c91c2171847a877e52a171300c350d522a3009a672afe",
+  "source_palette_method": "8-colour median-cut quantisation of non-background source pixels; observational colours, not exact PBR parameters",
+  "source_palette": [
+    {
+      "rgb": [
+        99,
+        105,
+        141
+      ],
+      "pixels": 4370
+    },
+    {
+      "rgb": [
+        174,
+        113,
+        80
+      ],
+      "pixels": 3827
+    },
+    {
+      "rgb": [
+        48,
+        52,
+        80
+      ],
+      "pixels": 3533
+    },
+    {
+      "rgb": [
+        28,
+        21,
+        32
+      ],
+      "pixels": 3424
+    },
+    {
+      "rgb": [
+        239,
+        224,
+        209
+      ],
+      "pixels": 3289
+    },
+    {
+      "rgb": [
+        90,
+        53,
+        40
+      ],
+      "pixels": 3057
+    },
+    {
+      "rgb": [
+        101,
+        80,
+        85
+      ],
+      "pixels": 2738
+    },
+    {
+      "rgb": [
+        187,
+        151,
+        140
+      ],
+      "pixels": 2430
+    }
+  ],
+  "labelled_source_samples": [
+    {
+      "label": "Cobalt helmet",
+      "crop_pixel_rect_xyxy": [
+        70,
+        14,
+        75,
+        19
+      ],
+      "rgb": [
+        97,
+        137,
+        222
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Skin",
+      "crop_pixel_rect_xyxy": [
+        96,
+        50,
+        101,
+        55
+      ],
+      "rgb": [
+        251,
+        178,
+        147
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Red hair",
+      "crop_pixel_rect_xyxy": [
+        55,
+        53,
+        60,
+        58
+      ],
+      "rgb": [
+        198,
+        91,
+        42
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Blue workwear",
+      "crop_pixel_rect_xyxy": [
+        91,
+        104,
+        96,
+        109
+      ],
+      "rgb": [
+        95,
+        105,
+        161
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Orange glove",
+      "crop_pixel_rect_xyxy": [
+        52,
+        133,
+        57,
+        138
+      ],
+      "rgb": [
+        234,
+        130,
+        75
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Grey knee pad",
+      "crop_pixel_rect_xyxy": [
+        57,
+        205,
+        62,
+        210
+      ],
+      "rgb": [
+        156,
+        142,
+        126
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Dark boot",
+      "crop_pixel_rect_xyxy": [
+        50,
+        246,
+        55,
+        251
+      ],
+      "rgb": [
+        140,
+        116,
+        102
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    },
+    {
+      "label": "Backpack metal",
+      "crop_pixel_rect_xyxy": [
+        25,
+        94,
+        30,
+        99
+      ],
+      "rgb": [
+        161,
+        113,
+        53
+      ],
+      "method": "Median RGB of inspected source pixel patch; source lighting and JPEG compression retained."
+    }
+  ],
+  "decisions": [
+    "Use the original red waves, cobalt protection, orange gauntlets and grey knee pads. The auxiliary sheet is consistent in broad colour regions.",
+    "The drill and backpack hose follow the original visible arrangement. Added vents, hose sockets and underside detail are reconstructed.",
+    "Avoid enlarging the backpack until it changes the original visible silhouette."
+  ],
+  "side_back_status": "Reconstructed details. The auxiliary views are proposed generated guidance, not verified technical drawings."
+}

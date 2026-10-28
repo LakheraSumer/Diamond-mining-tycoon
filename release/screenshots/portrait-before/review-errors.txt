@@ -1,0 +1,10 @@
+ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)
+UnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <a01e8b3f38b14e3cad24271866a92a8e>:0)
+System.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)
+System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)
+UnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <a01e8b3f38b14e3cad24271866a92a8e>:0)
+UnityEditor.Search.SearchInit.IndexationOnStartup () (at <a01e8b3f38b14e3cad24271866a92a8e>:0)
+UnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <9ec5ce099dc244cd8e7efe9ec5575af9>:0)
+

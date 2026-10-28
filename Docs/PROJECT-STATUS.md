@@ -1,3 +1,7 @@
+# Current project status
+
+25 October 2026: see [the reference update](REFERENCE-UPDATE.md) for current implementation, validation scope, current test APK and remaining fidelity work. The earlier records below are historical and do not certify the latest combined revision. Existing APKs are present; their source/build/inspection limits are described in that update.
+
 # Diamond Mine Tycoon project status
 
 Yard update, 24 October 2026. The 20 October notes below still describe the works mine. They are not a claim that mobile release work finished.
@@ -14,9 +18,25 @@ Implemented in the shared simulation and compiled against the Unity 6000.3.26f1 
 
 Automated result after this change: 84 passed, 0 failed, 0 skipped. Unity API compilation passed for simulation, Android, Android development, iOS, and editor. The runtime compile reported no errors. One inherited-name warning was removed after the run that first showed it.
 
-Not run on 24 October: Unity Play mode, portrait screenshots, Android APK, Android AAB, iOS Xcode export, device QA, FPS, thermal, and supervised family play. No store submission.
+The later timber-bunker pass below supersedes the Play-mode and screenshot limitation for that specific area. No new Android APK/AAB or iOS export was built for the 24 October yard/art changes. Device QA, FPS, thermal and supervised family play remain unverified. No store submission.
 
 The working title collides with an older Android idle game that store listings also call Diamond Mine Tycoon, package `com.theholycowstudio.diamondmerchant`, and with a Roblox experience named Diamond Mining Tycoon. Full names such as Tavi Flintstep were not found as existing characters in this search. A web search is not a trademark clearance.
+
+## Timber bunker art pass
+
+Authored one detailed timber entrance, recessed tunnel, rocky terrain patch, vegetation, shaped curved rails and metal ore cart in portable Blender 4.5.9 LTS. Exported four FBX models with applied bevels, UVs and vertex contact occlusion, eight texture maps and 24 persistent Unity materials. Main instantiates the two Resources/Yard prefabs; the old primitive bunker/cart generator is skipped for plot 0.
+
+Actual Main Play-mode captures, a close-up Unity render and the supplied-reference comparison are in `release/screenshots/timber-bunker`. All 20 rendered integration checks passed with zero captured errors, covering imported mesh provenance, UVs, wheel pivots, reflection lighting, walking, bunker interaction, mining and exact cart delivery using an isolated save. The simulation suite now passes 85/85, zero failed/skipped, and all installed-Unity API compiler checks passed. Details, source files and manual steps: [Timber bunker review](Timber-Bunker.md).
+
+This is one finished modelled area, not a claim that the full world, character lineup or eight gameplay screens match the concept board. The earlier APK does not include the new art; it must be rebuilt before testing this pass as an Android app.
+
+## Crew reconstruction pass
+
+Twelve Blender 4.5.9 LTS sources and twelve rigged FBX exports now replace the yard's old capsule figures, including the two NPCs. Each has UVs, fabric/leather and face maps, separate equipment meshes, a 17-bone rig, and nine clips serving ten game poses. The Unity assets include 286 persistent materials, eighteen PNG textures, twelve controllers and twelve Resources/Characters prefabs. Runtime character generation no longer substitutes primitives. A stale movement hint that kept the walk animation playing after arrival was fixed.
+
+The final actual Main Play review passed 242 checks with zero captured errors. It exercised every character through the existing selection rule, checked real leg/arm deformation, reduced motion and prop visibility, and confirmed movement, mining and exact cart delivery. The simulation suite passed 85/85; all six installed-Unity API compiler configurations passed. Screenshots and labelled comparisons are under `release/screenshots/characters`; editable sources under `ArtSource/Characters`. [Laptop preview steps and detailed limits](characters/README.md).
+
+The requested 100% visual match is **not achieved**. Faces, hair, proportions, garment detail and prop poses remain different from the single supplied image. Unseen sides are reconstructed. No facial or individual-finger animation, mobile LOD, material atlas or physical-device performance result is provided. No new APK/AAB/iOS build includes this pass yet. Blender, export and Unity import work; detailed art refinement is the outstanding dependency for the requested appearance.
 
 ## Earlier status
 

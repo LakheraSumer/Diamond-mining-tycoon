@@ -1,0 +1,353 @@
+{
+  "Env_Oak": {
+    "color": [
+      0.55,
+      0.32,
+      0.145
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "TimberGrain_BaseColor",
+    "normal": "TimberGrain_Normal"
+  },
+  "Env_DarkOak": {
+    "color": [
+      0.26,
+      0.145,
+      0.067
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "TimberGrain_BaseColor",
+    "normal": "TimberGrain_Normal"
+  },
+  "Env_LightOak": {
+    "color": [
+      0.72,
+      0.48,
+      0.24
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "TimberGrain_BaseColor",
+    "normal": "TimberGrain_Normal"
+  },
+  "Env_Floor": {
+    "color": [
+      0.6,
+      0.36,
+      0.16
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "TimberGrain_BaseColor",
+    "normal": "TimberGrain_Normal"
+  },
+  "Env_Stone": {
+    "color": [
+      0.52,
+      0.5,
+      0.46
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "RockStrata_BaseColor",
+    "normal": "RockStrata_Normal"
+  },
+  "Env_StoneLight": {
+    "color": [
+      0.67,
+      0.63,
+      0.55
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "RockStrata_BaseColor",
+    "normal": "RockStrata_Normal"
+  },
+  "Env_StoneDark": {
+    "color": [
+      0.3,
+      0.32,
+      0.34
+    ],
+    "roughness": 0.92,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "RockStrata_BaseColor",
+    "normal": "RockStrata_Normal"
+  },
+  "Env_Soil": {
+    "color": [
+      0.65,
+      0.49,
+      0.29
+    ],
+    "roughness": 0.95,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "SoilGrain_BaseColor",
+    "normal": "SoilGrain_Normal"
+  },
+  "Env_Grass": {
+    "color": [
+      0.33,
+      0.45,
+      0.16
+    ],
+    "roughness": 0.97,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_Leaf": {
+    "color": [
+      0.19,
+      0.36,
+      0.075
+    ],
+    "roughness": 0.9,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_LeafLight": {
+    "color": [
+      0.43,
+      0.57,
+      0.16
+    ],
+    "roughness": 0.92,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_Teal": {
+    "color": [
+      0.19,
+      0.48,
+      0.44
+    ],
+    "roughness": 0.49,
+    "metallic": 0.1,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "PaintWear_BaseColor",
+    "normal": "PaintWear_Normal"
+  },
+  "Env_TealLight": {
+    "color": [
+      0.35,
+      0.66,
+      0.59
+    ],
+    "roughness": 0.52,
+    "metallic": 0.1,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "PaintWear_BaseColor",
+    "normal": "PaintWear_Normal"
+  },
+  "Env_TealDark": {
+    "color": [
+      0.1,
+      0.29,
+      0.28
+    ],
+    "roughness": 0.55,
+    "metallic": 0.15,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "PaintWear_BaseColor",
+    "normal": "PaintWear_Normal"
+  },
+  "Env_Orange": {
+    "color": [
+      0.88,
+      0.48,
+      0.105
+    ],
+    "roughness": 0.53,
+    "metallic": 0.25,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "PaintWear_BaseColor",
+    "normal": "PaintWear_Normal"
+  },
+  "Env_Steel": {
+    "color": [
+      0.46,
+      0.53,
+      0.55
+    ],
+    "roughness": 0.34,
+    "metallic": 0.72,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_Iron": {
+    "color": [
+      0.13,
+      0.17,
+      0.18
+    ],
+    "roughness": 0.56,
+    "metallic": 0.55,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_Brass": {
+    "color": [
+      0.73,
+      0.49,
+      0.18
+    ],
+    "roughness": 0.3,
+    "metallic": 0.7,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_Gold": {
+    "color": [
+      0.98,
+      0.67,
+      0.13
+    ],
+    "roughness": 0.25,
+    "metallic": 0.7,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_GemBlue": {
+    "color": [
+      0.1,
+      0.68,
+      0.94
+    ],
+    "roughness": 0.22,
+    "metallic": 0.12,
+    "emission": 0.16,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_GemPale": {
+    "color": [
+      0.68,
+      0.89,
+      0.95
+    ],
+    "roughness": 0.28,
+    "metallic": 0.1,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_Glass": {
+    "color": [
+      0.69,
+      0.88,
+      0.88
+    ],
+    "roughness": 0.15,
+    "metallic": 0.05,
+    "emission": 0,
+    "alpha": 0.2,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_Water": {
+    "color": [
+      0.17,
+      0.67,
+      0.8
+    ],
+    "roughness": 0.18,
+    "metallic": 0.12,
+    "emission": 0,
+    "alpha": 0.7,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_Lamp": {
+    "color": [
+      1,
+      0.65,
+      0.19
+    ],
+    "roughness": 0.3,
+    "metallic": 0,
+    "emission": 1.7,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_Paper": {
+    "color": [
+      0.92,
+      0.85,
+      0.66
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_Velvet": {
+    "color": [
+      0.1,
+      0.17,
+      0.25
+    ],
+    "roughness": 0.91,
+    "metallic": 0,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  },
+  "Env_Copper": {
+    "color": [
+      0.68,
+      0.32,
+      0.17
+    ],
+    "roughness": 0.43,
+    "metallic": 0.55,
+    "emission": 0,
+    "alpha": 1,
+    "texture": "",
+    "normal": ""
+  }
+}

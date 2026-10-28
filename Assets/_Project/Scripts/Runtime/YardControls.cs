@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using DiamondMine.Simulation;
 using UnityEngine;
@@ -9,27 +10,38 @@ namespace DiamondMine.Runtime
     public sealed class YardStick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
     {
         public Vector2 Value;
+        public RectTransform Knob;
+        public Vector2 RestPosition;
         Vector2 origin;
 
         public void OnPointerDown(PointerEventData eventData)
         {
             origin = eventData.position;
             Value = Vector2.zero;
+            UpdateKnob(Vector2.zero);
         }
 
         public void OnDrag(PointerEventData eventData)
         {
             Vector2 delta = eventData.position - origin;
-            Value = Vector2.ClampMagnitude(delta / 90f, 1f);
+            Value = Vector2.ClampMagnitude(delta / 65f, 1f);
+            UpdateKnob(Value * 45f);
         }
 
         public void OnPointerUp(PointerEventData eventData)
         {
             Value = Vector2.zero;
+            UpdateKnob(Vector2.zero);
+        }
+
+        void UpdateKnob(Vector2 pos)
+        {
+            if (Knob != null)
+                Knob.anchoredPosition = RestPosition + pos;
         }
     }
 
-    public sealed class YardControls : MonoBehaviour
+    public sealed partial class YardControls : MonoBehaviour
     {
         GameSession session;
         YardWorld world;
@@ -41,10 +53,20 @@ namespace DiamondMine.Runtime
         RectTransform panelContent;
         Text interactLabel;
         Text statusText;
+        Text coinPill;
+        Text gemPill;
+        RectTransform exploreControls;
+        int boardSignature = int.MinValue;
         YardStick stick;
         string mode = "";
         int pendingPlot = -1;
         bool shown;
+
+        // Bottom dock buttons
+        readonly Dictionary<string, Button> dockButtons = new Dictionary<string, Button>();
+        RectTransform dockViewport, dockContent;
+        float dockLayoutWidth = -1;
+        Rect dockSafeArea;
 
         public bool IsOpen { get { return shown; } }
 
@@ -100,28 +122,73 @@ namespace DiamondMine.Runtime
             if (!shown || session == null || !session.Ready || session.State == null || session.State.Adventure == null)
                 return;
             if (canvas != null)
-                canvas.sortingOrder = NeedsCharacter() ? 40 : 8;
-            float dt = Mathf.Min(Time.unscaledDeltaTime, 0.05f);
-            if (stick != null && stick.Value.sqrMagnitude > 0.04f && mode != "characters")
             {
+                UpdateDockLayout();
+                bool covered = ui != null && ui.CoversYard;
+                canvas.sortingOrder = referenceReview ? 50 : NeedsCharacter() ? 40 : (covered ? 4 : 12);
+            }
+            float dt = Mathf.Min(Time.unscaledDeltaTime, 0.05f);
+            AdventureState adventure = session.State.Adventure;
+            if (stick != null && stick.Value.sqrMagnitude > 0.04f && mode.Length == 0 && !referenceReview)
+            {
+                if (world != null)
+                    world.ClearMove();
                 float speed = stick.Value.magnitude > 0.82f ? 7f : 4.2f;
                 session.MoveCrew(stick.Value.x * speed * dt, stick.Value.y * speed * dt);
-                session.State.Adventure.PoseHint = stick.Value.magnitude > 0.82f ? "run" : "move";
+                adventure.PoseHint = stick.Value.magnitude > 0.82f ? "run" : "move";
+                if (world != null)
+                    world.Facing = Mathf.Atan2(stick.Value.x, stick.Value.y) * Mathf.Rad2Deg;
             }
-            InteractSpot spot = YardLayout.Nearest(session.State.Adventure);
-            if (interactLabel != null)
+            else if (world != null && world.HasMove && mode.Length == 0 && !referenceReview)
+            {
+                Vector3 target = world.MoveTarget;
+                float dx = target.x - (float)adventure.PlayerX;
+                float dz = target.z - (float)adventure.PlayerZ;
+                float distance = Mathf.Sqrt(dx * dx + dz * dz);
+                if (distance < 0.18f)
+                {
+                    world.ClearMove();
+                }
+                else
+                {
+                    float step = Mathf.Min(4.2f * dt, distance);
+                    session.MoveCrew(dx / distance * step, dz / distance * step);
+                    adventure.PoseHint = "move";
+                    world.Facing = Mathf.Atan2(dx, dz) * Mathf.Rad2Deg;
+                }
+            }
+            if ((stick == null || stick.Value.sqrMagnitude <= 0.04f) && (world == null || !world.HasMove) &&
+                (adventure.PoseHint == "move" || adventure.PoseHint == "run"))
+                adventure.PoseHint = "";
+            InteractSpot spot = YardLayout.Nearest(adventure);
+            if (interactLabel != null && !referenceReview)
                 interactLabel.text = spot.Kind == "none" ? "Look" : spot.Label;
+            if (coinPill != null)
+                coinPill.text = referenceReview ? "2,480" : NumericFormat.Format(session.State.Coins);
+            if (gemPill != null)
+                gemPill.text = referenceReview ? "36" : adventure.LifetimeDiamondsRecovered.ToString("0");
             if (statusText != null)
-                statusText.text = RankRules.ProductionEnabled ? "" : "Ranking: practice only";
+            {
+                string hint = string.IsNullOrEmpty(session.ActionMessage) ? AdventureRules.NextHint(session.State) : session.ActionMessage;
+                if (!string.IsNullOrEmpty(session.SaveError))
+                    hint = session.SaveError;
+                statusText.text = hint;
+            }
+            if (exploreControls != null)
+                exploreControls.gameObject.SetActive(mode.Length == 0);
             if (world != null)
                 world.Present(session);
-            if (NeedsCharacter() && mode != "characters")
+            int signature = BoardSignature();
+            if (!referenceReview && signature != boardSignature && (mode == "mine" || mode == "factory" || mode == "craft" || mode == "shop" || mode == "tasks"))
+                Open(mode);
+            RefreshMeasuredLive();
+            if (NeedsCharacter() && mode != "characters" && !referenceReview)
                 Open("characters");
         }
 
         bool NeedsCharacter()
         {
-            return session != null && session.Ready && session.State != null && string.IsNullOrEmpty(session.State.Adventure.SelectedCharacter);
+            return !referenceReview && session != null && session.Ready && session.State != null && string.IsNullOrEmpty(session.State.Adventure.SelectedCharacter);
         }
 
         void Build()
@@ -130,50 +197,195 @@ namespace DiamondMine.Runtime
             canvasObject.transform.SetParent(transform, false);
             canvas = canvasObject.GetComponent<Canvas>();
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-            canvas.sortingOrder = 8;
+            canvas.sortingOrder = 12;
             CanvasScaler scaler = canvasObject.GetComponent<CanvasScaler>();
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             scaler.referenceResolution = new Vector2(720f, 1280f);
             scaler.matchWidthOrHeight = 0f;
             root = canvasObject.GetComponent<RectTransform>();
 
-            statusText = UiFactory.Label(root, "", 24, UiTheme.Paper, TextAnchor.MiddleLeft);
-            statusText.rectTransform.anchorMin = new Vector2(0.04f, 0.9f);
-            statusText.rectTransform.anchorMax = new Vector2(0.7f, 0.95f);
-            statusText.rectTransform.offsetMin = Vector2.zero;
-            statusText.rectTransform.offsetMax = Vector2.zero;
+            // Ground tap for tap-to-move
+            var ground = UiFactory.Panel("GroundTap", root, new Color(1f, 1f, 1f, 0.001f));
+            ground.GetComponent<Image>().raycastTarget = true;
+            ground.anchorMin = new Vector2(0f, 0.12f);
+            ground.anchorMax = new Vector2(1f, 0.90f);
+            ground.offsetMin = Vector2.zero;
+            ground.offsetMax = Vector2.zero;
+            YardGroundClick tap = ground.gameObject.AddComponent<YardGroundClick>();
+            tap.Owner = this;
 
-            RectTransform stickBase = UiFactory.Panel("Stick", root, new Color(0.1f, 0.12f, 0.1f, 0.45f));
-            stickBase.anchorMin = new Vector2(0.04f, 0.16f);
-            stickBase.anchorMax = new Vector2(0.34f, 0.34f);
-            stickBase.offsetMin = Vector2.zero;
-            stickBase.offsetMax = Vector2.zero;
-            stick = stickBase.gameObject.AddComponent<YardStick>();
-            Text stickText = UiFactory.Label(stickBase, "Move", 28, UiTheme.Paper, TextAnchor.MiddleCenter);
-            UiFactory.Stretch(stickText.rectTransform);
+            BuildBottomDock();
 
-            Button interact = MakeButton(root, "Look", OnInteract, new Vector2(0.58f, 0.16f), new Vector2(0.96f, 0.3f));
-            interactLabel = UiFactory.Caption(interact);
-            MakeButton(root, "Home", delegate { session.GoHome(); Ping(); }, new Vector2(0.36f, 0.16f), new Vector2(0.56f, 0.24f));
-            MakeButton(root, "Works", ShowWorks, new Vector2(0.36f, 0.25f), new Vector2(0.56f, 0.33f));
-            MakeButton(root, "Bag", delegate { Open("bag"); }, new Vector2(0.04f, 0.35f), new Vector2(0.27f, 0.43f));
-            MakeButton(root, "Mill", delegate { Open("factory"); }, new Vector2(0.29f, 0.35f), new Vector2(0.52f, 0.43f));
-            MakeButton(root, "Shop", delegate { Open("shop"); }, new Vector2(0.54f, 0.35f), new Vector2(0.77f, 0.43f));
-            MakeButton(root, "Tasks", delegate { Open("tasks"); }, new Vector2(0.79f, 0.35f), new Vector2(0.96f, 0.43f));
+            // Explore controls (virtual joystick + interact button)
+            exploreControls = UiFactory.Rect("ExploreControls", root);
+            UiFactory.Stretch(exploreControls);
+            // Reference-measured controls are built on their own surface.
 
-            panel = UiFactory.Panel("YardPanel", root, new Color(0.08f, 0.07f, 0.06f, 0.94f));
-            panel.anchorMin = new Vector2(0.04f, 0.45f);
-            panel.anchorMax = new Vector2(0.96f, 0.9f);
-            panel.offsetMin = Vector2.zero;
-            panel.offsetMax = Vector2.zero;
+            // Floating panel for screen content (transparent root, modular cards placed inside)
+            panel = UiFactory.Rect("YardPanel", root);
+            UiFactory.Stretch(panel);
+            ScrollRect scrollRect = panel.gameObject.AddComponent<ScrollRect>();
+            scrollRect.content = panel;
+            scrollRect.viewport = panel;
+            scrollRect.horizontal = false;
+            scrollRect.vertical = true;
             panel.gameObject.SetActive(false);
-            RectTransform scroll = UiFactory.Scroll(panel, out panelContent);
-            scroll.anchorMin = new Vector2(0f, 0.12f);
-            scroll.anchorMax = Vector2.one;
-            scroll.offsetMin = Vector2.zero;
-            scroll.offsetMax = Vector2.zero;
-            Button close = MakeButton(panel, "Close", ClosePanel, new Vector2(0.25f, 0.02f), new Vector2(0.75f, 0.11f));
-            close.onClick.AddListener(delegate { });
+            panelContent = panel;
+            BuildMeasuredSurface();
+            statusText = UiFactory.Label(root, "", 20, Color.white, TextAnchor.MiddleCenter, true);
+            UiFactory.Box(statusText.rectTransform, .04f, .083f, .96f, .117f);
+            Shadow feedbackShadow = statusText.gameObject.AddComponent<Shadow>();
+            feedbackShadow.effectColor = new Color(0,0,0,.85f);
+            BuildMeasuredScreen("explore");
+        }
+
+        void BuildTopHud()
+        {
+            // Coins Pill
+            RectTransform coinCapsule = UiFactory.DarkPill("CoinPill", root);
+            UiFactory.Box(coinCapsule, 0.04f, 0.932f, 0.38f, 0.985f);
+            Image coinIcon = UiFactory.Icon("CoinIcon", coinCapsule, "icon_coin");
+            UiFactory.Box(coinIcon.rectTransform, 0.06f, 0.15f, 0.28f, 0.85f);
+            coinPill = UiFactory.Label(coinCapsule, "0", 24, Color.white, TextAnchor.MiddleCenter, true);
+            UiFactory.Box(coinPill.rectTransform, 0.28f, 0.05f, 0.78f, 0.95f);
+            Button coinPlus = UiFactory.CircleButton("CoinPlus", coinCapsule, delegate { Ping(); });
+            UiFactory.Box(coinPlus.GetComponent<RectTransform>(), 0.78f, 0.15f, 0.96f, 0.85f);
+            Text plusTxt = UiFactory.Label(coinPlus.transform, "+", 20, Color.white, TextAnchor.MiddleCenter, true);
+            UiFactory.Stretch(plusTxt.rectTransform);
+
+            // Diamonds Pill
+            RectTransform gemCapsule = UiFactory.DarkPill("GemPill", root);
+            UiFactory.Box(gemCapsule, 0.42f, 0.932f, 0.78f, 0.985f);
+            Image gemIcon = UiFactory.Icon("GemIcon", gemCapsule, "icon_diamond");
+            UiFactory.Box(gemIcon.rectTransform, 0.06f, 0.15f, 0.28f, 0.85f);
+            gemPill = UiFactory.Label(gemCapsule, "0", 24, Color.white, TextAnchor.MiddleCenter, true);
+            UiFactory.Box(gemPill.rectTransform, 0.28f, 0.05f, 0.78f, 0.95f);
+            Button gemPlus = UiFactory.CircleButton("GemPlus", gemCapsule, delegate { Ping(); });
+            UiFactory.Box(gemPlus.GetComponent<RectTransform>(), 0.78f, 0.15f, 0.96f, 0.85f);
+            Text gemPlusTxt = UiFactory.Label(gemPlus.transform, "+", 20, Color.white, TextAnchor.MiddleCenter, true);
+            UiFactory.Stretch(gemPlusTxt.rectTransform);
+
+            // Settings Gear Button
+            RectTransform gearBox = UiFactory.DarkPill("GearBox", root);
+            UiFactory.Box(gearBox, 0.84f, 0.932f, 0.96f, 0.985f);
+            Button gearBtn = gearBox.gameObject.AddComponent<Button>();
+            gearBtn.onClick.AddListener(delegate { if (ui != null) ui.OpenSettings(); Ping(); });
+            Image gearIcon = UiFactory.Icon("GearIcon", gearBox, "icon_gear");
+            UiFactory.Box(gearIcon.rectTransform, 0.18f, 0.18f, 0.82f, 0.82f);
+            Text gearTxt = UiFactory.Label(gearBox, "", 1, Color.clear, TextAnchor.MiddleCenter);
+
+            // Subtle Status Hint text below top HUD
+            statusText = UiFactory.Label(root, "", 20, Color.white, TextAnchor.MiddleCenter, false);
+            UiFactory.Box(statusText.rectTransform, 0.05f, 0.89f, 0.95f, 0.925f);
+        }
+
+        void BuildBottomDock()
+        {
+            RectTransform dock = UiFactory.DarkPill("BottomDock", root);
+            UiFactory.Box(dock, 0.02f, 0.012f, 0.98f, 0.096f);
+            dockViewport = dock;
+            dock.gameObject.AddComponent<RectMask2D>();
+            dockContent = UiFactory.Rect("Tabs", dock);
+            dockContent.anchorMin = new Vector2(0,0);dockContent.anchorMax = new Vector2(0,1);dockContent.pivot = new Vector2(0,.5f);
+            dockContent.offsetMin = dockContent.offsetMax = Vector2.zero;
+            ScrollRect dockScroll = dock.gameObject.AddComponent<ScrollRect>();
+            dockScroll.viewport = dock;dockScroll.content = dockContent;dockScroll.horizontal = true;dockScroll.vertical = false;
+            dockScroll.movementType = ScrollRect.MovementType.Clamped;dockScroll.scrollSensitivity = 50;
+
+            string[] tabs = { "", "mine", "factory", "craft", "shop", "map", "tasks", "rank", "more" };
+            string[] labels = { "Explore", "Mine", "Process", "Craft", "Sell", "Expand", "Progress", "Rank", "More" };
+            string[] icons = { "icon_hand", "icon_pickaxe", "icon_crusher", "icon_ring", "icon_coin", "icon_sack", "trophy_gold", "trophy_silver", "icon_gear" };
+
+            float count = tabs.Length;
+            for (int i = 0; i < tabs.Length; i++)
+            {
+                string tabMode = tabs[i];
+                float xMin = (i + 0.05f) / count;
+                float xMax = (i + 0.95f) / count;
+
+                RectTransform item = UiFactory.Rect("Tab_" + labels[i], dockContent);
+                UiFactory.Box(item, xMin, 0.05f, xMax, 0.95f);
+                Button btn = item.gameObject.AddComponent<Button>();
+                Image hit = item.gameObject.AddComponent<Image>();
+                hit.color = new Color(0f, 0f, 0f, 0.01f);
+                btn.targetGraphic = hit;
+                dockButtons[tabMode] = btn;
+
+                Image icon = UiFactory.Icon("Icon", item, icons[i]);
+                UiFactory.Box(icon.rectTransform, 0.15f, 0.40f, 0.85f, 0.92f);
+
+                Text lbl = UiFactory.Label(item, labels[i], 24, Color.white, TextAnchor.LowerCenter, true);
+                lbl.resizeTextForBestFit = true;lbl.resizeTextMinSize = 18;lbl.resizeTextMaxSize = 24;
+                UiFactory.Box(lbl.rectTransform, 0f, 0.02f, 1f, 0.40f);
+
+                btn.onClick.AddListener(delegate
+                {
+                    if (tabMode.Length == 0)
+                        ClosePanel();
+                    else if (tabMode == "mine")
+                        OpenMine();
+                    else
+                        Open(tabMode);
+                    Ping();
+                });
+            }
+            UpdateDockLayout();
+        }
+
+        void UpdateDockLayout()
+        {
+            if(dockContent == null || dockViewport == null || canvas == null || dockButtons.Count == 0)return;
+            Rect safe = Screen.safeArea;
+            if(safe != dockSafeArea)
+            {
+                dockSafeArea = safe;
+                Vector2 low = new Vector2(safe.xMin / Mathf.Max(1,Screen.width), safe.yMin / Mathf.Max(1,Screen.height));
+                Vector2 span = new Vector2(safe.width / Mathf.Max(1,Screen.width), safe.height / Mathf.Max(1,Screen.height));
+                dockViewport.anchorMin = low + new Vector2(.02f*span.x,.012f*span.y);
+                dockViewport.anchorMax = low + new Vector2(.98f*span.x,.096f*span.y);
+            }
+            float density = Screen.dpi > 0 ? Mathf.Clamp(Screen.dpi / 160f, 1f, 4f) : 1f;
+            float minimum = 56f * density / Mathf.Max(.01f, canvas.scaleFactor);
+            float width = Mathf.Max(dockViewport.rect.width, dockButtons.Count * minimum / .90f);
+            if(Mathf.Abs(width - dockLayoutWidth) < .5f)return;
+            dockLayoutWidth = width;
+            dockContent.sizeDelta = new Vector2(width,0);
+        }
+
+        void BuildExploreControls()
+        {
+            // Virtual Joystick
+            RectTransform stickBox = UiFactory.Rect("StickBox", exploreControls);
+            UiFactory.Box(stickBox, 0.06f, 0.12f, 0.32f, 0.26f);
+            Image stickBase = stickBox.gameObject.AddComponent<Image>();
+            stickBase.sprite = UiFactory.GetSprite("joystick_base");
+            stickBase.color = Color.white;
+            stickBase.raycastTarget = true;
+            stick = stickBox.gameObject.AddComponent<YardStick>();
+
+            RectTransform knob = UiFactory.Rect("Knob", stickBox);
+            knob.anchorMin = new Vector2(0.5f, 0.5f);
+            knob.anchorMax = new Vector2(0.5f, 0.5f);
+            knob.sizeDelta = new Vector2(70f, 70f);
+            knob.anchoredPosition = Vector2.zero;
+            Image knobImg = knob.gameObject.AddComponent<Image>();
+            knobImg.sprite = UiFactory.GetSprite("joystick_knob");
+            knobImg.color = Color.white;
+            knobImg.raycastTarget = false;
+            stick.Knob = knob;
+
+            // Circular Navy Action Button (Interact)
+            Button interact = UiFactory.CircleButton("InteractBtn", exploreControls, OnInteract, "icon_hand", "Interact");
+            UiFactory.Box(interact.GetComponent<RectTransform>(), 0.74f, 0.12f, 0.94f, 0.24f);
+            interactLabel = interact.GetComponentInChildren<Text>();
+
+            // Return Home Pill Button
+            RectTransform homePill = UiFactory.DarkPill("HomePill", exploreControls);
+            UiFactory.Box(homePill, 0.35f, 0.13f, 0.65f, 0.18f);
+            Button homeBtn = homePill.gameObject.AddComponent<Button>();
+            homeBtn.onClick.AddListener(delegate { session.GoHome(); Ping(); });
+            Text homeTxt = UiFactory.Label(homePill, "Return Home", 22, Color.white, TextAnchor.MiddleCenter, true);
+            UiFactory.Stretch(homeTxt.rectTransform);
         }
 
         void OnInteract()
@@ -203,7 +415,7 @@ namespace DiamondMine.Runtime
                 {
                     session.TryVisitBunker(spot.PlotId);
                     pendingPlot = spot.PlotId;
-                    Open("bunker");
+                    Open("mine");
                 }
                 else
                 {
@@ -221,24 +433,54 @@ namespace DiamondMine.Runtime
         void Open(string next)
         {
             mode = next;
+            if (world != null) world.ClearMove();
+            if (stick != null) stick.Value = Vector2.zero;
+            if (BuildMeasuredScreen(next))
+            {
+                panel.gameObject.SetActive(false);
+                if (world != null) world.SetScreenMode(next);
+                boardSignature = BoardSignature();
+                return;
+            }
+            if (referenceSurface != null) referenceSurface.gameObject.SetActive(false);
+            if (world != null)
+                world.SetScreenMode(next);
             panel.gameObject.SetActive(true);
             UiFactory.Clear(panelContent);
+
             if (next == "characters")
                 BuildCharacters();
             else if (next == "bag")
                 BuildBag();
-            else if (next == "factory")
-                BuildFactory();
-            else if (next == "shop")
-                BuildShop();
-            else if (next == "tasks")
-                BuildTasks();
-            else if (next == "map")
-                BuildMap();
+            else if (next == "more")
+                BuildMore();
             else if (next == "bunker")
                 BuildBunker();
             else if (next == "buy")
                 BuildBuy();
+
+            boardSignature = BoardSignature();
+        }
+
+        void OpenMine()
+        {
+            if (pendingPlot < 0)
+                pendingPlot = 2;
+            Open("mine");
+        }
+
+        int BoardSignature()
+        {
+            if (session == null || session.State == null || session.State.Adventure == null)
+                return 0;
+            AdventureState adventure = session.State.Adventure;
+            int jobs = 0;
+            for (int i = 0; i < adventure.Jobs.Count; i++)
+            {
+                if (!adventure.Jobs[i].OutputGranted)
+                    jobs++;
+            }
+            return ((int)session.State.Coins * 17) ^ ((int)adventure.HandsAmount * 31) ^ ((int)adventure.CartLoad * 13) ^ adventure.RingsCrafted ^ (jobs << 8) ^ adventure.OrdersCompleted;
         }
 
         void ClosePanel()
@@ -246,200 +488,232 @@ namespace DiamondMine.Runtime
             if (NeedsCharacter())
                 return;
             mode = "";
+            if (world != null)
+                world.SetScreenMode("");
             if (panel != null)
                 panel.gameObject.SetActive(false);
+            BuildMeasuredScreen("explore");
         }
 
+        // ==========================================
+        // SCREEN 9: CHARACTER SELECTION
+        // ==========================================
         void BuildCharacters()
         {
-            AddLine("Choose a miner. Clothes do not change pay.");
+            RectTransform card = UiFactory.Card("CrewSelectionCard", panelContent);
+            UiFactory.Box(card, 0.04f, 0.10f, 0.96f, 0.92f);
+
+            Texture2D crew = Resources.Load<Texture2D>("Ui/crew-lineup");
+            if (crew != null)
+            {
+                RectTransform banner = UiFactory.Rect("CrewBanner", card);
+                UiFactory.Box(banner, 0.04f, 0.74f, 0.96f, 0.96f);
+                RawImage img = banner.gameObject.AddComponent<RawImage>();
+                img.texture = crew;
+                img.color = Color.white;
+            }
+
+            Text title = UiFactory.Label(card, "Choose Your Miner", 26, UiTheme.Ink, TextAnchor.MiddleCenter, true);
+            UiFactory.Box(title.rectTransform, 0.04f, 0.67f, 0.96f, 0.73f);
+
+            // 12 Characters Grid
             for (int i = 0; i < JourneyCatalog.AllCharacters.Count; i++)
             {
                 CharacterDef person = JourneyCatalog.AllCharacters[i];
-                bool open = session.State.Adventure.UnlockedCharacters.Contains(person.Id);
-                string label = person.Name + "\n" + person.Role + (open ? "" : "\n" + person.UnlockText);
+                int col = i % 3;
+                int row = i / 3;
+
+                float x0 = 0.04f + col * 0.31f;
+                float x1 = x0 + 0.29f;
+                float y1 = 0.65f - row * 0.13f;
+                float y0 = y1 - 0.11f;
+
                 string id = person.Id;
-                AddButton(label, delegate
+                RectTransform cBox = UiFactory.Panel("Char_" + id, card, UiTheme.Paper);
+                UiFactory.Box(cBox, x0, y0, x1, y1);
+
+                Text nm = UiFactory.Label(cBox, person.Name, 18, UiTheme.Ink, TextAnchor.UpperCenter, true);
+                UiFactory.Box(nm.rectTransform, 0.02f, 0.45f, 0.98f, 0.95f);
+
+                Text rl = UiFactory.Label(cBox, person.Role, 14, UiTheme.Muted, TextAnchor.LowerCenter, false);
+                UiFactory.Box(rl.rectTransform, 0.02f, 0.05f, 0.98f, 0.45f);
+
+                Button btn = cBox.gameObject.AddComponent<Button>();
+                bool unlocked = session.State.Adventure.UnlockedCharacters.Contains(id);
+                btn.interactable = unlocked;
+                if (!unlocked) rl.text = person.UnlockText + " (locked)";
+                btn.onClick.AddListener(delegate
                 {
                     if (session.TryChooseCharacter(id))
                     {
-                        world.Present(session);
+                        if (world != null) world.Present(session);
                         ClosePanel();
                     }
+                    Ping();
                 });
             }
         }
 
+        // ==========================================
+        // OTHER EXISTING SCREENS
+        // ==========================================
         void BuildBag()
         {
-            AddLine("Hands: " + (session.State.Adventure.HandsAmount <= 0d ? "empty" : session.State.Adventure.HandsAmount.ToString("0") + " " + JourneyCatalog.DisplayName(session.State.Adventure.HandsItem)));
-            AddButton("Store hands", delegate { session.TryPocket(); Open("bag"); });
-            foreach (var pair in session.State.Adventure.Inventory)
+            RectTransform card = UiFactory.Card("BagCard", panelContent);
+            UiFactory.Box(card, 0.06f, 0.15f, 0.94f, 0.88f);
+
+            Text title = UiFactory.Label(card, "Backpack & Inventory", 28, UiTheme.Ink, TextAnchor.UpperLeft, true);
+            UiFactory.Box(title.rectTransform, 0.08f, 0.88f, 0.92f, 0.96f);
+
+            AdventureState adventure = session.State.Adventure;
+            string hands = adventure.HandsAmount <= 0d ? "empty" : adventure.HandsAmount.ToString("0") + " " + JourneyCatalog.DisplayName(adventure.HandsItem);
+            string cart = adventure.CartLoad > 0d && !adventure.CartGranted ? adventure.CartLoad.ToString("0") + " " + JourneyCatalog.DisplayName(adventure.CartItem) : "empty";
+
+            Text info = UiFactory.Label(card, "Carrying: " + hands + "\nMine Cart: " + cart, 22, UiTheme.Ink, TextAnchor.MiddleLeft, false);
+            UiFactory.Box(info.rectTransform, 0.08f, 0.72f, 0.92f, 0.86f);
+
+            Button sendCart = UiFactory.ButtonBlue("SendCartBtn", card, "Send cart to mill", delegate { session.TrySendCart(); Open("bag"); Ping(); });
+            UiFactory.Box(sendCart.GetComponent<RectTransform>(), 0.08f, 0.58f, 0.48f, 0.68f);
+
+            Button pocket = UiFactory.ButtonGreen("PocketBtn", card, "Store hands at mill", delegate { session.TryPocket(); Open("bag"); Ping(); });
+            UiFactory.Box(pocket.GetComponent<RectTransform>(), 0.52f, 0.58f, 0.92f, 0.68f);
+
+            Button sweep = UiFactory.ButtonBlue("SweepBtn", card, "Sweep the path", delegate { session.TrySweepStone(); Open("bag"); Ping(); });
+            UiFactory.Box(sweep.GetComponent<RectTransform>(), 0.08f, 0.44f, 0.92f, 0.54f);
+            RectTransform inventory;
+            RectTransform inventoryScroll = UiFactory.Scroll(card, out inventory);
+            UiFactory.Box(inventoryScroll, .08f, .05f, .92f, .40f);
+            bool any = false;
+            foreach (ItemDef item in JourneyCatalog.AllItems)
             {
-                string id = pair.Key;
-                int count = (int)pair.Value;
-                AddLine(JourneyCatalog.DisplayName(id) + "  " + count + "  ·  " + JourneyCatalog.FindItem(id).Route);
-                AddButton("Sell 1", delegate { session.TrySellGoods(id, 1); Open("bag"); });
+                double count = AdventureRules.Count(adventure, item.Id);
+                if (count <= 0) continue;
+                any = true;
+                Text row = UiFactory.Label(inventory, item.Name + "   " + NumericFormat.Format(count), 22, UiTheme.Ink, TextAnchor.MiddleLeft);
+                row.gameObject.AddComponent<LayoutElement>().preferredHeight = 46;
             }
-            AddButton("Sweep the path", delegate { session.TrySweepStone(); Open("bag"); });
+            if (!any) UiFactory.Label(inventory, "Warehouse is empty. Mine and send a cart to the mill.", 22, UiTheme.Muted, TextAnchor.MiddleLeft).gameObject.AddComponent<LayoutElement>().preferredHeight = 80;
         }
 
-        void BuildFactory()
+        void BuildMore()
         {
-            AddLine(AdventureRules.Bottleneck(session.State.Adventure));
-            AddMachine("crush", "Crush rock");
-            AddMachine("wash", "Wash grit");
-            AddMachine("recover", "Sort diamonds");
-            AddMachine("cut", "Cut");
-            AddMachine("polish", "Polish");
-            AddButton("Refine silver", delegate { session.TryRefine(JourneyCatalog.SilverOre); Open("factory"); });
-            AddButton("Refine gold", delegate { session.TryRefine(JourneyCatalog.GoldOre); Open("factory"); });
-            AddButton("Refine copper", delegate { session.TryRefine(JourneyCatalog.CopperOre); Open("factory"); });
-            AddButton("Refine iron", delegate { session.TryRefine(JourneyCatalog.IronOre); Open("factory"); });
-            AddLine("Bench");
-            for (int i = 0; i < JourneyCatalog.AllRecipes.Count; i++)
-            {
-                JewelRecipe recipe = JourneyCatalog.AllRecipes[i];
-                string note;
-                bool ready = AdventureRules.CanCraft(session.State, recipe, out note);
-                AddLine(recipe.Name + " · " + recipe.Note + (ready ? "" : " · " + note));
-                string id = recipe.Id;
-                AddButton("Make " + recipe.Name, delegate { session.TryMakeJewel(id); Open("factory"); });
-            }
-        }
+            RectTransform card = UiFactory.Card("MoreCard", panelContent);
+            UiFactory.Box(card, 0.08f, 0.20f, 0.92f, 0.85f);
 
-        void AddMachine(string id, string label)
-        {
-            MachineState machine = session.State.Adventure.FindMachine(id);
-            AddLine(label + " · " + AdventureRules.MachineStatus(machine));
-            AddButton("Start " + label, delegate { session.TryStartBatch(id); Open("factory"); });
-            AddButton("Collect " + label, delegate { session.TryCollectMachine(id); Open("factory"); });
-        }
+            Text title = UiFactory.Label(card, "More Options", 28, UiTheme.Ink, TextAnchor.UpperLeft, true);
+            UiFactory.Box(title.rectTransform, 0.08f, 0.86f, 0.92f, 0.96f);
 
-        void BuildShop()
-        {
-            AddLine("The shop always buys. Prices stay steady.");
-            if (session.State.Adventure.OrderIndex < JourneyCatalog.AllOrders.Count)
+            string[] opts = { "Choose miner", "Backpack & inventory", "Refinery", "Hire yard worker", "Assign worker to current bunker", "Progress & Tasks", "Expand Region", "Rankings", "Settings", "Works Mines" };
+            for (int i = 0; i < opts.Length; i++)
             {
-                CustomerOrderDef order = JourneyCatalog.AllOrders[session.State.Adventure.OrderIndex];
-                AddLine(order.Title + " · " + order.Amount + " " + JourneyCatalog.DisplayName(order.ItemId));
-                AddButton("Give order", delegate { session.TryFulfillOrder(); Open("shop"); });
-            }
-            else
-            {
-                AddLine("No visitor is waiting.");
-            }
-            foreach (var pair in session.State.Adventure.Inventory)
-            {
-                string id = pair.Key;
-                ItemDef item = JourneyCatalog.FindItem(id);
-                if (item == null)
-                    continue;
-                AddButton("Sell " + item.Name + " (" + item.SellValue + ")", delegate { session.TrySellGoods(id, 1); Open("shop"); });
-            }
-        }
-
-        void BuildTasks()
-        {
-            for (int i = 0; i < JourneyCatalog.AllTasks.Count; i++)
-            {
-                YardTaskDef task = JourneyCatalog.AllTasks[i];
-                bool claimed = session.State.Adventure.ClaimedTasks.Contains(task.Id);
-                bool ready = AdventureRules.TaskReady(session.State, task.Id);
-                AddLine(task.Title + " · " + task.Detail + (claimed ? " · done" : ready ? " · ready" : ""));
-                string id = task.Id;
-                AddButton(claimed ? "Claimed" : "Claim " + task.Title, delegate { session.TryClaimYardTask(id); Open("tasks"); });
-            }
-        }
-
-        void BuildMap()
-        {
-            AddLine(RankRules.PendingLabel);
-            AddLine("My bunkers");
-            var owned = new List<int>();
-            session.State.Adventure.Owned.Collect(0, 12, owned);
-            for (int i = 0; i < owned.Count; i++)
-            {
-                int plot = owned[i];
-                AddButton("Go to bunker " + (plot + 1), delegate
+                float yTop = 0.81f - i * 0.078f;
+                float yBottom = yTop - 0.068f;
+                int idx = i;
+                Button b = UiFactory.ButtonBlue("Opt_" + i, card, opts[i], delegate
                 {
-                    YardPoint door = YardLayout.Entrance(plot);
-                    session.State.Adventure.PlayerX = door.X;
-                    session.State.Adventure.PlayerZ = door.Z + 1.2d;
-                    session.MarkYardDirty();
-                    ClosePanel();
+                    if (idx == 0) Open("characters");
+                    else if (idx == 1) Open("bag");
+                    else if (idx == 2) { Open("factory"); ShowRefineryDetails(); }
+                    else if (idx == 3) { session.TryHireCrew(); Open("more"); }
+                    else if (idx == 4) { session.TryPostCrew(Mathf.Max(0, session.State.Adventure.FocusPlotId)); Open("more"); }
+                    else if (idx == 5) Open("tasks");
+                    else if (idx == 6) Open("map");
+                    else if (idx == 7) Open("rank");
+                    else if (idx == 8) { if (ui != null) ui.OpenSettings(); }
+                    else if (idx == 9) ShowWorks();
+                    Ping();
                 });
+                UiFactory.Box(b.GetComponent<RectTransform>(), 0.08f, yBottom, 0.92f, yTop);
             }
-            AddLine("Region 1 · " + WorldGenerator.ThemeName(0));
-            var page = new List<PlotProfile>();
-            WorldGenerator.Page(session.State.Adventure.WorldSeed, 0, 0, 8, session.State.Adventure.GeneratorVersion, page);
-            for (int i = 0; i < page.Count; i++)
-                AddLine(AdventureRules.PreviewPlot(session.State.Adventure, page[i].PlotId));
         }
 
         void BuildBunker()
         {
+            RectTransform card = UiFactory.Card("BunkerCard", panelContent);
+            UiFactory.Box(card, 0.08f, 0.20f, 0.92f, 0.80f);
+
             int plot = pendingPlot;
-            AddLine(AdventureRules.PreviewPlot(session.State.Adventure, plot));
-            PlotProfile profile = WorldGenerator.Describe(session.State.Adventure.WorldSeed, plot, session.State.Adventure.GeneratorVersion);
-            for (int i = 0; i < profile.Reserves.Count; i++)
-            {
-                string item = profile.Reserves[i].ItemId;
-                double left = AdventureRules.Remaining(session.State.Adventure, plot, item);
-                AddButton("Mine " + JourneyCatalog.DisplayName(item) + " (" + left.ToString("0") + ")", delegate
-                {
-                    session.TryDig(plot, item);
-                    Open("bunker");
-                });
-            }
-            AddButton("Post crew here", delegate { session.TryPostCrew(plot); Open("bunker"); });
+            Text title = UiFactory.Label(card, "Mine Shaft " + (plot + 1), 28, UiTheme.Ink, TextAnchor.UpperLeft, true);
+            UiFactory.Box(title.rectTransform, 0.08f, 0.84f, 0.92f, 0.96f);
+
+            Text desc = UiFactory.Label(card, AdventureRules.PreviewPlot(session.State.Adventure, plot), 22, UiTheme.Muted, TextAnchor.MiddleLeft, false);
+            UiFactory.Box(desc.rectTransform, 0.08f, 0.60f, 0.92f, 0.80f);
+
+            Button mine = UiFactory.ButtonGreen("MineBtn", card, "Mine", delegate { session.TryDig(plot, JourneyCatalog.DiamondOre); Open("bunker"); Ping(); });
+            UiFactory.Box(mine.GetComponent<RectTransform>(), 0.08f, 0.40f, 0.92f, 0.54f);
+
+            Button sendCart = UiFactory.ButtonBlue("CartBtn", card, "Send cart to mill", delegate { session.TrySendCart(); Open("bunker"); Ping(); });
+            UiFactory.Box(sendCart.GetComponent<RectTransform>(), 0.08f, 0.22f, 0.92f, 0.36f);
         }
 
         void BuildBuy()
         {
+            RectTransform card = UiFactory.Card("BuyCard", panelContent);
+            UiFactory.Box(card, 0.08f, 0.25f, 0.92f, 0.75f);
+
             int plot = pendingPlot;
-            AddLine(AdventureRules.PreviewPlot(session.State.Adventure, plot));
-            AddLine("Buying is only this button. Walking past does not spend coins.");
-            AddButton("Buy this bunker", delegate
+            Text title = UiFactory.Label(card, "Purchase Mine Shaft " + (plot + 1), 28, UiTheme.Ink, TextAnchor.UpperLeft, true);
+            UiFactory.Box(title.rectTransform, 0.08f, 0.80f, 0.92f, 0.95f);
+
+            Text desc = UiFactory.Label(card, AdventureRules.PreviewPlot(session.State.Adventure, plot) + "\n\nPrice: " + AdventureRules.PlotPrice(session.State.Adventure, plot).ToString("0") + " Coins", 22, UiTheme.Muted, TextAnchor.MiddleLeft, false);
+            UiFactory.Box(desc.rectTransform, 0.08f, 0.45f, 0.92f, 0.75f);
+
+            Button buyBtn = UiFactory.ButtonGreen("ConfirmBuyBtn", card, "Buy Mine Shaft", delegate
             {
                 if (session.TryPurchasePlot(plot))
                     ClosePanel();
                 else
                     Open("buy");
-            });
+                Ping();
+            }, "icon_coin");
+            UiFactory.Box(buyBtn.GetComponent<RectTransform>(), 0.08f, 0.15f, 0.92f, 0.35f);
         }
 
-        void AddLine(string text)
+        static string MillLine(AdventureState adventure)
         {
-            Text line = UiFactory.Label(panelContent, text, 28, UiTheme.Paper, TextAnchor.MiddleLeft);
-            LayoutElement layout = line.gameObject.AddComponent<LayoutElement>();
-            layout.minHeight = 72f;
-            layout.preferredHeight = 96f;
+            string line = AdventureRules.Bottleneck(adventure);
+            string[] ids = { "crush", "wash", "recover", "cut", "polish" };
+            for (int i = 0; i < ids.Length; i++)
+            {
+                MachineState machine = adventure.FindMachine(ids[i]);
+                line += "\n" + ids[i] + " " + AdventureRules.MachineStatus(machine);
+            }
+            return line;
         }
 
-        void AddButton(string label, UnityEngine.Events.UnityAction action)
+        string CountLabel(string itemId)
         {
-            UiFactory.Press(panelContent, label, action, UiTheme.ButtonOn, 108f);
+            return ((int)AdventureRules.Count(session.State.Adventure, itemId)).ToString();
         }
 
-        static Button MakeButton(Transform parent, string label, UnityEngine.Events.UnityAction action, Vector2 min, Vector2 max)
+        public void TapMove(Vector2 screen)
         {
-            Button button = UiFactory.Press(parent, label, action, UiTheme.ButtonOn, 108f);
-            RectTransform rect = button.GetComponent<RectTransform>();
-            LayoutElement layout = button.GetComponent<LayoutElement>();
-            if (layout != null)
-                Destroy(layout);
-            rect.anchorMin = min;
-            rect.anchorMax = max;
-            rect.offsetMin = Vector2.zero;
-            rect.offsetMax = Vector2.zero;
-            return button;
+            if (world == null || world.View == null || !world.View.enabled || mode.Length != 0 || referenceReview || session == null || !session.Ready)
+                return;
+            Ray ray = world.View.ScreenPointToRay(screen);
+            Plane plane = new Plane(Vector3.up, Vector3.zero);
+            float distance;
+            if (!plane.Raycast(ray, out distance))
+                return;
+            Vector3 point = ray.GetPoint(distance);
+            world.SetMoveTarget(point.x, point.z);
         }
 
         void Ping()
         {
             if (cues != null && session != null)
                 cues.PlayUi(session);
+        }
+    }
+
+    public sealed class YardGroundClick : MonoBehaviour, IPointerDownHandler
+    {
+        public YardControls Owner;
+
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            if (Owner != null)
+                Owner.TapMove(eventData.position);
         }
     }
 }

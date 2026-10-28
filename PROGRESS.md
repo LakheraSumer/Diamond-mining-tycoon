@@ -1,8 +1,16 @@
 # Progress
 
-Updated 24 October 2026. The yard loop is in the simulation and the Unity API compile. This is not a tested mobile release candidate.
+25 October 2026: latest combined source passed85 simulation tests, six compiler configurations,517 Main Play checks,221 measured UI bounds and120 animation-pose samples. A fresh signed development Android APK built successfully; signing/alignment/static native checks passed. Native2160x3840 and1536x2048 captures and source-hashed comparisons are delivered. Character95/100 fidelity and exact reference appearance remain unaccepted; physical phone QA and iOS export are pending.
 
-Open the project, press Play, and use Yard. Choose a free miner, walk to a bunker, mine, then use the mill and the shop. Works still opens the older mine screen. Automated checks: `TEST_GAME.cmd`. Latest local result is 84 passed. See Docs/PROJECT-STATUS.md.
+See [current status and limits](Docs/REFERENCE-UPDATE.md). Open VIEW_ALL_IMAGES.html. Run RUN_FULL_GAME_TEST.cmd for Unity tests or BUILD_ANDROID_TEST.cmd to also build the APK.
+
+## Earlier records (historical)
+
+# Progress
+
+Updated 24 October 2026. Bunker 1 now uses authored Blender meshes, UVs, texture maps, persistent materials and prefabs in Main Play mode. Its terrain, detailed cart, curved track and lighting are included. Other areas retain their existing presentation. This is not a tested mobile release candidate.
+
+Open the project, press Play, and use Yard. Choose a free miner, walk to a bunker, mine, then use the mill and the shop. Works still opens the older mine screen. For the bunker use **Diamond Mine > Art > Play bunker 1 with isolated save**. For all twelve imported crew models use **Diamond Mine > Characters > Play crew with isolated save**. Latest checks: 85 simulation tests, six Unity API compiler configurations, 242 crew Play checks and the earlier 20 timber Play checks passed. The crew's 100% visual reference match remains unfinished; see Docs/characters/README.md. No new mobile build includes these assets yet. See Docs/Timber-Bunker.md and Docs/PROJECT-STATUS.md.
 
 ## Earlier progress
 

@@ -95,6 +95,15 @@ namespace DiamondMine.Runtime
                 world.SetRendering(!open);
         }
 
+        public bool CoversYard { get { return stack.Count > 0; } }
+
+        public void OpenSettings()
+        {
+            if (session == null || !session.Ready)
+                return;
+            Push(Modal.Settings, true);
+        }
+
         public void Bind(GameSession gameSession, GameAudio gameAudio, MinePresenter presenter)
         {
             session = gameSession;
@@ -352,6 +361,7 @@ namespace DiamondMine.Runtime
             MineState mine = state.FindMine(state.ActiveMineId);
             MineDefinition def = session.Config.FindMine(state.ActiveMineId);
             tapButton.gameObject.SetActive(!session.OfflinePending && !yardOpen);
+            SetWorksHud(!yardOpen);
             if (yardOpen && session.State.Adventure != null)
             {
                 coinsText.text = NumericFormat.Format(state.Coins) + " coins";
@@ -421,24 +431,46 @@ namespace DiamondMine.Runtime
                 gameSound.PlayUi(session);
         }
 
+        void SetWorksHud(bool visible)
+        {
+            if (coinsText != null)
+                coinsText.gameObject.SetActive(visible);
+            if (mineNameText != null)
+                mineNameText.gameObject.SetActive(visible);
+            if (incomeText != null)
+                incomeText.gameObject.SetActive(visible);
+            if (objectiveText != null)
+                objectiveText.gameObject.SetActive(visible);
+            if (bottleneckText != null)
+                bottleneckText.gameObject.SetActive(visible);
+            if (metersText != null)
+                metersText.gameObject.SetActive(visible);
+            if (bannerText != null)
+                bannerText.gameObject.SetActive(visible);
+            if (toastText != null)
+                toastText.gameObject.SetActive(visible);
+            if (navRoot != null)
+                navRoot.gameObject.SetActive(visible);
+        }
+
         void HandleBack()
         {
             if (!Input.GetKeyDown(KeyCode.Escape))
                 return;
+            if (stack.Count > 0)
+            {
+                Modal top = stack[stack.Count - 1];
+                if (top == Modal.Newer)
+                {
+                    Push(Modal.Quit, true);
+                    return;
+                }
+                Pop();
+                return;
+            }
             if (yardControls != null && yardOpen && yardControls.TryConsumeBack())
                 return;
-            if (stack.Count == 0)
-            {
-                Push(Modal.Quit, true);
-                return;
-            }
-            Modal top = stack[stack.Count - 1];
-            if (top == Modal.Newer)
-            {
-                Push(Modal.Quit, true);
-                return;
-            }
-            Pop();
+            Push(Modal.Quit, true);
         }
 
         void Push(Modal modal, bool sound)

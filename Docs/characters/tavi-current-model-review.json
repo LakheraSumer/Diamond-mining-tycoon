@@ -1,0 +1,80 @@
+{
+  "character_id": "tavi",
+  "review_date": "2026-10-25",
+  "reviewer": "Codex visual inspection",
+  "status": "Historical intermediate source inspection only. Superseded by a later Tavi face refinement; not a review or acceptance decision for the latest model.",
+  "scope": "Latest saved Blender mesh render only. Does not establish Main Play-mode behavior or final Unity material appearance.",
+  "model_source": "ArtSource/Characters/tavi.blend",
+  "model_source_sha256": "eb26f9a1726616911636650c080e501079fc09469966eacd11ba5ab0bbd2311a",
+  "rendered_model_source_sha256": "eb26f9a1726616911636650c080e501079fc09469966eacd11ba5ab0bbd2311a",
+  "model_source_matches_render": true,
+  "evidence": {
+    "02_Beauty.png": {
+      "file": "ArtSource/Characters/Tavi/02_Beauty.png",
+      "sha256": "f4149946e5cb3a9e1f4c1dc3a5041db83cd98cfca02dbb95fc8baa1372e6b196",
+      "capture": {
+        "camera": [
+          -3.0,
+          6.5,
+          1.600000023841858
+        ],
+        "look_at": [
+          0,
+          0,
+          1.03
+        ],
+        "ortho_scale": 2.65,
+        "pose": "Actual authored Idle frame 1",
+        "props_visible": true,
+        "native_dimensions": [
+          1200,
+          1600
+        ]
+      }
+    },
+    "07_Face.png": {
+      "file": "ArtSource/Characters/Tavi/07_Face.png",
+      "sha256": "d1da857db9e502e2d6a77bcf5457b5d2ef3282b1c1a1f70e3a553176afdbc42c",
+      "capture": {
+        "camera": [
+          -0.2199999988079071,
+          5.0,
+          1.7383246421813965
+        ],
+        "look_at": [
+          0,
+          0.02,
+          1.708324670791626
+        ],
+        "ortho_scale": 0.85,
+        "pose": "Neutral A-pose head",
+        "native_dimensions": [
+          1200,
+          1200
+        ]
+      }
+    }
+  },
+  "source_reference": "ArtSource/Characters/Tavi/01_SourceCrop.png",
+  "source_crop_sha256": "4e6aa505b3968bfb26037fdede0bedc4ce2e1a5f40e08a31fd64deab662ec44d",
+  "observations": [
+    "Headwear, goggles, teal/cream/tan/orange colour regions, map pouch and boot lace/sole construction correspond to major reference design features.",
+    "Eye/lid rings read as separate circular facial patches; source almond-shaped eyelids, eyelash mass and cheek integration are not matched.",
+    "Mouth appears flat or mildly downturned, with a more angular jaw and chin than the smiling, rounded reference face.",
+    "Hair uses sparse, similarly sized tubular locks rather than the source dense flowing curl mass.",
+    "Scarf reads as a bulky continuous angular collar; layered fabric wrapping and soft fold transitions differ.",
+    "Jacket shoulders have faceted/jagged silhouette transitions. Animation/deformation inspection is still required before deciding whether joins expose gaps.",
+    "Map fingers lie across the sheet and need a supporting grip/contact correction.",
+    "Garment folds, hardware wear and source-specific garment silhouette remain simplified."
+  ],
+  "unreviewed": [
+    "latest Unity import/render",
+    "all ten animation clips in Main",
+    "inferred side/back source likeness",
+    "mobile performance"
+  ],
+  "score": null,
+  "historical": true,
+  "current_source_sha256_at_historical_marking": "d780df9ac8b1314df1f4374d95be4cf5dfcd3dc46f8a1d75bfbefc765c904246",
+  "evidence_path_warning": "Paths recorded in evidence are mutable render destinations. Verify exact recorded hashes before associating a displayed image with this historical inspection."
+}

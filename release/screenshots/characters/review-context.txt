@@ -1,0 +1,9 @@
+Unity 6000.3.26f1; Main.unity; actual Play mode.
+Automated existing movement target and Unity UI pointer events. Not a physical device test.
+Save: D:\games\DiamondMineTycoon\.cache\timber-workspace\.cache/qa-saves/crew-20261025-084529
+Cart item: stone; quantity: 2
+Character views are Unity camera renders of the imported FBX, captured during Play mode.
+GPU: NVIDIA GeForce RTX 3050 Laptop GPU; API: Direct3D11; memory MB: 3962
+Desktop evidence only; no physical Android or iOS frame-time certification.
+
+Additional UI callback assertions use four diamond ore, two silver ore and task-progress fixtures in this private save only. Machine/job time is advanced through the production rules. Live screenshots use a separate fresh save.

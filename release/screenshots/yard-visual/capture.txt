@@ -1,0 +1,2 @@
+editor camera render of YardArt meshes
+6000.3.26f1

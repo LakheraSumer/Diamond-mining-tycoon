@@ -138,8 +138,12 @@ namespace DiamondMine.Simulation
                 return "Choose a miner.";
             if (!string.IsNullOrEmpty(adventure.MigrationNote))
                 return adventure.MigrationNote;
+            if (adventure.CartLoad > 0d && !adventure.CartGranted)
+                return "The cart is on its way to the mill.";
+            if (adventure.HandsAmount > 0d)
+                return "Send the cart, or walk to the mill and store.";
             if (adventure.LifetimeDiamondsRecovered < 1d)
-                return "Mine diamond rock. Crush, wash, then sort.";
+                return "Mine diamond rock at bunker 3. Then crush, wash, and sort.";
             if (adventure.RingsCrafted < 1)
                 return "Polish a diamond, refine silver, make a ring.";
             if (PaidOwned(adventure) < 1)
@@ -164,11 +168,13 @@ namespace DiamondMine.Simulation
                 TickMachines(state.Adventure, seconds);
                 TickJobs(state, seconds);
                 TickWorker(state, seconds);
+                TickCart(state, seconds);
             }
             else
             {
                 TickMachines(state.Adventure, 0d);
                 TickJobs(state, 0d);
+                TickCart(state, 0d);
             }
             RefreshUnlocks(state);
         }
@@ -269,6 +275,30 @@ namespace DiamondMine.Simulation
             adventure.FocusPlotId = plotId;
             adventure.PoseHint = "mine";
             message = "Picked up " + take.ToString("0", CultureInfo.InvariantCulture) + " " + item.Name + ".";
+            return true;
+        }
+
+        public static bool TrySendCart(GameState state, out string message)
+        {
+            AdventureState adventure = state.Adventure;
+            if (adventure.CartLoad > 0d && !adventure.CartGranted)
+            {
+                message = "A cart is already on the way.";
+                return false;
+            }
+            if (adventure.HandsAmount < 1d || string.IsNullOrEmpty(adventure.HandsItem))
+            {
+                message = "Hands are empty.";
+                return false;
+            }
+            adventure.CartItem = adventure.HandsItem;
+            adventure.CartLoad = adventure.HandsAmount;
+            adventure.HandsItem = "";
+            adventure.HandsAmount = 0d;
+            adventure.CartSeconds = JourneyCatalog.CartTripSeconds;
+            adventure.CartGranted = false;
+            adventure.PoseHint = "carry";
+            message = "Cart sent to the mill.";
             return true;
         }
 
@@ -789,6 +819,27 @@ namespace DiamondMine.Simulation
                     return false;
             }
             return true;
+        }
+
+        static void TickCart(GameState state, double seconds)
+        {
+            AdventureState adventure = state.Adventure;
+            if (adventure.CartLoad <= 0d || adventure.CartGranted)
+                return;
+            if (seconds > 0d)
+                adventure.CartSeconds -= seconds;
+            if (adventure.CartSeconds > 0d)
+                return;
+            if (WarehouseUsed(adventure) + adventure.CartLoad > adventure.WarehouseCapacity + 1e-6)
+            {
+                adventure.CartSeconds = 0d;
+                return;
+            }
+            AddItem(adventure, adventure.CartItem, adventure.CartLoad);
+            adventure.CartLoad = 0d;
+            adventure.CartItem = "";
+            adventure.CartGranted = true;
+            adventure.CartSeconds = 0d;
         }
 
         static void TickMachines(AdventureState adventure, double seconds)

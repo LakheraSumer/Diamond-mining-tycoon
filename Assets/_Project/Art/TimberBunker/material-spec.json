@@ -1,0 +1,290 @@
+{
+  "Oak": {
+    "color": [
+      0.54,
+      0.3,
+      0.12
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "AgedOak_BaseColor",
+    "normal": "AgedOak_Normal",
+    "emission": 0
+  },
+  "OakEnd": {
+    "color": [
+      0.64,
+      0.39,
+      0.18
+    ],
+    "roughness": 0.77,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "TunnelOak": {
+    "color": [
+      0.25,
+      0.13,
+      0.06
+    ],
+    "roughness": 0.85,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "Rock": {
+    "color": [
+      0.51,
+      0.48,
+      0.47
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "StratifiedStone_BaseColor",
+    "normal": "StratifiedStone_Normal",
+    "emission": 0
+  },
+  "RockLight": {
+    "color": [
+      0.49,
+      0.47,
+      0.44
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "RockShadow": {
+    "color": [
+      0.34,
+      0.35,
+      0.37
+    ],
+    "roughness": 0.88,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "Soil": {
+    "color": [
+      0.6,
+      0.43,
+      0.24
+    ],
+    "roughness": 0.65,
+    "metallic": 0,
+    "texture": "PackedEarth_BaseColor",
+    "normal": "PackedEarth_Normal",
+    "emission": 0
+  },
+  "EarthCut": {
+    "color": [
+      0.32,
+      0.235,
+      0.15
+    ],
+    "roughness": 0.96,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "Moss": {
+    "color": [
+      0.28,
+      0.36,
+      0.1
+    ],
+    "roughness": 0.95,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "Steel": {
+    "color": [
+      0.3,
+      0.34,
+      0.36
+    ],
+    "roughness": 0.46,
+    "metallic": 0.65,
+    "texture": "ForgedSteel_BaseColor",
+    "normal": "ForgedSteel_Normal",
+    "emission": 0
+  },
+  "WornSteel": {
+    "color": [
+      0.52,
+      0.57,
+      0.59
+    ],
+    "roughness": 0.32,
+    "metallic": 0.7,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "Oxide": {
+    "color": [
+      0.29,
+      0.18,
+      0.095
+    ],
+    "roughness": 0.8,
+    "metallic": 0.25,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "BlackIron": {
+    "color": [
+      0.12,
+      0.15,
+      0.155
+    ],
+    "roughness": 0.42,
+    "metallic": 0.6,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "Brass": {
+    "color": [
+      0.65,
+      0.4,
+      0.12
+    ],
+    "roughness": 0.35,
+    "metallic": 0.65,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "PlaqueLetter": {
+    "color": [
+      0.96,
+      0.84,
+      0.58
+    ],
+    "roughness": 0.6,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "Leaf": {
+    "color": [
+      0.2,
+      0.37,
+      0.065
+    ],
+    "roughness": 0.82,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "LeafLight": {
+    "color": [
+      0.42,
+      0.54,
+      0.105
+    ],
+    "roughness": 0.87,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "LeafDark": {
+    "color": [
+      0.115,
+      0.25,
+      0.06
+    ],
+    "roughness": 0.86,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "Grass": {
+    "color": [
+      0.47,
+      0.54,
+      0.12
+    ],
+    "roughness": 0.85,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "Flower": {
+    "color": [
+      0.97,
+      0.66,
+      0.13
+    ],
+    "roughness": 0.7,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "LanternGlow": {
+    "color": [
+      1,
+      0.48,
+      0.085
+    ],
+    "roughness": 0.3,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 2.6
+  },
+  "TunnelBlack": {
+    "color": [
+      0.035,
+      0.028,
+      0.022
+    ],
+    "roughness": 1,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "Ore": {
+    "color": [
+      0.49,
+      0.51,
+      0.53
+    ],
+    "roughness": 0.78,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  },
+  "OreLight": {
+    "color": [
+      0.67,
+      0.65,
+      0.6
+    ],
+    "roughness": 0.7,
+    "metallic": 0,
+    "texture": null,
+    "normal": null,
+    "emission": 0
+  }
+}
